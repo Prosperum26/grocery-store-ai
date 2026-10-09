@@ -8,5 +8,7 @@ products = pl.read_csv("products.csv")
 
 print(aisles.head())
 print(departments.head()) 
+print(order_products__prior.head()) 
+print(order_products__train.head()) 
 print(orders.head())
 print(products.head())
