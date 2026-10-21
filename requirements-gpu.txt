@@ -1,0 +1,8 @@
+# Bản torch có CUDA 12.6 cho máy có card NVIDIA (đã kiểm chứng trên RTX 4050 Laptop 6 GB, driver 610.78).
+# Cài SAU requirements.txt:   pip install -r requirements-gpu.txt
+# Ghi chú: file ~2,6 GB. Nếu pip báo lỗi SSL/đứt mạng giữa chừng, tải bằng curl có tải-tiếp rồi cài từ file:
+#   curl -L -C - -O "https://download.pytorch.org/whl/cu126/torch-2.14.1%2Bcu126-cp311-cp311-win_amd64.whl"
+#   pip install --no-deps torch-2.14.1+cu126-cp311-cp311-win_amd64.whl
+--index-url https://download.pytorch.org/whl/cu126
+--extra-index-url https://pypi.org/simple
+torch==2.14.1+cu126
