@@ -883,11 +883,11 @@
       "products": [
         {
           "name": "Bắp mỹ giòn ngọt",
-          "product_url": "https://www.bachhoaxanh.com/cu/bap-my-trai-tu-300g-tro-len-3-trai",
+          "product_url": "https://www.bachhoaxanh.com/cu/bap-my-1-trai",
           "category": "Củ, quả",
           "pack_size": null,
           "pack_unit": null,
-          "price": 270000,
+          "price": 90000,
           "source": "catalog"
         }
       ]
@@ -2377,15 +2377,6 @@
       "note": "",
       "products": [
         {
-          "name": "Nấm kim châm Trung Quốc",
-          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/3-goi-nam-kim-cham-noi-dia-trung-150g",
-          "category": "Nấm các loại",
-          "pack_size": null,
-          "pack_unit": null,
-          "price": 270000,
-          "source": "catalog"
-        },
-        {
           "name": "Nấm kim châm Thái Lan 150g",
           "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-kim-cham-thai-lan-150g",
           "category": "Nấm các loại",
@@ -2401,6 +2392,15 @@
           "pack_size": 150.0,
           "pack_unit": "g",
           "price": 149000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nấm kim châm Trung Quốc",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/3-goi-nam-kim-cham-noi-dia-trung-150g",
+          "category": "Nấm các loại",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 270000,
           "source": "catalog"
         }
       ]

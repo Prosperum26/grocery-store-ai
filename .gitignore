@@ -26,3 +26,5 @@ weights/*
 *.npy
 *.pkl
 *.joblib
+
+data

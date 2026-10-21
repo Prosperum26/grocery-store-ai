@@ -40,6 +40,7 @@ AI_FIXES = {
     "mực": ("4,3,2", "Đưa 'Mực ống' tươi lên đầu; bỏ 'Mực trứng' (loại riêng); hàng đông lạnh làm lựa chọn phụ"),
     "bắp cải": ("1", "Bỏ bắp cải thảo (loại khác)"),
     "trứng gà ta": ("alias:trứng gà", "alias 140 trỏ về chính nó; ghi chú của bạn nói giống 'trứng gà'"),
+    "nấm kim châm": ("2,3,1", "Ứng viên 1 là gói 3 hộp (450g), đưa Thái Lan 150g và Hàn Quốc 150g lên đầu"),
 }
 
 # Gợi ý của AI cho sheet pantry_san_pham: số thứ tự ứng viên (người duyệt có thể đổi), hoặc sp:<tên>.

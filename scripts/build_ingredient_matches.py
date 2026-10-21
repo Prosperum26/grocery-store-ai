@@ -27,7 +27,7 @@ from pathlib import Path
 from openpyxl import load_workbook
 
 from build_catalog_clean import clean_product
-from build_recipe_shortlist import load_full_catalog
+from build_recipe_shortlist import FULL_CATALOG
 
 ROOT = Path(__file__).resolve().parents[1]
 REVIEW = ROOT / "data" / "review"
@@ -35,6 +35,7 @@ SRC = REVIEW / "ingredient_matches_review_v2.xlsx"
 ADDITIONS = REVIEW / "catalog_additions_v1.json"
 SHORTLIST = ROOT / "data" / "processed" / "recipes_shortlist.json"
 OUT = REVIEW / "ingredient_catalog_map_v1.json"
+DISAMBIGUATION = REVIEW / "catalog_disambiguation_v1.json"
 MAX_CANDIDATES = 8
 
 
@@ -93,9 +94,11 @@ def _err(errors, where, msg):
 
 def main():
     errors, warnings = [], []
-    catalog = {}
-    for p in load_full_catalog():
-        catalog.setdefault(p["name"], p)
+    # Mọi hàng của catalog đầy đủ (KHÔNG bỏ trùng): tên trùng thì phải chọn đúng url ở file disambiguation.
+    rows_by_name = {}
+    for raw in json.loads(FULL_CATALOG.read_text(encoding="utf-8")):
+        rows_by_name.setdefault(raw["name"], []).append(clean_product(raw))
+    choices = json.loads(DISAMBIGUATION.read_text(encoding="utf-8"))["choices"]
     additions = load_additions()
     wb = load_workbook(SRC, data_only=True)
 
@@ -144,10 +147,17 @@ def main():
     def resolve_products(rec):
         out = []
         for kind, value in rec["data"]:
-            if value not in catalog:
+            rows = rows_by_name.get(value)
+            if not rows:
                 errors.append(f"{rec['where']}: sản phẩm '{value}' không có trong catalog")
                 continue
-            out.append(product_record(catalog[value], "catalog"))
+            if len(rows) > 1:                                   # tên trùng -> phải có lựa chọn url rõ ràng
+                url = choices.get(value, {}).get("product_url")
+                rows = [r for r in rows if r["product_url"] == url]
+                if not rows:
+                    errors.append(f"{rec['where']}: '{value}' trùng tên nhiều sản phẩm, thêm vào {DISAMBIGUATION.name}")
+                    continue
+            out.append(product_record(rows[0], "catalog"))
         return out
 
     resolved = {}
