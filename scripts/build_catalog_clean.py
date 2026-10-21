@@ -70,6 +70,8 @@ def clean_product(p):
         multipack, name = int(m.group(1)), name[m.end():]
     container, pack_size, pack_unit = parse_pack(p)
     name = re.sub(r"\([^)]*\)", " ", name)         # "(4 trái)": ghi chú trong ngoặc
+    # Cụm quảng cáo dính từ trang bán hàng: "Ớt hiểm trái gói 50g, giá cả", "Nấm đông cô 50g có bán với"
+    name = re.sub(r",?\s*giá (cả|tốt)\b|\bcó bán với\b|\bmua$", " ", name)
     name = PACK_RE.sub(" ", name)                  # bỏ quy cách khỏi tên
     name = re.sub(rf"\b({CONTAINERS})\b\s*$", "", tidy(name), flags=re.IGNORECASE)
     name = re.sub(r"\d+\s*%", " ", name)           # "100%", "12%"

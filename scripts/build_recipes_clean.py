@@ -89,6 +89,11 @@ PREFIX_ALIASES = [("sả cây", "sả")]
 ALIASES = {
     "cà hộp": "cà chua hộp", "cà paste hộp": "cà chua paste hộp", "cà paste": "cà chua paste",
     "tỏi củ": "tỏi", "gừng củ": "gừng",
+    "thịt ba rọi": "thịt ba chỉ", "ba rọi": "thịt ba chỉ", "ba chỉ": "thịt ba chỉ",
+    "mì gói": "mì", "mì ăn liền": "mì",
+    # Tên quá chung: "thịt"/"thịt xay" trong công thức Việt hầu như là thịt heo, "hành" đứng
+    # một mình thường là hành lá. Không gộp thì "thịt" khớp bừa "Thịt ốc bươu".
+    "thịt": "thịt heo", "hành": "hành lá",
     "tỏi ớt": ["tỏi", "ớt"], "sả ớt": ["sả", "ớt"], "sả cây": "sả",
     "đậu hủ": "đậu hũ", "đậu hủ trắng": "đậu hũ", "đậu hũ trắng": "đậu hũ", "đậu phụ": "đậu hũ",
     "hành boa rô": "hành boa rô", "hành boaro": "hành boa rô", "boa rô": "hành boa rô",
@@ -112,7 +117,8 @@ COUNT_QTY_RE = re.compile(
 
 
 def nfc(s):
-    return unicodedata.normalize("NFC", s)
+    """Chuẩn Unicode NFC và bỏ ký tự vô hình (zero-width) dính từ HTML crawl."""
+    return re.sub("[​‌‍﻿]", "", unicodedata.normalize("NFC", s))
 
 
 UNICODE_FRACTIONS = {"½": 0.5, "¼": 0.25, "¾": 0.75, "⅓": 1 / 3, "⅔": 2 / 3}

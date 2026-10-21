@@ -1,0 +1,3883 @@
+{
+  "source": "ingredient_matches_review_v2.xlsx",
+  "ingredients": [
+    {
+      "ingredient": "bột canh",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Bột canh I-ốt Vifon gói 200g",
+          "product_url": "https://www.bachhoaxanh.com/hat-nem/bot-canh-i-ot-vifon-goi-200g",
+          "category": "Hạt nêm, bột ngọt, bột canh",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 62000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bột chiên giòn",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Bột chiên giòn Meizan gói 150g",
+          "product_url": "https://www.bachhoaxanh.com/bot-che-bien-san/bot-chien-gion-meizan-goi-150g",
+          "category": "Bột các loại",
+          "pack_size": 150.0,
+          "pack_unit": "g",
+          "price": 110000,
+          "source": "catalog"
+        },
+        {
+          "name": "Bột chiên giòn Aji-Quick gói 150g",
+          "product_url": "https://www.bachhoaxanh.com/bot-che-bien-san/bot-chien-gion-aji-quick-150gr-60-loc-10",
+          "category": "Bột các loại",
+          "pack_size": 150.0,
+          "pack_unit": "g",
+          "price": 125000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bột ngọt",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "400g và 100g (gói nhỏ cho nhà ít dùng)",
+      "products": [
+        {
+          "name": "Bột ngọt Meizan gói 400g",
+          "product_url": "https://www.bachhoaxanh.com/hat-nem/bot-ngot-meizan-goi-400g",
+          "category": "Hạt nêm, bột ngọt, bột canh",
+          "pack_size": 400.0,
+          "pack_unit": "g",
+          "price": 330000,
+          "source": "catalog"
+        },
+        {
+          "name": "Bột ngọt hạt lớn Ajinomoto 100g",
+          "product_url": "https://www.bachhoaxanh.com/hat-nem/bot-ngot-ajinomoto-100g-canh-lon-120",
+          "category": "Hạt nêm, bột ngọt, bột canh",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": 92000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bột năng",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Bột năng khoai mì Tấn Sang 400g",
+          "product_url": "https://www.bachhoaxanh.com/bot-che-bien-san/bot-nang-tan-sang-goi-400g",
+          "category": "Bột các loại",
+          "pack_size": 400.0,
+          "pack_unit": "g",
+          "price": 130000,
+          "source": "catalog"
+        },
+        {
+          "name": "Bột năng đa dụng Miwon gói 400g",
+          "product_url": "https://www.bachhoaxanh.com/bot-che-bien-san/bot-nang-da-dung-miwon-400g",
+          "category": "Bột các loại",
+          "pack_size": 400.0,
+          "pack_unit": "g",
+          "price": 195000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bột tẩm khô chiên giòn",
+      "kind": "addon",
+      "status": "added",
+      "reviewed": false,
+      "note": "Tự thêm vào catalog (bạn đã xác nhận)",
+      "products": [
+        {
+          "name": "Bột tẩm khô chiên giòn gói 150g",
+          "product_url": null,
+          "category": "Bột các loại",
+          "pack_size": 150.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "dầu hào",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Dầu hào cao cấp Maggi bào ngư chai 350g",
+          "product_url": "https://www.bachhoaxanh.com/bo/dau-hao-cao-cap-maggi-bao-ngu-chai-350g",
+          "category": "Dầu hào, giấm, bơ",
+          "pack_size": 350.0,
+          "pack_unit": "g",
+          "price": 320000,
+          "source": "catalog"
+        },
+        {
+          "name": "Dầu hào Maggi đậm đặc 150g",
+          "product_url": "https://www.bachhoaxanh.com/bo/dau-hao-dam-dac-maggi-chai-150g",
+          "category": "Dầu hào, giấm, bơ",
+          "pack_size": 150.0,
+          "pack_unit": "g",
+          "price": 130000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "dầu mè",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Dầu mè thơm hảo hạng Meizan 250ml",
+          "product_url": "https://www.bachhoaxanh.com/dau-an/dau-me-meizan-025l",
+          "category": "Dầu ăn",
+          "pack_size": 250.0,
+          "pack_unit": "ml",
+          "price": 590000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "dầu ăn",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "Chai 1 lít trước, chai 400ml nhỏ; không chọn hàng thùng",
+      "products": [
+        {
+          "name": "Dầu ăn thượng hạng Neptune 1 lít",
+          "product_url": "https://www.bachhoaxanh.com/dau-an/dau-an-thuong-hang-neptune-light-chai-1-lit",
+          "category": "Dầu ăn",
+          "pack_size": 1.0,
+          "pack_unit": "lít",
+          "price": 650000,
+          "source": "catalog"
+        },
+        {
+          "name": "Dầu ăn cao cấp Happi Koki 400ml",
+          "product_url": "https://www.bachhoaxanh.com/dau-an/dau-an-happi-koki-400ml",
+          "category": "Dầu ăn",
+          "pack_size": 400.0,
+          "pack_unit": "ml",
+          "price": 215000,
+          "source": "catalog"
+        },
+        {
+          "name": "Dầu ăn cao cấp Meizan Gold 1 lít",
+          "product_url": "https://www.bachhoaxanh.com/dau-an/meizan-gold-chai-1lit",
+          "category": "Dầu ăn",
+          "pack_size": 1.0,
+          "pack_unit": "lít",
+          "price": 520000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "dầu điều",
+      "kind": "addon",
+      "status": "added",
+      "reviewed": false,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Dầu điều chai 250ml",
+          "product_url": null,
+          "category": "Dầu ăn",
+          "pack_size": 250.0,
+          "pack_unit": "ml",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "giấm gạo",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Giấm gạo lên men Ajinomoto 400ml",
+          "product_url": "https://www.bachhoaxanh.com/bo/giam-gao-len-men-ajinomoto-chai-400ml",
+          "category": "Dầu hào, giấm, bơ",
+          "pack_size": 400.0,
+          "pack_unit": "ml",
+          "price": 189000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "gừng",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Gừng",
+          "product_url": "https://www.bachhoaxanh.com/cu/gung-100g",
+          "category": "Củ, quả",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 62000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "hành lá",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Hành lá",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/hanh-la-goi-100g",
+          "category": "Rau lá",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 64000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "hành tím",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Hành tím 200g",
+          "product_url": "https://www.bachhoaxanh.com/cu/hanh-tim-200g",
+          "category": "Củ, quả",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 195000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "hạt nêm",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "Aji-ngon heo 170g đúng nhãn trong công thức; Knorr 170g; Neptune 850g",
+      "products": [
+        {
+          "name": "Hạt nêm thịt heo Aji-ngon 170g",
+          "product_url": "https://www.bachhoaxanh.com/hat-nem/hat-nem-vi-heo-aji-ngon-goi-170g",
+          "category": "Hạt nêm, bột ngọt, bột canh",
+          "pack_size": 170.0,
+          "pack_unit": "g",
+          "price": 189000,
+          "source": "catalog"
+        },
+        {
+          "name": "Hạt nêm thịt xương tuỷ Knorr 170g",
+          "product_url": "https://www.bachhoaxanh.com/hat-nem/hat-nem-thit-than-xuong-ong-tuy-knorr-goi-170g",
+          "category": "Hạt nêm, bột ngọt, bột canh",
+          "pack_size": 170.0,
+          "pack_unit": "g",
+          "price": 181000,
+          "source": "catalog"
+        },
+        {
+          "name": "Hạt nêm 4 trong 1 vị heo Neptune 850g",
+          "product_url": "https://www.bachhoaxanh.com/hat-nem/hat-nem-4-trong-1-vi-heo-neptune-goi-850g",
+          "category": "Hạt nêm, bột ngọt, bột canh",
+          "pack_size": 850.0,
+          "pack_unit": "g",
+          "price": 720000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "muối",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "Muối tinh sấy iot và muối hạt; bỏ muối tôm, muối ớt (là gia vị chấm)",
+      "products": [
+        {
+          "name": "Muối tinh sấy iot Sosal Group 1kg",
+          "product_url": "https://www.bachhoaxanh.com/muoi-an/muoi-tinh-say-bo-sung-i-ot-sosalco-goi-1kg",
+          "category": "Muối",
+          "pack_size": 1.0,
+          "pack_unit": "kg",
+          "price": 80000,
+          "source": "catalog"
+        },
+        {
+          "name": "Muối hạt thiên nhiên Ông Chà Và 1kg",
+          "product_url": "https://www.bachhoaxanh.com/muoi-an/muoi-hat-thien-nhien-ong-cha-va-goi-1kg",
+          "category": "Muối",
+          "pack_size": 1.0,
+          "pack_unit": "kg",
+          "price": 95000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "ngò rí",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Ngò rí 50g",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/ngo-ri-50g",
+          "category": "Rau lá",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 43000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nêm sẵn lẩu",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "Catalog đầy đủ đã có sản phẩm này; không cần thêm mới",
+      "products": [
+        {
+          "name": "Xốt gia vị nêm sẵn lẩu Thái Chinsu gói 80g",
+          "product_url": "https://www.bachhoaxanh.com/gia-vi-nem-san/xot-gia-vi-nem-san-lau-thai-chinsu-goi-80g",
+          "category": "Gia vị nêm sẵn",
+          "pack_size": 80.0,
+          "pack_unit": "g",
+          "price": 120000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nước mắm",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Nước mắm Phú Quốc Thanh Quốc 520ml",
+          "product_url": "https://www.bachhoaxanh.com/nuoc-mam/nuoc-mam-phu-quoc-thanh-quoc-35-do-dam-chai-520ml",
+          "category": "Nước mắm",
+          "pack_size": 520.0,
+          "pack_unit": "ml",
+          "price": 860000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nước mắm Nam Ngư Phú Quốc đậm đặc 32 độ đạm chai 500ml",
+          "product_url": "https://www.bachhoaxanh.com/nuoc-mam/nuoc-mam-nam-ngu-phu-quoc-dam-dac-32-do-dam-chai-500ml",
+          "category": "Nước mắm",
+          "pack_size": 500.0,
+          "pack_unit": "ml",
+          "price": 710000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nước mắm cá cơm than Knorr 242ml",
+          "product_url": "https://www.bachhoaxanh.com/nuoc-mam/nuoc-mam-ca-com-than-knorr-15-do-dam-chai-242ml",
+          "category": "Nước mắm",
+          "pack_size": 242.0,
+          "pack_unit": "ml",
+          "price": 150000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nước tương",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Nước tương Nam Dương 210ml",
+          "product_url": "https://www.bachhoaxanh.com/nuoc-tuong/nuoc-tuong-thuong-hang-nam-duong-chai-210ml",
+          "category": "Nước tương",
+          "pack_size": 210.0,
+          "pack_unit": "ml",
+          "price": 189000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nước tương Hương Việt 500ml",
+          "product_url": "https://www.bachhoaxanh.com/nuoc-tuong/nuoc-tuong-thanh-vi-huong-viet-500ml-24",
+          "category": "Nước tương",
+          "pack_size": 500.0,
+          "pack_unit": "ml",
+          "price": 75000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "rượu trắng",
+      "kind": "addon",
+      "status": "added",
+      "reviewed": false,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Rượu trắng chai 500ml",
+          "product_url": null,
+          "category": "Rượu",
+          "pack_size": 500.0,
+          "pack_unit": "ml",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "sả",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Sả cây gói 200g",
+          "product_url": "https://www.bachhoaxanh.com/cu/sa-cay-200g",
+          "category": "Củ, quả",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 68000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tiêu",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "Tiêu xay trước (công thức dùng tiêu xay), tiêu hạt làm phụ",
+      "products": [
+        {
+          "name": "Tiêu đen xay 50g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/tieu-den-xay-50g",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 220000,
+          "source": "catalog"
+        },
+        {
+          "name": "Tiêu đen hạt 50g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/tieu-den-hat-50gr",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 220000,
+          "source": "catalog"
+        },
+        {
+          "name": "Tiêu đen xay Fadely 45g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/tieu-den-xay-fadely-tinh-nguyen-hu-45g",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 45.0,
+          "pack_unit": "g",
+          "price": 260000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tương cà",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Tương cà Delly Cook chai 270g",
+          "product_url": "https://www.bachhoaxanh.com/tuong-ot-ca-den/tuong-ca-delly-cook-chai-270g",
+          "category": "Tương ớt-đen, mayonnaise",
+          "pack_size": 270.0,
+          "pack_unit": "g",
+          "price": 142000,
+          "source": "catalog"
+        },
+        {
+          "name": "Tương cà chua Chinsu 250g",
+          "product_url": "https://www.bachhoaxanh.com/tuong-ot-ca-den/tuong-ca-chinsu-250g",
+          "category": "Tương ớt-đen, mayonnaise",
+          "pack_size": 250.0,
+          "pack_unit": "g",
+          "price": 195000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tương ớt",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Tương ớt Cholimex Foods 270g",
+          "product_url": "https://www.bachhoaxanh.com/tuong-ot-ca-den/tuong-uot-pet-cholimex-270g-24",
+          "category": "Tương ớt-đen, mayonnaise",
+          "pack_size": 270.0,
+          "pack_unit": "g",
+          "price": 137000,
+          "source": "catalog"
+        },
+        {
+          "name": "Tương ớt Chinsu Sriracha 250g",
+          "product_url": "https://www.bachhoaxanh.com/tuong-ot-ca-den/tuong-ot-chinsu-sriracha-chai-250g",
+          "category": "Tương ớt-đen, mayonnaise",
+          "pack_size": 250.0,
+          "pack_unit": "g",
+          "price": 210000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tỏi",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "Tỏi tím và tỏi cô đơn; bỏ tỏi phi giòn (hàng chế biến)",
+      "products": [
+        {
+          "name": "Tỏi tím Trung Quốc 200g",
+          "product_url": "https://www.bachhoaxanh.com/cu/toi-tim-trung-quoc-200g",
+          "category": "Củ, quả",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 180000,
+          "source": "catalog"
+        },
+        {
+          "name": "Tỏi cô đơn 200g",
+          "product_url": "https://www.bachhoaxanh.com/cu/toi-co-don-200g",
+          "category": "Củ, quả",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 266000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "xốt mayonnaise",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "",
+      "products": [
+        {
+          "name": "Xốt mayonnaise Ajinomoto Aji-mayo 430g",
+          "product_url": "https://www.bachhoaxanh.com/tuong-ot-ca-den/xot-mayonnaise-ajinomoto-aji-mayo-chua-beo-chai-430g",
+          "category": "Tương ớt-đen, mayonnaise",
+          "pack_size": 430.0,
+          "pack_unit": "g",
+          "price": 620000,
+          "source": "catalog"
+        },
+        {
+          "name": "Xốt mayonnaise Ajinomoto chua béo 260g",
+          "product_url": "https://www.bachhoaxanh.com/tuong-ot-ca-den/xot-mayonnaise-aji-mayo-trung-ga-tuoi-260g",
+          "category": "Tương ớt-đen, mayonnaise",
+          "pack_size": 260.0,
+          "pack_unit": "g",
+          "price": 420000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "đường",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "Đường kính trắng 500g và 1kg; bỏ đường lỏng, đường phèn",
+      "products": [
+        {
+          "name": "Đường kính trắng An Khê 500g",
+          "product_url": "https://www.bachhoaxanh.com/duong/duong-kinh-trang-an-khe-goi-500g",
+          "category": "Đường",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 160000,
+          "source": "catalog"
+        },
+        {
+          "name": "Đường kính trắng An Khê 1kg",
+          "product_url": "https://www.bachhoaxanh.com/duong/duong-kinh-trang-an-khe-goi-1kg",
+          "category": "Đường",
+          "pack_size": 1.0,
+          "pack_unit": "kg",
+          "price": 290000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "ớt",
+      "kind": "addon",
+      "status": "matched",
+      "reviewed": false,
+      "note": "Ớt hiểm, ớt sừng, ớt xiêm; bỏ ớt xay và ớt bột (hàng khác)",
+      "products": [
+        {
+          "name": "Ớt hiểm trái gói 50g, giá cả",
+          "product_url": "https://www.bachhoaxanh.com/cu/ot-hiem-trai-goi-50g",
+          "category": "Củ, quả",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 53000,
+          "source": "catalog"
+        },
+        {
+          "name": "Ớt sừng đỏ tươi gói 100g",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/ot-sung-do-goi-100g",
+          "category": "Rau lá",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": 55000,
+          "source": "catalog"
+        },
+        {
+          "name": "Ớt xiêm xanh gói 50g",
+          "product_url": "https://www.bachhoaxanh.com/cu/ot-xiem-xanh-goi-50g",
+          "category": "Củ, quả",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 40000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bao tử cá basa",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bao tử cá basa 250g",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/bao-tu-ca-basa-250g",
+          "category": "Cá, hải sản",
+          "pack_size": 250.0,
+          "pack_unit": "g",
+          "price": 320000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bánh mì",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Bánh mì ổ 80g",
+          "product_url": null,
+          "category": "Bánh tươi, Sandwich",
+          "pack_size": 80.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "bánh tráng",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Bánh tráng gói 200g",
+          "product_url": null,
+          "category": "Bánh tráng, vỏ bánh",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "bí xanh",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bí xanh 500g",
+          "product_url": "https://www.bachhoaxanh.com/cu/bi-xanh-500g",
+          "category": "Củ, quả",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 100000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bông cải xanh",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bông cải xanh nhập khẩu",
+          "product_url": "https://www.bachhoaxanh.com/cu/bong-cai-xanh-nhap-khau",
+          "category": "Củ, quả",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 2750000,
+          "source": "catalog"
+        },
+        {
+          "name": "Bông cải xanh baby vỉ 200g",
+          "product_url": "https://www.bachhoaxanh.com/cu/bong-cai-xanh-baby-vi-200g",
+          "category": "Củ, quả",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 190000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bơ",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bơ lạt từ thực vật Tường An 80g",
+          "product_url": "https://www.bachhoaxanh.com/bo/bo-margarine-hop-80gr",
+          "category": "Dầu hào, giấm, bơ",
+          "pack_size": 80.0,
+          "pack_unit": "g",
+          "price": 110000,
+          "source": "catalog"
+        },
+        {
+          "name": "Bơ thực vật Tường An 200g",
+          "product_url": "https://www.bachhoaxanh.com/bo/bo-margarine-hop-200gr",
+          "category": "Dầu hào, giấm, bơ",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 210000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bầu",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bầu sao 500g",
+          "product_url": "https://www.bachhoaxanh.com/cu/bau-sao-500g",
+          "category": "Củ, quả",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 100000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bắp bò",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bắp bò",
+          "product_url": "https://www.bachhoaxanh.com/thit-bo/bap-bo-1kg",
+          "category": "Thịt bò",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 5580000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bắp cải",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bắp cải trắng",
+          "product_url": "https://www.bachhoaxanh.com/cu/bap-cai-trang-tui-1kg",
+          "category": "Củ, quả",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 1250000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bắp mỹ",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bắp mỹ giòn ngọt",
+          "product_url": "https://www.bachhoaxanh.com/cu/bap-my-trai-tu-300g-tro-len-3-trai",
+          "category": "Củ, quả",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 270000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bắp non",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bắp non vỉ 200g",
+          "product_url": "https://www.bachhoaxanh.com/cu/bap-non-vi-200g",
+          "category": "Củ, quả",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 180000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bột chiên xù",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bột chiên xù đa dụng Miwon 200g",
+          "product_url": "https://www.bachhoaxanh.com/bot-che-bien-san/bot-chien-xu-200gam",
+          "category": "Bột các loại",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 260000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bột cà ri",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bột cà ri tẩm ướp Vianco 10g",
+          "product_url": "https://www.bachhoaxanh.com/gia-vi-nem-san/bot-ca-ri-vianco-goi-10g",
+          "category": "Gia vị nêm sẵn",
+          "pack_size": 10.0,
+          "pack_unit": "g",
+          "price": 55000,
+          "source": "catalog"
+        },
+        {
+          "name": "Bột cà ri ướp Thiên Thành 10g",
+          "product_url": "https://www.bachhoaxanh.com/gia-vi-nem-san/bot-ca-ri-thien-thanh-goi-10g",
+          "category": "Gia vị nêm sẵn",
+          "pack_size": 10.0,
+          "pack_unit": "g",
+          "price": 63000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bột mì",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bột mì đa dụng Meizan cao cấp 500g",
+          "product_url": "https://www.bachhoaxanh.com/bot-che-bien-san/bot-mi-da-dung-meizan-500g",
+          "category": "Bột các loại",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 160000,
+          "source": "catalog"
+        },
+        {
+          "name": "Bột mì đa dụng Meizan cao cấp 1kg",
+          "product_url": "https://www.bachhoaxanh.com/bot-che-bien-san/bot-mi-da-dung-meizan-1kg",
+          "category": "Bột các loại",
+          "pack_size": 1.0,
+          "pack_unit": "kg",
+          "price": 285000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "bột ngũ vị hương",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Bột ngũ vị hương Thành Lộc 20g",
+          "product_url": "https://www.bachhoaxanh.com/bot-gia-vi/bot-ngu-vi-huong-thanh-loc-goi-20g",
+          "category": "Bột nghệ, tỏi, hồi, quế,...",
+          "pack_size": 20.0,
+          "pack_unit": "g",
+          "price": 90000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "chanh",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Chanh không hạt túi 250g (4 trái)",
+          "product_url": "https://www.bachhoaxanh.com/cu/chanh-khong-hat-tui-250g-2-4-trai",
+          "category": "Củ, quả",
+          "pack_size": 250.0,
+          "pack_unit": "g",
+          "price": 84000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "chả cá basa",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Chả cá basa tươi 200g",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/cha-ca-basa-tuoi-200g",
+          "category": "Cá, hải sản",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 310000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cua",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Cua biển nguyên con 1kg",
+          "product_url": null,
+          "category": "Cá, hải sản",
+          "pack_size": 1.0,
+          "pack_unit": "kg",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "cà chua",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cà chua 300g",
+          "product_url": "https://www.bachhoaxanh.com/cu/ca-chua-300g",
+          "category": "Củ, quả",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 126000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cà chua bi",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cà chua bi hộp 300g",
+          "product_url": "https://www.bachhoaxanh.com/cu/ca-chua-bi-hop-300g",
+          "category": "Củ, quả",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 202000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cà rốt",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cà rốt 300g",
+          "product_url": "https://www.bachhoaxanh.com/cu/ca-rot-300g",
+          "category": "Củ, quả",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 106000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cà tím",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cà tím (2 trái)",
+          "product_url": "https://www.bachhoaxanh.com/cu/ca-tim-2-trai",
+          "category": "Củ, quả",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 116000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cá basa phi lê",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cá basa phi lê 300g",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/ca-basa-phi-le-khay-300g",
+          "category": "Cá, hải sản",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 300000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cá chim",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cá chim nước ngọt làm sạch 450g",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/ca-chim-nuoc-ngot-lam-sach-450g",
+          "category": "Cá, hải sản",
+          "pack_size": 450.0,
+          "pack_unit": "g",
+          "price": 385000,
+          "source": "catalog"
+        },
+        {
+          "name": "Cá chim trắng làm sạch",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/ca-chim-trang-lam-sach",
+          "category": "Cá, hải sản",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 99000000,
+          "source": "catalog"
+        },
+        {
+          "name": "Cá chim nước ngọt làm sạch",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/ca-chim-nuoc-ngot-lam-sach",
+          "category": "Cá, hải sản",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 3600000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cá chim trắng",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cá chim trắng làm sạch",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/ca-chim-trang-lam-sach",
+          "category": "Cá, hải sản",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 99000000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cá hồi",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cá hồi phi lê SG Food khay 200g",
+          "product_url": "https://www.bachhoaxanh.com/ca-hai-san-dong-lanh/ca-hoi-phi-le-sg-food-khay-200g",
+          "category": "Thủy hải sản, thịt đông",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 1390000,
+          "source": "catalog"
+        },
+        {
+          "name": "Cá hồi Coho cắt khúc nhập khẩu Chi Lê 200g",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/ca-hoi-coho-cat-khuc-nhap-khau-chi-le-200g-chi-giao-khuc-giua",
+          "category": "Cá, hải sản",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 800000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cá hồi phi lê",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cá hồi phi lê SG Food khay 200g",
+          "product_url": "https://www.bachhoaxanh.com/ca-hai-san-dong-lanh/ca-hoi-phi-le-sg-food-khay-200g",
+          "category": "Thủy hải sản, thịt đông",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 1390000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cá mòi",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cá mòi xốt cà đậm đà 3 Cô Gái 155g",
+          "product_url": "https://www.bachhoaxanh.com/ca-hop/ca-hop-ba-co-gai-nap-giut-155g",
+          "category": "Cá hộp",
+          "pack_size": 155.0,
+          "pack_unit": "g",
+          "price": 215000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cá nục",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cá nục làm sạch",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/ca-nuc-lam-sach-500g",
+          "category": "Cá, hải sản",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 485000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cá rô",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cá rô làm sạch",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/ca-ro-lam-sach",
+          "category": "Cá, hải sản",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 3270000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cá thu",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Cá thu làm sạch 500g",
+          "product_url": null,
+          "category": "Cá, hải sản",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "cá thác lác",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Cá thác lác làm sạch 500g",
+          "product_url": null,
+          "category": "Cá, hải sản",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "cánh gà",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cánh gà",
+          "product_url": "https://www.bachhoaxanh.com/thit-ga/canh-ga-1kg",
+          "category": "Thịt gà, vịt",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 3240000,
+          "source": "catalog"
+        },
+        {
+          "name": "Cánh gà giữa nhập khẩu",
+          "product_url": "https://www.bachhoaxanh.com/thit-ga/canh-ga-giua-nhap-khau-1kg",
+          "category": "Thịt gà, vịt",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 4950000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cải bó xôi",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Cải bó xôi 300g",
+          "product_url": null,
+          "category": "Rau lá",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "cải chua",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cải chua Ngọc Phú gói 450g",
+          "product_url": "https://www.bachhoaxanh.com/do-chua-dua-muoi/cai-chua-ngoc-phu-goi-450g",
+          "category": "Hàng mát chế biến",
+          "pack_size": 450.0,
+          "pack_unit": "g",
+          "price": 270000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cải thìa",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Cải thìa",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/cai-thia-da-lat-1kg",
+          "category": "Rau lá",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 90000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cần tàu",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Rau cần tàu (cần ta) 100g",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/rau-can-tau-can-ta-100g",
+          "category": "Rau lá",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": 54000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "cần tây",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Cần tây 300g",
+          "product_url": null,
+          "category": "Rau lá",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "củ cải muối",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Củ cải muối dạng sợi",
+          "product_url": "https://www.bachhoaxanh.com/cu/cu-cai-muoi-dang-soi-tui-1kg",
+          "category": "Củ, quả",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 160000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "củ cải trắng",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Củ cải trắng",
+          "product_url": "https://www.bachhoaxanh.com/cu/cu-cai-trang-1kg",
+          "category": "Củ, quả",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 567000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "củ sen",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Củ sen 500g",
+          "product_url": null,
+          "category": "Củ, quả",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "củ sắn",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Củ sắn tươi giòn ngọt",
+          "product_url": "https://www.bachhoaxanh.com/cu/cu-san-1kg",
+          "category": "Củ, quả",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 910000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "dưa leo",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Dưa leo",
+          "product_url": "https://www.bachhoaxanh.com/cu/dua-leo-vi-500g",
+          "category": "Củ, quả",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 500000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "dầu hào chay",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Dầu hào chay Maggi từ nấm hương chai 350g",
+          "product_url": "https://www.bachhoaxanh.com/bo/dau-hao-chay-maggi-tu-nam-huong-chai-350g",
+          "category": "Dầu hào, giấm, bơ",
+          "pack_size": 350.0,
+          "pack_unit": "g",
+          "price": 285000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "dừa",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "3 trái dừa xiêm gọt vỏ",
+          "product_url": "https://www.bachhoaxanh.com/trai-cay-tuoi-ngon/3-trai-dua-xiem-got-vo-trai-400g-tro-len",
+          "category": "Trái cây",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 452000,
+          "source": "catalog"
+        },
+        {
+          "name": "Dừa nguyên trái, nhiều nước",
+          "product_url": "https://www.bachhoaxanh.com/trai-cay-tuoi-ngon/dua-nguyen-trai",
+          "category": "Trái cây",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 80000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "dừa xiêm",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "3 trái dừa xiêm gọt vỏ",
+          "product_url": "https://www.bachhoaxanh.com/trai-cay-tuoi-ngon/3-trai-dua-xiem-got-vo-trai-400g-tro-len",
+          "category": "Trái cây",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 452000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "giò sống",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Giò sống MVP khay 200g",
+          "product_url": "https://www.bachhoaxanh.com/thit-heo/gio-song-tui-200g",
+          "category": "Thịt heo",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 369000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "hoa hồi",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Hoa hồi nguyên chất Vipep 15g",
+          "product_url": "https://www.bachhoaxanh.com/bot-gia-vi/hoa-hoi-vipep-hu-15g",
+          "category": "Bột nghệ, tỏi, hồi, quế,...",
+          "pack_size": 15.0,
+          "pack_unit": "g",
+          "price": 96000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "hành boa rô",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Hành boa rô 100g",
+          "product_url": null,
+          "category": "Rau lá",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "hành tây",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Hành tây túi từ 300g",
+          "product_url": "https://www.bachhoaxanh.com/cu/hanh-tay-300gr",
+          "category": "Củ, quả",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 106000,
+          "source": "catalog"
+        },
+        {
+          "name": "Hành tây củ",
+          "product_url": "https://www.bachhoaxanh.com/cu/hanh-tay-tui-1kg",
+          "category": "Củ, quả",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 1295000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "húng quế",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Rau húng quế khoảng 100g",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/rau-hung-que-tui-100g",
+          "category": "Rau lá",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": 54000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "hạt sen",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Hạt sen tươi gói 200g",
+          "product_url": null,
+          "category": "Củ, quả",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "khoai tây",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Khoai tây 200g (từ 1 - 2 củ)",
+          "product_url": "https://www.bachhoaxanh.com/cu/khoai-tay-200g-tu-1-2-cu",
+          "category": "Củ, quả",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 68000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "kiwi",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Kiwi xanh Zespri nhập New Zealand 2 trái",
+          "product_url": "https://www.bachhoaxanh.com/trai-cay-tuoi-ngon/kiwi-xanh-zespri-nhap-khau-new-zealand-250g-hop-2-trai",
+          "category": "Trái cây",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 690000,
+          "source": "catalog"
+        },
+        {
+          "name": "Kiwi vàng Zespri nhập khẩu 2 trái",
+          "product_url": "https://www.bachhoaxanh.com/trai-cay-tuoi-ngon/kiwi-vang-zespri-nhap-khau-2-trai",
+          "category": "Trái cây",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 750000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "lá hoành thánh",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Lá hoành thánh gói 200g",
+          "product_url": null,
+          "category": "Bánh tráng, vỏ bánh",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "lươn",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Lươn làm sạch",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/luon-lam-sach",
+          "category": "Cá, hải sản",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 520000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "me",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Me chua vắt gói 250g",
+          "product_url": "https://www.bachhoaxanh.com/cu/me-chua-vat-goi-250g",
+          "category": "Củ, quả",
+          "pack_size": 250.0,
+          "pack_unit": "g",
+          "price": 169000,
+          "source": "catalog"
+        },
+        {
+          "name": "Me chua vắt hộp 68g",
+          "product_url": "https://www.bachhoaxanh.com/cu/me-chua-1-vat",
+          "category": "Củ, quả",
+          "pack_size": 68.0,
+          "pack_unit": "g",
+          "price": 42000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "miến khô",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Miến khô Vifon gói 210g",
+          "product_url": "https://www.bachhoaxanh.com/mien-kho/mien-kho-vifon-goi-300g",
+          "category": "Miến, hủ tiếu, phở khô",
+          "pack_size": 210.0,
+          "pack_unit": "g",
+          "price": 455000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mè",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Mè trắng gói 100g",
+          "product_url": "https://www.bachhoaxanh.com/dau-cac-loai/me-trang-khong-vo-vietfresh-100g",
+          "category": "Đậu, nấm, đồ khô",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": 180000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mè trắng",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Mè trắng gói 100g",
+          "product_url": "https://www.bachhoaxanh.com/dau-cac-loai/me-trang-khong-vo-vietfresh-100g",
+          "category": "Đậu, nấm, đồ khô",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": 180000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mì",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Mì 3 Miền Tôm sú chua cay trung bộ gói 75g",
+          "product_url": "https://www.bachhoaxanh.com/mi/mi-3-mien-tom-su-chua-cay-trung-bo-goi-75g",
+          "category": "Mì ăn liền",
+          "pack_size": 75.0,
+          "pack_unit": "g",
+          "price": 53000,
+          "source": "catalog"
+        },
+        {
+          "name": "Mì vắt Hảo Hảo túi 665g (không gói gia vị)",
+          "product_url": "https://www.bachhoaxanh.com/mi/mi-vat-hao-hao-tui-665g-10-vat-khong-goi-gia-vi",
+          "category": "Mì ăn liền",
+          "pack_size": 665.0,
+          "pack_unit": "g",
+          "price": 340000,
+          "source": "catalog"
+        },
+        {
+          "name": "Mì 3 Miền Gold cay 3 cấp độ gói 75g",
+          "product_url": "https://www.bachhoaxanh.com/mi/mi-3-mien-gold-cay-3-cap-do-goi-75g",
+          "category": "Mì ăn liền",
+          "pack_size": 75.0,
+          "pack_unit": "g",
+          "price": 53000,
+          "source": "catalog"
+        },
+        {
+          "name": "Mì Handy Hảo Hảo Tomyum ly 67g",
+          "product_url": "https://www.bachhoaxanh.com/mi/mi-handy-hao-hao-tomyum-ly-67g",
+          "category": "Mì ăn liền",
+          "pack_size": 67.0,
+          "pack_unit": "g",
+          "price": 102000,
+          "source": "catalog"
+        },
+        {
+          "name": "Mì Cung Đình Kool Spaghetti 105g",
+          "product_url": "https://www.bachhoaxanh.com/mi/mi-cung-dinh-kool-xot-spaghetti-thit-bo-bam-goi-100g",
+          "category": "Mì ăn liền",
+          "pack_size": 105.0,
+          "pack_unit": "g",
+          "price": 90000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mù tạt xanh",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Mù tạt xanh S&B cay nồng 43g",
+          "product_url": "https://www.bachhoaxanh.com/sot-nuoc-cham/mu-tat-xanh-wasabi-s-b-neri-goi-43g",
+          "category": "Nước chấm, mắm",
+          "pack_size": 43.0,
+          "pack_unit": "g",
+          "price": 380000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "măng tây",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Măng tây vỉ 150g",
+          "product_url": "https://www.bachhoaxanh.com/cu/mang-tay-vi-150g",
+          "category": "Củ, quả",
+          "pack_size": 150.0,
+          "pack_unit": "g",
+          "price": 190000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mướp hương",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Mướp hương",
+          "product_url": "https://www.bachhoaxanh.com/cu/muop-huong",
+          "category": "Củ, quả",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 70000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mật ong",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Mật ong Rừng Nhiệt Đới chai 300g",
+          "product_url": "https://www.bachhoaxanh.com/mat-ong/mat-ong-rung-nhiet-doi-honimore-chai-300g",
+          "category": "Mật ong",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 460000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mắm ruốc",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Mắm ruốc Huế Sông Hương 200g",
+          "product_url": "https://www.bachhoaxanh.com/sot-nuoc-cham/mam-ruoc-hue-hu-200g",
+          "category": "Nước chấm, mắm",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 320000,
+          "source": "catalog"
+        },
+        {
+          "name": "Mắm ruốc huế Ngọc Liên hũ 250g",
+          "product_url": "https://www.bachhoaxanh.com/sot-nuoc-cham/mam-ruoc-hue-ngoc-lien-chai-250g",
+          "category": "Nước chấm, mắm",
+          "pack_size": 250.0,
+          "pack_unit": "g",
+          "price": 350000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mồng tơi",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Rau mồng tơi tươi",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/rau-mong-toi-500-g",
+          "category": "Rau lá",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 90000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mỡ",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Mỡ heo sạch nguyên chất MEATDeli hũ 330g",
+          "product_url": "https://www.bachhoaxanh.com/gia-vi-nem-san/mo-heo-sach-nguyen-chat-meatdeli-hu-330g",
+          "category": "Gia vị nêm sẵn",
+          "pack_size": 330.0,
+          "pack_unit": "g",
+          "price": 470000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mực",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Mực ống",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/muc-ong-1kg",
+          "category": "Cá, hải sản",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 36000000,
+          "source": "catalog"
+        },
+        {
+          "name": "Mực ống nguyên con đông lạnh Ào Ào gói 300g",
+          "product_url": "https://www.bachhoaxanh.com/ca-hai-san-dong-lanh/muc-ong-nguyen-con-dong-lanh-ao-ao-goi-300g",
+          "category": "Thủy hải sản, thịt đông",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 1090000,
+          "source": "catalog"
+        },
+        {
+          "name": "Mực ống trứng nguyên con đông lạnh Ào Ào gói 300g",
+          "product_url": "https://www.bachhoaxanh.com/ca-hai-san-dong-lanh/muc-ong-trung-nguyen-con-dong-lanh-ao-ao-goi-300g",
+          "category": "Thủy hải sản, thịt đông",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 1090000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mực trứng",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Mực trứng Nhật Minh gói 500g",
+          "product_url": "https://www.bachhoaxanh.com/ca-hai-san-dong-lanh/muc-trung-nhat-minh-goi-500g",
+          "category": "Thủy hải sản, thịt đông",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 1570000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "mực ống",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Mực ống",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/muc-ong-1kg",
+          "category": "Cá, hải sản",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 36000000,
+          "source": "catalog"
+        },
+        {
+          "name": "Mực ống trứng nguyên con đông lạnh Ào Ào gói 300g",
+          "product_url": "https://www.bachhoaxanh.com/ca-hai-san-dong-lanh/muc-ong-trung-nguyen-con-dong-lanh-ao-ao-goi-300g",
+          "category": "Thủy hải sản, thịt đông",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 1090000,
+          "source": "catalog"
+        },
+        {
+          "name": "Mực ống nguyên con đông lạnh Ào Ào gói 300g",
+          "product_url": "https://www.bachhoaxanh.com/ca-hai-san-dong-lanh/muc-ong-nguyen-con-dong-lanh-ao-ao-goi-300g",
+          "category": "Thủy hải sản, thịt đông",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 1090000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nghệ",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Củ nghệ tươi 100g",
+          "product_url": null,
+          "category": "Củ, quả",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "ngũ vị hương",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Ngũ vị hương Vianco 10g",
+          "product_url": "https://www.bachhoaxanh.com/bot-gia-vi/bot-ngu-vi-huong-vianco-goi-10g",
+          "category": "Bột nghệ, tỏi, hồi, quế,...",
+          "pack_size": 10.0,
+          "pack_unit": "g",
+          "price": 60000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nước cốt chanh",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Nước cốt chanh chai 200ml",
+          "product_url": null,
+          "category": "Gia vị nêm sẵn",
+          "pack_size": 200.0,
+          "pack_unit": "ml",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "nước dừa",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nước dừa xiêm xanh Vico Fresh 1 lít",
+          "product_url": "https://www.bachhoaxanh.com/nuoc-ep-trai-cay/nuoc-dua-xiem-xanh-vicofresh-1-lit",
+          "category": "Nước ép trái cây",
+          "pack_size": 1.0,
+          "pack_unit": "lít",
+          "price": 440000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nước dừa tươi",
+      "kind": "core",
+      "status": "alias",
+      "alias_of": "nước dừa",
+      "reviewed": true,
+      "note": "Giống: nước dừa",
+      "products": [
+        {
+          "name": "Nước dừa xiêm xanh Vico Fresh 1 lít",
+          "product_url": "https://www.bachhoaxanh.com/nuoc-ep-trai-cay/nuoc-dua-xiem-xanh-vicofresh-1-lit",
+          "category": "Nước ép trái cây",
+          "pack_size": 1.0,
+          "pack_unit": "lít",
+          "price": 440000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nước dừa xiêm",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nước dừa xiêm xanh Vico Fresh 1 lít",
+          "product_url": "https://www.bachhoaxanh.com/nuoc-ep-trai-cay/nuoc-dua-xiem-xanh-vicofresh-1-lit",
+          "category": "Nước ép trái cây",
+          "pack_size": 1.0,
+          "pack_unit": "lít",
+          "price": 440000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nước màu",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nước màu thốt nốt Thnot 90ml",
+          "product_url": "https://www.bachhoaxanh.com/bot-gia-vi/nuoc-mau-thot-not-nguyen-chat-thnot-chai-90ml",
+          "category": "Bột nghệ, tỏi, hồi, quế,...",
+          "pack_size": 90.0,
+          "pack_unit": "ml",
+          "price": 150000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nước màu dừa A Tuấn Khang 120g",
+          "product_url": "https://www.bachhoaxanh.com/bot-gia-vi/nuoc-mau-dua-ben-tre-a-tuan-khang-chai-120g",
+          "category": "Bột nghệ, tỏi, hồi, quế,...",
+          "pack_size": 120.0,
+          "pack_unit": "g",
+          "price": 200000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nước soda",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "6 lon nước soda Schweppes 330ml",
+          "product_url": "https://www.bachhoaxanh.com/nuoc-ngot/nuoc-soda-schweppes-330ml-loc-6-lon",
+          "category": "Nước ngọt",
+          "pack_size": 330.0,
+          "pack_unit": "ml",
+          "price": 460000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm bào ngư xám tươi gói 300g",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-bao-ngu-xam-bich-300g",
+          "category": "Nấm các loại",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 230000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm hương",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm hương hộp 150g",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-huong-150gr",
+          "category": "Nấm các loại",
+          "pack_size": 150.0,
+          "pack_unit": "g",
+          "price": 270000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm hương khô",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm hương khô gói 50g",
+          "product_url": "https://www.bachhoaxanh.com/dau-cac-loai/nam-huong-kho-nguyen-bao-goi-50g",
+          "category": "Đậu, nấm, đồ khô",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 340000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm kim châm",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm kim châm Trung Quốc",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/3-goi-nam-kim-cham-noi-dia-trung-150g",
+          "category": "Nấm các loại",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 270000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nấm kim châm Thái Lan 150g",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-kim-cham-thai-lan-150g",
+          "category": "Nấm các loại",
+          "pack_size": 150.0,
+          "pack_unit": "g",
+          "price": 110000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nấm kim châm Hàn Quốc gói 150g",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-kim-cham-goi-150g",
+          "category": "Nấm các loại",
+          "pack_size": 150.0,
+          "pack_unit": "g",
+          "price": 149000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm linh chi",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm linh chi trắng Trung Quốc",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-linh-chi-trang-trung-quoc-150g",
+          "category": "Nấm các loại",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 190000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nấm linh chi nâu Trung Quốc tươi",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-linh-chi-nau-trung-quoc-150g",
+          "category": "Nấm các loại",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 190000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm linh chi nâu",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm linh chi nâu Trung Quốc tươi",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-linh-chi-nau-trung-quoc-150g",
+          "category": "Nấm các loại",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 190000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm linh chi trắng",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm linh chi trắng Trung Quốc",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-linh-chi-trang-trung-quoc-150g",
+          "category": "Nấm các loại",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 190000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm mèo",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm mèo thái 50g (Giao ngẫu nhiên)",
+          "product_url": "https://www.bachhoaxanh.com/dau-cac-loai/nam-meo-den-thai-soi-naita-goi-50g",
+          "category": "Đậu, nấm, đồ khô",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 160000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nấm mèo đen 50gcó bán với",
+          "product_url": "https://www.bachhoaxanh.com/dau-cac-loai/nam-meo-den-kho-naita-goi-50g",
+          "category": "Đậu, nấm, đồ khô",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 146000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm rơm",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm rơm túi 200g",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-rom-tui-200g",
+          "category": "Nấm các loại",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 260000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm tuyết khô",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm tuyết khô gói 50gr",
+          "product_url": "https://www.bachhoaxanh.com/dau-cac-loai/nam-tuyet-vietfresh-goi-50g",
+          "category": "Đậu, nấm, đồ khô",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 420000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm đông cô",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm đông cô 50g có bán với",
+          "product_url": "https://www.bachhoaxanh.com/dau-cac-loai/nam-dong-co-kho-bach-hoa-xanh-goi-50g",
+          "category": "Đậu, nấm, đồ khô",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 380000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm đùi gà",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Nấm đùi gà baby Việt Nam 300g",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-dui-ga-baby-viet-nam-300g",
+          "category": "Nấm các loại",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 290000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nấm đùi gà nội địa Trung 500g",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-dui-ga-noi-dia-trung-500g",
+          "category": "Nấm các loại",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 380000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nấm đùi gà baby HQ 200g",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-dui-ga-baby-hq-200g",
+          "category": "Nấm các loại",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 340000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nấm đùi gà baby Trung Quốc",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-dui-ga-noi-dia-trung-200g",
+          "category": "Nấm các loại",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 200000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "nấm đùi gà baby",
+      "kind": "core",
+      "status": "alias",
+      "alias_of": "nấm đùi gà",
+      "reviewed": true,
+      "note": "giống: nấm đùi gà",
+      "products": [
+        {
+          "name": "Nấm đùi gà baby Việt Nam 300g",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-dui-ga-baby-viet-nam-300g",
+          "category": "Nấm các loại",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 290000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nấm đùi gà nội địa Trung 500g",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-dui-ga-noi-dia-trung-500g",
+          "category": "Nấm các loại",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 380000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nấm đùi gà baby HQ 200g",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-dui-ga-baby-hq-200g",
+          "category": "Nấm các loại",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 340000,
+          "source": "catalog"
+        },
+        {
+          "name": "Nấm đùi gà baby Trung Quốc",
+          "product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-dui-ga-noi-dia-trung-200g",
+          "category": "Nấm các loại",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 200000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "phô mai",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Phô mai lát Zott Sandwich 200g",
+          "product_url": "https://www.bachhoaxanh.com/sua-chua-an/pho-mai-lat-zott-sandwich-goi-200g-12-lat",
+          "category": "Sữa chua",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 660000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "rau muống",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Rau muống nước 400gr",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/rau-muong-nuoc-400gr",
+          "category": "Rau lá",
+          "pack_size": 400.0,
+          "pack_unit": "g",
+          "price": 90000,
+          "source": "catalog"
+        },
+        {
+          "name": "Rau muống hạt gói 400g",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/rau-muong-hat-goi-300g",
+          "category": "Rau lá",
+          "pack_size": 400.0,
+          "pack_unit": "g",
+          "price": 90000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "rau muống hạt",
+      "kind": "core",
+      "status": "alias",
+      "alias_of": "rau muống",
+      "reviewed": true,
+      "note": "Giống: rau muống",
+      "products": [
+        {
+          "name": "Rau muống nước 400gr",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/rau-muong-nuoc-400gr",
+          "category": "Rau lá",
+          "pack_size": 400.0,
+          "pack_unit": "g",
+          "price": 90000,
+          "source": "catalog"
+        },
+        {
+          "name": "Rau muống hạt gói 400g",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/rau-muong-hat-goi-300g",
+          "category": "Rau lá",
+          "pack_size": 400.0,
+          "pack_unit": "g",
+          "price": 90000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "rau răm",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Rau răm khoảng 50g",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/rau-ram-50g",
+          "category": "Rau lá",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 34000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "rau thơm",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Rau thơm các loại khoảng 200g",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/rau-thom-cac-loai-goi-200gr",
+          "category": "Rau lá",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 142000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "sa tế",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Sa tế tôm vị cay Cholimex 90g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/sa-te-tom-cholimex-chai-90g",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 90.0,
+          "pack_unit": "g",
+          "price": 102000,
+          "source": "catalog"
+        },
+        {
+          "name": "Sa tế tôm vị cay Thuận Phát 85g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/sa-te-tom-ngon-thuan-phat-85gr",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 85.0,
+          "pack_unit": "g",
+          "price": 125000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "sa tế tôm",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Sa tế tôm vị cay Cholimex 90g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/sa-te-tom-cholimex-chai-90g",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 90.0,
+          "pack_unit": "g",
+          "price": 102000,
+          "source": "catalog"
+        },
+        {
+          "name": "Sa tế tôm vị cay Thuận Phát 85g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/sa-te-tom-ngon-thuan-phat-85gr",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 85.0,
+          "pack_unit": "g",
+          "price": 125000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "sườn cốt lết",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Sườn cốt lết C.P",
+          "product_url": "https://www.bachhoaxanh.com/thit-heo/suon-cot-let-1kg",
+          "category": "Thịt heo",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 5280000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "sườn non",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Sườn non heo nhập khẩu",
+          "product_url": "https://www.bachhoaxanh.com/thit-heo/suon-non-heo-nhap-khau-1kg",
+          "category": "Thịt heo",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 6120000,
+          "source": "catalog"
+        },
+        {
+          "name": "Sườn non heo",
+          "product_url": "https://www.bachhoaxanh.com/thit-heo/suon-non-heo-1kg",
+          "category": "Thịt heo",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 7920000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "sườn que",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Sườn que heo nhập khẩu",
+          "product_url": "https://www.bachhoaxanh.com/thit-heo/xuong-que-heo-nhap-khau-1kg",
+          "category": "Thịt heo",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 3750000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "sữa tươi không đường",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Sữa tươi không đường Vinamilk bịch 220ml",
+          "product_url": "https://www.bachhoaxanh.com/sua-tuoi/sua-tuoi-tiet-trung-khong-duong-vinamilk-100-sua-tuoi-bich-220ml",
+          "category": "Sữa tươi",
+          "pack_size": 220.0,
+          "pack_unit": "ml",
+          "price": 94000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "sữa đặc",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Sữa đặc có đường Créme Castle lon 380g",
+          "product_url": "https://www.bachhoaxanh.com/sua-dac/sua-dac-co-duong-creme-castle-lon-380g",
+          "category": "Sữa đặc",
+          "pack_size": 380.0,
+          "pack_unit": "g",
+          "price": 210000,
+          "source": "catalog"
+        },
+        {
+          "name": "Sữa đặc có đường Créme Castle lon 1kg",
+          "product_url": "https://www.bachhoaxanh.com/sua-dac/kem-dac-co-duong-creme-castle-lon-1kg",
+          "category": "Sữa đặc",
+          "pack_size": 1.0,
+          "pack_unit": "kg",
+          "price": 480000,
+          "source": "catalog"
+        },
+        {
+          "name": "Sữa đặc có đường Ông Thọ đỏ 165g",
+          "product_url": "https://www.bachhoaxanh.com/sua-dac/sua-dac-co-duong-ong-tho-do-tuyp-165g",
+          "category": "Sữa đặc",
+          "pack_size": 165.0,
+          "pack_unit": "g",
+          "price": 200000,
+          "source": "catalog"
+        },
+        {
+          "name": "Sữa đặc có đường Ông Thọ hộp 380g",
+          "product_url": "https://www.bachhoaxanh.com/sua-dac/sua-dac-ong-tho-trang-chu-xanh-hop-giay-380g-bhx",
+          "category": "Sữa đặc",
+          "pack_size": 380.0,
+          "pack_unit": "g",
+          "price": 275000,
+          "source": "catalog"
+        },
+        {
+          "name": "Sữa đặc Ông Thọ nhãn vàng lon 380g",
+          "product_url": "https://www.bachhoaxanh.com/sua-dac/sua-dac-ong-tho-trang-lon-nap-giat-380g",
+          "category": "Sữa đặc",
+          "pack_size": 380.0,
+          "pack_unit": "g",
+          "price": 345000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "thanh long",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Thanh long",
+          "product_url": "https://www.bachhoaxanh.com/trai-cay-tuoi-ngon/thanh-long-1kg",
+          "category": "Trái cây",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 2000000,
+          "source": "catalog"
+        },
+        {
+          "name": "Thanh long ruột đỏ",
+          "product_url": "https://www.bachhoaxanh.com/trai-cay-tuoi-ngon/thanh-long-ruot-do-1kg",
+          "category": "Trái cây",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 1400000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "thì là",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Thì là vỉ 100g",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/thi-la-vi-100g",
+          "category": "Rau lá",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": 150000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "thơm",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Thơm trái trung từ 700g - dưới 1kg",
+          "product_url": "https://www.bachhoaxanh.com/cu/thom-trai-trung-trai-tu-700g-duoi-1kg",
+          "category": "Củ, quả",
+          "pack_size": 700.0,
+          "pack_unit": "g",
+          "price": 170000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "thịt ba chỉ",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Thịt ba chỉ heo khay 500g",
+          "product_url": null,
+          "category": "Thịt heo",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "thịt cua",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Thịt cua khay 200g",
+          "product_url": null,
+          "category": "Cá, hải sản",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "thịt heo",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Thịt heo xay CP 100g",
+          "product_url": "https://www.bachhoaxanh.com/thit-heo/thit-heo-xay-cp-100g",
+          "category": "Thịt heo",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": 130000,
+          "source": "catalog"
+        },
+        {
+          "name": "Thịt heo xay CP khay 200g",
+          "product_url": "https://www.bachhoaxanh.com/thit-heo/thit-heo-xay-cp-khay-200g",
+          "category": "Thịt heo",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 255000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "thịt hến",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Thịt hến làm sạch khay 250g",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/thit-hen-lam-sach-khay-250g",
+          "category": "Cá, hải sản",
+          "pack_size": 250.0,
+          "pack_unit": "g",
+          "price": 400000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "thịt nạc",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Thịt nạc heo",
+          "product_url": "https://www.bachhoaxanh.com/thit-heo/nac-dam-heo-1kg",
+          "category": "Thịt heo",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 5520000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "thịt đùi",
+      "kind": "core",
+      "status": "alias",
+      "alias_of": "thịt đùi heo",
+      "reviewed": true,
+      "note": "Giống: thịt đùi heo",
+      "products": [
+        {
+          "name": "Thịt đùi heo",
+          "product_url": "https://www.bachhoaxanh.com/thit-heo/thit-dui-heo-1kg",
+          "category": "Thịt heo",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 5080000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "thịt đùi heo",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Thịt đùi heo",
+          "product_url": "https://www.bachhoaxanh.com/thit-heo/thit-dui-heo-1kg",
+          "category": "Thịt heo",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 5080000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "thịt ếch",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Thịt ếch làm sạch khay 250g",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/thit-ech-lam-sach-khay-250g",
+          "category": "Cá, hải sản",
+          "pack_size": 250.0,
+          "pack_unit": "g",
+          "price": 390000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "thịt ức gà",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Thịt ức gà tươi có xương túi 500g",
+          "product_url": "https://www.bachhoaxanh.com/thit-ga/uc-ga-co-xuong-tui-500g",
+          "category": "Thịt gà, vịt",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 495000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tiêu xanh",
+      "kind": "core",
+      "status": "added",
+      "reviewed": true,
+      "note": "Tự thêm vào catalog",
+      "products": [
+        {
+          "name": "Tiêu xanh 100g",
+          "product_url": null,
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": null,
+          "source": "manual_added_v1"
+        }
+      ]
+    },
+    {
+      "ingredient": "tiêu đen",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Tiêu đen xay 50g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/tieu-den-xay-50g",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 220000,
+          "source": "catalog"
+        },
+        {
+          "name": "Tiêu đen xay Fadely 45g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/tieu-den-xay-fadely-tinh-nguyen-hu-45g",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 45.0,
+          "pack_unit": "g",
+          "price": 260000,
+          "source": "catalog"
+        },
+        {
+          "name": "Tiêu đen hạt 50g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/tieu-den-hat-50gr",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 220000,
+          "source": "catalog"
+        },
+        {
+          "name": "Tiêu đen xay sẵn DH Foods 45g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/tieu-den-xay-dh-foods-45g",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 45.0,
+          "pack_unit": "g",
+          "price": 275000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "trứng",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Trứng gà ta hộp 6 quả",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-ga-ta-hop-6-qua",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 270000,
+          "source": "catalog"
+        },
+        {
+          "name": "Trứng vịt muối hộp 4 quả tươi, to",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-vit-muoi-hop-4-qua",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 260000,
+          "source": "catalog"
+        },
+        {
+          "name": "Trứng vịt bắc thảo hộp 4 quả",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-vit-bac-thao-hop-4-qua",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 260000,
+          "source": "catalog"
+        },
+        {
+          "name": "Trứng vịt hộp 10 quả",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-vit-hop-10-qua",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 380000,
+          "source": "catalog"
+        },
+        {
+          "name": "Trứng cút hộp 30 tươi mới",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-cut-hop-30",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 250000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "trứng cút",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Trứng cút hộp 30 tươi mới",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-cut-hop-30",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 250000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "trứng gà",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Trứng gà ta hộp 6 quả",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-ga-ta-hop-6-qua",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 270000,
+          "source": "catalog"
+        },
+        {
+          "name": "Trứng gà so hộp 10 tặng 2",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-ga-so-hop-10-tang-2",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 290000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "trứng gà ta",
+      "kind": "core",
+      "status": "alias",
+      "alias_of": "trứng gà",
+      "reviewed": true,
+      "note": "Giống: trứng gà",
+      "products": [
+        {
+          "name": "Trứng gà ta hộp 6 quả",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-ga-ta-hop-6-qua",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 270000,
+          "source": "catalog"
+        },
+        {
+          "name": "Trứng gà so hộp 10 tặng 2",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-ga-so-hop-10-tang-2",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 290000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "trứng vịt",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Trứng vịt hộp 10 quả",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-vit-hop-10-qua",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 380000,
+          "source": "catalog"
+        },
+        {
+          "name": "Trứng vịt bắc thảo hộp 4 quả",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-vit-bac-thao-hop-4-qua",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 260000,
+          "source": "catalog"
+        },
+        {
+          "name": "Trứng vịt muối hộp 4 quả tươi, to",
+          "product_url": "https://www.bachhoaxanh.com/trung/trung-vit-muoi-hop-4-qua",
+          "category": "Trứng gà, vịt, cút",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 260000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tía tô",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Tía tô khoảng 100g",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/tia-to-goi-100g",
+          "category": "Rau lá",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": 47000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tôm",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Tôm thẻ khay 300g",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/tom-the-300g",
+          "category": "Cá, hải sản",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 3900000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tôm sú",
+      "kind": "core",
+      "status": "alias",
+      "alias_of": "tôm",
+      "reviewed": true,
+      "note": "Giống : tôm",
+      "products": [
+        {
+          "name": "Tôm thẻ khay 300g",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/tom-the-300g",
+          "category": "Cá, hải sản",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 3900000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tôm thẻ",
+      "kind": "core",
+      "status": "alias",
+      "alias_of": "tôm",
+      "reviewed": true,
+      "note": "Giống : tôm",
+      "products": [
+        {
+          "name": "Tôm thẻ khay 300g",
+          "product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/tom-the-300g",
+          "category": "Cá, hải sản",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 3900000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tương hột",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Tương hột Cholimex Foods 250g",
+          "product_url": "https://www.bachhoaxanh.com/tuong-ot-ca-den/tuong-hot-cholimex-250g",
+          "category": "Tương ớt-đen, mayonnaise",
+          "pack_size": 250.0,
+          "pack_unit": "g",
+          "price": 125000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tương ớt xí muội",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Tương ớt xí muội Cholimex 270g",
+          "product_url": "https://www.bachhoaxanh.com/tuong-ot-ca-den/tuong-ot-xi-muoi-cholimex-270g-24",
+          "category": "Tương ớt-đen, mayonnaise",
+          "pack_size": 270.0,
+          "pack_unit": "g",
+          "price": 155000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "tắc",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Tắc trái túi 200g",
+          "product_url": "https://www.bachhoaxanh.com/cu/tac-trai-tui-200g",
+          "category": "Củ, quả",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 48000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "xà lách",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Xà lách thủy tinh thủy canh",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/xa-lach-thuy-tinh-thuy-canh-cay-tu-230g",
+          "category": "Rau lá",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 190000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "xúc xích",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Xúc xích Five Star Red C.P 200g",
+          "product_url": "https://www.bachhoaxanh.com/xuc-xich/xuc-xich-five-star-red-cp-goi-200g",
+          "category": "Xúc xích",
+          "pack_size": 200.0,
+          "pack_unit": "g",
+          "price": 265000,
+          "source": "catalog"
+        },
+        {
+          "name": "Xúc xích Romas Đức Việt gói 500g",
+          "product_url": "https://www.bachhoaxanh.com/xuc-xich-tuoi/xuc-xich-romas-duc-viet-goi-500g",
+          "category": "Xúc xích, lạp xưởng, giò chả",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 715000,
+          "source": "catalog"
+        },
+        {
+          "name": "Xúc xích Chicagos Đức Việt 500g",
+          "product_url": "https://www.bachhoaxanh.com/xuc-xich-tuoi/xuc-xich-chicagos-duc-viet-goi-500g",
+          "category": "Xúc xích, lạp xưởng, giò chả",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 470000,
+          "source": "catalog"
+        },
+        {
+          "name": "Xúc xích Mỹ Le Gourmet gói 500g",
+          "product_url": "https://www.bachhoaxanh.com/xuc-xich-tuoi/xuc-xich-my-le-gourmet-goi-500g",
+          "category": "Xúc xích, lạp xưởng, giò chả",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 715000,
+          "source": "catalog"
+        },
+        {
+          "name": "Xúc xích Frankfurter C.P gói 500g",
+          "product_url": "https://www.bachhoaxanh.com/xuc-xich-tuoi/xuc-xich-frankfurter-cp-goi-500g",
+          "category": "Xúc xích, lạp xưởng, giò chả",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 860000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "xúc xích xông khói",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Xúc xích xông khói HOTTT 450g",
+          "product_url": "https://www.bachhoaxanh.com/xuc-xich-tuoi/xuc-xich-xong-khoi-hottt-g-kitchen-goi-450g",
+          "category": "Xúc xích, lạp xưởng, giò chả",
+          "pack_size": 450.0,
+          "pack_unit": "g",
+          "price": 830000,
+          "source": "catalog"
+        },
+        {
+          "name": "Xúc xích xông khói WYN G Kitchen 450g",
+          "product_url": "https://www.bachhoaxanh.com/xuc-xich-tuoi/xuc-xich-xong-khoi-top-one-wyn-g-kitchen-goi-450g",
+          "category": "Xúc xích, lạp xưởng, giò chả",
+          "pack_size": 450.0,
+          "pack_unit": "g",
+          "price": 540000,
+          "source": "catalog"
+        },
+        {
+          "name": "Xúc xích xông khói Superwao Ponnie 450g",
+          "product_url": "https://www.bachhoaxanh.com/xuc-xich-tuoi/xuc-xich-xong-khoi-superwao-meatdeli-goi-450g",
+          "category": "Xúc xích, lạp xưởng, giò chả",
+          "pack_size": 450.0,
+          "pack_unit": "g",
+          "price": 750000,
+          "source": "catalog"
+        },
+        {
+          "name": "Xúc xích xông khói C.P gói 250g",
+          "product_url": "https://www.bachhoaxanh.com/xuc-xich-tuoi/xuc-xich-cocktail-xong-khoi-cp-cp-goi-250g",
+          "category": "Xúc xích, lạp xưởng, giò chả",
+          "pack_size": 250.0,
+          "pack_unit": "g",
+          "price": 490000,
+          "source": "catalog"
+        },
+        {
+          "name": "Xúc xích xông khói truyền thống Ponnie 450g",
+          "product_url": "https://www.bachhoaxanh.com/xuc-xich-tuoi/xuc-xich-xong-khoi-truyen-thong-meatdeli-goi-450g",
+          "category": "Xúc xích, lạp xưởng, giò chả",
+          "pack_size": 450.0,
+          "pack_unit": "g",
+          "price": 900000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "xương gà",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Xương gà có thịt 500g",
+          "product_url": "https://www.bachhoaxanh.com/thit-ga/xuong-ga-tui-500g",
+          "category": "Thịt gà, vịt",
+          "pack_size": 500.0,
+          "pack_unit": "g",
+          "price": 182500,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "đùi gà",
+      "kind": "core",
+      "status": "alias",
+      "alias_of": "đùi gà góc tư",
+      "reviewed": true,
+      "note": "Giống: đùi gà góc tư",
+      "products": [
+        {
+          "name": "Đùi gà góc tư",
+          "product_url": "https://www.bachhoaxanh.com/thit-ga/dui-ga-goc-tu-1kg",
+          "category": "Thịt gà, vịt",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 2790000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "đùi gà góc tư",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Đùi gà góc tư",
+          "product_url": "https://www.bachhoaxanh.com/thit-ga/dui-ga-goc-tu-1kg",
+          "category": "Thịt gà, vịt",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 2790000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "đùi tỏi gà",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Đùi tỏi gà",
+          "product_url": "https://www.bachhoaxanh.com/thit-ga/dui-toi-ga-1kg",
+          "category": "Thịt gà, vịt",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 4240000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "đậu bắp",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Đậu bắp khay 250g",
+          "product_url": "https://www.bachhoaxanh.com/cu/dau-bap-khay-250g-10-12-trai",
+          "category": "Củ, quả",
+          "pack_size": 250.0,
+          "pack_unit": "g",
+          "price": 106000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "đậu hũ",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Đậu hũ trắng non Nguyên 280g",
+          "product_url": "https://www.bachhoaxanh.com/do-chua-dua-muoi/dau-hu-non-vi-nguyen-hop-280g",
+          "category": "Hàng mát chế biến",
+          "pack_size": 280.0,
+          "pack_unit": "g",
+          "price": 130000,
+          "source": "catalog"
+        },
+        {
+          "name": "Đậu hũ ta Vị Nguyên hộp 280g",
+          "product_url": "https://www.bachhoaxanh.com/do-chua-dua-muoi/dau-hu-ta-vi-nguyen-hop-280g",
+          "category": "Hàng mát chế biến",
+          "pack_size": 280.0,
+          "pack_unit": "g",
+          "price": 135000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "đậu hũ chiên",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Đậu hũ chiên Vị Nguyên hộp 300g",
+          "product_url": "https://www.bachhoaxanh.com/do-chua-dua-muoi/dau-hu-chien-vi-nguyen-hop-300g",
+          "category": "Hàng mát chế biến",
+          "pack_size": 300.0,
+          "pack_unit": "g",
+          "price": 175000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "ớt bột",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Ớt bột cay Hàn Quốc Dh Food 90g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/ot-bot-han-quoc-dh-foods-natural-hu-90ml",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 90.0,
+          "pack_unit": "g",
+          "price": 360000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "ớt hiểm",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Ớt hiểm trái gói 50g, giá cả",
+          "product_url": "https://www.bachhoaxanh.com/cu/ot-hiem-trai-goi-50g",
+          "category": "Củ, quả",
+          "pack_size": 50.0,
+          "pack_unit": "g",
+          "price": 53000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "ớt khô",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Ớt khô sa tế cay Cholimex 100g",
+          "product_url": "https://www.bachhoaxanh.com/tieu/ot-sate-hu-thuy-tinh-100g",
+          "category": "Tiêu, sa tế, ớt bột",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": 210000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "ớt sừng",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Ớt sừng đỏ tươi gói 100g",
+          "product_url": "https://www.bachhoaxanh.com/rau-sach/ot-sung-do-goi-100g",
+          "category": "Rau lá",
+          "pack_size": 100.0,
+          "pack_unit": "g",
+          "price": 55000,
+          "source": "catalog"
+        }
+      ]
+    },
+    {
+      "ingredient": "ức gà",
+      "kind": "core",
+      "status": "matched",
+      "reviewed": true,
+      "note": "",
+      "products": [
+        {
+          "name": "Ức gà có xương",
+          "product_url": "https://www.bachhoaxanh.com/thit-ga/uc-ga-co-xuong-1kg",
+          "category": "Thịt gà, vịt",
+          "pack_size": null,
+          "pack_unit": null,
+          "price": 3800000,
+          "source": "catalog"
+        }
+      ]
+    }
+  ]
+}
