@@ -31,72 +31,144 @@ grocery-store-ai/
 ├── requirements.txt
 ├── notebooks/
 ├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── recipes_vn.json
-├── weights/
+│   ├── raw/                      # CSV Instacart (không commit)
+│   └── processed/                # parquet, kết quả chạy (không commit)
+├── docs/
+│   ├── report.md                 # báo cáo predictive reorder
+│   ├── features.md               # bảng mô tả feature
+│   ├── experiments.md            # nhật ký thí nghiệm
+│   └── figures/
+├── scripts/
+│   ├── data_prep.py              # lọc dữ liệu, chia split, candidate
+│   ├── baselines.py              # popularity, personal_freq, TIFU-KNN
+│   ├── tifuknn.py
+│   ├── train_lgbm.py             # train, ablation, inspect
+│   ├── select_threshold.py       # chọn τ, calibration
+│   ├── final_eval.py             # model gate trên test
+│   └── onnx_probe.py
+├── tests/
+├── weights/                      # model (không commit), model_metadata.json (commit)
 └── src/
-	├── main.py
-	├── config/
-	├── api/
-	│   └── v1/
-	├── schemas/
-	├── services/
-	├── ml/
-	└── utils/
+    ├── main.py
+    ├── config/
+    ├── api/
+    │   └── v1/
+    ├── schemas/
+    ├── services/
+    ├── ml/
+    │   └── feature_extractor.py  # extract_features: dùng chung cho train và /predict
+    └── utils/
 ```
 
-Các module Python hiện chỉ là skeleton và docstring định hướng. Chưa có logic nghiệp vụ, inference hoặc xử lý API.
+Phần predictive reorder (chuẩn bị dữ liệu, feature, baseline, LightGBM) đã có code, nằm ở `scripts/` và `src/ml/feature_extractor.py`. Các module API (`src/api`, `src/services`) vẫn chỉ là skeleton.
 
-## Dữ liệu đã xử lý (predictive reorder)
+## Predictive reorder: dự đoán mua lại
 
-Cần có sẵn trong `data/raw/` các file `orders.csv`, `order_products__prior.csv` và `order_products__train.csv`. Mọi lệnh chạy từ thư mục gốc của repo, sau khi đã kích hoạt `.venv` (xem [Khởi chạy ban đầu](#khởi-chạy-ban-đầu)). Không chạy từ bên trong `scripts/`, vì code import theo dạng `scripts...`.
+Gợi ý cho mỗi khách tối đa 15 món họ **đã từng mua** và nhiều khả năng sẽ mua trong đơn tiếp theo. Dữ liệu là bộ Instacart, mô hình là LightGBM.
 
-### Tạo dữ liệu
+**Kết quả hiện tại** (20.000 khách, chạy test một lần): LightGBM đạt Recall@15 = **0,431** và NDCG@15 = **0,449**, vượt baseline tốt nhất là TIFU-KNN (0,417 và 0,433). **Model gate: QUA.** Chi tiết trong [docs/report.md](docs/report.md).
+
+### Cách hoạt động (tóm tắt)
+
+1. **Chuẩn bị dữ liệu** ([scripts/data_prep.py](scripts/data_prep.py)):
+   - gộp lịch sử mua và giữ khách có ít nhất 5 đơn;
+   - chia split theo từng khách: đơn cuối là test, đơn kế cuối là val, các đơn trước là train.
+2. **Candidate**: với mỗi đơn cần dự đoán, lấy tối đa 100 món khách đã mua trước đó.
+3. **Feature** ([src/ml/feature_extractor.py](src/ml/feature_extractor.py)): 23 con số cho mỗi cặp (khách, món), như số lần mua, độ gần đây và nhịp mua. Feature chỉ dùng các đơn trước thời điểm dự đoán. Mô tả trong [docs/features.md](docs/features.md).
+4. **LightGBM** chấm xác suất được mua lại cho từng candidate, rồi xếp hạng.
+5. **Ngưỡng τ**: gợi ý các món nằm trong top-15 và có xác suất ≥ τ. Hiện τ = 0,13, đọc từ `weights/model_metadata.json`.
+
+### Yêu cầu
+
+- Trong `data/raw/` cần có các file `orders.csv`, `order_products__prior.csv`, `order_products__train.csv` và `products.csv` của Instacart.
+- Đã kích hoạt `.venv` (xem [Khởi chạy ban đầu](#khởi-chạy-ban-đầu)).
+- Mọi lệnh chạy **từ thư mục gốc của repo**. Không chạy từ bên trong `scripts/`, vì code import theo dạng `scripts...` và `src...`.
+
+### Chạy toàn bộ pipeline
+
+Chạy lần lượt từ trên xuống:
+
+| Bước | Lệnh | Thời gian | Kết quả |
+| --- | --- | --- | --- |
+| 0. Kiểm tra code | `python -m pytest -q tests` | ~10 giây | tất cả test pass |
+| 1. Dữ liệu cho baseline | `python -m scripts.data_prep --users 20000` | ~1 phút | `data/processed/` |
+| 2. Dữ liệu cho LightGBM (thêm nhãn T−3, T−4) | `python -m scripts.data_prep --users 20000 --train-targets 3 --out-dir data/processed_tt3` | ~1 phút | `data/processed_tt3/` |
+| 3. Baseline (val + test) | `python -m scripts.baselines --users 20000` | ~3 phút | `data/processed/baselines.json` |
+| 4. Train model đã chọn | `python -m scripts.train_lgbm --versions v4 --data-dir data/processed_tt3 --tag selected --save-model` | ~30 giây | `weights/lgbm_v4_selected.txt` |
+| 5. Chọn τ và kiểm tra calibration | `python -m scripts.select_threshold --data-dir data/processed_tt3` | ~30 giây | `weights/model_metadata.json`, `docs/figures/reliability_val.png` |
+| 6. Model gate (test, **một lần**) | `python -m scripts.final_eval` | ~2 phút | `data/processed/final_test.json` |
+
+**Về bước 6**: test chỉ được dùng một lần. Nếu `data/processed/final_test.json` đã tồn tại, script sẽ từ chối chạy lại. Muốn xem kết quả thì đọc file đó:
+
+```powershell
+Get-Content data\processed\final_test.json
+```
+
+Chỉ xóa file này khi làm lại từ đầu với cấu hình đã chốt sẵn (ví dụ chạy trên toàn bộ khách). Không xóa để thử lại sau khi đổi model.
+
+### Thử nghiệm (chỉ nhìn val)
 
 ```bash
-python -m scripts.data_prep --users 20000                    # tập con 20.000 user, seed 42 (mặc định)
-python -m scripts.data_prep --users 0                        # toàn bộ user
-python -m scripts.data_prep --users 20000 --train-targets 3  # lấy 3 đơn train cuối làm nhãn
+python -m scripts.train_lgbm --versions v0,v1,v2,v3,v4                        # ablation theo lượt feature
+python -m scripts.train_lgbm --versions v4 --inspect 5                        # feature importance + top-15 của 5 khách
+python -m scripts.train_lgbm --versions v4 --num-leaves 127 --tag leaves127   # thử một thay đổi
+python -m scripts.baselines --users 20000 --group-size 7 --alpha 0.9          # thử tham số TIFU-KNN
+python -m scripts.onnx_probe                                                  # kiểm tra chuyển LightGBM sang ONNX
+```
+
+- Mỗi lần chỉ đổi một thứ.
+- Ghi kết quả vào [docs/experiments.md](docs/experiments.md).
+- Mỗi lần train được ghi thêm một dòng vào `<data-dir>/lgbm_runs.jsonl`.
+- Không dùng `--eval-test` khi đang thử nghiệm.
+- Thêm `--help` vào bất kỳ lệnh nào để xem mọi tùy chọn.
+
+Các tùy chọn khác của `data_prep`:
+
+```bash
+python -m scripts.data_prep --users 0                                # toàn bộ khách
 python -m scripts.data_prep --users 0 --out-dir data/processed_full  # ghi ra thư mục khác
-python -m scripts.data_prep --help                           # xem mọi tùy chọn
 ```
-
-`src/ml/feature_extractor.py` là thư viện, không chạy riêng. Hàm `extract_features` của nó được `data_prep` gọi tới, và sau này endpoint `/predict` cũng dùng đúng hàm này.
-
-### Chạy baseline
-
-```bash
-python -m scripts.baselines --users 20000 --k 10   # popularity và top-frequency cá nhân
-```
-
-Dùng đúng user, split và đơn nhãn như `data_prep`. Kết quả in ra bảng precision, recall, F1, hit rate cho từng split và được lưu vào `data/processed/baselines.json`.
 
 ### Chạy test
 
 ```bash
 python -m pytest -q tests                # toàn bộ test
-python -m pytest -v tests                # xem kết quả từng test
 python -m pytest -v tests -k real        # chỉ các test trên dữ liệu thật
 python -m pytest -v tests -k "not real"  # chỉ các test trên dữ liệu đồ chơi (không cần data/raw)
 ```
 
 Các test trên dữ liệu thật tự bỏ qua nếu chưa có `data/raw/orders.csv`.
 
-### Xem nhanh kết quả
+### Kiểm tra nhanh
 
-```powershell
-Get-Content data\processed\meta.json
-python -c "import polars as pl; print(pl.read_parquet('data/processed/train.parquet').head())"
+Nếu đã có sẵn dữ liệu và model, lệnh sau phải ra NDCG@15 ≈ **0,4505** trên val:
+
+```bash
+python -m scripts.train_lgbm --versions v4 --data-dir data/processed_tt3
 ```
 
-### Kết quả
+### File đầu ra
 
-Kết quả là `data/processed/{train,val,test}.parquet` và `meta.json` (không commit). `meta.json` ghi lại thời điểm chạy, seed, `n_users`, `train_targets`, các tham số và thống kê của từng split, để biết bộ parquet hiện có được tạo ra như thế nào. Chi tiết cách lọc, chia split và xử lý giá trị 30 nằm trong docstring của [scripts/data_prep.py](scripts/data_prep.py).
+| File | Nội dung | Commit? |
+| --- | --- | --- |
+| `data/processed*/{train,val,test}.parquet` | Mỗi dòng là một cặp (đơn cần dự đoán, món candidate): feature và `label` | Không |
+| `data/processed*/{split}_truth.parquet` | Giỏ hàng thật đầy đủ của từng đơn, kể cả món mới, để tính metric | Không |
+| `data/processed*/meta.json` | Seed, số khách, tham số và thống kê của lần tạo dữ liệu | Không |
+| `data/processed/baselines.json` | Kết quả của 3 baseline | Không |
+| `data/processed*/lgbm_runs.jsonl` | Một dòng cho mỗi lần train | Không |
+| `data/processed/final_test.json` | Kết quả của lần chạy test duy nhất | Không |
+| `weights/lgbm_v4_selected.txt` | Model LightGBM đã chọn | Không |
+| `weights/model_metadata.json` | τ, danh sách feature, tên file model, calibration | **Có** |
+| `docs/figures/reliability_val.png` | Reliability diagram | Có |
 
-Mỗi dòng là một cặp **(đơn nhãn, sản phẩm candidate)**: liệu user có mua lại sản phẩm này trong đơn nhãn hay không. Candidate là tối đa 100 sản phẩm user đã mua trước đơn nhãn, xếp theo `up_decay`. Mọi feature chỉ dùng các đơn có `order_number < t_order`.
+### Tài liệu
 
-Tên, ý nghĩa và công thức của từng feature, cùng các lượt v0–v4, nằm trong [docs/features.md](docs/features.md). Kết quả thí nghiệm ghi trong [docs/experiments.md](docs/experiments.md).
+| File | Nội dung |
+| --- | --- |
+| [docs/report.md](docs/report.md) | Báo cáo kết quả và kết luận của model gate |
+| [docs/features.md](docs/features.md) | Tên, ý nghĩa và công thức của từng feature, các lượt v0–v4 |
+| [docs/experiments.md](docs/experiments.md) | Nhật ký thí nghiệm: baseline, ablation, tune, τ |
+| [scripts/data_prep.py](scripts/data_prep.py) (docstring) | Cách lọc dữ liệu, chia split, xử lý `days_since_prior_order = 30` |
 
 ## Khởi chạy ban đầu
 
