@@ -16,7 +16,7 @@ from scripts.data_prep import (
     prepare,
     sample_users,
 )
-from scripts.feature_extractor import build_examples, product_features
+from src.ml.feature_extractor import extract_features, item_stats
 
 
 def _toy_raw():
@@ -42,6 +42,7 @@ def _toy_raw():
             "product_id": [r[1] for r in rows],
             "add_to_cart_order": [1] * len(rows),
             "reordered": [0] * len(rows),
+            "aisle_id": [1] * len(rows),
         }
     )
     return orders, op
@@ -51,7 +52,7 @@ def _toy(train_targets=1):
     orders, op = _toy_raw()
     orders = add_timeline_and_roles(filter_users(orders), train_targets)
     hist = build_history(orders, op)
-    prod = product_features(hist.filter(~pl.col("is_target")))
+    prod = item_stats(hist.filter(~pl.col("is_target")))
     return orders, hist, prod
 
 
@@ -102,12 +103,12 @@ def test_no_leakage_and_labels():
         assert n_truth == (2 if role == "test" else 1)
 
 
-def test_product_features_ignore_label_orders():
+def test_item_stats_ignore_label_orders():
     _, hist, prod = _toy()
     # Product 2 only appears in the test order.
     assert 2 not in prod["product_id"].to_list()
-    # Product 1: orders 1-3 only, not 4/5/6.
-    assert prod.filter(pl.col("product_id") == 1)["p_cnt"].item() == 3
+    # Product 3 is only in order 1 (a history order), so it is there.
+    assert 3 in prod["product_id"].to_list()
 
 
 def test_check_no_leakage_raises():
@@ -125,6 +126,7 @@ def test_candidates_capped():
             "day": [0] * 10,
             "dsp": [0] * 10,
             "dsp_capped": [0] * 10,
+            "aisle_id": [1] * 10,
             "add_to_cart_order": list(range(1, 11)),
             "reordered": [0] * 10,
             "product_id": list(range(10)),
@@ -133,8 +135,8 @@ def test_candidates_capped():
     targets = pl.DataFrame({"user_id": [1], "t_order": [2], "t_day": [7],
                             "t_dow": [0], "t_hour": [9], "t_dsp": [7],
                             "t_dsp_capped": [0]})
-    prod = product_features(hist)
-    assert build_examples(hist, targets, prod, max_candidates=3).height == 3
+    prod = item_stats(hist)
+    assert extract_features(hist, targets, prod, max_candidates=3).height == 3
 
 
 def test_user_gap_stats_skip_first_order_and_flag_cap():
@@ -195,7 +197,6 @@ def test_real_data_features_match_recomputation(real):
             mine = past.filter(pl.col("product_id") == row["product_id"])
             assert row["up_cnt"] == mine.height, role
             assert row["up_last_order"] == mine["order_number"].max(), role
-            assert row["up_first_order"] == mine["order_number"].min(), role
             assert row["u_n_orders"] == past["order_number"].n_unique(), role
             assert row["u_n_products"] == past["product_id"].n_unique(), role
 

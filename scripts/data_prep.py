@@ -47,7 +47,7 @@ from pathlib import Path
 
 import polars as pl
 
-from scripts.feature_extractor import MAX_CANDIDATES, build_examples, product_features
+from src.ml.feature_extractor import MAX_CANDIDATES, extract_features, item_stats
 
 RAW_DIR = Path("data/raw")
 OUT_DIR = Path("data/processed")
@@ -68,8 +68,9 @@ def load_orders(raw_dir: Path = RAW_DIR) -> pl.DataFrame:
 
 
 def load_order_products(raw_dir: Path, order_ids: pl.Series) -> pl.DataFrame:
-    """prior + train baskets, read lazily and limited to `order_ids`."""
+    """prior + train baskets with aisle_id, read lazily, limited to `order_ids`."""
     keep = pl.DataFrame({"order_id": order_ids}).lazy()
+    aisles = pl.scan_csv(raw_dir / "products.csv").select("product_id", "aisle_id")
     return (
         pl.concat(
             [
@@ -78,6 +79,7 @@ def load_order_products(raw_dir: Path, order_ids: pl.Series) -> pl.DataFrame:
             ]
         )
         .join(keep, on="order_id")
+        .join(aisles, on="product_id", how="left")
         .collect()
     )
 
@@ -150,7 +152,7 @@ def make_split(
 ) -> tuple[pl.DataFrame, int]:
     """Return (labelled examples, number of items in the true baskets)."""
     targets = targets_of(orders, role)
-    examples = build_examples(hist, targets, prod)
+    examples = extract_features(hist, targets, prod)
 
     truth = hist.join(
         targets.select("user_id", "t_order"),
@@ -190,7 +192,7 @@ def prepare(
     orders = add_timeline_and_roles(orders, train_targets)
     hist = build_history(orders, load_order_products(raw_dir, orders["order_id"]))
     # Global product stats only from orders that are never a label.
-    prod = product_features(hist.filter(~pl.col("is_target")))
+    prod = item_stats(hist.filter(~pl.col("is_target")))
 
     out_dir.mkdir(parents=True, exist_ok=True)
     report = {}
