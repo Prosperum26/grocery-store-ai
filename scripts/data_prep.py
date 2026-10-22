@@ -35,8 +35,8 @@ lower bounds for users with capped gaps; the model sees this through
 its gap is null, set to 0 and not flagged.
 
 Run:
-    python -m src.ml.data_prep --users 20000
-    python -m src.ml.data_prep --users 0        # all users
+    python -m scripts.data_prep --users 20000
+    python -m scripts.data_prep --users 0        # all users
 Outputs data/processed/{train,val,test}.parquet and meta.json (git-ignored).
 """
 

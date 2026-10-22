@@ -50,19 +50,27 @@ Các module Python hiện chỉ là skeleton và docstring định hướng. Ch�
 
 ## Dữ liệu đã xử lý (predictive reorder)
 
-Cần có sẵn trong `data/raw/` các file `orders.csv`, `order_products__prior.csv` và `order_products__train.csv`. Mọi lệnh chạy từ thư mục gốc của repo, sau khi đã kích hoạt `.venv` (xem [Khởi chạy ban đầu](#khởi-chạy-ban-đầu)). Không chạy từ bên trong `src/`, vì code import theo dạng `src.ml...`.
+Cần có sẵn trong `data/raw/` các file `orders.csv`, `order_products__prior.csv` và `order_products__train.csv`. Mọi lệnh chạy từ thư mục gốc của repo, sau khi đã kích hoạt `.venv` (xem [Khởi chạy ban đầu](#khởi-chạy-ban-đầu)). Không chạy từ bên trong `scripts/`, vì code import theo dạng `scripts...`.
 
 ### Tạo dữ liệu
 
 ```bash
-python -m src.ml.data_prep --users 20000                    # tập con 20.000 user, seed 42 (mặc định)
-python -m src.ml.data_prep --users 0                        # toàn bộ user
-python -m src.ml.data_prep --users 20000 --train-targets 3  # lấy 3 đơn train cuối làm nhãn
-python -m src.ml.data_prep --users 0 --out-dir data/processed_full  # ghi ra thư mục khác
-python -m src.ml.data_prep --help                           # xem mọi tùy chọn
+python -m scripts.data_prep --users 20000                    # tập con 20.000 user, seed 42 (mặc định)
+python -m scripts.data_prep --users 0                        # toàn bộ user
+python -m scripts.data_prep --users 20000 --train-targets 3  # lấy 3 đơn train cuối làm nhãn
+python -m scripts.data_prep --users 0 --out-dir data/processed_full  # ghi ra thư mục khác
+python -m scripts.data_prep --help                           # xem mọi tùy chọn
 ```
 
-`src/ml/feature_extractor.py` là thư viện được `data_prep` gọi tới, không chạy riêng.
+`scripts/feature_extractor.py` là thư viện được `data_prep` gọi tới, không chạy riêng.
+
+### Chạy baseline
+
+```bash
+python -m scripts.baselines --users 20000 --k 10   # popularity và top-frequency cá nhân
+```
+
+Dùng đúng user, split và đơn nhãn như `data_prep`. Kết quả in ra bảng precision, recall, F1, hit rate cho từng split và được lưu vào `data/processed/baselines.json`.
 
 ### Chạy test
 
@@ -84,7 +92,7 @@ python -c "import polars as pl; print(pl.read_parquet('data/processed/train.parq
 
 ### Kết quả
 
-Kết quả là `data/processed/{train,val,test}.parquet` và `meta.json` (không commit). `meta.json` ghi lại thời điểm chạy, seed, `n_users`, `train_targets`, các tham số và thống kê của từng split, để biết bộ parquet hiện có được tạo ra như thế nào. Chi tiết cách lọc, chia split và xử lý giá trị 30 nằm trong docstring của [src/ml/data_prep.py](src/ml/data_prep.py).
+Kết quả là `data/processed/{train,val,test}.parquet` và `meta.json` (không commit). `meta.json` ghi lại thời điểm chạy, seed, `n_users`, `train_targets`, các tham số và thống kê của từng split, để biết bộ parquet hiện có được tạo ra như thế nào. Chi tiết cách lọc, chia split và xử lý giá trị 30 nằm trong docstring của [scripts/data_prep.py](scripts/data_prep.py).
 
 Mỗi dòng là một cặp **(đơn nhãn, sản phẩm candidate)**: liệu user có mua lại sản phẩm này trong đơn nhãn hay không. Candidate là tối đa 100 sản phẩm user đã mua trước đơn nhãn, xếp theo `up_decay`. Mọi feature chỉ dùng các đơn có `order_number < t_order`.
 
