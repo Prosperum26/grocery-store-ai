@@ -3,7 +3,7 @@ from pathlib import Path
 import polars as pl
 import pytest
 
-from src.ml.data_prep import (
+from scripts.data_prep import (
     RAW_DIR,
     SEED,
     add_timeline_and_roles,
@@ -16,7 +16,7 @@ from src.ml.data_prep import (
     prepare,
     sample_users,
 )
-from src.ml.feature_extractor import build_examples, product_features
+from scripts.feature_extractor import build_examples, product_features
 
 
 def _toy_raw():

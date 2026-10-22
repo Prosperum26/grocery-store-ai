@@ -47,7 +47,7 @@ from pathlib import Path
 
 import polars as pl
 
-from src.ml.feature_extractor import MAX_CANDIDATES, build_examples, product_features
+from scripts.feature_extractor import MAX_CANDIDATES, build_examples, product_features
 
 RAW_DIR = Path("data/raw")
 OUT_DIR = Path("data/processed")
