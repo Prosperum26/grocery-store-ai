@@ -56,5 +56,13 @@ CREATE UNIQUE INDEX recipe_embedding_ingredient_uq ON recipe_embedding (ingredie
 CREATE INDEX recipe_embedding_recipe_idx ON recipe_embedding (recipe_id);
 
 -- Chỉ mục vector HNSW theo cosine (khớp toán tử <=> và vector đã chuẩn hóa của bge-m3).
--- Với vài chục nghìn vector, quét tuần tự cũng đủ nhanh; HNSW có để đo xem có đáng dùng không (xem notebook).
-CREATE INDEX recipe_embedding_hnsw_idx ON recipe_embedding USING hnsw (embedding vector_cosine_ops);
+-- MỖI LOẠI CHUNK MỘT CHỈ MỤC RIÊNG (chỉ mục từng phần). Không dùng một chỉ mục chung: HNSW chỉ trả về
+-- khoảng 40 vector gần nhất (hnsw.ef_search) TRONG TOÀN BẢNG rồi mới áp bộ lọc `where chunk_type = ...`.
+-- Câu hỏi ngắn ("canh chua") gần với các tên nguyên liệu ngắn hơn là thẻ món, nên 40 kết quả đó toàn là
+-- chunk 'ingredient' và bị lọc hết, tìm thẻ món ra 0 dòng. Chỉ mục từng phần chỉ chứa đúng một loại chunk.
+-- Truy vấn PHẢI có điều kiện `chunk_type = 'card'` (hoặc 'ingredient') ghi thẳng như hằng số để dùng được chỉ mục này.
+-- Với ~2,5 nghìn thẻ món, quét chính xác cũng chỉ vài ms; chỉ mục có để đo xem có đáng dùng không (xem notebook).
+CREATE INDEX recipe_embedding_card_hnsw_idx ON recipe_embedding
+    USING hnsw (embedding vector_cosine_ops) WHERE chunk_type = 'card';
+CREATE INDEX recipe_embedding_ingredient_hnsw_idx ON recipe_embedding
+    USING hnsw (embedding vector_cosine_ops) WHERE chunk_type = 'ingredient';
