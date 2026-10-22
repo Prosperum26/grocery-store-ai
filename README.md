@@ -48,6 +48,77 @@ grocery-store-ai/
 
 Các module Python hiện chỉ là skeleton và docstring định hướng. Chưa có logic nghiệp vụ, inference hoặc xử lý API.
 
+## Dữ liệu đã xử lý (predictive reorder)
+
+Tạo dữ liệu từ bộ Instacart trong `data/raw/`:
+
+```bash
+python -m src.ml.data_prep --users 20000   # tập con 20.000 user, seed 42
+python -m src.ml.data_prep --users 0       # toàn bộ user
+```
+
+Kết quả là `data/processed/{train,val,test}.parquet` (không commit). Chi tiết cách lọc, chia split và xử lý giá trị 30 nằm trong docstring của [src/ml/data_prep.py](src/ml/data_prep.py).
+
+Mỗi dòng là một cặp **(đơn nhãn, sản phẩm candidate)**: liệu user có mua lại sản phẩm này trong đơn nhãn hay không. Candidate là tối đa 100 sản phẩm user đã mua trước đơn nhãn, xếp theo `up_decay`. Mọi feature chỉ dùng các đơn có `order_number < t_order`.
+
+Quy ước tiền tố: `up_` = user × sản phẩm, `u_` = user, `p_` = sản phẩm (toàn cục), `t_` = đơn nhãn. "Đơn trước" luôn là các đơn trước đơn nhãn.
+
+### Khóa và nhãn
+
+| Cột | Kiểu | Ý nghĩa |
+| --- | --- | --- |
+| `user_id` | int | Mã người dùng |
+| `t_order` | int | `order_number` của đơn nhãn (đơn cần dự đoán) |
+| `product_id` | int | Mã sản phẩm candidate |
+| `label` | 0/1 | 1 nếu sản phẩm có trong đơn nhãn, 0 nếu không |
+| `up_last_order` | int | `order_number` lần gần nhất user mua sản phẩm. Dùng để kiểm tra rò rỉ (luôn < `t_order`), không đưa vào model |
+
+### Feature user × sản phẩm
+
+| Cột | Ý nghĩa |
+| --- | --- |
+| `up_cnt` | Số đơn trước có sản phẩm này |
+| `up_rate` | `up_cnt / u_n_orders`: tỉ lệ đơn có sản phẩm |
+| `up_orders_since` | Số đơn kể từ lần mua gần nhất (`t_order - up_last_order`) |
+| `up_days_since` | Số ngày kể từ lần mua gần nhất. Là cận dưới nếu có khoảng cách bị chặn ở 30 |
+| `up_mean_gap` | Số ngày trung bình giữa hai lần mua liên tiếp. Null nếu mới mua một lần |
+| `streak_ratio` | `up_days_since / up_mean_gap`. Gần 1 nghĩa là "đến lúc mua lại". Null nếu không biết khoảng cách hoặc khoảng cách bằng 0 |
+| `up_decay` | Tổng `0.9^k` của các lần mua, với k là số đơn tính từ lần mua đó đến đơn nhãn. Mua càng gần, càng nhiều thì càng lớn. Dùng để chọn top 100 candidate |
+| `up_avg_cart_pos` | Vị trí trung bình trong giỏ (`add_to_cart_order`). Nhỏ nghĩa là thường được thêm vào giỏ sớm |
+| `up_first_order` | `order_number` lần đầu mua sản phẩm |
+| `in_last_1`, `in_last_2`, `in_last_3` | 1 nếu sản phẩm có trong 1, 2 hoặc 3 đơn gần nhất |
+
+### Feature user
+
+| Cột | Ý nghĩa |
+| --- | --- |
+| `u_n_orders` | Số đơn trước đơn nhãn (= `t_order - 1`) |
+| `u_basket` | Số món trung bình mỗi đơn |
+| `u_reorder_rate` | Tỉ lệ món là hàng mua lại (`reordered = 1`) |
+| `u_n_products` | Số sản phẩm khác nhau user đã mua |
+| `u_mean_dsp` | Số ngày trung bình giữa các đơn (không tính đơn đầu) |
+| `u_pct_capped` | Tỉ lệ khoảng cách giữa các đơn bị chặn ở 30 (≥ 30 ngày) |
+
+### Feature sản phẩm (toàn cục)
+
+Chỉ tính từ các đơn không bao giờ làm nhãn, để giỏ hàng val/test của user khác không lọt vào.
+
+| Cột | Ý nghĩa |
+| --- | --- |
+| `p_cnt` | Số lần sản phẩm được mua |
+| `p_reorder_ratio` | Tỉ lệ lần mua là mua lại |
+| `p_avg_cart_pos` | Vị trí trung bình trong giỏ |
+| `p_n_users` | Số user khác nhau đã mua |
+
+### Bối cảnh đơn nhãn
+
+| Cột | Ý nghĩa |
+| --- | --- |
+| `t_dow` | Thứ trong tuần của đơn nhãn (0–6) |
+| `t_hour` | Giờ đặt đơn nhãn (0–23) |
+| `t_dsp` | Số ngày từ đơn trước đến đơn nhãn (`days_since_prior_order`). 30 nghĩa là ≥ 30 |
+| `t_dsp_capped` | 1 nếu `t_dsp` bị chặn ở 30 |
+
 ## Khởi chạy ban đầu
 
 ### Windows PowerShell

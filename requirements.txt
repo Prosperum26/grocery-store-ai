@@ -3,5 +3,5 @@ uvicorn[standard]>=0.28.0
 pydantic>=2.6.0
 pydantic-settings>=2.2.0
 python-dotenv>=1.0.1
-Python=3.11.9
-polars
+polars>=1.0
+pytest>=8.0
