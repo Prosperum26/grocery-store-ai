@@ -37,15 +37,17 @@ its gap is null, set to 0 and not flagged.
 Run:
     python -m src.ml.data_prep --users 20000
     python -m src.ml.data_prep --users 0        # all users
-Outputs data/processed/{train,val,test}.parquet (git-ignored).
+Outputs data/processed/{train,val,test}.parquet and meta.json (git-ignored).
 """
 
 import argparse
+import json
+from datetime import datetime, timezone
 from pathlib import Path
 
 import polars as pl
 
-from src.ml.feature_extractor import build_examples, product_features
+from src.ml.feature_extractor import MAX_CANDIDATES, build_examples, product_features
 
 RAW_DIR = Path("data/raw")
 OUT_DIR = Path("data/processed")
@@ -202,6 +204,19 @@ def prepare(
             "pos_rate": round(df["label"].mean(), 4),
             "recall_ceiling": round(df["label"].sum() / n_truth, 4),
         }
+
+    # Record how this run was made, next to the parquet files.
+    meta = {
+        "created_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "seed": SEED,
+        "n_users": n_users,
+        "min_orders": MIN_ORDERS,
+        "train_targets": train_targets,
+        "max_candidates": MAX_CANDIDATES,
+        "dsp_cap": DSP_CAP,
+        "splits": report,
+    }
+    (out_dir / "meta.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
     return report
 
 

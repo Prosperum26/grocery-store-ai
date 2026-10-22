@@ -64,9 +64,9 @@ def build_examples(
     """Build candidate rows with features for each target order.
 
     hist:    one row per (order, product) with user_id, order_number, day,
-             dsp, add_to_cart_order, reordered, product_id.
+             dsp, dsp_capped, add_to_cart_order, reordered, product_id.
     targets: one row per target order with user_id, t_order, t_day,
-             t_dow, t_hour, t_dsp.
+             t_dow, t_hour, t_dsp, t_dsp_capped.
     prod:    output of product_features().
     """
     past = hist.join(targets, on="user_id").filter(
@@ -88,6 +88,7 @@ def build_examples(
     # weighted by basket size.
     past_orders = past.group_by("user_id", "t_order", "order_number").agg(
         dsp=pl.col("dsp").first(),
+        dsp_capped=pl.col("dsp_capped").first(),
         basket=pl.len(),
         reordered=pl.col("reordered").sum(),
     )
@@ -97,7 +98,7 @@ def build_examples(
         u_reorder_rate=pl.col("reordered").sum() / pl.col("basket").sum(),
         # First order has no previous order, so exclude it from gap stats.
         u_mean_dsp=pl.col("dsp").filter(pl.col("order_number") > 1).mean(),
-        u_pct_capped=(pl.col("dsp").filter(pl.col("order_number") > 1) >= 30).mean(),
+        u_pct_capped=pl.col("dsp_capped").filter(pl.col("order_number") > 1).mean(),
     )
     u_products = up.group_by("user_id", "t_order").agg(u_n_products=pl.len())
 

@@ -5,10 +5,13 @@ import pytest
 
 from src.ml.data_prep import (
     RAW_DIR,
+    SEED,
     add_timeline_and_roles,
     build_history,
     check_no_leakage,
     filter_users,
+    load_order_products,
+    load_orders,
     make_split,
     prepare,
     sample_users,
@@ -121,6 +124,7 @@ def test_candidates_capped():
             "order_number": [1] * 10,
             "day": [0] * 10,
             "dsp": [0] * 10,
+            "dsp_capped": [0] * 10,
             "add_to_cart_order": list(range(1, 11)),
             "reordered": [0] * 10,
             "product_id": list(range(10)),
@@ -133,13 +137,86 @@ def test_candidates_capped():
     assert build_examples(hist, targets, prod, max_candidates=3).height == 3
 
 
-@pytest.mark.skipif(not (RAW_DIR / "orders.csv").exists(), reason="no raw data")
-def test_real_data_no_leakage(tmp_path: Path):
-    report = prepare(RAW_DIR, tmp_path, n_users=300)
-    for role in ("train", "val", "test"):
-        df = pl.read_parquet(tmp_path / f"{role}.parquet")
+def test_user_gap_stats_skip_first_order_and_flag_cap():
+    # Gaps of user 1: order 1 has none, then 7, 7, 30 (capped), 7, 7.
+    orders, hist, prod = _toy()
+    expected = {
+        "train": (7.0, 0.0),           # past orders 1-3: gaps 7, 7
+        "val": (44 / 3, 1 / 3),        # past orders 1-4: gaps 7, 7, 30
+        "test": (51 / 4, 1 / 4),       # past orders 1-5: gaps 7, 7, 30, 7
+    }
+    for role, (mean_dsp, pct_capped) in expected.items():
+        df, _ = make_split(orders, hist, prod, role)
+        assert df["u_mean_dsp"].unique().to_list() == [pytest.approx(mean_dsp)]
+        assert df["u_pct_capped"].unique().to_list() == [pytest.approx(pct_capped)]
+
+
+REAL_USERS = 300
+needs_raw = pytest.mark.skipif(
+    not (RAW_DIR / "orders.csv").exists(), reason="no raw data"
+)
+
+
+@pytest.fixture(scope="module")
+def real(tmp_path_factory):
+    """Run the pipeline once on a small real sample, shared by the tests."""
+    out = tmp_path_factory.mktemp("processed")
+    report = prepare(RAW_DIR, out, n_users=REAL_USERS)
+    splits = {r: pl.read_parquet(out / f"{r}.parquet") for r in report}
+    # Rebuild the purchase history independently of build_examples.
+    orders = sample_users(filter_users(load_orders(RAW_DIR)), REAL_USERS, SEED)
+    hist = load_order_products(RAW_DIR, orders["order_id"]).join(
+        orders.select("order_id", "user_id", "order_number"), on="order_id"
+    )
+    return out, report, splits, hist
+
+
+@needs_raw
+def test_real_data_no_leakage(real):
+    out, report, splits, _ = real
+    for role, df in splits.items():
         check_no_leakage(df)
         # >= 5 orders, so even the train target (n-2) has >= 2 past orders.
         assert df["u_n_orders"].min() >= 2
-        assert df.group_by("user_id", "t_order").len()["len"].max() <= 100
-        assert report[role]["users"] <= 300
+        assert report[role]["users"] == REAL_USERS
+    assert (out / "meta.json").exists()
+
+
+@needs_raw
+def test_real_data_features_match_recomputation(real):
+    """Recompute features from raw history for random rows and compare."""
+    _, _, splits, hist = real
+    for role, df in splits.items():
+        for row in df.sample(50, seed=SEED).iter_rows(named=True):
+            past = hist.filter(
+                (pl.col("user_id") == row["user_id"])
+                & (pl.col("order_number") < row["t_order"])
+            )
+            mine = past.filter(pl.col("product_id") == row["product_id"])
+            assert row["up_cnt"] == mine.height, role
+            assert row["up_last_order"] == mine["order_number"].max(), role
+            assert row["up_first_order"] == mine["order_number"].min(), role
+            assert row["u_n_orders"] == past["order_number"].n_unique(), role
+            assert row["u_n_products"] == past["product_id"].n_unique(), role
+
+            in_target = hist.filter(
+                (pl.col("user_id") == row["user_id"])
+                & (pl.col("order_number") == row["t_order"])
+                & (pl.col("product_id") == row["product_id"])
+            ).height
+            assert row["label"] == in_target, role
+
+
+@needs_raw
+def test_real_data_candidates_capped_at_100(real):
+    _, _, splits, _ = real
+    for role, df in splits.items():
+        sizes = df.group_by("user_id", "t_order").agg(
+            n=pl.len(), n_products=pl.col("u_n_products").first()
+        )
+        big = sizes.filter(pl.col("n_products") > 100)
+        # The sample must contain users above the cap, or the cap is untested.
+        assert big.height > 0, role
+        assert big["n"].to_list() == [100] * big.height, role
+        small = sizes.filter(pl.col("n_products") <= 100)
+        assert (small["n"] == small["n_products"]).all(), role
