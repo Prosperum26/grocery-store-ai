@@ -50,14 +50,41 @@ Các module Python hiện chỉ là skeleton và docstring định hướng. Ch�
 
 ## Dữ liệu đã xử lý (predictive reorder)
 
-Tạo dữ liệu từ bộ Instacart trong `data/raw/`:
+Cần có sẵn trong `data/raw/` các file `orders.csv`, `order_products__prior.csv` và `order_products__train.csv`. Mọi lệnh chạy từ thư mục gốc của repo, sau khi đã kích hoạt `.venv` (xem [Khởi chạy ban đầu](#khởi-chạy-ban-đầu)). Không chạy từ bên trong `src/`, vì code import theo dạng `src.ml...`.
+
+### Tạo dữ liệu
 
 ```bash
-python -m src.ml.data_prep --users 20000   # tập con 20.000 user, seed 42
-python -m src.ml.data_prep --users 0       # toàn bộ user
+python -m src.ml.data_prep --users 20000                    # tập con 20.000 user, seed 42 (mặc định)
+python -m src.ml.data_prep --users 0                        # toàn bộ user
+python -m src.ml.data_prep --users 20000 --train-targets 3  # lấy 3 đơn train cuối làm nhãn
+python -m src.ml.data_prep --users 0 --out-dir data/processed_full  # ghi ra thư mục khác
+python -m src.ml.data_prep --help                           # xem mọi tùy chọn
 ```
 
-Kết quả là `data/processed/{train,val,test}.parquet` (không commit). Chi tiết cách lọc, chia split và xử lý giá trị 30 nằm trong docstring của [src/ml/data_prep.py](src/ml/data_prep.py).
+`src/ml/feature_extractor.py` là thư viện được `data_prep` gọi tới, không chạy riêng.
+
+### Chạy test
+
+```bash
+python -m pytest -q tests                # toàn bộ test
+python -m pytest -v tests                # xem kết quả từng test
+python -m pytest -v tests -k real        # chỉ các test trên dữ liệu thật
+python -m pytest -v tests -k "not real"  # chỉ các test trên dữ liệu đồ chơi (không cần data/raw)
+```
+
+Các test trên dữ liệu thật tự bỏ qua nếu chưa có `data/raw/orders.csv`.
+
+### Xem nhanh kết quả
+
+```powershell
+Get-Content data\processed\meta.json
+python -c "import polars as pl; print(pl.read_parquet('data/processed/train.parquet').head())"
+```
+
+### Kết quả
+
+Kết quả là `data/processed/{train,val,test}.parquet` và `meta.json` (không commit). `meta.json` ghi lại thời điểm chạy, seed, `n_users`, `train_targets`, các tham số và thống kê của từng split, để biết bộ parquet hiện có được tạo ra như thế nào. Chi tiết cách lọc, chia split và xử lý giá trị 30 nằm trong docstring của [src/ml/data_prep.py](src/ml/data_prep.py).
 
 Mỗi dòng là một cặp **(đơn nhãn, sản phẩm candidate)**: liệu user có mua lại sản phẩm này trong đơn nhãn hay không. Candidate là tối đa 100 sản phẩm user đã mua trước đơn nhãn, xếp theo `up_decay`. Mọi feature chỉ dùng các đơn có `order_number < t_order`.
 
@@ -82,7 +109,7 @@ Quy ước tiền tố: `up_` = user × sản phẩm, `u_` = user, `p_` = sản 
 | `up_orders_since` | Số đơn kể từ lần mua gần nhất (`t_order - up_last_order`) |
 | `up_days_since` | Số ngày kể từ lần mua gần nhất. Là cận dưới nếu có khoảng cách bị chặn ở 30 |
 | `up_mean_gap` | Số ngày trung bình giữa hai lần mua liên tiếp. Null nếu mới mua một lần |
-| `streak_ratio` | `up_days_since / up_mean_gap`. Gần 1 nghĩa là "đến lúc mua lại". Null nếu không biết khoảng cách hoặc khoảng cách bằng 0 |
+| `streak_ratio` | `up_days_since / up_mean_gap`. Gần 1 nghĩa là "đến lúc mua lại". Cố ý để null khi sản phẩm mới mua một lần (chưa có `up_mean_gap`) hoặc khoảng cách bằng 0. LightGBM xử lý null trực tiếp, không cần điền giá trị |
 | `up_decay` | Tổng `0.9^k` của các lần mua, với k là số đơn tính từ lần mua đó đến đơn nhãn. Mua càng gần, càng nhiều thì càng lớn. Dùng để chọn top 100 candidate |
 | `up_avg_cart_pos` | Vị trí trung bình trong giỏ (`add_to_cart_order`). Nhỏ nghĩa là thường được thêm vào giỏ sớm |
 | `up_first_order` | `order_number` lần đầu mua sản phẩm |
@@ -129,6 +156,12 @@ py -3.11 -m venv .venv
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 uvicorn src.main:app --reload
+```
+
+Nếu PowerShell chặn `Activate.ps1` vì không cho chạy script, chạy lệnh sau một lần rồi kích hoạt lại:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
 
 ### macOS / Linux
