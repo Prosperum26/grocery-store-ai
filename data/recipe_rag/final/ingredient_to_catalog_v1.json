@@ -1,0 +1,1997 @@
+[
+ {
+  "ingredient": "bột canh",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000366"
+  ],
+  "default_catalog_id": "CAT-000366",
+  "note": null
+ },
+ {
+  "ingredient": "bột chiên giòn",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000073",
+   "CAT-000084"
+  ],
+  "default_catalog_id": "CAT-000073",
+  "note": null
+ },
+ {
+  "ingredient": "bột ngọt",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000363",
+   "CAT-000377"
+  ],
+  "default_catalog_id": "CAT-000363",
+  "note": "400g và 100g (gói nhỏ cho nhà ít dùng)"
+ },
+ {
+  "ingredient": "bột năng",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000070",
+   "CAT-000081"
+  ],
+  "default_catalog_id": "CAT-000070",
+  "note": null
+ },
+ {
+  "ingredient": "bột tẩm khô chiên giòn",
+  "kind": "addon",
+  "status": "added",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-001150"
+  ],
+  "default_catalog_id": "CAT-001150",
+  "note": "Tự thêm vào catalog (bạn đã xác nhận)"
+ },
+ {
+  "ingredient": "dầu hào",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000528",
+   "CAT-000534"
+  ],
+  "default_catalog_id": "CAT-000528",
+  "note": null
+ },
+ {
+  "ingredient": "dầu mè",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000054"
+  ],
+  "default_catalog_id": "CAT-000054",
+  "note": null
+ },
+ {
+  "ingredient": "dầu ăn",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000043",
+   "CAT-000050",
+   "CAT-000048"
+  ],
+  "default_catalog_id": "CAT-000043",
+  "note": "Chai 1 lít trước, chai 400ml nhỏ; không chọn hàng thùng"
+ },
+ {
+  "ingredient": "dầu điều",
+  "kind": "addon",
+  "status": "added",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-001148"
+  ],
+  "default_catalog_id": "CAT-001148",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "giấm gạo",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000535"
+  ],
+  "default_catalog_id": "CAT-000535",
+  "note": null
+ },
+ {
+  "ingredient": "gừng",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000937"
+  ],
+  "default_catalog_id": "CAT-000937",
+  "note": null
+ },
+ {
+  "ingredient": "hành lá",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-001099"
+  ],
+  "default_catalog_id": "CAT-001099",
+  "note": null
+ },
+ {
+  "ingredient": "hành tím",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000947"
+  ],
+  "default_catalog_id": "CAT-000947",
+  "note": null
+ },
+ {
+  "ingredient": "hạt nêm",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000374",
+   "CAT-000373",
+   "CAT-000369"
+  ],
+  "default_catalog_id": "CAT-000374",
+  "note": "Aji-ngon heo 170g đúng nhãn trong công thức; Knorr 170g; Neptune 850g"
+ },
+ {
+  "ingredient": "muối",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000301",
+   "CAT-000297"
+  ],
+  "default_catalog_id": "CAT-000301",
+  "note": "Muối tinh sấy iot và muối hạt; bỏ muối tôm, muối ớt (là gia vị chấm)"
+ },
+ {
+  "ingredient": "ngò rí",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-001089"
+  ],
+  "default_catalog_id": "CAT-001089",
+  "note": null
+ },
+ {
+  "ingredient": "nêm sẵn lẩu",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000593"
+  ],
+  "default_catalog_id": "CAT-000593",
+  "note": "Catalog đầy đủ đã có sản phẩm này; không cần thêm mới"
+ },
+ {
+  "ingredient": "nước mắm",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000010",
+   "CAT-000001",
+   "CAT-000012"
+  ],
+  "default_catalog_id": "CAT-000010",
+  "note": null
+ },
+ {
+  "ingredient": "nước tương",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000426",
+   "CAT-001123"
+  ],
+  "default_catalog_id": "CAT-000426",
+  "note": null
+ },
+ {
+  "ingredient": "rượu trắng",
+  "kind": "addon",
+  "status": "added",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-001149"
+  ],
+  "default_catalog_id": "CAT-001149",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "sả",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000951"
+  ],
+  "default_catalog_id": "CAT-000951",
+  "note": null
+ },
+ {
+  "ingredient": "tiêu",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000352",
+   "CAT-000353",
+   "CAT-000354"
+  ],
+  "default_catalog_id": "CAT-000352",
+  "note": "Tiêu xay trước (công thức dùng tiêu xay), tiêu hạt làm phụ"
+ },
+ {
+  "ingredient": "tương cà",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000396",
+   "CAT-001121"
+  ],
+  "default_catalog_id": "CAT-000396",
+  "note": null
+ },
+ {
+  "ingredient": "tương ớt",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000409",
+   "CAT-000394"
+  ],
+  "default_catalog_id": "CAT-000409",
+  "note": null
+ },
+ {
+  "ingredient": "tỏi",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000946",
+   "CAT-000945"
+  ],
+  "default_catalog_id": "CAT-000946",
+  "note": "Tỏi tím và tỏi cô đơn; bỏ tỏi phi giòn (hàng chế biến)"
+ },
+ {
+  "ingredient": "xốt mayonnaise",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000395",
+   "CAT-000406"
+  ],
+  "default_catalog_id": "CAT-000395",
+  "note": null
+ },
+ {
+  "ingredient": "đường",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000227",
+   "CAT-000229"
+  ],
+  "default_catalog_id": "CAT-000227",
+  "note": "Đường kính trắng 500g và 1kg; bỏ đường lỏng, đường phèn"
+ },
+ {
+  "ingredient": "ớt",
+  "kind": "addon",
+  "status": "matched",
+  "reviewed": false,
+  "catalog_ids": [
+   "CAT-000958",
+   "CAT-001082",
+   "CAT-000950"
+  ],
+  "default_catalog_id": "CAT-000958",
+  "note": "Ớt hiểm, ớt sừng, ớt xiêm; bỏ ớt xay và ớt bột (hàng khác)"
+ },
+ {
+  "ingredient": "bao tử cá basa",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000910"
+  ],
+  "default_catalog_id": "CAT-000910",
+  "note": null
+ },
+ {
+  "ingredient": "bánh mì",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001145"
+  ],
+  "default_catalog_id": "CAT-001145",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "bánh tráng",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001137"
+  ],
+  "default_catalog_id": "CAT-001137",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "bí xanh",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000944"
+  ],
+  "default_catalog_id": "CAT-000944",
+  "note": null
+ },
+ {
+  "ingredient": "bông cải xanh",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001103",
+   "CAT-001107"
+  ],
+  "default_catalog_id": "CAT-001103",
+  "note": null
+ },
+ {
+  "ingredient": "bơ",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000533",
+   "CAT-000536"
+  ],
+  "default_catalog_id": "CAT-000533",
+  "note": null
+ },
+ {
+  "ingredient": "bầu",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000943"
+  ],
+  "default_catalog_id": "CAT-000943",
+  "note": null
+ },
+ {
+  "ingredient": "bắp bò",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000759"
+  ],
+  "default_catalog_id": "CAT-000759",
+  "note": null
+ },
+ {
+  "ingredient": "bắp cải",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000963"
+  ],
+  "default_catalog_id": "CAT-000963",
+  "note": null
+ },
+ {
+  "ingredient": "bắp mỹ",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000960"
+  ],
+  "default_catalog_id": "CAT-000960",
+  "note": null
+ },
+ {
+  "ingredient": "bắp non",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001106"
+  ],
+  "default_catalog_id": "CAT-001106",
+  "note": null
+ },
+ {
+  "ingredient": "bột chiên xù",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000091"
+  ],
+  "default_catalog_id": "CAT-000091",
+  "note": null
+ },
+ {
+  "ingredient": "bột cà ri",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000851",
+   "CAT-000852"
+  ],
+  "default_catalog_id": "CAT-000851",
+  "note": null
+ },
+ {
+  "ingredient": "bột mì",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000089",
+   "CAT-000090"
+  ],
+  "default_catalog_id": "CAT-000089",
+  "note": null
+ },
+ {
+  "ingredient": "bột ngũ vị hương",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000646"
+  ],
+  "default_catalog_id": "CAT-000646",
+  "note": null
+ },
+ {
+  "ingredient": "chanh",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000361"
+  ],
+  "default_catalog_id": "CAT-000361",
+  "note": null
+ },
+ {
+  "ingredient": "chả cá basa",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000899"
+  ],
+  "default_catalog_id": "CAT-000899",
+  "note": null
+ },
+ {
+  "ingredient": "cua",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001143"
+  ],
+  "default_catalog_id": "CAT-001143",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "cà chua",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000936"
+  ],
+  "default_catalog_id": "CAT-000936",
+  "note": null
+ },
+ {
+  "ingredient": "cà chua bi",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000959"
+  ],
+  "default_catalog_id": "CAT-000959",
+  "note": null
+ },
+ {
+  "ingredient": "cà rốt",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000939"
+  ],
+  "default_catalog_id": "CAT-000939",
+  "note": null
+ },
+ {
+  "ingredient": "cà tím",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000930"
+  ],
+  "default_catalog_id": "CAT-000930",
+  "note": null
+ },
+ {
+  "ingredient": "cá basa phi lê",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000981"
+  ],
+  "default_catalog_id": "CAT-000981",
+  "note": null
+ },
+ {
+  "ingredient": "cá chim",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000905",
+   "CAT-000908",
+   "CAT-000909"
+  ],
+  "default_catalog_id": "CAT-000905",
+  "note": null
+ },
+ {
+  "ingredient": "cá chim trắng",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000908"
+  ],
+  "default_catalog_id": "CAT-000908",
+  "note": null
+ },
+ {
+  "ingredient": "cá hồi",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000866",
+   "CAT-000904"
+  ],
+  "default_catalog_id": "CAT-000866",
+  "note": null
+ },
+ {
+  "ingredient": "cá hồi phi lê",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000866"
+  ],
+  "default_catalog_id": "CAT-000866",
+  "note": null
+ },
+ {
+  "ingredient": "cá mòi",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000491"
+  ],
+  "default_catalog_id": "CAT-000491",
+  "note": null
+ },
+ {
+  "ingredient": "cá nục",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000901"
+  ],
+  "default_catalog_id": "CAT-000901",
+  "note": null
+ },
+ {
+  "ingredient": "cá rô",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000913"
+  ],
+  "default_catalog_id": "CAT-000913",
+  "note": null
+ },
+ {
+  "ingredient": "cá thu",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001144"
+  ],
+  "default_catalog_id": "CAT-001144",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "cá thác lác",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001138"
+  ],
+  "default_catalog_id": "CAT-001138",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "cánh gà",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001068",
+   "CAT-001059"
+  ],
+  "default_catalog_id": "CAT-001068",
+  "note": null
+ },
+ {
+  "ingredient": "cải bó xôi",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001140"
+  ],
+  "default_catalog_id": "CAT-001140",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "cải chua",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000767"
+  ],
+  "default_catalog_id": "CAT-000767",
+  "note": null
+ },
+ {
+  "ingredient": "cải thìa",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001101"
+  ],
+  "default_catalog_id": "CAT-001101",
+  "note": null
+ },
+ {
+  "ingredient": "cần tàu",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001088"
+  ],
+  "default_catalog_id": "CAT-001088",
+  "note": null
+ },
+ {
+  "ingredient": "cần tây",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001139"
+  ],
+  "default_catalog_id": "CAT-001139",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "củ cải muối",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001110"
+  ],
+  "default_catalog_id": "CAT-001110",
+  "note": null
+ },
+ {
+  "ingredient": "củ cải trắng",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000965"
+  ],
+  "default_catalog_id": "CAT-000965",
+  "note": null
+ },
+ {
+  "ingredient": "củ sen",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001141"
+  ],
+  "default_catalog_id": "CAT-001141",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "củ sắn",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001111"
+  ],
+  "default_catalog_id": "CAT-001111",
+  "note": null
+ },
+ {
+  "ingredient": "dưa leo",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001114"
+  ],
+  "default_catalog_id": "CAT-001114",
+  "note": null
+ },
+ {
+  "ingredient": "dầu hào chay",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000530"
+  ],
+  "default_catalog_id": "CAT-000530",
+  "note": null
+ },
+ {
+  "ingredient": "dừa",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001020",
+   "CAT-001037"
+  ],
+  "default_catalog_id": "CAT-001020",
+  "note": null
+ },
+ {
+  "ingredient": "dừa xiêm",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001020"
+  ],
+  "default_catalog_id": "CAT-001020",
+  "note": null
+ },
+ {
+  "ingredient": "giò sống",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000995"
+  ],
+  "default_catalog_id": "CAT-000995",
+  "note": null
+ },
+ {
+  "ingredient": "hoa hồi",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000634"
+  ],
+  "default_catalog_id": "CAT-000634",
+  "note": null
+ },
+ {
+  "ingredient": "hành boa rô",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001133"
+  ],
+  "default_catalog_id": "CAT-001133",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "hành tây",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000940",
+   "CAT-000956"
+  ],
+  "default_catalog_id": "CAT-000940",
+  "note": null
+ },
+ {
+  "ingredient": "húng quế",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001094"
+  ],
+  "default_catalog_id": "CAT-001094",
+  "note": null
+ },
+ {
+  "ingredient": "hạt sen",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001146"
+  ],
+  "default_catalog_id": "CAT-001146",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "khoai tây",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000935"
+  ],
+  "default_catalog_id": "CAT-000935",
+  "note": null
+ },
+ {
+  "ingredient": "kiwi",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001026",
+   "CAT-001030"
+  ],
+  "default_catalog_id": "CAT-001026",
+  "note": null
+ },
+ {
+  "ingredient": "lá hoành thánh",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001134"
+  ],
+  "default_catalog_id": "CAT-001134",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "lươn",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000898"
+  ],
+  "default_catalog_id": "CAT-000898",
+  "note": null
+ },
+ {
+  "ingredient": "me",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000953",
+   "CAT-001119"
+  ],
+  "default_catalog_id": "CAT-000953",
+  "note": null
+ },
+ {
+  "ingredient": "miến khô",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000706"
+  ],
+  "default_catalog_id": "CAT-000706",
+  "note": null
+ },
+ {
+  "ingredient": "mè",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000468"
+  ],
+  "default_catalog_id": "CAT-000468",
+  "note": null
+ },
+ {
+  "ingredient": "mè trắng",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000468"
+  ],
+  "default_catalog_id": "CAT-000468",
+  "note": null
+ },
+ {
+  "ingredient": "mì",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000239",
+   "CAT-000247",
+   "CAT-000248",
+   "CAT-000260",
+   "CAT-000271"
+  ],
+  "default_catalog_id": "CAT-000239",
+  "note": null
+ },
+ {
+  "ingredient": "mù tạt xanh",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000765"
+  ],
+  "default_catalog_id": "CAT-000765",
+  "note": null
+ },
+ {
+  "ingredient": "măng tây",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001105"
+  ],
+  "default_catalog_id": "CAT-001105",
+  "note": null
+ },
+ {
+  "ingredient": "mướp hương",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000938"
+  ],
+  "default_catalog_id": "CAT-000938",
+  "note": null
+ },
+ {
+  "ingredient": "mật ong",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000684"
+  ],
+  "default_catalog_id": "CAT-000684",
+  "note": null
+ },
+ {
+  "ingredient": "mắm ruốc",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000762",
+   "CAT-000619"
+  ],
+  "default_catalog_id": "CAT-000762",
+  "note": null
+ },
+ {
+  "ingredient": "mồng tơi",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001083"
+  ],
+  "default_catalog_id": "CAT-001083",
+  "note": null
+ },
+ {
+  "ingredient": "mỡ",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000594"
+  ],
+  "default_catalog_id": "CAT-000594",
+  "note": null
+ },
+ {
+  "ingredient": "mực",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000916",
+   "CAT-000863",
+   "CAT-000862"
+  ],
+  "default_catalog_id": "CAT-000916",
+  "note": null
+ },
+ {
+  "ingredient": "mực trứng",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000861"
+  ],
+  "default_catalog_id": "CAT-000861",
+  "note": null
+ },
+ {
+  "ingredient": "mực ống",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000916",
+   "CAT-000862",
+   "CAT-000863"
+  ],
+  "default_catalog_id": "CAT-000916",
+  "note": null
+ },
+ {
+  "ingredient": "nghệ",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001147"
+  ],
+  "default_catalog_id": "CAT-001147",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "ngũ vị hương",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000848"
+  ],
+  "default_catalog_id": "CAT-000848",
+  "note": null
+ },
+ {
+  "ingredient": "nước cốt chanh",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001135"
+  ],
+  "default_catalog_id": "CAT-001135",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "nước dừa",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001130"
+  ],
+  "default_catalog_id": "CAT-001130",
+  "note": null
+ },
+ {
+  "ingredient": "nước dừa tươi",
+  "kind": "core",
+  "status": "alias",
+  "alias_of": "nước dừa",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001130"
+  ],
+  "default_catalog_id": "CAT-001130",
+  "note": "Giống: nước dừa"
+ },
+ {
+  "ingredient": "nước dừa xiêm",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001130"
+  ],
+  "default_catalog_id": "CAT-001130",
+  "note": null
+ },
+ {
+  "ingredient": "nước màu",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000637",
+   "CAT-000849"
+  ],
+  "default_catalog_id": "CAT-000637",
+  "note": null
+ },
+ {
+  "ingredient": "nước soda",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001131"
+  ],
+  "default_catalog_id": "CAT-001131",
+  "note": null
+ },
+ {
+  "ingredient": "nấm",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001010"
+  ],
+  "default_catalog_id": "CAT-001010",
+  "note": null
+ },
+ {
+  "ingredient": "nấm hương",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000999"
+  ],
+  "default_catalog_id": "CAT-000999",
+  "note": null
+ },
+ {
+  "ingredient": "nấm hương khô",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000462"
+  ],
+  "default_catalog_id": "CAT-000462",
+  "note": null
+ },
+ {
+  "ingredient": "nấm kim châm",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001006",
+   "CAT-001009",
+   "CAT-000998"
+  ],
+  "default_catalog_id": "CAT-001006",
+  "note": null
+ },
+ {
+  "ingredient": "nấm linh chi",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001001",
+   "CAT-001002"
+  ],
+  "default_catalog_id": "CAT-001001",
+  "note": null
+ },
+ {
+  "ingredient": "nấm linh chi nâu",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001002"
+  ],
+  "default_catalog_id": "CAT-001002",
+  "note": null
+ },
+ {
+  "ingredient": "nấm linh chi trắng",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001001"
+  ],
+  "default_catalog_id": "CAT-001001",
+  "note": null
+ },
+ {
+  "ingredient": "nấm mèo",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000475",
+   "CAT-000474"
+  ],
+  "default_catalog_id": "CAT-000475",
+  "note": null
+ },
+ {
+  "ingredient": "nấm rơm",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001007"
+  ],
+  "default_catalog_id": "CAT-001007",
+  "note": null
+ },
+ {
+  "ingredient": "nấm tuyết khô",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000458"
+  ],
+  "default_catalog_id": "CAT-000458",
+  "note": null
+ },
+ {
+  "ingredient": "nấm đông cô",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000469"
+  ],
+  "default_catalog_id": "CAT-000469",
+  "note": null
+ },
+ {
+  "ingredient": "nấm đùi gà",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000996",
+   "CAT-001000",
+   "CAT-001004",
+   "CAT-001011"
+  ],
+  "default_catalog_id": "CAT-000996",
+  "note": null
+ },
+ {
+  "ingredient": "nấm đùi gà baby",
+  "kind": "core",
+  "status": "alias",
+  "alias_of": "nấm đùi gà",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000996",
+   "CAT-001000",
+   "CAT-001004",
+   "CAT-001011"
+  ],
+  "default_catalog_id": "CAT-000996",
+  "note": "giống: nấm đùi gà"
+ },
+ {
+  "ingredient": "phô mai",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000844"
+  ],
+  "default_catalog_id": "CAT-000844",
+  "note": null
+ },
+ {
+  "ingredient": "rau muống",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001077",
+   "CAT-001097"
+  ],
+  "default_catalog_id": "CAT-001077",
+  "note": null
+ },
+ {
+  "ingredient": "rau muống hạt",
+  "kind": "core",
+  "status": "alias",
+  "alias_of": "rau muống",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001077",
+   "CAT-001097"
+  ],
+  "default_catalog_id": "CAT-001077",
+  "note": "Giống: rau muống"
+ },
+ {
+  "ingredient": "rau răm",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001085"
+  ],
+  "default_catalog_id": "CAT-001085",
+  "note": null
+ },
+ {
+  "ingredient": "rau thơm",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001100"
+  ],
+  "default_catalog_id": "CAT-001100",
+  "note": null
+ },
+ {
+  "ingredient": "sa tế",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000357",
+   "CAT-000359"
+  ],
+  "default_catalog_id": "CAT-000357",
+  "note": null
+ },
+ {
+  "ingredient": "sa tế tôm",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000357",
+   "CAT-000359"
+  ],
+  "default_catalog_id": "CAT-000357",
+  "note": null
+ },
+ {
+  "ingredient": "sườn cốt lết",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000990"
+  ],
+  "default_catalog_id": "CAT-000990",
+  "note": null
+ },
+ {
+  "ingredient": "sườn non",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000989",
+   "CAT-000992"
+  ],
+  "default_catalog_id": "CAT-000989",
+  "note": null
+ },
+ {
+  "ingredient": "sườn que",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000987"
+  ],
+  "default_catalog_id": "CAT-000987",
+  "note": null
+ },
+ {
+  "ingredient": "sữa tươi không đường",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000115"
+  ],
+  "default_catalog_id": "CAT-000115",
+  "note": null
+ },
+ {
+  "ingredient": "sữa đặc",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000157",
+   "CAT-000158",
+   "CAT-000162",
+   "CAT-000164",
+   "CAT-000166"
+  ],
+  "default_catalog_id": "CAT-000157",
+  "note": null
+ },
+ {
+  "ingredient": "thanh long",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001045",
+   "CAT-001041"
+  ],
+  "default_catalog_id": "CAT-001045",
+  "note": null
+ },
+ {
+  "ingredient": "thì là",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001072"
+  ],
+  "default_catalog_id": "CAT-001072",
+  "note": null
+ },
+ {
+  "ingredient": "thơm",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000942"
+  ],
+  "default_catalog_id": "CAT-000942",
+  "note": null
+ },
+ {
+  "ingredient": "thịt ba chỉ",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001132"
+  ],
+  "default_catalog_id": "CAT-001132",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "thịt cua",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001142"
+  ],
+  "default_catalog_id": "CAT-001142",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "thịt heo",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000972",
+   "CAT-000980"
+  ],
+  "default_catalog_id": "CAT-000972",
+  "note": null
+ },
+ {
+  "ingredient": "thịt hến",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000968"
+  ],
+  "default_catalog_id": "CAT-000968",
+  "note": null
+ },
+ {
+  "ingredient": "thịt nạc",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000993"
+  ],
+  "default_catalog_id": "CAT-000993",
+  "note": null
+ },
+ {
+  "ingredient": "thịt đùi",
+  "kind": "core",
+  "status": "alias",
+  "alias_of": "thịt đùi heo",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000991"
+  ],
+  "default_catalog_id": "CAT-000991",
+  "note": "Giống: thịt đùi heo"
+ },
+ {
+  "ingredient": "thịt đùi heo",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000991"
+  ],
+  "default_catalog_id": "CAT-000991",
+  "note": null
+ },
+ {
+  "ingredient": "thịt ếch",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000896"
+  ],
+  "default_catalog_id": "CAT-000896",
+  "note": null
+ },
+ {
+  "ingredient": "thịt ức gà",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001064"
+  ],
+  "default_catalog_id": "CAT-001064",
+  "note": null
+ },
+ {
+  "ingredient": "tiêu xanh",
+  "kind": "core",
+  "status": "added",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001136"
+  ],
+  "default_catalog_id": "CAT-001136",
+  "note": "Tự thêm vào catalog"
+ },
+ {
+  "ingredient": "tiêu đen",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000352",
+   "CAT-000354",
+   "CAT-000353",
+   "CAT-000358"
+  ],
+  "default_catalog_id": "CAT-000352",
+  "note": null
+ },
+ {
+  "ingredient": "trứng",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000974",
+   "CAT-000975",
+   "CAT-000976",
+   "CAT-000977",
+   "CAT-000978"
+  ],
+  "default_catalog_id": "CAT-000974",
+  "note": null
+ },
+ {
+  "ingredient": "trứng cút",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000978"
+  ],
+  "default_catalog_id": "CAT-000978",
+  "note": null
+ },
+ {
+  "ingredient": "trứng gà",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000974",
+   "CAT-000979"
+  ],
+  "default_catalog_id": "CAT-000974",
+  "note": null
+ },
+ {
+  "ingredient": "trứng gà ta",
+  "kind": "core",
+  "status": "alias",
+  "alias_of": "trứng gà",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000974",
+   "CAT-000979"
+  ],
+  "default_catalog_id": "CAT-000974",
+  "note": "Giống: trứng gà"
+ },
+ {
+  "ingredient": "trứng vịt",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000977",
+   "CAT-000976",
+   "CAT-000975"
+  ],
+  "default_catalog_id": "CAT-000977",
+  "note": null
+ },
+ {
+  "ingredient": "tía tô",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001095"
+  ],
+  "default_catalog_id": "CAT-001095",
+  "note": null
+ },
+ {
+  "ingredient": "tôm",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000915"
+  ],
+  "default_catalog_id": "CAT-000915",
+  "note": null
+ },
+ {
+  "ingredient": "tôm sú",
+  "kind": "core",
+  "status": "alias",
+  "alias_of": "tôm",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000915"
+  ],
+  "default_catalog_id": "CAT-000915",
+  "note": "Giống : tôm"
+ },
+ {
+  "ingredient": "tôm thẻ",
+  "kind": "core",
+  "status": "alias",
+  "alias_of": "tôm",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000915"
+  ],
+  "default_catalog_id": "CAT-000915",
+  "note": "Giống : tôm"
+ },
+ {
+  "ingredient": "tương hột",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000415"
+  ],
+  "default_catalog_id": "CAT-000415",
+  "note": null
+ },
+ {
+  "ingredient": "tương ớt xí muội",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000414"
+  ],
+  "default_catalog_id": "CAT-000414",
+  "note": null
+ },
+ {
+  "ingredient": "tắc",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000955"
+  ],
+  "default_catalog_id": "CAT-000955",
+  "note": null
+ },
+ {
+  "ingredient": "xà lách",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001090"
+  ],
+  "default_catalog_id": "CAT-001090",
+  "note": null
+ },
+ {
+  "ingredient": "xúc xích",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000518",
+   "CAT-000786",
+   "CAT-000787",
+   "CAT-000802",
+   "CAT-000803"
+  ],
+  "default_catalog_id": "CAT-000518",
+  "note": null
+ },
+ {
+  "ingredient": "xúc xích xông khói",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000780",
+   "CAT-000789",
+   "CAT-000799",
+   "CAT-000826",
+   "CAT-000798"
+  ],
+  "default_catalog_id": "CAT-000780",
+  "note": null
+ },
+ {
+  "ingredient": "xương gà",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001063"
+  ],
+  "default_catalog_id": "CAT-001063",
+  "note": null
+ },
+ {
+  "ingredient": "đùi gà",
+  "kind": "core",
+  "status": "alias",
+  "alias_of": "đùi gà góc tư",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001066"
+  ],
+  "default_catalog_id": "CAT-001066",
+  "note": "Giống: đùi gà góc tư"
+ },
+ {
+  "ingredient": "đùi gà góc tư",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001066"
+  ],
+  "default_catalog_id": "CAT-001066",
+  "note": null
+ },
+ {
+  "ingredient": "đùi tỏi gà",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001060"
+  ],
+  "default_catalog_id": "CAT-001060",
+  "note": null
+ },
+ {
+  "ingredient": "đậu bắp",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000957"
+  ],
+  "default_catalog_id": "CAT-000957",
+  "note": null
+ },
+ {
+  "ingredient": "đậu hũ",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000566",
+   "CAT-000565"
+  ],
+  "default_catalog_id": "CAT-000566",
+  "note": null
+ },
+ {
+  "ingredient": "đậu hũ chiên",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000561"
+  ],
+  "default_catalog_id": "CAT-000561",
+  "note": null
+ },
+ {
+  "ingredient": "ớt bột",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000355"
+  ],
+  "default_catalog_id": "CAT-000355",
+  "note": null
+ },
+ {
+  "ingredient": "ớt hiểm",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000958"
+  ],
+  "default_catalog_id": "CAT-000958",
+  "note": null
+ },
+ {
+  "ingredient": "ớt khô",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-000360"
+  ],
+  "default_catalog_id": "CAT-000360",
+  "note": null
+ },
+ {
+  "ingredient": "ớt sừng",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001082"
+  ],
+  "default_catalog_id": "CAT-001082",
+  "note": null
+ },
+ {
+  "ingredient": "ức gà",
+  "kind": "core",
+  "status": "matched",
+  "reviewed": true,
+  "catalog_ids": [
+   "CAT-001070"
+  ],
+  "default_catalog_id": "CAT-001070",
+  "note": null
+ }
+]

@@ -1,0 +1,34 @@
+KẾT QUẢ KIỂM TRA TỰ ĐỘNG (v2)
+============================
+catalog: 2129 sản phẩm, id CAT-000001..CAT-002129; thêm tay (cần xác nhận): 373
+công thức: 1061 (trong đó 100 món mục tiêu: 100) | giỏ đủ nguyên liệu core: 1061 | thiếu: 0
+dùng được ngay không cần sản phẩm mới: 173
+tên nguyên liệu đã ghép: 1524 theo cách: {'bang_ghep_100_mon': 173, 'san_pham_moi': 564, 'khop_ten': 175, 'gop_ten_da_duyet': 358, 'khong_phai_hang_mua': 62, 'quyet_dinh_che_bien_tu': 30, 'quyet_dinh_gop': 165, 'ten_san_pham': 43, 'chon_tay': 18, 'bo': 52}
+nguyên liệu core chưa ghép được: 0 tên | addon chưa ghép: 0 tên
+giỏ có packs > 1: 288 dòng
+
+LỖI: 0
+
+Nguyên liệu chưa ghép được (loại, tên, số lượt):
+
+Công thức chưa đủ core:
+
+Ghép chọn tay (tên nguyên liệu -> sản phẩm đầu tiên chứa mảnh tên):
+  hẹ -> CAT-001929 Hẹ lá 100g
+  mẻ -> CAT-001870 Cơm mẻ hũ 200g
+  mộc nhĩ -> CAT-000474 Nấm mèo đen 50gcó bán với
+  cá cơm than -> CAT-000012 Nước mắm cá cơm than Knorr 242ml
+  nước mắm ngon -> CAT-000001 Nước mắm Nam Ngư Phú Quốc đậm đặc 32 độ đạm chai 500ml
+  nước mắm chay -> CAT-000001 Nước mắm Nam Ngư Phú Quốc đậm đặc 32 độ đạm chai 500ml
+  nước ngọt coca -> CAT-001159 Nước ngọt Coca chai lớn 1.5 lít
+  nước chanh dây -> CAT-001028 Chanh dây vỉ 4 trái
+  nước dão dừa -> CAT-001130 Nước dừa xiêm xanh Vico Fresh 1 lít
+  nước dảo dừa -> CAT-001130 Nước dừa xiêm xanh Vico Fresh 1 lít
+  nước gião dừa -> CAT-001130 Nước dừa xiêm xanh Vico Fresh 1 lít
+  gia vị nêm sẵn bột chiên giòn -> CAT-000073 Bột chiên giòn Meizan gói 150g
+  nêm sẵn bột tẩm khô chiên giòn -> CAT-000073 Bột chiên giòn Meizan gói 150g
+  bột tẩm khô chiên giòn hương vị bơ tỏi -> CAT-000073 Bột chiên giòn Meizan gói 150g
+  bánh xếp kiểu nhật gyoza dùng nồi chiên không dầu -> CAT-001785 Bánh xếp gyoza Nhật gói 300g
+  bánh xếp kiểu nhật gyoza dùng nồi chiên không dầu nhân thịt gà -> CAT-001785 Bánh xếp gyoza Nhật gói 300g
+  ớt chao đỏ -> CAT-000539 Chao đậu nành chay Bông Mai 170g
+  bột bánh rán pha sẵn vị sô-cô-la -> CAT-000082 Bột bánh rán trứng Ajinomoto 200g
