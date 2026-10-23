@@ -1,0 +1,9962 @@
+[
+ {
+  "id": "thit-bo-xao-dau-cove-2",
+  "ten": "Thịt Bò Xào Đậu Cove",
+  "ho_mon": "bò xào",
+  "hang": 1,
+  "thieu": [
+   "thịt bò phi lê"
+  ]
+ },
+ {
+  "id": "thit-bo-xao-dau-cove",
+  "ten": "Thịt bò xào đậu cove mềm ngon, đậm vị hao cơm",
+  "ho_mon": "bò xào",
+  "hang": 2,
+  "thieu": [
+   "thịt bò phi lê"
+  ]
+ },
+ {
+  "id": "bap-bo-xao-sa-ot-com-chay",
+  "ten": "Bắp bò xào sả ớt cơm cháy",
+  "ho_mon": "bò xào",
+  "hang": 3,
+  "thieu": [
+   "mỡ hành"
+  ]
+ },
+ {
+  "id": "bap-bo-xao-xot-tieu-xanh",
+  "ten": "Bắp bò xào xốt tiêu xanh",
+  "ho_mon": "bò xào",
+  "hang": 4,
+  "thieu": [
+   "tiêu sọ"
+  ]
+ },
+ {
+  "id": "thit-bo-xao-ngong-cai",
+  "ten": "Thịt bò xào ngồng cải",
+  "ho_mon": "bò xào",
+  "hang": 5,
+  "thieu": [
+   "ngồng cải",
+   "thịt bò mềm"
+  ]
+ },
+ {
+  "id": "thit-bo-xao-dau-rong-sa-te",
+  "ten": "Thịt Bò Xào Đậu Rồng Sa Tế",
+  "ho_mon": "bò xào",
+  "hang": 6,
+  "thieu": [
+   "thịt bò",
+   "đậu rồng"
+  ]
+ },
+ {
+  "id": "bo-xao-ot-kho",
+  "ten": "Bò xào ớt khô",
+  "ho_mon": "bò xào",
+  "hang": 7,
+  "thieu": [
+   "bò phi lê",
+   "rau càng cua"
+  ]
+ },
+ {
+  "id": "gan-bo-xao-sa-ot",
+  "ten": "Gân bò xào sả ớt",
+  "ho_mon": "bò xào",
+  "hang": 8,
+  "thieu": [
+   "gân bò",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "thit-bo-xao-bong-so-dua",
+  "ten": "Thịt bò xào bông so đũa",
+  "ho_mon": "bò xào",
+  "hang": 9,
+  "thieu": [
+   "bông so đũa",
+   "thịt bò phi lê"
+  ]
+ },
+ {
+  "id": "thit-bo-xao-kieu-han-quoc",
+  "ten": "Thịt bò xào kiểu Hàn Quốc",
+  "ho_mon": "bò xào",
+  "hang": 10,
+  "thieu": [
+   "thịt bò phi lê",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "gan-bo-xao-thom-ca",
+  "ten": "Gan bò xào thơm cà",
+  "ho_mon": "bò xào",
+  "hang": 11,
+  "thieu": [
+   "bông hành",
+   "gan bò"
+  ]
+ },
+ {
+  "id": "bo-xao-lan",
+  "ten": "Bò xào lăn",
+  "ho_mon": "bò xào",
+  "hang": 12,
+  "thieu": [
+   "bún tàu",
+   "thịt bò phi lê"
+  ]
+ },
+ {
+  "id": "thit-bo-xao-la-lot",
+  "ten": "Thịt bò xào lá lốt",
+  "ho_mon": "bò xào",
+  "hang": 13,
+  "thieu": [
+   "kẹo đậu phộng",
+   "lá lốt",
+   "thịt bò -lê"
+  ]
+ },
+ {
+  "id": "bo-xao-nam-mo",
+  "ten": "Bò xào nấm mỡ",
+  "ho_mon": "bò xào",
+  "hang": 14,
+  "thieu": [
+   "dầu oliu",
+   "nấm mỡ",
+   "thịt bò phi lê"
+  ]
+ },
+ {
+  "id": "bap-bo-xao-dau-rong",
+  "ten": "Bắp bò xào đậu rồng",
+  "ho_mon": "bò xào",
+  "hang": 15,
+  "thieu": [
+   "ngò om",
+   "tỏi bắc",
+   "đậu rồng non"
+  ]
+ },
+ {
+  "id": "thit-bo-xao-can-nuoc",
+  "ten": "Thịt bò xào cần nước",
+  "ho_mon": "bò xào",
+  "hang": 16,
+  "thieu": [
+   "cần nước",
+   "thịt bò phi lê",
+   "đầu hành",
+   "ớt muối"
+  ]
+ },
+ {
+  "id": "canh-ca-loc-rau-can",
+  "ten": "Canh cá lóc rau cần",
+  "ho_mon": "canh cá",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "canh-ca-chim-dua-muoi",
+  "ten": "Canh cá chim dưa muối",
+  "ho_mon": "canh cá",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "canh-ca-ro-nau-cai-be-xanh",
+  "ten": "Canh cá rô nấu cải bẹ xanh",
+  "ho_mon": "canh cá",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "canh-ca-chim-nau-ngot",
+  "ten": "Canh cá chim nấu ngót",
+  "ho_mon": "canh cá",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "canh-ca-rau-can-2",
+  "ten": "Canh cá rau cần",
+  "ho_mon": "canh cá",
+  "hang": 5,
+  "thieu": []
+ },
+ {
+  "id": "canh-ca-hoi-nau-nam",
+  "ten": "Canh cá hồi nấu nấm",
+  "ho_mon": "canh cá",
+  "hang": 6,
+  "thieu": []
+ },
+ {
+  "id": "canh-ca-rau-day",
+  "ten": "Canh cá rau đay",
+  "ho_mon": "canh cá",
+  "hang": 7,
+  "thieu": [
+   "rau đay"
+  ]
+ },
+ {
+  "id": "canh-ca-chep-gion-nau-nghe",
+  "ten": "Canh cá chép giòn nấu nghệ",
+  "ho_mon": "canh cá",
+  "hang": 8,
+  "thieu": [
+   "cá chép giòn"
+  ]
+ },
+ {
+  "id": "canh-ca-chep-rau-can",
+  "ten": "Canh cá chép rau cần",
+  "ho_mon": "canh cá",
+  "hang": 9,
+  "thieu": [
+   "cá chép"
+  ]
+ },
+ {
+  "id": "canh-ca-bong-mu",
+  "ten": "Canh cá bống mú",
+  "ho_mon": "canh cá",
+  "hang": 10,
+  "thieu": [
+   "cá bống mú"
+  ]
+ },
+ {
+  "id": "canh-ca-ro-bong-sung",
+  "ten": "Canh cá rô bông súng",
+  "ho_mon": "canh cá",
+  "hang": 11,
+  "thieu": [
+   "kèo nèo"
+  ]
+ },
+ {
+  "id": "canh-ca-nau-me",
+  "ten": "Canh cá nấu mẻ",
+  "ho_mon": "canh cá",
+  "hang": 12,
+  "thieu": [
+   "hành khô"
+  ]
+ },
+ {
+  "id": "canh-ca-dua-cai",
+  "ten": "Canh Cá Dưa Cải",
+  "ho_mon": "canh cá",
+  "hang": 13,
+  "thieu": [
+   "cá nâu",
+   "mỡ + tóp mỡ"
+  ]
+ },
+ {
+  "id": "canh-ca-com-la-me-dat",
+  "ten": "Canh cá cơm lá me đất",
+  "ho_mon": "canh cá",
+  "hang": 14,
+  "thieu": [
+   "cá cơm",
+   "lá me đất"
+  ]
+ },
+ {
+  "id": "canh-ca-tran-chau",
+  "ten": "Canh cá trân châu",
+  "ho_mon": "canh cá",
+  "hang": 15,
+  "thieu": [
+   "củ năng",
+   "hành ngò"
+  ]
+ },
+ {
+  "id": "canh-ca-dong-nau-khe",
+  "ten": "Canh cá đồng nấu khế",
+  "ho_mon": "canh cá",
+  "hang": 16,
+  "thieu": [
+   "bột nghệ",
+   "khế chua"
+  ]
+ },
+ {
+  "id": "canh-ca-rau-can",
+  "ten": "Làm ngay canh cá rau cần phù hợp cho thời tiết giao mùa!",
+  "ho_mon": "canh cá",
+  "hang": 17,
+  "thieu": [
+   "cơm mẻ",
+   "cần nước"
+  ]
+ },
+ {
+  "id": "canh-ca-minh-thai",
+  "ten": "Canh cá Minh Thái",
+  "ho_mon": "canh cá",
+  "hang": 18,
+  "thieu": [
+   "giá sạch",
+   "khô cá minh"
+  ]
+ },
+ {
+  "id": "canh-ca-hong",
+  "ten": "Canh cá hồng",
+  "ho_mon": "canh cá",
+  "hang": 19,
+  "thieu": [
+   "cá hồng",
+   "thit heo"
+  ]
+ },
+ {
+  "id": "banh-canh-ca-loc",
+  "ten": "Bánh canh cá lóc",
+  "ho_mon": "canh cá",
+  "hang": 20,
+  "thieu": [
+   "tôm khô",
+   "xương bọng gà"
+  ]
+ },
+ {
+  "id": "canh-ca-loc-la-giang",
+  "ten": "Canh cá lóc lá giang",
+  "ho_mon": "canh cá",
+  "hang": 21,
+  "thieu": [
+   "lá giang",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-ca-tam-vi-thai",
+  "ten": "Canh Cá Tầm Vị Thái",
+  "ho_mon": "canh cá",
+  "hang": 22,
+  "thieu": [
+   "cá tầm",
+   "kèo nèo",
+   "rau nhút"
+  ]
+ },
+ {
+  "id": "canh-ca-ro-rau-nhut",
+  "ten": "Canh cá rô rau nhút",
+  "ho_mon": "canh cá",
+  "hang": 23,
+  "thieu": [
+   "hoa kim châm",
+   "rau nhút lặt sạch",
+   "rau quế"
+  ]
+ },
+ {
+  "id": "canh-ca-rau-muong",
+  "ten": "Canh cá rau muống",
+  "ho_mon": "canh cá",
+  "hang": 24,
+  "thieu": [
+   "măng chua",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-but-giam-ca-lang-dua-bon-bon",
+  "ten": "Canh Cá Lăng Bụt Giấm Dưa Bồn Bồn: Món ngon bổ dưỡng",
+  "ho_mon": "canh cá",
+  "hang": 25,
+  "thieu": [
+   "bồn bồn ngâm chua",
+   "bụt giấm",
+   "thịt cá lăng"
+  ]
+ },
+ {
+  "id": "canh-ca-khoai-la-giang-2",
+  "ten": "CANH CÁ KHOAI LÁ GIANG",
+  "ho_mon": "canh cá",
+  "hang": 26,
+  "thieu": [
+   "cá khoai",
+   "lá giang",
+   "ngò gai",
+   "ngò om"
+  ]
+ },
+ {
+  "id": "canh-ca-khoai-la-giang",
+  "ten": "Canh cá khoai lá giang chua ngọt chuẩn vị miền Tây",
+  "ho_mon": "canh cá",
+  "hang": 27,
+  "thieu": [
+   "cá khoai",
+   "lá giang",
+   "ngò gai",
+   "ngò om"
+  ]
+ },
+ {
+  "id": "canh-ca-keo-rau-dang",
+  "ten": "Canh cá kèo rau đắng",
+  "ho_mon": "canh cá",
+  "hang": 28,
+  "thieu": [
+   "bắp chuối",
+   "cá kèo",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-ca-thac-lac-nau-hoa",
+  "ten": "Canh cá thác lác nấu hoa",
+  "ho_mon": "canh cá",
+  "hang": 29,
+  "thieu": [
+   "bông bí",
+   "bông hẹ",
+   "bông thiên lý",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-ca-hanh-vi-thai",
+  "ten": "Canh cá hanh vị Thái",
+  "ho_mon": "canh cá",
+  "hang": 30,
+  "thieu": [
+   "cà bi",
+   "cá hanh",
+   "lá lốt",
+   "mỡ gáy heo",
+   "ngó sen",
+   "rau quế",
+   "đậu rồng"
+  ]
+ },
+ {
+  "id": "cha-gio-tom-mayo",
+  "ten": "Chả Giò Tôm Mayo",
+  "ho_mon": "chả giò",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "cha-gio-cua",
+  "ten": "Chả giò cua",
+  "ho_mon": "chả giò",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "cha-gio-chien",
+  "ten": "Chả giò chiên",
+  "ho_mon": "chả giò",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "cha-gio-chuoi-2",
+  "ten": "Chả giò chuối",
+  "ho_mon": "chả giò",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "cha-gio-thanh-cua-mayo",
+  "ten": "Chả Giò Thanh Cua Mayo",
+  "ho_mon": "chả giò",
+  "hang": 5,
+  "thieu": [
+   "trứng cá chuồn"
+  ]
+ },
+ {
+  "id": "cha-gio-cua-thanh",
+  "ten": "Chả giò cua thanh",
+  "ho_mon": "chả giò",
+  "hang": 6,
+  "thieu": [
+   "cua giả"
+  ]
+ },
+ {
+  "id": "cha-gio-ca-chem",
+  "ten": "Chả giò cá chẽm",
+  "ho_mon": "chả giò",
+  "hang": 7,
+  "thieu": [
+   "cá chẽm fillet"
+  ]
+ },
+ {
+  "id": "cha-gio-ca",
+  "ten": "Chả giò cá",
+  "ho_mon": "chả giò",
+  "hang": 8,
+  "thieu": [
+   "bún tàu"
+  ]
+ },
+ {
+  "id": "cha-gio-khoai-tay-trung-muoi",
+  "ten": "Chả giò khoai tây trứng muối",
+  "ho_mon": "chả giò",
+  "hang": 9,
+  "thieu": [
+   "khoai tây tím"
+  ]
+ },
+ {
+  "id": "cha-gio-chay",
+  "ten": "Chả giò chay",
+  "ho_mon": "chả giò",
+  "hang": 10,
+  "thieu": [
+   "bún tàu"
+  ]
+ },
+ {
+  "id": "cha-gio-spaghetti",
+  "ten": "Chả giò Spaghetti",
+  "ho_mon": "chả giò",
+  "hang": 11,
+  "thieu": [
+   "cải thảo",
+   "thịt nguội"
+  ]
+ },
+ {
+  "id": "cha-gio-tau-hu-ky",
+  "ten": "Chả giò tàu hũ ky",
+  "ho_mon": "chả giò",
+  "hang": 12,
+  "thieu": [
+   "củ năng",
+   "lá tàu hủ ky"
+  ]
+ },
+ {
+  "id": "cha-gio-muc",
+  "ten": "Chả giò mực",
+  "ho_mon": "chả giò",
+  "hang": 13,
+  "thieu": [
+   "mỡ gáy",
+   "mực lá"
+  ]
+ },
+ {
+  "id": "cha-gio-trai-cay-xot-sau-rieng",
+  "ten": "Chả giò trái cây xốt sầu riêng",
+  "ho_mon": "chả giò",
+  "hang": 14,
+  "thieu": [
+   "dâu",
+   "thịt sầu riêng"
+  ]
+ },
+ {
+  "id": "cha-gio-so-diep-xot-trung-muoi",
+  "ten": "Chả Giò Sò Điệp Xốt Trứng Muối",
+  "ho_mon": "chả giò",
+  "hang": 15,
+  "thieu": [
+   "cồi sò điệp",
+   "phomai mozzarella"
+  ]
+ },
+ {
+  "id": "cha-gio-ca-chem-dua-luoi",
+  "ten": "Chả giò cá chẽm dưa lưới",
+  "ho_mon": "chả giò",
+  "hang": 16,
+  "thieu": [
+   "cá chẽm phi lê",
+   "hành poa-rô"
+  ]
+ },
+ {
+  "id": "cha-gio-sua",
+  "ten": "Chả giò sứa",
+  "ho_mon": "chả giò",
+  "hang": 17,
+  "thieu": [
+   "bắp hạt",
+   "sứa ngâm chua"
+  ]
+ },
+ {
+  "id": "cha-gio-ngu-vi-2",
+  "ten": "Chả Giò Ngũ Vị",
+  "ho_mon": "chả giò",
+  "hang": 18,
+  "thieu": [
+   "củ năng",
+   "da bò bía"
+  ]
+ },
+ {
+  "id": "cha-gio-rong-bien-chay",
+  "ten": "Chả giò rong biển chay",
+  "ho_mon": "chả giò",
+  "hang": 19,
+  "thieu": [
+   "bún tàu đậu xanh",
+   "củ năng"
+  ]
+ },
+ {
+  "id": "cha-gio-hau",
+  "ten": "Chả giò hàu",
+  "ho_mon": "chả giò",
+  "hang": 20,
+  "thieu": [
+   "hàu thịt",
+   "su hào",
+   "đầu hành"
+  ]
+ },
+ {
+  "id": "cha-gio-hai-san-pho-mai",
+  "ten": "Chả giò hải sản phô mai",
+  "ho_mon": "chả giò",
+  "hang": 21,
+  "thieu": [
+   "cua thanh",
+   "húng lủi",
+   "xoài ngọt"
+  ]
+ },
+ {
+  "id": "cha-gio-ngu-vi",
+  "ten": "Chả giò ngũ vị giòn tan, nhân thơm hấp dẫn",
+  "ho_mon": "chả giò",
+  "hang": 22,
+  "thieu": [
+   "củ năng",
+   "da bò bía",
+   "thịt bò",
+   "ớt tabasco"
+  ]
+ },
+ {
+  "id": "cha-gio-rong-bien",
+  "ten": "Chả giò rong biển",
+  "ho_mon": "chả giò",
+  "hang": 23,
+  "thieu": [
+   "củ năng",
+   "lòng trắng trứng",
+   "nạc dăm",
+   "tiêu sọ"
+  ]
+ },
+ {
+  "id": "salad-nui",
+  "ten": "Salad nui sốt mè rang thơm ngon, không ngán béo",
+  "ho_mon": "mè rang",
+  "hang": 1,
+  "thieu": [
+   "thịt nguội"
+  ]
+ },
+ {
+  "id": "salad-rong-nho-xot-me-rang",
+  "ten": "Salad rong nho xốt mè rang",
+  "ho_mon": "mè rang",
+  "hang": 2,
+  "thieu": [
+   "xốt mè aji-xốt",
+   "ăn trưa kèm"
+  ]
+ },
+ {
+  "id": "salad-bacon-xot-me-rang",
+  "ten": "Salad Bacon Xốt Mè Rang",
+  "ho_mon": "mè rang",
+  "hang": 3,
+  "thieu": [
+   "bacon xông khói",
+   "bắp hạt",
+   "xốt mè aji-xốt"
+  ]
+ },
+ {
+  "id": "salad-mi-udon-ca-hoi-xot-me-rang",
+  "ten": "Salad mì udon cá hồi xốt mè rang",
+  "ho_mon": "mè rang",
+  "hang": 4,
+  "thieu": [
+   "khác",
+   "xá lách",
+   "xốt mè aji-xốt"
+  ]
+ },
+ {
+  "id": "goi-buoi-thit-bo-xot-me-rang",
+  "ten": "Gỏi Bưởi Thịt Bò Xốt Mè Rang",
+  "ho_mon": "mè rang",
+  "hang": 5,
+  "thieu": [
+   "ca rốt",
+   "thịt bò file",
+   "xốt mè aji-xốt",
+   "ơt sừng"
+  ]
+ },
+ {
+  "id": "sandwiches-bo-xot-me-rang",
+  "ten": "Sandwiches bò xốt mè rang",
+  "ho_mon": "mè rang",
+  "hang": 6,
+  "thieu": [
+   "bánh mì sandwiches",
+   "thịt lõi vai bò mỹ",
+   "tôm khô",
+   "xốt mè aji-xốt"
+  ]
+ },
+ {
+  "id": "dau-tron-dau-giam-xot-me-rang",
+  "ten": "Đậu trộn dầu giấm xốt mè rang",
+  "ho_mon": "mè rang",
+  "hang": 7,
+  "thieu": [
+   "bắp hạt lon",
+   "salad iceberg",
+   "xốt mè",
+   "đậu gà lon"
+  ]
+ },
+ {
+  "id": "tom-xao-tau-xi",
+  "ten": "Tôm xào tàu xì",
+  "ho_mon": "tôm xào",
+  "hang": 1,
+  "thieu": [
+   "tương tàu xì"
+  ]
+ },
+ {
+  "id": "tom-xao-hanh-nhan-chay-2",
+  "ten": "Tôm Xào Hạnh Nhân Chay",
+  "ho_mon": "tôm xào",
+  "hang": 2,
+  "thieu": [
+   "bí ngòi vàng",
+   "hạnh nhân",
+   "tôm chay"
+  ]
+ },
+ {
+  "id": "tom-xao-hanh-nhan-chay",
+  "ten": "Tôm xào hạnh nhân chay",
+  "ho_mon": "tôm xào",
+  "hang": 3,
+  "thieu": [
+   "bí ngòi vàng",
+   "dầu hàu chay",
+   "hạnh nhân",
+   "tôm chay"
+  ]
+ },
+ {
+  "id": "canh-ngheu-mong-toi-2",
+  "ten": "Canh nghêu mồng tơi",
+  "ho_mon": "canh nghêu",
+  "hang": 1,
+  "thieu": [
+   "nghêu"
+  ]
+ },
+ {
+  "id": "canh-ngheu-kim-chi-tia-to",
+  "ten": "Canh nghêu kim chi tía tô",
+  "ho_mon": "canh nghêu",
+  "hang": 2,
+  "thieu": [
+   "thịt nghêu"
+  ]
+ },
+ {
+  "id": "canh-ngheu-kim-cham",
+  "ten": "Canh nghêu kim châm",
+  "ho_mon": "canh nghêu",
+  "hang": 3,
+  "thieu": [
+   "nghêu"
+  ]
+ },
+ {
+  "id": "canh-ngheu-nau-nam",
+  "ten": "Canh Nghêu Nấu Nấm",
+  "ho_mon": "canh nghêu",
+  "hang": 4,
+  "thieu": [
+   "nghêu sống",
+   "rau tần ô"
+  ]
+ },
+ {
+  "id": "canh-ngheu-mang-le-vi-lau-thai",
+  "ten": "Canh nghêu măng le vị lẩu thái",
+  "ho_mon": "canh nghêu",
+  "hang": 5,
+  "thieu": [
+   "măng le",
+   "thịt nghêu"
+  ]
+ },
+ {
+  "id": "canh-ngheu-bo-xoi",
+  "ten": "Canh nghêu bó xôi",
+  "ho_mon": "canh nghêu",
+  "hang": 6,
+  "thieu": [
+   "bó xôi",
+   "gừng cạo vỏ",
+   "nghêu",
+   "tương đậu nành",
+   "đâu hũ non"
+  ]
+ },
+ {
+  "id": "cai-ngong-xao-nam",
+  "ten": "Cải ngồng xào nấm",
+  "ho_mon": "xào nấm",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "rau-cu-xao-nam-loc-nhung",
+  "ten": "Rau Củ Xào Nấm Lộc Nhung",
+  "ho_mon": "xào nấm",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "cai-ro-xao-nam-mayonnaise",
+  "ten": "Cải rổ xào nấm Mayonnaise",
+  "ho_mon": "xào nấm",
+  "hang": 3,
+  "thieu": [
+   "cải rổ"
+  ]
+ },
+ {
+  "id": "cai-thia-xao-nam-dong-co-thit-cua",
+  "ten": "Cải thìa xào nấm đông cô thịt cua thanh ngọt dễ làm",
+  "ho_mon": "xào nấm",
+  "hang": 4,
+  "thieu": [
+   "thịt vế cua"
+  ]
+ },
+ {
+  "id": "thit-ba-roi-xao-nam",
+  "ten": "Thịt ba rọi xào nấm",
+  "ho_mon": "xào nấm",
+  "hang": 5,
+  "thieu": [
+   "xốt tương"
+  ]
+ },
+ {
+  "id": "tau-hu-ky-xao-nam",
+  "ten": "Tàu hũ ky xào nấm",
+  "ho_mon": "xào nấm",
+  "hang": 6,
+  "thieu": [
+   "tiêu sọ bể"
+  ]
+ },
+ {
+  "id": "muc-xao-nam-huong",
+  "ten": "Mực xào nấm hương",
+  "ho_mon": "xào nấm",
+  "hang": 7,
+  "thieu": [
+   "củ năng",
+   "dầu màu điều",
+   "mực lá",
+   "tép tỏi"
+  ]
+ },
+ {
+  "id": "mi-efu-xao-nam-tra",
+  "ten": "Mì EFU xào nấm trà",
+  "ho_mon": "xào nấm",
+  "hang": 8,
+  "thieu": [
+   "bò chay",
+   "mì efu",
+   "nấm bạch tuyết",
+   "nấm trà khô"
+  ]
+ },
+ {
+  "id": "canh-ga-cai-bo-xoi",
+  "ten": "Canh gà cải bó xôi",
+  "ho_mon": "canh gà",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "canh-ga-nau-khoai-tay",
+  "ten": "Canh gà nấu khoai tây",
+  "ho_mon": "canh gà",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "canh-ga-bi-xanh",
+  "ten": "Canh gà bí xanh",
+  "ho_mon": "canh gà",
+  "hang": 3,
+  "thieu": [
+   "gà ta"
+  ]
+ },
+ {
+  "id": "canh-ga-nau-bong-cai-2",
+  "ten": "Canh gà nấu bông cải",
+  "ho_mon": "canh gà",
+  "hang": 4,
+  "thieu": [
+   "thịt gà"
+  ]
+ },
+ {
+  "id": "canh-ga-huong-vi-thai",
+  "ten": "Canh gà hương vị thái",
+  "ho_mon": "canh gà",
+  "hang": 5,
+  "thieu": [
+   "lòng gà"
+  ]
+ },
+ {
+  "id": "canh-ga-mang-chua",
+  "ten": "Canh gà măng chua",
+  "ho_mon": "canh gà",
+  "hang": 6,
+  "thieu": [
+   "măng chua",
+   "ngò gai"
+  ]
+ },
+ {
+  "id": "canh-ga-quay-tam-sac",
+  "ten": "Canh gà quay tam sắc",
+  "ho_mon": "canh gà",
+  "hang": 7,
+  "thieu": [
+   "gà quay",
+   "măng chua"
+  ]
+ },
+ {
+  "id": "canh-ga-cuon-cai-thao",
+  "ten": "Canh gà cuộn cải thảo",
+  "ho_mon": "canh gà",
+  "hang": 8,
+  "thieu": [
+   "cải thảo",
+   "thịt má đùi gà lóc xương"
+  ]
+ },
+ {
+  "id": "canh-ga-hat-luu",
+  "ten": "Canh gà hạt lựu",
+  "ho_mon": "canh gà",
+  "hang": 9,
+  "thieu": [
+   "gà ta",
+   "đậu petit pois"
+  ]
+ },
+ {
+  "id": "canh-ga-nau-khoai-mon",
+  "ten": "Canh gà nấu khoai môn",
+  "ho_mon": "canh gà",
+  "hang": 10,
+  "thieu": [
+   "khoai môn cao",
+   "nước cốt hành tím"
+  ]
+ },
+ {
+  "id": "canh-ga-thuoc-bac",
+  "ten": "Canh gà thuốc bắc",
+  "ho_mon": "canh gà",
+  "hang": 11,
+  "thieu": [
+   "gà ta",
+   "thuốc bắc"
+  ]
+ },
+ {
+  "id": "canh-ga-nam-mo",
+  "ten": "Bí quyết nấu canh gà nấm mỡ ngọt bùi bổ dưỡng",
+  "ho_mon": "canh gà",
+  "hang": 12,
+  "thieu": [
+   "hành ngò",
+   "nấm mỡ"
+  ]
+ },
+ {
+  "id": "canh-ga-nam-mo-2",
+  "ten": "Canh gà nấm mỡ",
+  "ho_mon": "canh gà",
+  "hang": 13,
+  "thieu": [
+   "nấm mỡ",
+   "tôm hấp đông lạnh"
+  ]
+ },
+ {
+  "id": "canh-ga-nau-nho",
+  "ten": "Canh gà nấu nho",
+  "ho_mon": "canh gà",
+  "hang": 14,
+  "thieu": [
+   "bí ngòi vàng",
+   "đậu bi"
+  ]
+ },
+ {
+  "id": "canh-ga-nam-huong-cu-sam-dat",
+  "ten": "Nấu canh gà nấm hương củ sâm đất thanh ngọt, bổ dưỡng",
+  "ho_mon": "canh gà",
+  "hang": 15,
+  "thieu": [
+   "củ sâm đất",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "canh-ga-mang-chua-la-giang",
+  "ten": "Canh gà măng chua lá giang",
+  "ho_mon": "canh gà",
+  "hang": 16,
+  "thieu": [
+   "gà ta",
+   "lá giang",
+   "măng chua"
+  ]
+ },
+ {
+  "id": "canh-ga-la-que",
+  "ten": "Canh gà lá quế",
+  "ho_mon": "canh gà",
+  "hang": 17,
+  "thieu": [
+   "gà ta",
+   "ngò gai",
+   "rau quế"
+  ]
+ },
+ {
+  "id": "canh-ga-cu-sen",
+  "ten": "Canh Gà Củ Sen",
+  "ho_mon": "canh gà",
+  "hang": 18,
+  "thieu": [
+   "gà ta góc tư",
+   "hành ngò",
+   "kỷ tử"
+  ]
+ },
+ {
+  "id": "canh-ga-la-e",
+  "ten": "Canh gà lá é",
+  "ho_mon": "canh gà",
+  "hang": 19,
+  "thieu": [
+   "gà ta",
+   "lá é trắng",
+   "muối hột"
+  ]
+ },
+ {
+  "id": "canh-ga-la-me-non",
+  "ten": "Canh gà lá me non",
+  "ho_mon": "canh gà",
+  "hang": 20,
+  "thieu": [
+   "gà ta",
+   "lá me non",
+   "ngó sen",
+   "tỏi dầu"
+  ]
+ },
+ {
+  "id": "canh-ga-tu-quy",
+  "ten": "Canh gà tứ quý",
+  "ho_mon": "canh gà",
+  "hang": 21,
+  "thieu": [
+   "gà ta",
+   "đậu ngự",
+   "đậu phộng",
+   "đậu đỏ"
+  ]
+ },
+ {
+  "id": "canh-ga-moc-vien",
+  "ten": "Canh gà mọc viên",
+  "ho_mon": "canh gà",
+  "hang": 22,
+  "thieu": [
+   "củ từ",
+   "gà ta",
+   "mộc nhĩ",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "com-gao-lut-tron",
+  "ten": "Bí quyết làm cơm gạo lứt trộn dinh dưỡng thơm ngon",
+  "ho_mon": "cơm gạo",
+  "hang": 1,
+  "thieu": [
+   "ham chay"
+  ]
+ },
+ {
+  "id": "com-gao-lut-tron-2",
+  "ten": "Cơm gạo lứt trộn",
+  "ho_mon": "cơm gạo",
+  "hang": 2,
+  "thieu": [
+   "gạo thường",
+   "đậu pháp"
+  ]
+ },
+ {
+  "id": "com-gao-lut-chien-ngheu",
+  "ten": "Cơm Gạo Lứt Chiên Nghêu",
+  "ho_mon": "cơm gạo",
+  "hang": 3,
+  "thieu": [
+   "nghêu",
+   "ngò đường",
+   "đậu cô ve"
+  ]
+ },
+ {
+  "id": "com-gao-luc-chien-ngheu",
+  "ten": "Cơm gạo lức chiên nghêu",
+  "ho_mon": "cơm gạo",
+  "hang": 4,
+  "thieu": [
+   "nghêu",
+   "ngò đường",
+   "đậu cô ve"
+  ]
+ },
+ {
+  "id": "com-gao-lut-hat-sen",
+  "ten": "Cơm gạo lứt hạt sen",
+  "ho_mon": "cơm gạo",
+  "hang": 5,
+  "thieu": [
+   "khoai môn cau",
+   "lá dứa",
+   "đậu que"
+  ]
+ },
+ {
+  "id": "com-gao-luc-tron-rau-cu",
+  "ten": "Cơm gạo lức trộn rau củ",
+  "ho_mon": "cơm gạo",
+  "hang": 6,
+  "thieu": [
+   "cơm gạo lức sấy giòn",
+   "sườn chay",
+   "đậu cô ve"
+  ]
+ },
+ {
+  "id": "canh-suon-cai-chua",
+  "ten": "Canh sườn cải chua",
+  "ho_mon": "canh sườn",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "canh-suon-hat-sen",
+  "ten": "Canh Sườn Hạt Sen",
+  "ho_mon": "canh sườn",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "canh-suon-bo-han-quoc",
+  "ten": "Canh sườn bò Hàn Quốc",
+  "ho_mon": "canh sườn",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "canh-suon-hat-sen-2",
+  "ten": "Canh sườn hạt sen",
+  "ho_mon": "canh sườn",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "canh-suon-cu-sen-a-ti-so",
+  "ten": "CANH SƯỜN CỦ SEN A-TI-SÔ",
+  "ho_mon": "canh sườn",
+  "hang": 5,
+  "thieu": [
+   "bông a-ti-sô"
+  ]
+ },
+ {
+  "id": "canh-suon-non-tao-do",
+  "ten": "Canh sườn non táo đỏ",
+  "ho_mon": "canh sườn",
+  "hang": 6,
+  "thieu": [
+   "hành ngò"
+  ]
+ },
+ {
+  "id": "canh-suon-dau-phong-xa-bau",
+  "ten": "Canh sườn đậu phộng xá bấu",
+  "ho_mon": "canh sườn",
+  "hang": 7,
+  "thieu": [
+   "xá bấu",
+   "đậu phộng sống"
+  ]
+ },
+ {
+  "id": "canh-suon-cu-cai-muoi",
+  "ten": "Canh sườn củ cải muối",
+  "ho_mon": "canh sườn",
+  "hang": 8,
+  "thieu": [
+   "câu kỷ tử",
+   "cải muối"
+  ]
+ },
+ {
+  "id": "canh-suon-nha-dam",
+  "ten": "Canh sườn nha đam",
+  "ho_mon": "canh sườn",
+  "hang": 9,
+  "thieu": [
+   "kỷ tử",
+   "nha đam"
+  ]
+ },
+ {
+  "id": "canh-suon-gyoza",
+  "ten": "Canh Sườn Gyoza",
+  "ho_mon": "canh sườn",
+  "hang": 10,
+  "thieu": [
+   "bánh xếp kiểu nhật gyoza",
+   "ca rốt",
+   "tôm khô ngon"
+  ]
+ },
+ {
+  "id": "canh-suon-bo-cu-sen",
+  "ten": "Canh sườn bò củ sen",
+  "ho_mon": "canh sườn",
+  "hang": 11,
+  "thieu": [
+   "kỷ tử",
+   "nêm sẵn phở bò",
+   "đảng sâm"
+  ]
+ },
+ {
+  "id": "canh-suon-non-xuyen-tieu",
+  "ten": "Canh sườn non xuyên tiêu",
+  "ho_mon": "canh sườn",
+  "hang": 12,
+  "thieu": [
+   "kỷ tử",
+   "xuyên tiêu",
+   "đẳng sâm"
+  ]
+ },
+ {
+  "id": "canh-suon-khoai-so",
+  "ten": "Canh sườn khoai sọ",
+  "ho_mon": "canh sườn",
+  "hang": 13,
+  "thieu": [
+   "khoai sọ",
+   "ngò gai",
+   "ngò om",
+   "đầu hành"
+  ]
+ },
+ {
+  "id": "canh-suon-mit-non-trai-va",
+  "ten": "Canh sườn mít non trái vả",
+  "ho_mon": "canh sườn",
+  "hang": 14,
+  "thieu": [
+   "bắp chuối xanh",
+   "kỷ tử",
+   "lá lốt",
+   "mít non",
+   "trái vả"
+  ]
+ },
+ {
+  "id": "ga-nuong-sa",
+  "ten": "Gà Nướng Sả",
+  "ho_mon": "gà nướng",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "canh-ga-nuong-cay",
+  "ten": "Cánh gà nướng cay",
+  "ho_mon": "gà nướng",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "com-ga-nuong-nuoc-tuong",
+  "ten": "Cơm gà nướng nước tương",
+  "ho_mon": "gà nướng",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "ga-nuong-nam-linh-chi",
+  "ten": "Gà nướng nấm linh chi",
+  "ho_mon": "gà nướng",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "thit-ga-nuong",
+  "ten": "Thịt gà nướng",
+  "ho_mon": "gà nướng",
+  "hang": 5,
+  "thieu": [
+   "dầu màu điều"
+  ]
+ },
+ {
+  "id": "ga-nuong-xien-2",
+  "ten": "Gà nướng xiên",
+  "ho_mon": "gà nướng",
+  "hang": 6,
+  "thieu": [
+   "xốt mè aji-xốt"
+  ]
+ },
+ {
+  "id": "ga-nuong-noi-dat",
+  "ten": "Cách làm gà nướng nồi đất thơm ngon dễ làm tại nhà",
+  "ho_mon": "gà nướng",
+  "hang": 7,
+  "thieu": [
+   "lá chanh"
+  ]
+ },
+ {
+  "id": "ga-nuong-teriyaki",
+  "ten": "Gà nướng Teriyaki",
+  "ho_mon": "gà nướng",
+  "hang": 8,
+  "thieu": [
+   "rượu nếp"
+  ]
+ },
+ {
+  "id": "ga-nuong-buoi-xot-giam",
+  "ten": "Gà nướng bưởi xốt giấm",
+  "ho_mon": "gà nướng",
+  "hang": 9,
+  "thieu": [
+   "bưởi năm roi"
+  ]
+ },
+ {
+  "id": "salad-ga-nuong-2",
+  "ten": "Bỏ túi mẹo làm salad gà nướng đậm đà hấp dẫn cho Bé",
+  "ho_mon": "gà nướng",
+  "hang": 10,
+  "thieu": [
+   "nướng tương"
+  ]
+ },
+ {
+  "id": "ga-nuong-chanh-sa-mayo",
+  "ten": "Gà Nướng Chanh Sả Mayo",
+  "ho_mon": "gà nướng",
+  "hang": 11,
+  "thieu": [
+   "lá chúc"
+  ]
+ },
+ {
+  "id": "salad-ga-nuong-thom",
+  "ten": "Salad gà nướng thơm",
+  "ho_mon": "gà nướng",
+  "hang": 12,
+  "thieu": [
+   "nướng tương"
+  ]
+ },
+ {
+  "id": "ga-nuong-lua-trai",
+  "ten": "Gà nướng lửa trại",
+  "ho_mon": "gà nướng",
+  "hang": 13,
+  "thieu": [
+   "gà đùi",
+   "rượu mai quế lộ"
+  ]
+ },
+ {
+  "id": "ga-nuong-chao",
+  "ten": "Gà nướng chảo",
+  "ho_mon": "gà nướng",
+  "hang": 14,
+  "thieu": [
+   "hạt ngò",
+   "vỏ chanh vàng mài"
+  ]
+ },
+ {
+  "id": "ga-nuong-noi-dat-2",
+  "ten": "Gà nướng nồi đất",
+  "ho_mon": "gà nướng",
+  "hang": 15,
+  "thieu": [
+   "lá chanh bắc",
+   "xốt phô mai cay aji-xốt"
+  ]
+ },
+ {
+  "id": "ga-nuong-xien",
+  "ten": "Cách làm gà nướng xiên ngon đậm vị không bị khô",
+  "ho_mon": "gà nướng",
+  "hang": 16,
+  "thieu": [
+   "que xiên",
+   "rượu nếp"
+  ]
+ },
+ {
+  "id": "ga-nuong-tao-2",
+  "ten": "Gà nướng táo",
+  "ho_mon": "gà nướng",
+  "hang": 17,
+  "thieu": [
+   "gà góc tư",
+   "rượu vang trắng"
+  ]
+ },
+ {
+  "id": "salad-ga-nuong-3",
+  "ten": "Salad gà nướng",
+  "ho_mon": "gà nướng",
+  "hang": 18,
+  "thieu": [
+   "gà nướng topping",
+   "lá quế"
+  ]
+ },
+ {
+  "id": "goi-ga-nuong-trai-dua",
+  "ten": "Gỏi gà nướng trái dừa",
+  "ho_mon": "gà nướng",
+  "hang": 19,
+  "thieu": [
+   "riềng",
+   "đu đủ"
+  ]
+ },
+ {
+  "id": "xoi-ga-nuong",
+  "ten": "Xôi gà nướng",
+  "ho_mon": "gà nướng",
+  "hang": 20,
+  "thieu": [
+   "bột nghệ",
+   "mỡ gà",
+   "thịt gà ta"
+  ]
+ },
+ {
+  "id": "dui-ga-nuong-ruou",
+  "ten": "Đùi gà nướng rượu",
+  "ho_mon": "gà nướng",
+  "hang": 21,
+  "thieu": [
+   "hạt mắc khén",
+   "mỡ gà thắng",
+   "rượu mai quế lộ"
+  ]
+ },
+ {
+  "id": "ga-nuong-xien-xot-dau-phong",
+  "ten": "Gà nướng xiên xốt đậu phộng",
+  "ho_mon": "gà nướng",
+  "hang": 22,
+  "thieu": [
+   "bột nghệ",
+   "nước cốt me",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "ga-nuong-co-xa-huong",
+  "ten": "Gà nướng cỏ xạ hương",
+  "ho_mon": "gà nướng",
+  "hang": 23,
+  "thieu": [
+   "cỏ xạ hương",
+   "húng lủi",
+   "muối hột"
+  ]
+ },
+ {
+  "id": "ga-nuong-xi-muoi",
+  "ten": "Gà nướng xí muội",
+  "ho_mon": "gà nướng",
+  "hang": 24,
+  "thieu": [
+   "gà ta",
+   "nước cốt hành tỏi",
+   "quả xí muội đã ngâm",
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "salad-ga-nuong",
+  "ten": "Salad bơ gà nướng",
+  "ho_mon": "gà nướng",
+  "hang": 25,
+  "thieu": [
+   "bơ sáp",
+   "lá chanh",
+   "salad romaine",
+   "vỏ chanh vàng mài"
+  ]
+ },
+ {
+  "id": "ga-nuong-la-hung-lui",
+  "ten": "Gà nướng lá húng lủi",
+  "ho_mon": "gà nướng",
+  "hang": 26,
+  "thieu": [
+   "bột cumin",
+   "cọng ngò",
+   "dầu màu điều",
+   "gà ta",
+   "lá húng lủi",
+   "màu gạch tôm"
+  ]
+ },
+ {
+  "id": "ca-vien-chien",
+  "ten": "Cá viên chiên",
+  "ho_mon": "viên chiên",
+  "hang": 1,
+  "thieu": [
+   "tương đỏ"
+  ]
+ },
+ {
+  "id": "khoai-tay-vien-chien-xu",
+  "ten": "Khoai tây viên chiên xù",
+  "ho_mon": "viên chiên",
+  "hang": 2,
+  "thieu": [
+   "bột xù"
+  ]
+ },
+ {
+  "id": "heo-vien-chien-xu",
+  "ten": "Heo viên chiên xù",
+  "ho_mon": "viên chiên",
+  "hang": 3,
+  "thieu": [
+   "bột xù",
+   "củ năng"
+  ]
+ },
+ {
+  "id": "ga-vien-chien",
+  "ten": "Gà viên chiên",
+  "ho_mon": "viên chiên",
+  "hang": 4,
+  "thieu": [
+   "bột xù",
+   "ngò tây",
+   "thịt gà"
+  ]
+ },
+ {
+  "id": "xoi-vien-chien-nhan-thap-cam",
+  "ten": "Xôi Viên Chiên Nhân Thập Cẩm",
+  "ho_mon": "viên chiên",
+  "hang": 5,
+  "thieu": [
+   "lòng đỏ trứng muối",
+   "tương xí muội",
+   "xôi"
+  ]
+ },
+ {
+  "id": "dau-bap-xao-tom",
+  "ten": "Đậu bắp xào tôm",
+  "ho_mon": "xào tôm",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "bong-thien-ly-xao-tom",
+  "ten": "Bông thiên lý xào tôm",
+  "ho_mon": "xào tôm",
+  "hang": 2,
+  "thieu": [
+   "bông thiên lý"
+  ]
+ },
+ {
+  "id": "bon-bon-xao-tom",
+  "ten": "Bồn bồn xào tôm",
+  "ho_mon": "xào tôm",
+  "hang": 3,
+  "thieu": [
+   "bồn bồn muối chua"
+  ]
+ },
+ {
+  "id": "dot-su-xao-tom-2",
+  "ten": "Đọt Su Xào Tôm",
+  "ho_mon": "xào tôm",
+  "hang": 4,
+  "thieu": [
+   "bóc vỏ"
+  ]
+ },
+ {
+  "id": "dau-dua-xao-tom",
+  "ten": "Đậu đũa xào tôm",
+  "ho_mon": "xào tôm",
+  "hang": 5,
+  "thieu": [
+   "đậu đũa"
+  ]
+ },
+ {
+  "id": "mi-nua-xao-tom-nam",
+  "ten": "Mì nưa xào tôm nấm",
+  "ho_mon": "xào tôm",
+  "hang": 6,
+  "thieu": [
+   "mì nưa"
+  ]
+ },
+ {
+  "id": "cai-xoong-xao-tom",
+  "ten": "Cải xoong xào tôm",
+  "ho_mon": "xào tôm",
+  "hang": 7,
+  "thieu": [
+   "cải xoong"
+  ]
+ },
+ {
+  "id": "mi-spaghetti-xao-tom-nam",
+  "ten": "Mì spaghetti xào tôm nấm",
+  "ho_mon": "xào tôm",
+  "hang": 8,
+  "thieu": [
+   "hẹ bông"
+  ]
+ },
+ {
+  "id": "du-du-huong-xao-tom-dat",
+  "ten": "Đu đủ hường xào tôm đất",
+  "ho_mon": "xào tôm",
+  "hang": 9,
+  "thieu": [
+   "tôm đất",
+   "đu đủ hường"
+  ]
+ },
+ {
+  "id": "dot-su-xao-tom",
+  "ten": "Đọt su xào tôm",
+  "ho_mon": "xào tôm",
+  "hang": 10,
+  "thieu": [
+   "bóc vỏ",
+   "muối trang trí"
+  ]
+ },
+ {
+  "id": "dau-dua-xao-tom-thit",
+  "ten": "Đậu đũa xào tôm thịt",
+  "ho_mon": "xào tôm",
+  "hang": 11,
+  "thieu": [
+   "tôm khô",
+   "đậu đũa"
+  ]
+ },
+ {
+  "id": "cai-thao-xao-tom-kho",
+  "ten": "Cải thảo xào tôm khô",
+  "ho_mon": "xào tôm",
+  "hang": 12,
+  "thieu": [
+   "cải thảo",
+   "tôm khô"
+  ]
+ },
+ {
+  "id": "ca-tim-xao-tom-thit",
+  "ten": "Cà tím xào tôm thịt",
+  "ho_mon": "xào tôm",
+  "hang": 13,
+  "thieu": [
+   "bột nghệ",
+   "lá lốt"
+  ]
+ },
+ {
+  "id": "mang-tay-xao-tom",
+  "ten": "Măng tây xào tôm",
+  "ho_mon": "xào tôm",
+  "hang": 14,
+  "thieu": [
+   "lá oregano khô",
+   "ngò tây"
+  ]
+ },
+ {
+  "id": "mang-tay-xao-tom-muc",
+  "ten": "Măng tây xào tôm mực",
+  "ho_mon": "xào tôm",
+  "hang": 15,
+  "thieu": [
+   "mực lá",
+   "tôm đông lạnh",
+   "ớt đà lạt vàng đỏ"
+  ]
+ },
+ {
+  "id": "mi-linguine-xao-tom-bap",
+  "ten": "Mì Linguine xào tôm bắp",
+  "ho_mon": "xào tôm",
+  "hang": 16,
+  "thieu": [
+   "lá quế tây",
+   "mì linguine dẹp",
+   "đậu bi bo"
+  ]
+ },
+ {
+  "id": "cu-nang-xao-tom-thit",
+  "ten": "Củ năng xào tôm thịt",
+  "ho_mon": "xào tôm",
+  "hang": 17,
+  "thieu": [
+   "củ năng",
+   "thịt nạc lưng",
+   "ớt đà lạt vàng",
+   "ớt đà lạt xanh",
+   "ớt đà lạt đỏ"
+  ]
+ },
+ {
+  "id": "cha-ca-kho-van-trung-2",
+  "ten": "Chả Cá Kho Vân Trứng",
+  "ho_mon": "chả cá",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "cha-ca-kho-van-trung",
+  "ten": "Chả cá kho vân trứng",
+  "ho_mon": "chả cá",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "dau-bap-nhoi-cha-ca-chien",
+  "ten": "Đậu bắp nhồi chả cá chiên",
+  "ho_mon": "chả cá",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "canh-cua-cha-ca",
+  "ten": "Canh cua chả cá",
+  "ho_mon": "chả cá",
+  "hang": 4,
+  "thieu": [
+   "cải xoong"
+  ]
+ },
+ {
+  "id": "cha-ca-chien-banh-trang",
+  "ten": "Chả cá chiên bánh tráng",
+  "ho_mon": "chả cá",
+  "hang": 5,
+  "thieu": [
+   "su hào"
+  ]
+ },
+ {
+  "id": "cha-ca-thi-la",
+  "ten": "Chả cá thì là",
+  "ho_mon": "chả cá",
+  "hang": 6,
+  "thieu": [
+   "đầu hành hoa"
+  ]
+ },
+ {
+  "id": "cha-ca-kho-chua-cay",
+  "ten": "Chả cá kho chua cay",
+  "ho_mon": "chả cá",
+  "hang": 7,
+  "thieu": [
+   "tiêu sọ"
+  ]
+ },
+ {
+  "id": "cha-ca-thu-chien-la-lot",
+  "ten": "Chả cá thu chiên lá lốt",
+  "ho_mon": "chả cá",
+  "hang": 8,
+  "thieu": [
+   "lá lốt"
+  ]
+ },
+ {
+  "id": "cha-ca-ngu-sac",
+  "ten": "Chả cá ngũ sắc",
+  "ho_mon": "chả cá",
+  "hang": 9,
+  "thieu": [
+   "bắp hạt",
+   "xốt phô mai cay aji-xốt"
+  ]
+ },
+ {
+  "id": "cha-ca-loc-xot-mayo-mat-ong",
+  "ten": "Chả cá lóc xốt mayo mật ong",
+  "ho_mon": "chả cá",
+  "hang": 10,
+  "thieu": [
+   "chả quết heo",
+   "lá lốt"
+  ]
+ },
+ {
+  "id": "cu-sen-kep-cha-ca-basa",
+  "ten": "Củ sen kẹp chả cá basa",
+  "ho_mon": "chả cá",
+  "hang": 11,
+  "thieu": [
+   "bột xù",
+   "cọng ngò"
+  ]
+ },
+ {
+  "id": "cha-ca-thac-lac-boc-cu-qua-chien",
+  "ten": "Chả cá thác lác bọc củ quả chiên",
+  "ho_mon": "chả cá",
+  "hang": 12,
+  "thieu": [
+   "bột xù",
+   "lá chanh bắc"
+  ]
+ },
+ {
+  "id": "bun-cha-ca",
+  "ten": "Bún chả cá",
+  "ho_mon": "chả cá",
+  "hang": 13,
+  "thieu": [
+   "cơm mẻ",
+   "dọc mùng"
+  ]
+ },
+ {
+  "id": "cha-ca-la-vong",
+  "ten": "Chả cá Lã Vọng",
+  "ho_mon": "chả cá",
+  "hang": 14,
+  "thieu": [
+   "lạc",
+   "nước cốt gừng",
+   "riềng"
+  ]
+ },
+ {
+  "id": "cha-ca-chien-com",
+  "ten": "Chả cá chiên cốm",
+  "ho_mon": "chả cá",
+  "hang": 15,
+  "thieu": [
+   "cốm dẹp màu xanh",
+   "tiêu sọ",
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "cha-ca-ha-noi-2",
+  "ten": "Chả cá Hà Nội",
+  "ho_mon": "chả cá",
+  "hang": 16,
+  "thieu": [
+   "cơm mẻ",
+   "mạch nha",
+   "mỡ nước",
+   "phi lê cá lăng",
+   "tinh dầu cà cuống",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "kho-qua-xao-tom",
+  "ten": "Khổ qua xào tôm",
+  "ho_mon": "khổ qua",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "kho-qua-deo-kho-nam",
+  "ten": "Khổ qua đèo kho nấm",
+  "ho_mon": "khổ qua",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "lau-ca-thac-lac-kho-qua-2",
+  "ten": "Lẩu cá thác lác khổ qua",
+  "ho_mon": "khổ qua",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "lau-ca-thac-lac-kho-qua",
+  "ten": "Lẩu cá thác lác khổ qua chua ngọt chuẩn vị miền Tây",
+  "ho_mon": "khổ qua",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "kho-qua-xao-cha-ca",
+  "ten": "Khổ qua xào chả cá",
+  "ho_mon": "khổ qua",
+  "hang": 5,
+  "thieu": [
+   "lá quế"
+  ]
+ },
+ {
+  "id": "thit-kho-kho-qua-tay",
+  "ten": "Thịt kho khổ qua tây",
+  "ho_mon": "khổ qua",
+  "hang": 6,
+  "thieu": [
+   "tôm khô"
+  ]
+ },
+ {
+  "id": "kho-qua-xao-trung-thit-bam",
+  "ten": "Khổ qua xào trứng thịt bằm",
+  "ho_mon": "khổ qua",
+  "hang": 7,
+  "thieu": [
+   "trứng muối"
+  ]
+ },
+ {
+  "id": "bo-xao-kho-qua-bap-cai-tim",
+  "ten": "Bò xào khổ qua bắp cải tím",
+  "ho_mon": "khổ qua",
+  "hang": 8,
+  "thieu": [
+   "thịt bò phi lê"
+  ]
+ },
+ {
+  "id": "canh-kho-qua-ham-thit",
+  "ten": "Canh khổ qua hầm thịt",
+  "ho_mon": "khổ qua",
+  "hang": 9,
+  "thieu": [
+   "bún tàu"
+  ]
+ },
+ {
+  "id": "kho-qua-chien-me-cay",
+  "ten": "Khổ qua chiên me cay",
+  "ho_mon": "khổ qua",
+  "hang": 10,
+  "thieu": [
+   "nước cốt me"
+  ]
+ },
+ {
+  "id": "kho-qua-kho-chay",
+  "ten": "Khổ qua kho chay",
+  "ho_mon": "khổ qua",
+  "hang": 11,
+  "thieu": [
+   "bún tàu"
+  ]
+ },
+ {
+  "id": "kho-qua-nhoi-nam-kho-nuoc-tuong",
+  "ten": "Khổ qua nhồi nấm kho nước tương",
+  "ho_mon": "khổ qua",
+  "hang": 12,
+  "thieu": [
+   "dâù ăn"
+  ]
+ },
+ {
+  "id": "lau-kho-qua-hai-san",
+  "ten": "Lẩu khổ qua hải sản",
+  "ho_mon": "khổ qua",
+  "hang": 13,
+  "thieu": [
+   "tôm đất"
+  ]
+ },
+ {
+  "id": "kho-qua-hap-tam-co",
+  "ten": "Khổ qua hấp tam cô",
+  "ho_mon": "khổ qua",
+  "hang": 14,
+  "thieu": [
+   "hạnh nhân"
+  ]
+ },
+ {
+  "id": "kho-qua-xao-chay",
+  "ten": "Khổ qua xào chay",
+  "ho_mon": "khổ qua",
+  "hang": 15,
+  "thieu": [
+   "bò chay"
+  ]
+ },
+ {
+  "id": "canh-dot-kho-qua-rung-tom-tha",
+  "ten": "Canh đọt khổ qua rừng tôm thả",
+  "ho_mon": "khổ qua",
+  "hang": 16,
+  "thieu": [
+   "tiêu sọ bể",
+   "đọt khổ qua rừng"
+  ]
+ },
+ {
+  "id": "kho-qua-tay-xao-thit-bo-2",
+  "ten": "Khổ Qua Tây Xào Thịt Bò",
+  "ho_mon": "khổ qua",
+  "hang": 17,
+  "thieu": [
+   "thông thường",
+   "thịt bò"
+  ]
+ },
+ {
+  "id": "kho-qua-tay-xao-thit-bo",
+  "ten": "Khổ qua tây xào thịt bò",
+  "ho_mon": "khổ qua",
+  "hang": 18,
+  "thieu": [
+   "thông thường",
+   "thịt bò"
+  ]
+ },
+ {
+  "id": "ngheu-xao-la-kho-qua",
+  "ten": "Nghêu xào lá khổ qua",
+  "ho_mon": "khổ qua",
+  "hang": 19,
+  "thieu": [
+   "lá khổ qua rừng",
+   "nghêu"
+  ]
+ },
+ {
+  "id": "canh-cua-kho-qua-2",
+  "ten": "Canh cua khổ qua",
+  "ho_mon": "khổ qua",
+  "hang": 20,
+  "thieu": [
+   "gạch để riêng",
+   "ngò gai"
+  ]
+ },
+ {
+  "id": "goi-kho-qua-ca-kho",
+  "ten": "Gỏi khổ qua cá khô",
+  "ho_mon": "khổ qua",
+  "hang": 21,
+  "thieu": [
+   "húng lủi",
+   "rau mầm"
+  ]
+ },
+ {
+  "id": "goi-kho-qua",
+  "ten": "Gỏi khổ qua",
+  "ho_mon": "khổ qua",
+  "hang": 22,
+  "thieu": [
+   "bánh phồng tôm",
+   "chà bông heo"
+  ]
+ },
+ {
+  "id": "muc-tron-kho-qua-chua-ngot",
+  "ten": "Mực trộn khổ qua chua ngọt",
+  "ho_mon": "khổ qua",
+  "hang": 23,
+  "thieu": [
+   "bánh phồng tôm chiên",
+   "lá chanh bắc",
+   "mực lá"
+  ]
+ },
+ {
+  "id": "ba-roi-kho-mang",
+  "ten": "Ba rọi kho măng: Món ăn \"quốc dân\" dân dã thơm ngon",
+  "ho_mon": "kho măng",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "heo-quay-kho-mang",
+  "ten": "Heo quay kho măng",
+  "ho_mon": "kho măng",
+  "hang": 2,
+  "thieu": [
+   "heo quay"
+  ]
+ },
+ {
+  "id": "heo-quay-kho-mang-2",
+  "ten": "Heo quay kho măng đậm đà phù hợp cho mọi bữa ăn tại nhà",
+  "ho_mon": "kho măng",
+  "hang": 3,
+  "thieu": [
+   "heo quay"
+  ]
+ },
+ {
+  "id": "ech-kho-mang-la-que",
+  "ten": "Ếch kho măng lá quế",
+  "ho_mon": "kho măng",
+  "hang": 4,
+  "thieu": [
+   "lá quế"
+  ]
+ },
+ {
+  "id": "salad-bap-tron-tom",
+  "ten": "Salad bắp trộn tôm",
+  "ho_mon": "salad bắp",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "salad-bap-cai-xot-me",
+  "ten": "Salad bắp cải xốt mè",
+  "ho_mon": "salad bắp",
+  "hang": 2,
+  "thieu": [
+   "thịt nguội"
+  ]
+ },
+ {
+  "id": "salad-bap-tom",
+  "ten": "Bí quyết làm salad bắp tôm cho thực đơn ngày hè",
+  "ho_mon": "salad bắp",
+  "hang": 3,
+  "thieu": [
+   "bắp hạt",
+   "húng lủi"
+  ]
+ },
+ {
+  "id": "salad-bap-nuong",
+  "ten": "Salad bắp nướng",
+  "ho_mon": "salad bắp",
+  "hang": 4,
+  "thieu": [
+   "bơ mặn",
+   "dầu oliu"
+  ]
+ },
+ {
+  "id": "salad-bap-tom-3",
+  "ten": "Salad bắp tôm - món ngon giòn mát giải nhiệt mùa hè",
+  "ho_mon": "salad bắp",
+  "hang": 5,
+  "thieu": [
+   "bắp hạt",
+   "húng lủi"
+  ]
+ },
+ {
+  "id": "salad-bap-tom-2",
+  "ten": "Salad bắp tôm",
+  "ho_mon": "salad bắp",
+  "hang": 6,
+  "thieu": [
+   "dầu ô liu",
+   "mù tạt hạt"
+  ]
+ },
+ {
+  "id": "tom-xao-sa-cay",
+  "ten": "Tôm xào sả cay",
+  "ho_mon": "xào sả",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "nam-bao-ngu-xao-sa-ot",
+  "ten": "Nấm bào ngư xào sả ớt",
+  "ho_mon": "xào sả",
+  "hang": 2,
+  "thieu": [
+   "lá boaro"
+  ]
+ },
+ {
+  "id": "nam-bao-ngu-xao-xa-ot",
+  "ten": "Nấm bào ngư xào sả ớt món chay ngon miệng, dinh dưỡng",
+  "ho_mon": "xào sả",
+  "hang": 3,
+  "thieu": [
+   "lá boaro"
+  ]
+ },
+ {
+  "id": "mi-can-xao-sa-ot",
+  "ten": "Mì căn xào sả ớt",
+  "ho_mon": "xào sả",
+  "hang": 4,
+  "thieu": [
+   "cà ri bột",
+   "mì căn"
+  ]
+ },
+ {
+  "id": "bun-thit-xao-sa-ot",
+  "ten": "Bún thịt xào sả ớt",
+  "ho_mon": "xào sả",
+  "hang": 5,
+  "thieu": [
+   "mỡ hành",
+   "đậu phụng"
+  ]
+ },
+ {
+  "id": "suon-nuong-mat-ong-2",
+  "ten": "Sườn nướng mật ong ngọt ngào, đậm đà cho bữa ăn thêm hấp dẫn",
+  "ho_mon": "sườn nướng",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "suon-nuong-sot-cay",
+  "ten": "Sườn nướng xốt cay",
+  "ho_mon": "sườn nướng",
+  "hang": 2,
+  "thieu": [
+   "sườn heo"
+  ]
+ },
+ {
+  "id": "suon-nuong-mat-ong",
+  "ten": "Sườn nướng mật ong",
+  "ho_mon": "sườn nướng",
+  "hang": 3,
+  "thieu": [
+   "xốt phô mai cay aji-xốt"
+  ]
+ },
+ {
+  "id": "suon-nuong-la-huong-thao",
+  "ten": "Sườn nướng lá hương thảo",
+  "ho_mon": "sườn nướng",
+  "hang": 4,
+  "thieu": [
+   "lá hương thảo"
+  ]
+ },
+ {
+  "id": "suon-nuong-qua-le",
+  "ten": "Sườn nướng quả lê",
+  "ho_mon": "sườn nướng",
+  "hang": 5,
+  "thieu": [
+   "lê hàn quốc",
+   "sườn heo non"
+  ]
+ },
+ {
+  "id": "suon-nuong-ngu-vi",
+  "ten": "Sườn nướng ngũ vị",
+  "ho_mon": "sườn nướng",
+  "hang": 6,
+  "thieu": [
+   "caramel",
+   "sườn cây"
+  ]
+ },
+ {
+  "id": "suon-nuong-xot-gac",
+  "ten": "Sườn nướng xốt gấc",
+  "ho_mon": "sườn nướng",
+  "hang": 7,
+  "thieu": [
+   "bột hành",
+   "thịt gấc",
+   "vỏ cam"
+  ]
+ },
+ {
+  "id": "suon-nuong-tieu",
+  "ten": "Sườn nướng tiêu",
+  "ho_mon": "sườn nướng",
+  "hang": 8,
+  "thieu": [
+   "baking sodo",
+   "bột hành",
+   "tiêu trắng bể"
+  ]
+ },
+ {
+  "id": "canh-bi-dao-suon-non",
+  "ten": "Canh Bí Đao Sườn Non món canh thanh mát bổ dưỡng",
+  "ho_mon": "canh bí",
+  "hang": 1,
+  "thieu": [
+   "bí đao"
+  ]
+ },
+ {
+  "id": "canh-bi-dao-nau-suon-non",
+  "ten": "Canh bí đao nấu sườn non",
+  "ho_mon": "canh bí",
+  "hang": 2,
+  "thieu": [
+   "bí đao"
+  ]
+ },
+ {
+  "id": "canh-bi-dao-rong-bien-2",
+  "ten": "Canh Bí Đao Rong Biển",
+  "ho_mon": "canh bí",
+  "hang": 3,
+  "thieu": [
+   "bí đao"
+  ]
+ },
+ {
+  "id": "canh-bi-ngoi-quan-tom",
+  "ten": "Canh bí ngòi quấn tôm",
+  "ho_mon": "canh bí",
+  "hang": 4,
+  "thieu": [
+   "bí ngòi xanh"
+  ]
+ },
+ {
+  "id": "canh-bi-ngoi-nau-nam",
+  "ten": "Canh bí ngòi nấu nấm",
+  "ho_mon": "canh bí",
+  "hang": 5,
+  "thieu": [
+   "bí ngòi"
+  ]
+ },
+ {
+  "id": "canh-bi-dao-don-thit",
+  "ten": "Canh bí đao dồn thịt",
+  "ho_mon": "canh bí",
+  "hang": 6,
+  "thieu": [
+   "bí đao"
+  ]
+ },
+ {
+  "id": "hau-xao-bong-cai",
+  "ten": "Hàu xào bông cải",
+  "ho_mon": "xào bông",
+  "hang": 1,
+  "thieu": [
+   "thịt hàu sữa"
+  ]
+ },
+ {
+  "id": "oc-giac-xao-bong-hanh",
+  "ten": "Ốc giác xào bông hành",
+  "ho_mon": "xào bông",
+  "hang": 2,
+  "thieu": [
+   "bông hành"
+  ]
+ },
+ {
+  "id": "tom-xao-bong-so-dua",
+  "ten": "Tôm xào bông so đũa",
+  "ho_mon": "xào bông",
+  "hang": 3,
+  "thieu": [
+   "bông so đũa",
+   "lá cải xanh"
+  ]
+ },
+ {
+  "id": "so-diep-xao-bong-he-mayonnaise",
+  "ten": "Sò điệp xào bông hẹ mayonnaise",
+  "ho_mon": "xào bông",
+  "hang": 4,
+  "thieu": [
+   "bông hẹ non",
+   "cồi sò điệp"
+  ]
+ },
+ {
+  "id": "doi-truong-xao-bong-he",
+  "ten": "Dồi trường xào bông hẹ",
+  "ho_mon": "xào bông",
+  "hang": 5,
+  "thieu": [
+   "bông hẹ",
+   "dồi trường"
+  ]
+ },
+ {
+  "id": "bacon-xao-bong-cai-mang-tay",
+  "ten": "Bacon xào bông cải măng tây",
+  "ho_mon": "xào bông",
+  "hang": 6,
+  "thieu": [
+   "bacon hun khói",
+   "hành ngò"
+  ]
+ },
+ {
+  "id": "tom-xao-bong-cai-2",
+  "ten": "Cách làm tôm xào bông cải, đậm vị cho bữa cơm gia đình",
+  "ho_mon": "xào bông",
+  "hang": 7,
+  "thieu": [
+   "hạt điều",
+   "tôm viên"
+  ]
+ },
+ {
+  "id": "tom-xao-bong-cai",
+  "ten": "Tôm xào bông cải",
+  "ho_mon": "xào bông",
+  "hang": 8,
+  "thieu": [
+   "hạt điều",
+   "tôm viên"
+  ]
+ },
+ {
+  "id": "tom-trung-cut-xuc-xich-xao-bong-cai",
+  "ten": "Tôm trứng cút xúc xích xào bông cải cho bữa ăn gia đình",
+  "ho_mon": "xào bông",
+  "hang": 9,
+  "thieu": [
+   "bóc vỏ",
+   "mỡ nước"
+  ]
+ },
+ {
+  "id": "nhong-xao-bong-he",
+  "ten": "Nhộng xào bông hẹ",
+  "ho_mon": "xào bông",
+  "hang": 10,
+  "thieu": [
+   "bông hẹ",
+   "nhộng",
+   "thông thường"
+  ]
+ },
+ {
+  "id": "ech-xao-bong-he-sa-te",
+  "ten": "Ếch xào bông hẹ sa tế",
+  "ho_mon": "xào bông",
+  "hang": 11,
+  "thieu": [
+   "bông hẹ",
+   "ngò gai",
+   "rau om",
+   "thịt đùi ếch",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "ca-nuc-kho-thom",
+  "ten": "Cá nục kho thơm",
+  "ho_mon": "kho thơm",
+  "hang": 1,
+  "thieu": [
+   "mía lau"
+  ]
+ },
+ {
+  "id": "ca-nuc-kho-thom-2",
+  "ten": "Cách làm cá nục kho thơm đậm đà, mềm ngon chuẩn vị miền Nam",
+  "ho_mon": "kho thơm",
+  "hang": 2,
+  "thieu": [
+   "mía lau"
+  ]
+ },
+ {
+  "id": "cha-lua-chay-kho-thom",
+  "ten": "Chả lụa chay kho thơm",
+  "ho_mon": "kho thơm",
+  "hang": 3,
+  "thieu": [
+   "bông hẹ chần"
+  ]
+ },
+ {
+  "id": "ca-doi-kho-thom",
+  "ten": "Cá đối kho thơm",
+  "ho_mon": "kho thơm",
+  "hang": 4,
+  "thieu": [
+   "bột ớt",
+   "cá đối có trứng"
+  ]
+ },
+ {
+  "id": "ca-ri-luon",
+  "ten": "Cà ri lươn",
+  "ho_mon": "cà ri",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "canh-ga-tam-xot-mayonnaise-ca-ri",
+  "ten": "Cánh gà tẩm xốt Mayonnaise cà ri",
+  "ho_mon": "cà ri",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "lau-ca-ri-nhung",
+  "ten": "Lẩu cà ri nhúng",
+  "ho_mon": "cà ri",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "sun-ga-rang-la-ca-ri-cay",
+  "ten": "Sụn gà rang lá cà ri cay",
+  "ho_mon": "cà ri",
+  "hang": 4,
+  "thieu": [
+   "lá cà ri",
+   "sụn gà"
+  ]
+ },
+ {
+  "id": "ca-ri-to-ong",
+  "ten": "Cà ri tổ ong",
+  "ho_mon": "cà ri",
+  "hang": 5,
+  "thieu": [
+   "lá cà ri",
+   "tổ ong bò"
+  ]
+ },
+ {
+  "id": "cha-ca-vi-ca-ri",
+  "ten": "Chả cá vị cà ri",
+  "ho_mon": "cà ri",
+  "hang": 6,
+  "thieu": [
+   "cà ri dầu",
+   "lá cà ri",
+   "đậu que"
+  ]
+ },
+ {
+  "id": "ca-nuong-ca-ri",
+  "ten": "Cá nướng cà ri",
+  "ho_mon": "cà ri",
+  "hang": 7,
+  "thieu": [
+   "bột cari",
+   "bột nghệ",
+   "lá cà ri"
+  ]
+ },
+ {
+  "id": "gan-xao-la-ca-ri",
+  "ten": "Gan xào lá cà ri",
+  "ho_mon": "cà ri",
+  "hang": 8,
+  "thieu": [
+   "củ năng",
+   "gan heo",
+   "lá cà ri"
+  ]
+ },
+ {
+  "id": "ca-ri-chay",
+  "ten": "Cà ri chay",
+  "ho_mon": "cà ri",
+  "hang": 9,
+  "thieu": [
+   "dừa nạo",
+   "khoai cao",
+   "đậu bi hà lan"
+  ]
+ },
+ {
+  "id": "ga-vien-xot-ca-ri",
+  "ten": "Gà viên xốt cà ri",
+  "ho_mon": "cà ri",
+  "hang": 10,
+  "thieu": [
+   "bột xù",
+   "cà ri dầu",
+   "lá cà ri"
+  ]
+ },
+ {
+  "id": "ca-ri-hai-san",
+  "ten": "Cà ri hải sản",
+  "ho_mon": "cà ri",
+  "hang": 11,
+  "thieu": [
+   "cà ri dầu",
+   "cá chẽm phi lê",
+   "lá cà ri"
+  ]
+ },
+ {
+  "id": "ca-hoi-xot-ca-ri-me",
+  "ten": "Cá hồi xốt cà ri me",
+  "ho_mon": "cà ri",
+  "hang": 12,
+  "thieu": [
+   "cà ri dầu",
+   "lá cà ri",
+   "nước cốt me"
+  ]
+ },
+ {
+  "id": "ca-ri-ga",
+  "ten": "Cách làm cà ri gà thơm béo, ăn cùng cơm siêu ngon",
+  "ho_mon": "cà ri",
+  "hang": 13,
+  "thieu": [
+   "cà ri bột",
+   "cà ri dầu",
+   "dừa nạo",
+   "lá cà ri"
+  ]
+ },
+ {
+  "id": "ca-ri-vit-quay",
+  "ten": "Cà ri vịt quay",
+  "ho_mon": "cà ri",
+  "hang": 14,
+  "thieu": [
+   "cà ri đỏ",
+   "dừa khô nạo",
+   "lá chanh",
+   "lườn vịt quay"
+  ]
+ },
+ {
+  "id": "ca-com-than-chien-ca-ri",
+  "ten": "Cá Cơm Than Chiên Cà Ri",
+  "ho_mon": "cà ri",
+  "hang": 15,
+  "thieu": [
+   "cá cơm than",
+   "lá cà ri",
+   "lòng trắng trứng",
+   "mè đen"
+  ]
+ },
+ {
+  "id": "ga-ca-ri-xanh",
+  "ten": "Gà cà ri xanh",
+  "ho_mon": "cà ri",
+  "hang": 16,
+  "thieu": [
+   "cốt chanh",
+   "cốt dừa",
+   "hỗn hợp cà ry xanh",
+   "không xương",
+   "lá chúc",
+   "lá rau bó xôi chần",
+   "xay",
+   "đường tán",
+   "đậu đũa chần"
+  ]
+ },
+ {
+  "id": "tom-chien-xot-kiwi",
+  "ten": "Tôm chiên xốt kiwi",
+  "ho_mon": "tôm chiên",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "banh-bap-tom-chien",
+  "ten": "Bánh bắp tôm chiên",
+  "ho_mon": "tôm chiên",
+  "hang": 2,
+  "thieu": [
+   "bắp nếp"
+  ]
+ },
+ {
+  "id": "cha-tom-chien-la-tra-xanh",
+  "ten": "Chả tôm chiên lá trà xanh",
+  "ho_mon": "tôm chiên",
+  "hang": 3,
+  "thieu": [
+   "lá trà xanh non"
+  ]
+ },
+ {
+  "id": "tom-chien-xot-mayo",
+  "ten": "Tôm Chiên Xốt Mayo",
+  "ho_mon": "tôm chiên",
+  "hang": 4,
+  "thieu": [
+   "ketchup"
+  ]
+ },
+ {
+  "id": "tom-chien-hoanh-thanh",
+  "ten": "Tôm chiên hoành thánh",
+  "ho_mon": "tôm chiên",
+  "hang": 5,
+  "thieu": [
+   "da hoành thánh"
+  ]
+ },
+ {
+  "id": "tom-chien-me",
+  "ten": "Tôm chiên mè",
+  "ho_mon": "tôm chiên",
+  "hang": 6,
+  "thieu": [
+   "mè đen"
+  ]
+ },
+ {
+  "id": "vien-tom-chien-toi-thi-la",
+  "ten": "Viên tôm chiên tỏi thì là",
+  "ho_mon": "tôm chiên",
+  "hang": 7,
+  "thieu": [
+   "tôm hấp"
+  ]
+ },
+ {
+  "id": "tom-chien-la-ca-ri",
+  "ten": "Tôm chiên lá cà ri",
+  "ho_mon": "tôm chiên",
+  "hang": 8,
+  "thieu": [
+   "lá cà ri"
+  ]
+ },
+ {
+  "id": "tom-chien-xien-sa-trai-tim",
+  "ten": "Tôm chiên xiên sả trái tim",
+  "ho_mon": "tôm chiên",
+  "hang": 9,
+  "thieu": [
+   "dâu tây"
+  ]
+ },
+ {
+  "id": "tom-chien-com",
+  "ten": "Tôm chiên cốm",
+  "ho_mon": "tôm chiên",
+  "hang": 10,
+  "thieu": [
+   "cốm dẹp"
+  ]
+ },
+ {
+  "id": "tom-chien-dua",
+  "ten": "Tôm chiên dừa",
+  "ho_mon": "tôm chiên",
+  "hang": 11,
+  "thieu": [
+   "dừa rám",
+   "mứt phúc bồn tử"
+  ]
+ },
+ {
+  "id": "tom-chien-u-rom",
+  "ten": "Tôm chiên ủ rơm",
+  "ho_mon": "tôm chiên",
+  "hang": 12,
+  "thieu": [
+   "tôm đất",
+   "đầu hành trắng"
+  ]
+ },
+ {
+  "id": "sake-kep-tom-chien-gion",
+  "ten": "Sake kẹp tôm chiên giòn",
+  "ho_mon": "tôm chiên",
+  "hang": 13,
+  "thieu": [
+   "sake",
+   "salad trộn dầu"
+  ]
+ },
+ {
+  "id": "tom-chien-gion-xot-trung-muoi",
+  "ten": "Tôm chiên giòn xốt trứng muối",
+  "ho_mon": "tôm chiên",
+  "hang": 14,
+  "thieu": [
+   "lòng đỏ trứng muối tán",
+   "tôm bạc thẻ"
+  ]
+ },
+ {
+  "id": "salad-cai-mam-tom-chien",
+  "ten": "Salad cải mầm tôm chiên",
+  "ho_mon": "tôm chiên",
+  "hang": 15,
+  "thieu": [
+   "hỗn hợp cải mầm",
+   "vỏ chanh mài"
+  ]
+ },
+ {
+  "id": "tom-chien-xot-chanh",
+  "ten": "Tôm chiên xốt chanh",
+  "ho_mon": "tôm chiên",
+  "hang": 16,
+  "thieu": [
+   "bỏ chỉ lưng",
+   "lá húng lủi"
+  ]
+ },
+ {
+  "id": "goi-cuon-tom-chien",
+  "ten": "Gỏi cuốn tôm chiên",
+  "ho_mon": "tôm chiên",
+  "hang": 17,
+  "thieu": [
+   "bánh ướt không nhân",
+   "rau mầm"
+  ]
+ },
+ {
+  "id": "tom-chien-canh-buom",
+  "ten": "Tôm chiên cánh bướm",
+  "ho_mon": "tôm chiên",
+  "hang": 18,
+  "thieu": [
+   "bông thiên lý",
+   "soda"
+  ]
+ },
+ {
+  "id": "tom-chien-xoc-la-que",
+  "ten": "Tôm chiên xóc lá quế",
+  "ho_mon": "tôm chiên",
+  "hang": 19,
+  "thieu": [
+   "lá chanh bắc",
+   "lá quế"
+  ]
+ },
+ {
+  "id": "muc-nhoi-tom-chien-hanh-nhan",
+  "ten": "Mực nhồi tôm chiên hạnh nhân",
+  "ho_mon": "tôm chiên",
+  "hang": 20,
+  "thieu": [
+   "hạnh nhân",
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "salad-romain-tom-chien",
+  "ten": "Salad romain tôm chiên",
+  "ho_mon": "tôm chiên",
+  "hang": 21,
+  "thieu": [
+   "cải mầm",
+   "dưa chuột muối chua"
+  ]
+ },
+ {
+  "id": "banh-tom-chien-cu-san",
+  "ten": "Bánh tôm chiên củ sắn",
+  "ho_mon": "tôm chiên",
+  "hang": 22,
+  "thieu": [
+   "bắp hạt mỹ",
+   "tôm khô",
+   "tôm đất"
+  ]
+ },
+ {
+  "id": "chom-chom-nhoi-tom-chien",
+  "ten": "Chôm chôm nhồi tôm chiên",
+  "ho_mon": "tôm chiên",
+  "hang": 23,
+  "thieu": [
+   "bột xù",
+   "chôm chôm",
+   "cọng ngò"
+  ]
+ },
+ {
+  "id": "cha-tom-chien-mat-nguyet",
+  "ten": "Chả tôm chiên mặt nguyệt",
+  "ho_mon": "tôm chiên",
+  "hang": 24,
+  "thieu": [
+   "bột xù",
+   "tôm đông lạnh",
+   "đậu cô ve"
+  ]
+ },
+ {
+  "id": "ca-cuon-tom-chien",
+  "ten": "Cá cuốn tôm chiên",
+  "ho_mon": "tôm chiên",
+  "hang": 25,
+  "thieu": [
+   "bột xù",
+   "tôm đất",
+   "đầu hành"
+  ]
+ },
+ {
+  "id": "tom-chien-rong-bien",
+  "ten": "Tôm chiên rong biển",
+  "ho_mon": "tôm chiên",
+  "hang": 26,
+  "thieu": [
+   "bắp hạt",
+   "cốm dẹp",
+   "tiêu sọ"
+  ]
+ },
+ {
+  "id": "tom-chien-dua-xot-bac-ha",
+  "ten": "Tôm chiên dừa xốt bạc hà",
+  "ho_mon": "tôm chiên",
+  "hang": 27,
+  "thieu": [
+   "dừa sấy",
+   "lá húng lủi",
+   "mù tạc xanh",
+   "vỏ chanh mài"
+  ]
+ },
+ {
+  "id": "banh-tom",
+  "ten": "Công thức làm bánh tôm chiên giòn ngon đúng điệu",
+  "ho_mon": "tôm chiên",
+  "hang": 28,
+  "thieu": [
+   "bột nghệ",
+   "su hào",
+   "tôm đất",
+   "đu đủ"
+  ]
+ },
+ {
+  "id": "ca-cuon-tom-chien-xot-qua-bo",
+  "ten": "Cá cuốn tôm chiên xốt quả bơ",
+  "ho_mon": "tôm chiên",
+  "hang": 29,
+  "thieu": [
+   "chừa đuôi",
+   "cá chẽm phi lê",
+   "dưa nụ ngâm chua",
+   "húng lủi",
+   "tôm đất to"
+  ]
+ },
+ {
+  "id": "salad-cua-va-mi-y-2",
+  "ten": "Salad cua mì ý",
+  "ho_mon": "mì ý",
+  "hang": 1,
+  "thieu": [
+   "mì ý"
+  ]
+ },
+ {
+  "id": "salad-mi-y-voi-gio-thu",
+  "ten": "Salad mì Ý với giò thủ",
+  "ho_mon": "mì ý",
+  "hang": 2,
+  "thieu": [
+   "dưa kiệu",
+   "mì ý"
+  ]
+ },
+ {
+  "id": "mi-y-ca-hoi-xot-caesar",
+  "ten": "Mì Ý Cá Hồi Xốt Caesar",
+  "ho_mon": "mì ý",
+  "hang": 3,
+  "thieu": [
+   "bắp hạt",
+   "mì ý",
+   "xốt phô mai caesar aji-xốt"
+  ]
+ },
+ {
+  "id": "mi-y-ca-hoi-xot-me-rang",
+  "ten": "Mì ý cá hồi xốt mè rang",
+  "ho_mon": "mì ý",
+  "hang": 4,
+  "thieu": [
+   "mỳ ý",
+   "phô mai bột",
+   "xốt mè aji-xốt"
+  ]
+ },
+ {
+  "id": "mi-y-bo-bam",
+  "ten": "Mì Ý bò băm",
+  "ho_mon": "mì ý",
+  "hang": 5,
+  "thieu": [
+   "mì ý",
+   "ngò tây",
+   "thịt bò",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "mi-y-xot-cua",
+  "ten": "Cách làm mì Ý xốt cua biển đậm đà, béo thơm hấp dẫn",
+  "ho_mon": "mì ý",
+  "hang": 6,
+  "thieu": [
+   "cua gạch",
+   "heavy cream",
+   "lá oregano",
+   "mì ý",
+   "sốt cà chua đậm đặc"
+  ]
+ },
+ {
+  "id": "salad-mi-y-chua-ngot",
+  "ten": "Salad mì Ý chua ngọt",
+  "ho_mon": "mì ý",
+  "hang": 7,
+  "thieu": [
+   "hạt điều",
+   "mì ý số",
+   "tương xí muội",
+   "đậu hà lan",
+   "ớt paprika"
+  ]
+ },
+ {
+  "id": "mi-y-xot-nam",
+  "ten": "Mì Ý xốt nấm chay béo thơm, nấu nhanh 20 phút",
+  "ho_mon": "mì ý",
+  "hang": 8,
+  "thieu": [
+   "ba rọi xông khói",
+   "dầu oliu",
+   "mì ý",
+   "rượu vang trắng",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "mi-y-xot-cua-2",
+  "ten": "Mì ý xốt cua",
+  "ho_mon": "mì ý",
+  "hang": 9,
+  "thieu": [
+   "cua thịt",
+   "lá oregano",
+   "mỳ ý",
+   "rượu vang trắng",
+   "sốt cà chua đậm đặc",
+   "whipping cream"
+  ]
+ },
+ {
+  "id": "salad-ca-hoi-nuong-xot-mayo",
+  "ten": "Salad cá hồi nướng xốt mayo",
+  "ho_mon": "salad cá",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "salad-ca-hoi-trai-cay-nhiet-doi",
+  "ten": "Salad Cá Hồi Trái Cây Nhiệt Đới",
+  "ho_mon": "salad cá",
+  "hang": 2,
+  "thieu": [
+   "chanh núm vàng"
+  ]
+ },
+ {
+  "id": "salad-ca-hoi-xong-khoi",
+  "ten": "Salad cá hồi xông khói",
+  "ho_mon": "salad cá",
+  "hang": 3,
+  "thieu": [
+   "cá hồi xông khói",
+   "mù tạc vàng"
+  ]
+ },
+ {
+  "id": "salad-ca-hoi",
+  "ten": "Salad cá hồi",
+  "ho_mon": "salad cá",
+  "hang": 4,
+  "thieu": [
+   "lá quế tây",
+   "ngò tây"
+  ]
+ },
+ {
+  "id": "salad-ca-hoi-sot-tom-kho",
+  "ten": "Salad cá hồi sốt tôm khô",
+  "ho_mon": "salad cá",
+  "hang": 5,
+  "thieu": [
+   "bắp mĩ hạt",
+   "tôm khô"
+  ]
+ },
+ {
+  "id": "salad-ca-moi",
+  "ten": "Salad Cá Mòi",
+  "ho_mon": "salad cá",
+  "hang": 6,
+  "thieu": [
+   "bắp hạt",
+   "dầu salad",
+   "rau càng cua"
+  ]
+ },
+ {
+  "id": "salad-ca-hoi-hung-que",
+  "ten": "Salad cá hồi húng quế",
+  "ho_mon": "salad cá",
+  "hang": 7,
+  "thieu": [
+   "xốt tasbaco",
+   "ớt đà lạt vàng",
+   "ớt đà lạt xanh"
+  ]
+ },
+ {
+  "id": "salad-ca-ngu-rau-thom",
+  "ten": "Salad cá ngừ rau thơm",
+  "ho_mon": "salad cá",
+  "hang": 8,
+  "thieu": [
+   "bữa chiều",
+   "thính gạo",
+   "xốt mè aji-xốt",
+   "ớt ngọt đà lạt"
+  ]
+ },
+ {
+  "id": "salad-ca-hoi-tron-bong-cai-trang",
+  "ten": "Salad Cá Hồi Trộn Bông Cải Trắng",
+  "ho_mon": "salad cá",
+  "hang": 9,
+  "thieu": [
+   "húng lủi",
+   "snack tôm",
+   "xốt mè aji-xốt",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "salad-ca-hoi-xot-thanh-long",
+  "ten": "Salad cá hồi xốt thanh long",
+  "ho_mon": "salad cá",
+  "hang": 10,
+  "thieu": [
+   "bí ngòi vàng",
+   "cá hồi xông khói",
+   "cải mầm",
+   "hạt thông"
+  ]
+ },
+ {
+  "id": "mien-xao-cua-mang-tay",
+  "ten": "Miến Xào Cua Măng Tây",
+  "ho_mon": "miến xào",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "mien-xao-luon-chien-gion",
+  "ten": "Miến xào lươn chiên giòn",
+  "ho_mon": "miến xào",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "mien-xao-luon-chay",
+  "ten": "Miến xào lươn chay",
+  "ho_mon": "miến xào",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "mien-xao-cua",
+  "ten": "Miến xào cua",
+  "ho_mon": "miến xào",
+  "hang": 4,
+  "thieu": [
+   "thịt càng cua"
+  ]
+ },
+ {
+  "id": "mien-xao-xot-tuong",
+  "ten": "Miến xào xốt tương",
+  "ho_mon": "miến xào",
+  "hang": 5,
+  "thieu": [
+   "xốt tương"
+  ]
+ },
+ {
+  "id": "mien-xao-gia-dau-nanh",
+  "ten": "Miến xào giá đậu nành",
+  "ho_mon": "miến xào",
+  "hang": 6,
+  "thieu": [
+   "bò chay",
+   "giá đậu nành"
+  ]
+ },
+ {
+  "id": "mien-xao-ngheu",
+  "ten": "Miến xào nghêu",
+  "ho_mon": "miến xào",
+  "hang": 7,
+  "thieu": [
+   "cải thảo",
+   "nghêu"
+  ]
+ },
+ {
+  "id": "mien-xao-hen-xot-me",
+  "ten": "Miến xào hến xốt me",
+  "ho_mon": "miến xào",
+  "hang": 8,
+  "thieu": [
+   "nước cốt me",
+   "ớt đà lạt đỏ vàng"
+  ]
+ },
+ {
+  "id": "mien-xao-dau-ngu",
+  "ten": "Miến xào đậu ngự",
+  "ho_mon": "miến xào",
+  "hang": 9,
+  "thieu": [
+   "bông hẹ",
+   "đậu ngự"
+  ]
+ },
+ {
+  "id": "mien-xao-ngheu-tay-cam",
+  "ten": "Miến xào nghêu tay cầm",
+  "ho_mon": "miến xào",
+  "hang": 10,
+  "thieu": [
+   "cải thảo",
+   "lá quế",
+   "nghêu"
+  ]
+ },
+ {
+  "id": "mien-xao-chay",
+  "ten": "Miến xào chay",
+  "ho_mon": "miến xào",
+  "hang": 11,
+  "thieu": [
+   "poa-rô",
+   "thịt cua chay",
+   "tiêu sọ",
+   "ớt đà lạt đỏ"
+  ]
+ },
+ {
+  "id": "bo-nuong-sa-te",
+  "ten": "Bò nướng sa tế",
+  "ho_mon": "bò nướng",
+  "hang": 1,
+  "thieu": [
+   "bò phi lê"
+  ]
+ },
+ {
+  "id": "than-bo-nuong",
+  "ten": "Thăn bò nướng",
+  "ho_mon": "bò nướng",
+  "hang": 2,
+  "thieu": [
+   "thăn bò"
+  ]
+ },
+ {
+  "id": "bo-nuong-la-cach",
+  "ten": "Bò nướng lá cách",
+  "ho_mon": "bò nướng",
+  "hang": 3,
+  "thieu": [
+   "lá cách",
+   "thịt bò file mềm"
+  ]
+ },
+ {
+  "id": "thit-bo-nuong-mu-tat",
+  "ten": "Thịt bò nướng mù tạt",
+  "ho_mon": "bò nướng",
+  "hang": 4,
+  "thieu": [
+   "que xiên",
+   "thịt bò phi lê"
+  ]
+ },
+ {
+  "id": "thit-bo-nuong-me-kieu-han-quoc",
+  "ten": "Thịt bò nướng mè kiểu Hàn Quốc",
+  "ho_mon": "bò nướng",
+  "hang": 5,
+  "thieu": [
+   "dầu ôliu",
+   "thịt thăn bò"
+  ]
+ },
+ {
+  "id": "salad-bo-nuong-ap-chao",
+  "ten": "Salad Bò Nướng Áp Chảo",
+  "ho_mon": "bò nướng",
+  "hang": 6,
+  "thieu": [
+   "lá hương thảo",
+   "thịt bò file"
+  ]
+ },
+ {
+  "id": "khoai-tay-chien-bo-nuong",
+  "ten": "Khoai tây chiên bò nướng",
+  "ho_mon": "bò nướng",
+  "hang": 7,
+  "thieu": [
+   "bò thăn",
+   "hương thảo",
+   "khoai tím"
+  ]
+ },
+ {
+  "id": "banh-mi-nuong-toi",
+  "ten": "Bánh mì nướng tỏi",
+  "ho_mon": "bánh mì",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "banh-mi-sandwich-nuong-pho-mai",
+  "ten": "Bánh Mì Sandwich Nướng Phô Mai",
+  "ho_mon": "bánh mì",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "banh-mi-tam-trung-chien",
+  "ten": "Bánh mì tẩm trứng chiên",
+  "ho_mon": "bánh mì",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "banh-mi-chien-tom",
+  "ten": "Bánh mì chiên tôm",
+  "ho_mon": "bánh mì",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "banh-mi-op-la-ca-moi",
+  "ten": "Bánh mì ốp la cá mòi",
+  "ho_mon": "bánh mì",
+  "hang": 5,
+  "thieu": []
+ },
+ {
+  "id": "banh-mi-cuon-ca-hop",
+  "ten": "Bánh mì cuộn cá hộp",
+  "ho_mon": "bánh mì",
+  "hang": 6,
+  "thieu": []
+ },
+ {
+  "id": "banh-mi-kep-tom-tron-mayonnaise",
+  "ten": "Bánh mì kẹp tôm trộn Mayonnaise",
+  "ho_mon": "bánh mì",
+  "hang": 7,
+  "thieu": []
+ },
+ {
+  "id": "banh-mi-xiu-mai",
+  "ten": "Cách làm bánh mì xíu mại tại nhà ngon như ngoài hàng",
+  "ho_mon": "bánh mì",
+  "hang": 8,
+  "thieu": []
+ },
+ {
+  "id": "banh-mi-kep-thit-ga",
+  "ten": "Bánh mì kẹp thịt gà",
+  "ho_mon": "bánh mì",
+  "hang": 9,
+  "thieu": []
+ },
+ {
+  "id": "banh-mi-kep-thit-ga-khia",
+  "ten": "Bánh mì kẹp thịt gà khìa",
+  "ho_mon": "bánh mì",
+  "hang": 10,
+  "thieu": []
+ },
+ {
+  "id": "banh-mi-ap-chao",
+  "ten": "Bánh mì áp chảo",
+  "ho_mon": "bánh mì",
+  "hang": 11,
+  "thieu": [
+   "chà bông heo"
+  ]
+ },
+ {
+  "id": "banh-mi-thit-nguoi-bap-cai",
+  "ten": "Bánh mì thịt nguội bắp cải",
+  "ho_mon": "bánh mì",
+  "hang": 12,
+  "thieu": [
+   "thịt nguội"
+  ]
+ },
+ {
+  "id": "banh-mi-thit-nuong-sa-mayo",
+  "ten": "Bánh mì thịt nướng sả mayo",
+  "ho_mon": "bánh mì",
+  "hang": 13,
+  "thieu": [
+   "đồ chua"
+  ]
+ },
+ {
+  "id": "banh-mi-chao",
+  "ten": "Bánh Mì Chảo",
+  "ho_mon": "bánh mì",
+  "hang": 14,
+  "thieu": [
+   "thịt bò phi lê"
+  ]
+ },
+ {
+  "id": "banh-mi-trung-danh-thit-nguoi",
+  "ten": "Bánh mì trứng thịt nguội",
+  "ho_mon": "bánh mì",
+  "hang": 15,
+  "thieu": [
+   "thịt nguội"
+  ]
+ },
+ {
+  "id": "banh-mi-kep-pho-mai-thit-nguoi",
+  "ten": "Bánh mì kẹp phô mai thịt nguội",
+  "ho_mon": "bánh mì",
+  "hang": 16,
+  "thieu": [
+   "lát thịt nguội"
+  ]
+ },
+ {
+  "id": "banh-mi-xiu-mai-2",
+  "ten": "Bánh mì xíu mại",
+  "ho_mon": "bánh mì",
+  "hang": 17,
+  "thieu": [
+   "ketchup"
+  ]
+ },
+ {
+  "id": "banh-mi-que-nuong-rau-cu",
+  "ten": "Bánh mì que nướng rau củ",
+  "ho_mon": "bánh mì",
+  "hang": 18,
+  "thieu": [
+   "ba rọi xông khói"
+  ]
+ },
+ {
+  "id": "banh-mi-kep-xuc-xich-2",
+  "ten": "Bánh mì kẹp xúc xích",
+  "ho_mon": "bánh mì",
+  "hang": 19,
+  "thieu": [
+   "mù tạc vàng"
+  ]
+ },
+ {
+  "id": "banh-mi-kep-ca-chien-xu",
+  "ten": "Bánh mì kẹp cá chiên xù",
+  "ho_mon": "bánh mì",
+  "hang": 20,
+  "thieu": [
+   "bột xù"
+  ]
+ },
+ {
+  "id": "banh-mi-nuong-hoa-hong",
+  "ten": "Bánh mì nướng hoa hồng",
+  "ho_mon": "bánh mì",
+  "hang": 21,
+  "thieu": [
+   "phô mai bột",
+   "thịt jambon"
+  ]
+ },
+ {
+  "id": "banh-mi-luoi-heo-khia",
+  "ten": "Bánh mì - Lưỡi heo khìa",
+  "ho_mon": "bánh mì",
+  "hang": 22,
+  "thieu": [
+   "lưỡi heo",
+   "tỏi đâp giập"
+  ]
+ },
+ {
+  "id": "banh-mi-que-xot-thit-cay-mayo",
+  "ten": "Bánh mì que xốt thịt cay Mayo",
+  "ho_mon": "bánh mì",
+  "hang": 23,
+  "thieu": [
+   "thịt đầu vai",
+   "ớt ba tri"
+  ]
+ },
+ {
+  "id": "banh-mi-nuong",
+  "ten": "Bánh mì nướng phô mai",
+  "ho_mon": "bánh mì",
+  "hang": 24,
+  "thieu": [
+   "bắp hạt",
+   "thịt nguội"
+  ]
+ },
+ {
+  "id": "banh-mi-nuong-xot-ca",
+  "ten": "Bánh mì nướng xốt cà",
+  "ho_mon": "bánh mì",
+  "hang": 25,
+  "thieu": [
+   "bột ớt",
+   "ngò tây"
+  ]
+ },
+ {
+  "id": "banh-mi-dut-lo-xot-mayonnaise",
+  "ten": "Bánh mì đút lò xốt mayonnaise",
+  "ho_mon": "bánh mì",
+  "hang": 26,
+  "thieu": [
+   "ngò tây",
+   "thịt heo xông khói"
+  ]
+ },
+ {
+  "id": "banh-mi-pho-mai-thit-nguoi",
+  "ten": "Bánh mì phô mai thịt nguội",
+  "ho_mon": "bánh mì",
+  "hang": 27,
+  "thieu": [
+   "bánh mí sandwich",
+   "muốn",
+   "thịt nguột"
+  ]
+ },
+ {
+  "id": "banh-mi-kep-thit-bo-bam",
+  "ten": "Bánh mì kẹp thịt bò bằm",
+  "ho_mon": "bánh mì",
+  "hang": 28,
+  "thieu": [
+   "cà lách",
+   "mù tạc vàng",
+   "thịt bò"
+  ]
+ },
+ {
+  "id": "banh-mi-nuong-hai-san",
+  "ten": "Bánh mì nướng hải sản",
+  "ho_mon": "bánh mì",
+  "hang": 29,
+  "thieu": [
+   "cọng ngò",
+   "trứng cá",
+   "tôm vột vỏ"
+  ]
+ },
+ {
+  "id": "banh-mi-bi-sai-gon",
+  "ten": "Bánh mì bì Sài Gòn",
+  "ho_mon": "bánh mì",
+  "hang": 30,
+  "thieu": [
+   "da heo",
+   "thính",
+   "thịt nách",
+   "đồ chua"
+  ]
+ },
+ {
+  "id": "banh-mi-hanh-nhan",
+  "ten": "Bánh mì hạnh nhân",
+  "ho_mon": "bánh mì",
+  "hang": 31,
+  "thieu": [
+   "dâu ngọt",
+   "húng lủi",
+   "hạnh nhân",
+   "mứt cam"
+  ]
+ },
+ {
+  "id": "banh-mi-hap-bi-chay",
+  "ten": "Bánh mì hấp bì chay",
+  "ho_mon": "bánh mì",
+  "hang": 32,
+  "thieu": [
+   "hẹ lá",
+   "sườn chay",
+   "thính",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "banh-xeo-cuon-ap-chao",
+  "ten": "Bánh xèo cuốn áp chảo",
+  "ho_mon": "bánh xèo",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "banh-xeo-nhat-ban-3",
+  "ten": "Bánh Xèo Nhật Bản",
+  "ho_mon": "bánh xèo",
+  "hang": 2,
+  "thieu": [
+   "bacon",
+   "tôm đất"
+  ]
+ },
+ {
+  "id": "banh-xeo-han-quoc",
+  "ten": "Bánh xèo Hàn Quốc",
+  "ho_mon": "bánh xèo",
+  "hang": 3,
+  "thieu": [
+   "hẹ lá",
+   "mực lá"
+  ]
+ },
+ {
+  "id": "banh-xeo-xot-trung-ga-tuoi",
+  "ten": "Bánh xèo xốt trứng gà tươi",
+  "ho_mon": "bánh xèo",
+  "hang": 4,
+  "thieu": [
+   "mực tẩm",
+   "tỏi tây"
+  ]
+ },
+ {
+  "id": "banh-xeo-nam-moi-chay",
+  "ten": "Bánh xèo nấm mối chay",
+  "ho_mon": "bánh xèo",
+  "hang": 5,
+  "thieu": [
+   "ham chay",
+   "nấm mối"
+  ]
+ },
+ {
+  "id": "banh-xeo-hai-san",
+  "ten": "Bánh xèo hải sản",
+  "ho_mon": "bánh xèo",
+  "hang": 6,
+  "thieu": [
+   "tôm đất",
+   "đồ chua"
+  ]
+ },
+ {
+  "id": "banh-xeo-nhat-ban",
+  "ten": "Đãi cả nhà món bánh xèo Nhật Bản thơm ngon chuẩn vị",
+  "ho_mon": "bánh xèo",
+  "hang": 7,
+  "thieu": [
+   "ba chỉ xông khói",
+   "cá ngừ khô",
+   "tôm đất",
+   "xốt okonomi"
+  ]
+ },
+ {
+  "id": "banh-xeo-nhat-ban-2",
+  "ten": "Bánh xèo Nhật Bản Okonomiyaki chuẩn vị dễ làm",
+  "ho_mon": "bánh xèo",
+  "hang": 8,
+  "thieu": [
+   "ba chỉ xông khói",
+   "cá ngừ khô",
+   "khoai môn",
+   "tôm đông lạnh",
+   "xốt okonomoyaki"
+  ]
+ },
+ {
+  "id": "banh-xeo",
+  "ten": "Bí quyết làm bánh xèo vàng giòn không ngấy, ai cũng mê",
+  "ho_mon": "bánh xèo",
+  "hang": 9,
+  "thieu": [
+   "bột nghệ",
+   "cải xanh",
+   "dừa nạo",
+   "tiêu đường",
+   "tôm bạc",
+   "đồ chua"
+  ]
+ },
+ {
+  "id": "ech-kho-tieu-xanh",
+  "ten": "Ếch kho tiêu xanh",
+  "ho_mon": "kho tiêu",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "so-long-kho-tieu-xanh",
+  "ten": "Sò lông kho tiêu xanh",
+  "ho_mon": "kho tiêu",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "ca-bong-trung-kho-tieu",
+  "ten": "Cá bống trứng kho tiêu",
+  "ho_mon": "kho tiêu",
+  "hang": 3,
+  "thieu": [
+   "cá bống trứng"
+  ]
+ },
+ {
+  "id": "mi-can-kho-tieu-xanh",
+  "ten": "Mì căn kho tiêu xanh",
+  "ho_mon": "kho tiêu",
+  "hang": 4,
+  "thieu": [
+   "mì căn",
+   "poa-rô"
+  ]
+ },
+ {
+  "id": "nam-loc-nhung-kho-tieu-xanh-an-voi-chao-dau-do-chay",
+  "ten": "Nấm Lộc Nhung Kho Tiêu Xanh Ăn Với Cháo Đậu Đỏ (Chay)",
+  "ho_mon": "kho tiêu",
+  "hang": 5,
+  "thieu": [
+   "lá dứa",
+   "đậu đỏ khô"
+  ]
+ },
+ {
+  "id": "com-chien-tom-thom",
+  "ten": "Cơm Chiên Tôm Thơm",
+  "ho_mon": "cơm chiên",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "ca-com-chien-gion-xot-tieu",
+  "ten": "Cá cơm chiên giòn xốt tiêu",
+  "ho_mon": "cơm chiên",
+  "hang": 2,
+  "thieu": [
+   "cá cơm"
+  ]
+ },
+ {
+  "id": "com-chien-trung-ca",
+  "ten": "Cơm chiên trứng cá",
+  "ho_mon": "cơm chiên",
+  "hang": 3,
+  "thieu": [
+   "trứng cá chuồn"
+  ]
+ },
+ {
+  "id": "com-chien-ca-man",
+  "ten": "Cơm chiên cá mặn",
+  "ho_mon": "cơm chiên",
+  "hang": 4,
+  "thieu": [
+   "khô cá sửu"
+  ]
+ },
+ {
+  "id": "com-chien-mayonnaise-2",
+  "ten": "Cơm chiên mayonnaise béo ngậy, lạ miệng dễ ăn",
+  "ho_mon": "cơm chiên",
+  "hang": 5,
+  "thieu": [
+   "thịt nguội"
+  ]
+ },
+ {
+  "id": "com-chien-ca-man-chay",
+  "ten": "Cơm chiên cá mặn chay",
+  "ho_mon": "cơm chiên",
+  "hang": 6,
+  "thieu": [
+   "cá mặn chay"
+  ]
+ },
+ {
+  "id": "com-chien-nam-man",
+  "ten": "Cơm chiên nấm mặn",
+  "ho_mon": "cơm chiên",
+  "hang": 7,
+  "thieu": [
+   "củ năng"
+  ]
+ },
+ {
+  "id": "com-chien-chay",
+  "ten": "Cơm chiên chay",
+  "ho_mon": "cơm chiên",
+  "hang": 8,
+  "thieu": [
+   "đậu bi hà lan"
+  ]
+ },
+ {
+  "id": "com-chien-mayonnaise",
+  "ten": "CƠM CHIÊN MAYONNAISE",
+  "ho_mon": "cơm chiên",
+  "hang": 9,
+  "thieu": [
+   "mayo",
+   "thịt nguội"
+  ]
+ },
+ {
+  "id": "com-chien-nam-thit-bo",
+  "ten": "Cơm chiên nấm thịt bò",
+  "ho_mon": "cơm chiên",
+  "hang": 10,
+  "thieu": [
+   "thịt bò phi lê",
+   "đậu bi"
+  ]
+ },
+ {
+  "id": "ca-com-chien-gion",
+  "ten": "Cá cơm chiên giòn",
+  "ho_mon": "cơm chiên",
+  "hang": 11,
+  "thieu": [
+   "cá cơm",
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "ca-hoi-cuon-com-chien",
+  "ten": "Cá hồi cuộn cơm chiên",
+  "ho_mon": "cơm chiên",
+  "hang": 12,
+  "thieu": [
+   "cơm gạo nhật",
+   "muối hột"
+  ]
+ },
+ {
+  "id": "rau-cu-luoc-va-com-chien-gion-cham-kho-quet",
+  "ten": "Rau củ luộc và cơm chiên giòn chấm kho quẹt",
+  "ho_mon": "cơm chiên",
+  "hang": 13,
+  "thieu": [
+   "cơm nguội",
+   "xốt kho quẹt"
+  ]
+ },
+ {
+  "id": "ca-com-chien-bong-he-mam-me",
+  "ten": "Cá cơm chiên bông hẹ mắm me",
+  "ho_mon": "cơm chiên",
+  "hang": 14,
+  "thieu": [
+   "bông hẹ",
+   "cá cơm"
+  ]
+ },
+ {
+  "id": "com-chien-trai-thom",
+  "ten": "Cơm chiên trái thơm",
+  "ho_mon": "cơm chiên",
+  "hang": 15,
+  "thieu": [
+   "thơm còn phần đầu",
+   "tôm khô"
+  ]
+ },
+ {
+  "id": "com-chien-thap-cam",
+  "ten": "Cơm chiên thập cẩm",
+  "ho_mon": "cơm chiên",
+  "hang": 16,
+  "thieu": [
+   "cơm tấm",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "com-chien-dua-bo",
+  "ten": "Cơm chiên dưa bò",
+  "ho_mon": "cơm chiên",
+  "hang": 17,
+  "thieu": [
+   "hành ngò",
+   "nêm sẵn phở bò",
+   "thịt bò fillet"
+  ]
+ },
+ {
+  "id": "com-chien-duong-chau",
+  "ten": "Cơm chiên Dương Châu thơm ngon dễ làm tại nhà",
+  "ho_mon": "cơm chiên",
+  "hang": 18,
+  "thieu": [
+   "tôm khô",
+   "xá xíu",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "com-chien-tom-bong-cai",
+  "ten": "Cơm chiên tôm bông cải",
+  "ho_mon": "cơm chiên",
+  "hang": 19,
+  "thieu": [
+   "cơm nguội",
+   "hành ngò",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "com-chien-dua",
+  "ten": "Cơm chiên dừa",
+  "ho_mon": "cơm chiên",
+  "hang": 20,
+  "thieu": [
+   "cơm nguội",
+   "dừa nạo",
+   "tôm đất"
+  ]
+ },
+ {
+  "id": "com-chien-trai-cay",
+  "ten": "Cơm chiên trái cây",
+  "ho_mon": "cơm chiên",
+  "hang": 21,
+  "thieu": [
+   "cơm nguội",
+   "muối hột",
+   "nho xanh không hạt"
+  ]
+ },
+ {
+  "id": "com-chien-thit-bo-va-pho-mai",
+  "ten": "Cơm chiên thịt bò và phô mai",
+  "ho_mon": "cơm chiên",
+  "hang": 22,
+  "thieu": [
+   "bắp hạt mỹ",
+   "cơm trắng nấu khô",
+   "thịt thăn bò",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "com-chien-kim-chi",
+  "ten": "Cơm chiên kim chi",
+  "ho_mon": "cơm chiên",
+  "hang": 23,
+  "thieu": [
+   "bắp hạt",
+   "cơm gạo",
+   "kimchi",
+   "thịt bò fillet mềm",
+   "tương ớt hàn quốc - gochujang"
+  ]
+ },
+ {
+  "id": "goi-xoai-ca-com-chien",
+  "ten": "Gỏi xoài cá cơm chiên",
+  "ho_mon": "cơm chiên",
+  "hang": 24,
+  "thieu": [
+   "bánh phồng tôm",
+   "cá cơm",
+   "húng lủi",
+   "hạt điều",
+   "lá cần tây non",
+   "xoài keo"
+  ]
+ },
+ {
+  "id": "da-heo-chien-nuoc-mam",
+  "ten": "Da heo chiên nước mắm",
+  "ho_mon": "heo chiên",
+  "hang": 1,
+  "thieu": [
+   "da heo"
+  ]
+ },
+ {
+  "id": "oc-heo-chien-gion",
+  "ten": "Óc heo chiên giòn",
+  "ho_mon": "heo chiên",
+  "hang": 2,
+  "thieu": [
+   "óc heo"
+  ]
+ },
+ {
+  "id": "thit-heo-chien-xu",
+  "ten": "Thịt heo chiên xù",
+  "ho_mon": "heo chiên",
+  "hang": 3,
+  "thieu": [
+   "bột xù"
+  ]
+ },
+ {
+  "id": "than-heo-chien-gion-rau-que",
+  "ten": "Thăn heo chiên giòn rau quế",
+  "ho_mon": "heo chiên",
+  "hang": 4,
+  "thieu": [
+   "rau quế",
+   "thịt thăn ngoại"
+  ]
+ },
+ {
+  "id": "than-heo-chien-gion",
+  "ten": "Thăn heo chiên giòn",
+  "ho_mon": "heo chiên",
+  "hang": 5,
+  "thieu": [
+   "húng lủi",
+   "thịt thăn heo"
+  ]
+ },
+ {
+  "id": "thit-heo-chien-xu-tonkatsu-1",
+  "ten": "Thịt Heo Chiên Xù Tonkatsu",
+  "ho_mon": "heo chiên",
+  "hang": 6,
+  "thieu": [
+   "súp miso",
+   "đồ chua nhật"
+  ]
+ },
+ {
+  "id": "than-heo-chien-bo",
+  "ten": "Thăn heo chiên bơ",
+  "ho_mon": "heo chiên",
+  "hang": 7,
+  "thieu": [
+   "bột xù",
+   "thịt nạc lưng",
+   "xốt ớt xanh"
+  ]
+ },
+ {
+  "id": "thit-heo-chien-gion-vi-ca-ri",
+  "ten": "Thịt Heo Chiên Giòn Vị Cà Ri",
+  "ho_mon": "heo chiên",
+  "hang": 8,
+  "thieu": [
+   "dầu chiên",
+   "lá quế",
+   "mè đen",
+   "nạc lưng heo"
+  ]
+ },
+ {
+  "id": "hoanh-thanh-ta-la",
+  "ten": "Hoành Thánh Tá Lả",
+  "ho_mon": "hoành thánh",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "hoanh-thanh-tom-sot-vi-thai",
+  "ten": "Hoành thánh tôm xốt vị Thái",
+  "ho_mon": "hoành thánh",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "hoanh-thanh-nhan-dau-chien",
+  "ten": "Hoành thánh nhân đậu chiên",
+  "ho_mon": "hoành thánh",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "hoanh-thanh-hoa-hong",
+  "ten": "Hoành thánh hoa hồng",
+  "ho_mon": "hoành thánh",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "hoanh-thanh-cay",
+  "ten": "Hoành thánh cay",
+  "ho_mon": "hoành thánh",
+  "hang": 5,
+  "thieu": []
+ },
+ {
+  "id": "sup-hoanh-thanh",
+  "ten": "Súp hoành thánh",
+  "ho_mon": "hoành thánh",
+  "hang": 6,
+  "thieu": []
+ },
+ {
+  "id": "hoanh-thanh-chay-ap-chao",
+  "ten": "Hoành thánh chay áp chảo",
+  "ho_mon": "hoành thánh",
+  "hang": 7,
+  "thieu": []
+ },
+ {
+  "id": "hoanh-thanh-ca-hoi",
+  "ten": "Hoành thánh cá hồi",
+  "ho_mon": "hoành thánh",
+  "hang": 8,
+  "thieu": [
+   "tương chua ngọt"
+  ]
+ },
+ {
+  "id": "hoanh-thanh-bap-chien",
+  "ten": "Hoành thánh bắp chiên",
+  "ho_mon": "hoành thánh",
+  "hang": 9,
+  "thieu": [
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "hoanh-thanh-chien-gion",
+  "ten": "Hoành thánh chiên giòn",
+  "ho_mon": "hoành thánh",
+  "hang": 10,
+  "thieu": [
+   "hoành thánh",
+   "lòng trắng trứng",
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "hoanh-thanh-hai-san-chien-gion",
+  "ten": "Hoành thánh hải sản chiên giòn",
+  "ho_mon": "hoành thánh",
+  "hang": 11,
+  "thieu": [
+   "tiêu sọ",
+   "tương xí muội",
+   "vỏ hoành thánh"
+  ]
+ },
+ {
+  "id": "hoanh-thanh-chay",
+  "ten": "Hoành thánh chay",
+  "ho_mon": "hoành thánh",
+  "hang": 12,
+  "thieu": [
+   "củ năng",
+   "khoai cau hấp",
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "hoanh-thanh",
+  "ten": "Hoành thánh",
+  "ho_mon": "hoành thánh",
+  "hang": 13,
+  "thieu": [
+   "hẹ lá",
+   "thịt xá xíu",
+   "tôm khô",
+   "vỏ hoành thánh"
+  ]
+ },
+ {
+  "id": "canh-suon-bi-do-rong-bien",
+  "ten": "Canh sườn bí đỏ rong biển",
+  "ho_mon": "bí đỏ",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "bi-do-kho-rong-bien",
+  "ten": "Bí đỏ kho rong biển",
+  "ho_mon": "bí đỏ",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "canh-bi-do-dau-phong",
+  "ten": "Canh bí đỏ đậu phộng",
+  "ho_mon": "bí đỏ",
+  "hang": 3,
+  "thieu": [
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "pancake-xot-bi-do-pho-mai",
+  "ten": "Pancake xốt bí đỏ phô mai",
+  "ho_mon": "bí đỏ",
+  "hang": 4,
+  "thieu": [
+   "chà bông gà"
+  ]
+ },
+ {
+  "id": "canh-bi-do-rong-bien",
+  "ten": "Canh bí đỏ rong biển",
+  "ho_mon": "bí đỏ",
+  "hang": 5,
+  "thieu": [
+   "sườn chay"
+  ]
+ },
+ {
+  "id": "bi-do-xao-thit-xong-khoi",
+  "ten": "Bí đỏ xào thịt xông khói",
+  "ho_mon": "bí đỏ",
+  "hang": 6,
+  "thieu": [
+   "thịt ba rọi xông khói"
+  ]
+ },
+ {
+  "id": "bi-do-hap-hat-sen",
+  "ten": "Bí đỏ hấp hạt sen",
+  "ho_mon": "bí đỏ",
+  "hang": 7,
+  "thieu": [
+   "đậu bi"
+  ]
+ },
+ {
+  "id": "sup-ga-bi-do",
+  "ten": "Súp Gà Bí Đỏ",
+  "ho_mon": "bí đỏ",
+  "hang": 8,
+  "thieu": [
+   "kem sữa"
+  ]
+ },
+ {
+  "id": "canh-bi-do-dau-xanh-2",
+  "ten": "Canh bí đỏ đậu xanh",
+  "ho_mon": "bí đỏ",
+  "hang": 9,
+  "thieu": [
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "com-tom-bi-do",
+  "ten": "Cơm tôm bí đỏ",
+  "ho_mon": "bí đỏ",
+  "hang": 10,
+  "thieu": [
+   "cơm nguội",
+   "đậu cô ve nhật"
+  ]
+ },
+ {
+  "id": "sup-tom-bi-do",
+  "ten": "Súp tôm bí đỏ",
+  "ho_mon": "bí đỏ",
+  "hang": 11,
+  "thieu": [
+   "bơ phe",
+   "lá thơm"
+  ]
+ },
+ {
+  "id": "bi-do-hap-hai-san",
+  "ten": "Bí đỏ hấp hải sản",
+  "ho_mon": "bí đỏ",
+  "hang": 12,
+  "thieu": [
+   "củ năng",
+   "ngò gai"
+  ]
+ },
+ {
+  "id": "canh-bach-qua-bi-do",
+  "ten": "Canh bạch quả bí đỏ",
+  "ho_mon": "bí đỏ",
+  "hang": 13,
+  "thieu": [
+   "bạch quả",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "com-gao-lut-bi-do-hap",
+  "ten": "Cơm gạo lứt bí đỏ hấp",
+  "ho_mon": "bí đỏ",
+  "hang": 14,
+  "thieu": [
+   "bí nhật",
+   "đậu bi"
+  ]
+ },
+ {
+  "id": "hamburger-bi-do",
+  "ten": "Hamburger bí đỏ",
+  "ho_mon": "bí đỏ",
+  "hang": 15,
+  "thieu": [
+   "ham chay",
+   "tàu hũ ki"
+  ]
+ },
+ {
+  "id": "canh-bi-do-hanh-nhan",
+  "ten": "Canh bí đỏ hạnh nhân",
+  "ho_mon": "bí đỏ",
+  "hang": 16,
+  "thieu": [
+   "hành ngò",
+   "hạnh nhân",
+   "tôm đất"
+  ]
+ },
+ {
+  "id": "salad-bi-do",
+  "ten": "Salad bí đỏ",
+  "ho_mon": "bí đỏ",
+  "hang": 17,
+  "thieu": [
+   "dầu ôliu",
+   "vỏ chanh mài",
+   "xốt ớt tabasco"
+  ]
+ },
+ {
+  "id": "banh-bi-do-tom-thit",
+  "ten": "Bánh bí đỏ tôm thịt",
+  "ho_mon": "bí đỏ",
+  "hang": 18,
+  "thieu": [
+   "hành ngò",
+   "lòng trắng trứng",
+   "tiêu sọ",
+   "vắt ráo nước"
+  ]
+ },
+ {
+  "id": "dau-hu-nhoi-tom-chien",
+  "ten": "Đậu hũ nhồi tôm chiên",
+  "ho_mon": "đậu hũ",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "dau-hu-xot-cay-xe",
+  "ten": "ĐẬU HŨ XỐT CAY XÈ",
+  "ho_mon": "đậu hũ",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "dau-hu-nhoi-hat-sen",
+  "ten": "Đậu hũ nhồi hạt sen",
+  "ho_mon": "đậu hũ",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "dau-hu-nhoi-nam-bao-ngu",
+  "ten": "Đậu hũ nhồi nấm bào ngư",
+  "ho_mon": "đậu hũ",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "rong-bien-cuon-dau-hu",
+  "ten": "Rong biển cuộn đậu hũ",
+  "ho_mon": "đậu hũ",
+  "hang": 5,
+  "thieu": []
+ },
+ {
+  "id": "dau-hu-xot-me-mayonnaise",
+  "ten": "Đậu hũ xốt mè mayonnaise",
+  "ho_mon": "đậu hũ",
+  "hang": 6,
+  "thieu": []
+ },
+ {
+  "id": "dau-hu-kho-nam-rom",
+  "ten": "Đậu hũ kho nấm rơm",
+  "ho_mon": "đậu hũ",
+  "hang": 7,
+  "thieu": [
+   "hành poa-rô"
+  ]
+ },
+ {
+  "id": "canh-boaro-nau-dau-hu-non",
+  "ten": "Canh boaro nấu đậu hũ non",
+  "ho_mon": "đậu hũ",
+  "hang": 8,
+  "thieu": [
+   "boarô"
+  ]
+ },
+ {
+  "id": "dau-hu-chien-sa-ot",
+  "ten": "Đậu hũ chiên sả ớt",
+  "ho_mon": "đậu hũ",
+  "hang": 9,
+  "thieu": [
+   "bột nghệ"
+  ]
+ },
+ {
+  "id": "suon-kho-dau-hu-non",
+  "ten": "Sườn kho đậu hũ non",
+  "ho_mon": "đậu hũ",
+  "hang": 10,
+  "thieu": [
+   "dầu màu điều"
+  ]
+ },
+ {
+  "id": "dau-hu-cuon-chien-gion",
+  "ten": "Đậu hũ cuộn chiên giòn",
+  "ho_mon": "đậu hũ",
+  "hang": 11,
+  "thieu": [
+   "hành ngò"
+  ]
+ },
+ {
+  "id": "dau-hu-don-tom-kho-chao",
+  "ten": "Đậu hũ dồn tôm kho chao",
+  "ho_mon": "đậu hũ",
+  "hang": 12,
+  "thieu": [
+   "chao trắng"
+  ]
+ },
+ {
+  "id": "dau-hu-hap-trung",
+  "ten": "Đậu hũ hấp trứng",
+  "ho_mon": "đậu hũ",
+  "hang": 13,
+  "thieu": [
+   "rượu sake"
+  ]
+ },
+ {
+  "id": "dau-hu-nuong-giay-bac",
+  "ten": "Đậu hũ nướng giấy bạc",
+  "ho_mon": "đậu hũ",
+  "hang": 14,
+  "thieu": [
+   "cua thịt"
+  ]
+ },
+ {
+  "id": "canh-ngheu-dau-hu-chua-cay",
+  "ten": "Canh nghêu đậu hũ chua cay",
+  "ho_mon": "đậu hũ",
+  "hang": 15,
+  "thieu": [
+   "nghêu vỏ còn sống"
+  ]
+ },
+ {
+  "id": "suon-chay-kho-dau-hu",
+  "ten": "Sườn chay kho đậu hũ",
+  "ho_mon": "đậu hũ",
+  "hang": 16,
+  "thieu": [
+   "sườn chay khô"
+  ]
+ },
+ {
+  "id": "suon-va-dau-hu-kho-thom",
+  "ten": "Sườn và đậu hũ kho thơm",
+  "ho_mon": "đậu hũ",
+  "hang": 17,
+  "thieu": [
+   "dầu màu điều"
+  ]
+ },
+ {
+  "id": "dau-hu-hap-tom",
+  "ten": "Đậu hũ hấp tôm",
+  "ho_mon": "đậu hũ",
+  "hang": 18,
+  "thieu": [
+   "đậu petit poise"
+  ]
+ },
+ {
+  "id": "ca-tim-dau-hu-chien-xu",
+  "ten": "Cà tím đậu hũ chiên xù",
+  "ho_mon": "đậu hũ",
+  "hang": 19,
+  "thieu": [
+   "bột xù"
+  ]
+ },
+ {
+  "id": "salad-tom-dau-hu",
+  "ten": "Salad tôm đậu hũ",
+  "ho_mon": "đậu hũ",
+  "hang": 20,
+  "thieu": [
+   "đậu cô ve nhật"
+  ]
+ },
+ {
+  "id": "dau-hu-xot-nam",
+  "ten": "Đậu hũ xốt nấm",
+  "ho_mon": "đậu hũ",
+  "hang": 21,
+  "thieu": [
+   "nấm mỡ"
+  ]
+ },
+ {
+  "id": "vien-dau-hu-xot-nuoc-tuong",
+  "ten": "Viên đậu hũ xốt nước tương",
+  "ho_mon": "đậu hũ",
+  "hang": 22,
+  "thieu": [
+   "gừng chiên"
+  ]
+ },
+ {
+  "id": "rau-cu-xao-dau-hu-xot-me",
+  "ten": "Rau củ xào đậu hũ xốt mè",
+  "ho_mon": "đậu hũ",
+  "hang": 23,
+  "thieu": [
+   "bí ngòi xanh"
+  ]
+ },
+ {
+  "id": "dau-hu-khia",
+  "ten": "Đậu hũ khìa",
+  "ho_mon": "đậu hũ",
+  "hang": 24,
+  "thieu": [
+   "bông hẹ"
+  ]
+ },
+ {
+  "id": "dau-hu-hap-la-han",
+  "ten": "Đậu hũ hấp la hán",
+  "ho_mon": "đậu hũ",
+  "hang": 25,
+  "thieu": [
+   "kỉ tử",
+   "thịt nguội chay"
+  ]
+ },
+ {
+  "id": "lau-ca-chem-dau-hu-non",
+  "ten": "Lẩu cá chẽm đậu hũ non",
+  "ho_mon": "đậu hũ",
+  "hang": 26,
+  "thieu": [
+   "cá chẽm",
+   "lá rau quế"
+  ]
+ },
+ {
+  "id": "salad-dau-hu-chien",
+  "ten": "Salad đậu hũ chiên",
+  "ho_mon": "đậu hũ",
+  "hang": 27,
+  "thieu": [
+   "chà bông heo",
+   "húng lủi"
+  ]
+ },
+ {
+  "id": "ga-hap-dau-hu-non",
+  "ten": "Gà hấp đậu hũ non",
+  "ho_mon": "đậu hũ",
+  "hang": 28,
+  "thieu": [
+   "thịt gà phi lê",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "sushi-dau-hu",
+  "ten": "Sushi đậu hũ",
+  "ho_mon": "đậu hũ",
+  "hang": 29,
+  "thieu": [
+   "cơm gạo nhật",
+   "dưa chua"
+  ]
+ },
+ {
+  "id": "dau-hu-croquette",
+  "ten": "Đậu hũ Croquette",
+  "ho_mon": "đậu hũ",
+  "hang": 30,
+  "thieu": [
+   "bột xù",
+   "ngò gai"
+  ]
+ },
+ {
+  "id": "dau-hu-chien-xot-ca",
+  "ten": "Đậu hũ chiên xốt cà",
+  "ho_mon": "đậu hũ",
+  "hang": 31,
+  "thieu": [
+   "bún tàu",
+   "dưa kiệu chua"
+  ]
+ },
+ {
+  "id": "dau-hu-hap-nam-nhat",
+  "ten": "Đậu hũ hấp nấm Nhật",
+  "ho_mon": "đậu hũ",
+  "hang": 32,
+  "thieu": [
+   "nấm nhật",
+   "tiêu sọ bể"
+  ]
+ },
+ {
+  "id": "dau-hu-ap-chao-sot-sambal",
+  "ten": "Đậu hũ áp chảo xốt sambal",
+  "ho_mon": "đậu hũ",
+  "hang": 33,
+  "thieu": [
+   "dụng cụ",
+   "xốt tabaco"
+  ]
+ },
+ {
+  "id": "cuon-rau-dau-hu",
+  "ten": "Cuốn rau đậu hũ",
+  "ho_mon": "đậu hũ",
+  "hang": 34,
+  "thieu": [
+   "thính gạo",
+   "đồ chua"
+  ]
+ },
+ {
+  "id": "cuon-chay-dau-hu-rau-rung",
+  "ten": "Cuốn chay đậu hũ rau rừng",
+  "ho_mon": "đậu hũ",
+  "hang": 35,
+  "thieu": [
+   "boarô",
+   "củ hũ dừa",
+   "rau rừng"
+  ]
+ },
+ {
+  "id": "dau-hu-nhoi-xot-me-2",
+  "ten": "Đậu hũ nhồi xốt me",
+  "ho_mon": "đậu hũ",
+  "hang": 36,
+  "thieu": [
+   "bún tàu",
+   "hành boarô",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "cuon-rong-bien-dau-hu",
+  "ten": "Cuốn rong biển đậu hũ",
+  "ho_mon": "đậu hũ",
+  "hang": 37,
+  "thieu": [
+   "ham chay",
+   "hành baro",
+   "tiêu bể"
+  ]
+ },
+ {
+  "id": "ca-chua-nhoi-dau-hu",
+  "ten": "Cà chua nhồi đậu hũ",
+  "ho_mon": "đậu hũ",
+  "hang": 38,
+  "thieu": [
+   "bún tàu",
+   "củ năng",
+   "xốt cà hộp"
+  ]
+ },
+ {
+  "id": "dau-hu-xao-nam",
+  "ten": "Đậu hũ xào nấm",
+  "ho_mon": "đậu hũ",
+  "hang": 39,
+  "thieu": [
+   "cải xoong",
+   "hạt điều",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "dau-hu-thit-cua-vien-chien",
+  "ten": "Đậu hũ thịt cua viên chiên",
+  "ho_mon": "đậu hũ",
+  "hang": 40,
+  "thieu": [
+   "cá thác",
+   "lòng đỏ trứng",
+   "tóp mỡ",
+   "wasabi"
+  ]
+ },
+ {
+  "id": "dau-hu-um-nuoc-cot-dua",
+  "ten": "Đậu hũ um nước cốt dừa",
+  "ho_mon": "đậu hũ",
+  "hang": 41,
+  "thieu": [
+   "bột nghệ",
+   "lá cách non",
+   "nấm đầu khỉ",
+   "tàu hủ ky"
+  ]
+ },
+ {
+  "id": "dau-hu-bao-bo",
+  "ten": "Đậu hũ bao bố",
+  "ho_mon": "đậu hũ",
+  "hang": 42,
+  "thieu": [
+   "bông hẹ chần",
+   "chả chay",
+   "củ năng",
+   "poa-rô"
+  ]
+ },
+ {
+  "id": "mit-non-tron-tau-hu-ky",
+  "ten": "Mít non trộn đậu hũ ky",
+  "ho_mon": "đậu hũ",
+  "hang": 43,
+  "thieu": [
+   "dưa kiệu",
+   "dầu boaro",
+   "mít non",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "cai-ro-xot-me-dau-hu",
+  "ten": "Cải rổ xốt mè đậu hũ",
+  "ho_mon": "đậu hũ",
+  "hang": 44,
+  "thieu": [
+   "bột cá dashi",
+   "cream cheese",
+   "cải rổ",
+   "mirin",
+   "sake",
+   "tương mè trắng"
+  ]
+ },
+ {
+  "id": "dau-hu-xao-lan",
+  "ten": "Đậu hũ xào lăn",
+  "ho_mon": "đậu hũ",
+  "hang": 45,
+  "thieu": [
+   "bún tàu",
+   "bột nghệ",
+   "ham chay",
+   "ngò gai",
+   "rau om",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "mi-tron-gyoza",
+  "ten": "MÌ TRỘN GYOZA",
+  "ho_mon": "mì trộn",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "mi-tron-vi-thai",
+  "ten": "Mì Trộn Vị Thái",
+  "ho_mon": "mì trộn",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "mi-tron-tom-trung-mayonnaise",
+  "ten": "Mì trộn tôm trứng mayonnaise",
+  "ho_mon": "mì trộn",
+  "hang": 3,
+  "thieu": [
+   "mì koreno"
+  ]
+ },
+ {
+  "id": "gyoza-mi-tron",
+  "ten": "GYOZA MÌ TRỘN",
+  "ho_mon": "mì trộn",
+  "hang": 4,
+  "thieu": [
+   "bánh xếp kiểu nhật gyoza",
+   "giam gạo"
+  ]
+ },
+ {
+  "id": "mi-tron-xot-mayonnaise",
+  "ten": "Mì trộn xốt mayonnaise",
+  "ho_mon": "mì trộn",
+  "hang": 5,
+  "thieu": [
+   "bông hẹ",
+   "hành bắc"
+  ]
+ },
+ {
+  "id": "mi-tron-sot-kho-quet",
+  "ten": "Mì trộn sốt kho quẹt",
+  "ho_mon": "mì trộn",
+  "hang": 6,
+  "thieu": [
+   "giá đỗ",
+   "thịt thăn bò",
+   "xốt kho quẹt"
+  ]
+ },
+ {
+  "id": "banh-cuon-lanh",
+  "ten": "Bánh cuốn lạnh",
+  "ho_mon": "bánh cuốn",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "banh-cuon-nhan-ca-hoi",
+  "ten": "Bánh cuốn nhân cá hồi",
+  "ho_mon": "bánh cuốn",
+  "hang": 2,
+  "thieu": [
+   "bánh ướt tròn"
+  ]
+ },
+ {
+  "id": "banh-cuon-chay",
+  "ten": "Bánh cuốn chay",
+  "ho_mon": "bánh cuốn",
+  "hang": 3,
+  "thieu": [
+   "bột bánh cuốn",
+   "kiệu chua"
+  ]
+ },
+ {
+  "id": "banh-cuon-long-vit",
+  "ten": "Bánh cuốn lòng vịt",
+  "ho_mon": "bánh cuốn",
+  "hang": 4,
+  "thieu": [
+   "bột bánh cuốn",
+   "lòng vịt",
+   "màu nước dành dành",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "banh-cuon-cu-cai",
+  "ten": "Bánh cuốn củ cải",
+  "ho_mon": "bánh cuốn",
+  "hang": 5,
+  "thieu": [
+   "bột bánh cuốn",
+   "chà bông tôm",
+   "giá trụng",
+   "rau quế"
+  ]
+ },
+ {
+  "id": "canh-chua-bong-thien-ly",
+  "ten": "Canh chua bông thiên lý",
+  "ho_mon": "canh chua",
+  "hang": 1,
+  "thieu": [
+   "bông thiên lý"
+  ]
+ },
+ {
+  "id": "canh-chua-ca-cu-thi-la",
+  "ten": "Canh chua cá củ thì là",
+  "ho_mon": "canh chua",
+  "hang": 2,
+  "thieu": [
+   "tỏi dầu"
+  ]
+ },
+ {
+  "id": "canh-chua-cu-hu-dua-tom-dat",
+  "ten": "Canh chua củ hủ dừa tôm đất",
+  "ho_mon": "canh chua",
+  "hang": 3,
+  "thieu": [
+   "củ hũ dừa",
+   "tôm đất"
+  ]
+ },
+ {
+  "id": "canh-chua-ca-dua-1-nang",
+  "ten": "Canh chua cá dứa 1 nắng",
+  "ho_mon": "canh chua",
+  "hang": 4,
+  "thieu": [
+   "bạc hà",
+   "cá dứa"
+  ]
+ },
+ {
+  "id": "canh-chua-dua-cai",
+  "ten": "Canh chua dưa cải",
+  "ho_mon": "canh chua",
+  "hang": 5,
+  "thieu": [
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-chua-tom-rau-muong",
+  "ten": "Canh chua tôm rau muống",
+  "ho_mon": "canh chua",
+  "hang": 6,
+  "thieu": [
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-chua-dau-ca-hoi",
+  "ten": "Canh chua đầu cá hồi",
+  "ho_mon": "canh chua",
+  "hang": 7,
+  "thieu": [
+   "măng chua",
+   "nước cốt me"
+  ]
+ },
+ {
+  "id": "canh-chua-bon-bon-vi-thai",
+  "ten": "Canh chua bồn bồn vị thái",
+  "ho_mon": "canh chua",
+  "hang": 8,
+  "thieu": [
+   "bồn bồn",
+   "cá hú"
+  ]
+ },
+ {
+  "id": "canh-chua-tom-bon-bon-bong-dien-dien",
+  "ten": "CANH CHUA TÔM BỒN BỒN BÔNG ĐIÊN ĐIỂN",
+  "ho_mon": "canh chua",
+  "hang": 9,
+  "thieu": [
+   "bồn bồn",
+   "tôm càng"
+  ]
+ },
+ {
+  "id": "canh-chua-tom-nuoc-trong",
+  "ten": "Canh chua tôm nước trong",
+  "ho_mon": "canh chua",
+  "hang": 10,
+  "thieu": [
+   "dường",
+   "giá đỗ bỏ rể"
+  ]
+ },
+ {
+  "id": "canh-chua-ca-loc-dau-tuong",
+  "ten": "Canh chua cá lóc đậu tương",
+  "ho_mon": "canh chua",
+  "hang": 11,
+  "thieu": [
+   "cọng súng",
+   "ăn trưa"
+  ]
+ },
+ {
+  "id": "canh-chua-tom-ca-ri",
+  "ten": "Canh chua tôm cà ri",
+  "ho_mon": "canh chua",
+  "hang": 12,
+  "thieu": [
+   "lá cà ry",
+   "tôm bạc đất"
+  ]
+ },
+ {
+  "id": "canh-chua-chem-chep",
+  "ten": "Canh chua chem chép",
+  "ho_mon": "canh chua",
+  "hang": 13,
+  "thieu": [
+   "chem chép",
+   "khế",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-chua-ca-nau-mang",
+  "ten": "Canh chua cá nấu măng",
+  "ho_mon": "canh chua",
+  "hang": 14,
+  "thieu": [
+   "cá bớp",
+   "măng chua",
+   "ngò gai"
+  ]
+ },
+ {
+  "id": "canh-chua-ca-mien-nam",
+  "ten": "Canh chua cá miền Nam",
+  "ho_mon": "canh chua",
+  "hang": 15,
+  "thieu": [
+   "bạc hà",
+   "cá liệt",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-chua-ca-dieu-hong",
+  "ten": "Canh chua cá diêu hồng",
+  "ho_mon": "canh chua",
+  "hang": 16,
+  "thieu": [
+   "dọc mùng",
+   "dứa",
+   "hành củ"
+  ]
+ },
+ {
+  "id": "canh-chua-mang",
+  "ten": "Canh chua măng",
+  "ho_mon": "canh chua",
+  "hang": 17,
+  "thieu": [
+   "cá điêu hồng",
+   "lá lốt",
+   "măng chua"
+  ]
+ },
+ {
+  "id": "canh-chua-ca-keo-bong-so-dua",
+  "ten": "Canh chua cá kèo bông so đũa",
+  "ho_mon": "canh chua",
+  "hang": 18,
+  "thieu": [
+   "bông so đũa",
+   "cá kèo",
+   "rau nhút"
+  ]
+ },
+ {
+  "id": "canh-chua-nau-ca-hoi",
+  "ten": "Canh chua nấu cá hồi",
+  "ho_mon": "canh chua",
+  "hang": 19,
+  "thieu": [
+   "măng chua",
+   "ngò gai",
+   "ngò om"
+  ]
+ },
+ {
+  "id": "canh-chua-suon",
+  "ten": "Canh chua sườn",
+  "ho_mon": "canh chua",
+  "hang": 20,
+  "thieu": [
+   "ngò gai",
+   "ngò om",
+   "tỏi dầu"
+  ]
+ },
+ {
+  "id": "canh-chua-ca",
+  "ten": "Canh chua cá",
+  "ho_mon": "canh chua",
+  "hang": 21,
+  "thieu": [
+   "bạc hà",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-chua-muc",
+  "ten": "Canh chua mực",
+  "ho_mon": "canh chua",
+  "hang": 22,
+  "thieu": [
+   "cọng súng",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-chua-hai-san",
+  "ten": "Canh chua hải sản",
+  "ho_mon": "canh chua",
+  "hang": 23,
+  "thieu": [
+   "lá chanh",
+   "riềng",
+   "tôm đất"
+  ]
+ },
+ {
+  "id": "canh-chua-bong-so-dua-chay",
+  "ten": "Canh chua bông so đũa chay",
+  "ho_mon": "canh chua",
+  "hang": 24,
+  "thieu": [
+   "bông so đũa",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-chua-ca-loc",
+  "ten": "Canh chua cá lóc",
+  "ho_mon": "canh chua",
+  "hang": 25,
+  "thieu": [
+   "bạc hà",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-chua-bap-cai-tim",
+  "ten": "Canh chua bắp cải tím",
+  "ho_mon": "canh chua",
+  "hang": 26,
+  "thieu": [
+   "ngò gai",
+   "nước cốt me",
+   "rau om",
+   "tép"
+  ]
+ },
+ {
+  "id": "canh-chua-trai-tac",
+  "ten": "Canh chua trái tắc",
+  "ho_mon": "canh chua",
+  "hang": 27,
+  "thieu": [
+   "bạc hà",
+   "cá điêu hồng",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-chua-thit-bam",
+  "ten": "Canh chua thịt băm",
+  "ho_mon": "canh chua",
+  "hang": 28,
+  "thieu": [
+   "giá đỗ",
+   "hành củ",
+   "hành hoa",
+   "ngò gai",
+   "ngò om"
+  ]
+ },
+ {
+  "id": "canh-chua-thai",
+  "ten": "Canh chua Thái",
+  "ho_mon": "canh chua",
+  "hang": 29,
+  "thieu": [
+   "cốt chanh",
+   "cốt dừa",
+   "lá chúc",
+   "riềng",
+   "tôm càng lóng"
+  ]
+ },
+ {
+  "id": "canh-chua-ga-bong-so-dua",
+  "ten": "Canh chua gà bông so đũa",
+  "ho_mon": "canh chua",
+  "hang": 30,
+  "thieu": [
+   "bông so đũa",
+   "bạc hà",
+   "ngò gai",
+   "nước cốt me",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-chua-ca-lang-rau-nhut",
+  "ten": "Canh chua cá lăng rau nhút",
+  "ho_mon": "canh chua",
+  "hang": 31,
+  "thieu": [
+   "cá lăng",
+   "khế chua",
+   "mỡ nước",
+   "ngò gai",
+   "nước cốt me",
+   "rau nhút",
+   "rau om",
+   "tần dày lá sả cây",
+   "đậu phộng",
+   "đậu rồng"
+  ]
+ },
+ {
+  "id": "mi-xao-tron-mayonnaise",
+  "ten": "Mì xào trộn mayonnaise",
+  "ho_mon": "mì xào",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "mi-xao-ga-chua-cay",
+  "ten": "Mì xào gà chua cay",
+  "ho_mon": "mì xào",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "mi-xao-bo",
+  "ten": "MÌ XÀO BÒ",
+  "ho_mon": "mì xào",
+  "hang": 3,
+  "thieu": [
+   "mì vàng",
+   "thịt bò"
+  ]
+ },
+ {
+  "id": "mi-xao-bo-rau-cu",
+  "ten": "Mì xào bò rau củ",
+  "ho_mon": "mì xào",
+  "hang": 4,
+  "thieu": [
+   "mì vàng",
+   "thịt bò"
+  ]
+ },
+ {
+  "id": "hu-tieu-mi-xao",
+  "ten": "Hủ tiếu mì xào",
+  "ho_mon": "mì xào",
+  "hang": 5,
+  "thieu": [
+   "hẹ lá",
+   "tim heo"
+  ]
+ },
+ {
+  "id": "mi-xao-gion-so-diep",
+  "ten": "Mì xào giòn sò điệp",
+  "ho_mon": "mì xào",
+  "hang": 6,
+  "thieu": [
+   "cồi sò điệp",
+   "dầu màu điều",
+   "mì vàng"
+  ]
+ },
+ {
+  "id": "mi-xao-xa-xiu",
+  "ten": "Bỏ túi công thức làm mì xào xá xíu chuẩn vị người Hoa",
+  "ho_mon": "mì xào",
+  "hang": 7,
+  "thieu": [
+   "cải thảo",
+   "xá xíu",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "bun-mi-xao-tep",
+  "ten": "Bún mì xào tép",
+  "ho_mon": "mì xào",
+  "hang": 8,
+  "thieu": [
+   "dưa kiệu",
+   "tép",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "mi-xao-xa-xiu-2",
+  "ten": "Mì xào xá xíu",
+  "ho_mon": "mì xào",
+  "hang": 9,
+  "thieu": [
+   "cải thảo",
+   "xá xíu",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "mi-xao-gion-chay",
+  "ten": "Mì xào giòn chay",
+  "ho_mon": "mì xào",
+  "hang": 10,
+  "thieu": [
+   "cải thảo",
+   "mì chiên giòn",
+   "thịt nguội chay"
+  ]
+ },
+ {
+  "id": "ga-chien-gion",
+  "ten": "Gà chiên giòn",
+  "ho_mon": "gà chiên",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "canh-ga-chien-coca",
+  "ten": "Cánh gà chiên Coca",
+  "ho_mon": "gà chiên",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "ga-chien-sa-te-xot-mayonnaise",
+  "ten": "Gà chiên sa tế xốt mayonnaise",
+  "ho_mon": "gà chiên",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "ga-chien-xa-xi",
+  "ten": "Gà chiên xá xị",
+  "ho_mon": "gà chiên",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "ga-chien-xot-tao",
+  "ten": "Gà chiên xốt táo",
+  "ho_mon": "gà chiên",
+  "hang": 5,
+  "thieu": []
+ },
+ {
+  "id": "ga-chien-lap-xuong",
+  "ten": "Gà chiên lạp xưởng",
+  "ho_mon": "gà chiên",
+  "hang": 6,
+  "thieu": []
+ },
+ {
+  "id": "ga-chien-tron-xot-ngot-mayonnaise",
+  "ten": "Gà chiên trộn xốt ngọt Mayonnaise",
+  "ho_mon": "gà chiên",
+  "hang": 7,
+  "thieu": []
+ },
+ {
+  "id": "ga-chien-bap-pho-mai",
+  "ten": "Gà chiên bắp phô mai",
+  "ho_mon": "gà chiên",
+  "hang": 8,
+  "thieu": [
+   "bột pho mai"
+  ]
+ },
+ {
+  "id": "ga-chien-gion-xoc-vi-thai",
+  "ten": "Gà Chiên Giòn Xóc Vị Thái",
+  "ho_mon": "gà chiên",
+  "hang": 9,
+  "thieu": [
+   "gà phi lê"
+  ]
+ },
+ {
+  "id": "ga-chien-sa-la-chanh",
+  "ten": "Gà chiên sả lá chanh",
+  "ho_mon": "gà chiên",
+  "hang": 10,
+  "thieu": [
+   "lá chanh bắc"
+  ]
+ },
+ {
+  "id": "canh-ga-chien-nuoc-mam",
+  "ten": "Cánh gà chiên nước mắm",
+  "ho_mon": "gà chiên",
+  "hang": 11,
+  "thieu": [
+   "nước cốt tỏi"
+  ]
+ },
+ {
+  "id": "canh-ga-chien-sa-te-tom",
+  "ten": "Cánh gà chiên sa tế tôm",
+  "ho_mon": "gà chiên",
+  "hang": 12,
+  "thieu": [
+   "tôm khô ngâm"
+  ]
+ },
+ {
+  "id": "chan-ga-chien-cham-mam-me",
+  "ten": "Chân gà chiên chấm mắm mè",
+  "ho_mon": "gà chiên",
+  "hang": 13,
+  "thieu": [
+   "nước cốt gừng"
+  ]
+ },
+ {
+  "id": "canh-ga-chien-ngu-coc",
+  "ten": "Cánh gà chiên ngũ cốc",
+  "ho_mon": "gà chiên",
+  "hang": 14,
+  "thieu": [
+   "nước cốt hành tím"
+  ]
+ },
+ {
+  "id": "ga-chien-bo",
+  "ten": "Gà chiên bơ",
+  "ho_mon": "gà chiên",
+  "hang": 15,
+  "thieu": [
+   "lá quế"
+  ]
+ },
+ {
+  "id": "ga-chien-la-dua",
+  "ten": "Gà chiên lá dứa",
+  "ho_mon": "gà chiên",
+  "hang": 16,
+  "thieu": [
+   "lá dứa bản"
+  ]
+ },
+ {
+  "id": "canh-ga-chien-toi-la-chanh",
+  "ten": "Cánh gà chiên tỏi lá chanh",
+  "ho_mon": "gà chiên",
+  "hang": 17,
+  "thieu": [
+   "lá chanh"
+  ]
+ },
+ {
+  "id": "ca-tim-kep-thit-ga-chien",
+  "ten": "Cà tím kẹp thịt gà chiên",
+  "ho_mon": "gà chiên",
+  "hang": 18,
+  "thieu": [
+   "lá chanh"
+  ]
+ },
+ {
+  "id": "canh-ga-chien-la-chanh",
+  "ten": "Cánh gà chiên lá chanh",
+  "ho_mon": "gà chiên",
+  "hang": 19,
+  "thieu": [
+   "cách gà công nghiệp",
+   "lá chanh"
+  ]
+ },
+ {
+  "id": "canh-ga-chien-tieu-lop",
+  "ten": "Cánh gà chiên tiêu lốp",
+  "ho_mon": "gà chiên",
+  "hang": 20,
+  "thieu": [
+   "kem béo",
+   "tiêu lốp"
+  ]
+ },
+ {
+  "id": "xoi-ga-chien",
+  "ten": "Xôi gà chiên",
+  "ho_mon": "gà chiên",
+  "hang": 21,
+  "thieu": [
+   "thịt gà",
+   "xôi đậu xanh"
+  ]
+ },
+ {
+  "id": "ga-chien-xuc-xich-ot-xiem",
+  "ten": "Gà chiên xúc xích ớt xiêm",
+  "ho_mon": "gà chiên",
+  "hang": 22,
+  "thieu": [
+   "cải mầm",
+   "xúc xích hun khói"
+  ]
+ },
+ {
+  "id": "banh-ga-chien-xot-me",
+  "ten": "Bánh gà chiên xốt mè",
+  "ho_mon": "gà chiên",
+  "hang": 23,
+  "thieu": [
+   "lòng đỏ trứng muối",
+   "thịt gà"
+  ]
+ },
+ {
+  "id": "ga-chien-vi-bo-toi",
+  "ten": "GÀ CHIÊN VỊ BƠ TỎI",
+  "ho_mon": "gà chiên",
+  "hang": 24,
+  "thieu": [
+   "btkcg hương vị bơ tỏi",
+   "mayo"
+  ]
+ },
+ {
+  "id": "ga-chien-la-e",
+  "ten": "Gà chiên lá é",
+  "ho_mon": "gà chiên",
+  "hang": 25,
+  "thieu": [
+   "lá é",
+   "muối hột",
+   "ớt xanh"
+  ]
+ },
+ {
+  "id": "dui-ga-chien-cay",
+  "ten": "Đùi gà chiên cay",
+  "ho_mon": "gà chiên",
+  "hang": 26,
+  "thieu": [
+   "bột ớt cay hàn quốc",
+   "lá húng lủi",
+   "vỏ chanh vàng mài"
+  ]
+ },
+ {
+  "id": "ga-chien-sot-taru-taru",
+  "ten": "Gà chiên sốt taru taru",
+  "ho_mon": "gà chiên",
+  "hang": 27,
+  "thieu": [
+   "bột xù trắng",
+   "dưa chuột muối",
+   "yaua không đường"
+  ]
+ },
+ {
+  "id": "canh-ga-chien-dua",
+  "ten": "Cánh gà chiên dừa",
+  "ho_mon": "gà chiên",
+  "hang": 28,
+  "thieu": [
+   "bột quế",
+   "cốt chanh",
+   "cốt dừa",
+   "dừa nạo sấy"
+  ]
+ },
+ {
+  "id": "canh-ga-chien-la-que",
+  "ten": "Cánh gà chiên lá quế",
+  "ho_mon": "gà chiên",
+  "hang": 29,
+  "thieu": [
+   "gà ta",
+   "lá quế",
+   "nước cốt hành tím",
+   "nước cốt tỏi"
+  ]
+ },
+ {
+  "id": "thanh-ga-chien-xot-cay",
+  "ten": "Thanh gà chiên xốt cay",
+  "ho_mon": "gà chiên",
+  "hang": 30,
+  "thieu": [
+   "bột xù",
+   "lá chanh",
+   "xốt ớt hàn quốc",
+   "ớt bột dầu mè"
+  ]
+ },
+ {
+  "id": "ga-chien-me-xot-chanh-muoi-mayo",
+  "ten": "Gà chiên mè xốt chanh muối Mayo",
+  "ho_mon": "gà chiên",
+  "hang": 31,
+  "thieu": [
+   "bột xù",
+   "chanh muối",
+   "gà má đùi",
+   "mè đen",
+   "ngò tây"
+  ]
+ },
+ {
+  "id": "bun-cha-hen",
+  "ten": "Bún chả hến",
+  "ho_mon": "bún chả",
+  "hang": 1,
+  "thieu": [
+   "mỡ gáy",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "bun-gao-xao-ga",
+  "ten": "Bún gạo xào gà",
+  "ho_mon": "gạo xào",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "bun-gao-xao-long-nghe",
+  "ten": "Bún gạo xào lòng nghệ",
+  "ho_mon": "gạo xào",
+  "hang": 2,
+  "thieu": [
+   "hẹ lá",
+   "lòng non"
+  ]
+ },
+ {
+  "id": "bun-gao-xao-mayo",
+  "ten": "Bún gạo xào mayo",
+  "ho_mon": "gạo xào",
+  "hang": 3,
+  "thieu": [
+   "bông hẹ",
+   "thịt bò phi lê"
+  ]
+ },
+ {
+  "id": "banh-gao-xao-cay",
+  "ten": "Bánh gạo xào cay",
+  "ho_mon": "gạo xào",
+  "hang": 4,
+  "thieu": [
+   "bánh gạo",
+   "gà má đùi"
+  ]
+ },
+ {
+  "id": "bun-gao-xao-chao-do",
+  "ten": "Bún gạo xào chao đỏ",
+  "ho_mon": "gạo xào",
+  "hang": 5,
+  "thieu": [
+   "đậu phộng",
+   "ớt chao đỏ"
+  ]
+ },
+ {
+  "id": "bun-gao-xao-rau-cu",
+  "ten": "Bún gạo xào rau củ",
+  "ho_mon": "gạo xào",
+  "hang": 6,
+  "thieu": [
+   "gà chay",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "bun-gao-xao-thap-cam",
+  "ten": "Bún gạo xào thập cẩm",
+  "ho_mon": "gạo xào",
+  "hang": 7,
+  "thieu": [
+   "bông hẹ",
+   "hành ngò",
+   "jambon"
+  ]
+ },
+ {
+  "id": "lau-bo-hoa",
+  "ten": "Lẩu bò hoa",
+  "ho_mon": "lẩu bò",
+  "hang": 1,
+  "thieu": [
+   "cải thảo",
+   "nêm sẵn phở bò"
+  ]
+ },
+ {
+  "id": "lau-bo-2",
+  "ten": "Công thức nấu lẩu bò với nước dùng đậm đà mê ly",
+  "ho_mon": "lẩu bò",
+  "hang": 2,
+  "thieu": [
+   "cải xanh",
+   "khoai môn"
+  ]
+ },
+ {
+  "id": "lau-bo-chua-cay",
+  "ten": "Cách làm lẩu bò chua cay hương vị lẩu Thái đậm đà",
+  "ho_mon": "lẩu bò",
+  "hang": 3,
+  "thieu": [
+   "gân bò lạng",
+   "hành tím+ tỏi củ",
+   "khăn lông bò"
+  ]
+ },
+ {
+  "id": "pha-lau",
+  "ten": "Cách nấu phá lẩu bò ngon chuẩn vị ai cũng làm được",
+  "ho_mon": "lẩu bò",
+  "hang": 4,
+  "thieu": [
+   "cái vị",
+   "lưỡi heo",
+   "phèn chua",
+   "tai heo"
+  ]
+ },
+ {
+  "id": "lau-bo-thao-moc",
+  "ten": "Lẩu bò thảo mộc",
+  "ho_mon": "lẩu bò",
+  "hang": 5,
+  "thieu": [
+   "bò phi lê",
+   "khoai môn",
+   "kỷ tử",
+   "đẳng sâm"
+  ]
+ },
+ {
+  "id": "lau-bo-sa-te",
+  "ten": "Lẩu bò sa tế",
+  "ho_mon": "lẩu bò",
+  "hang": 6,
+  "thieu": [
+   "bột bò kho",
+   "hoa bí",
+   "thịt bò nạm",
+   "thịt bò phi lê",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "lau-bo-khoai-cao",
+  "ten": "Lẩu bò khoai cao",
+  "ho_mon": "lẩu bò",
+  "hang": 7,
+  "thieu": [
+   "bánh phở",
+   "gan bò",
+   "khoai môn cao",
+   "lá sách",
+   "thịt bò bắp hoa",
+   "tim bò"
+  ]
+ },
+ {
+  "id": "lau-bo-chua-cay-2",
+  "ten": "Lẩu bò chua cay",
+  "ho_mon": "lẩu bò",
+  "hang": 8,
+  "thieu": [
+   "chao",
+   "cải xanh",
+   "khoai môn cao",
+   "tai vị thơm",
+   "thịt bò phi lê",
+   "tàu hủ ky chiên",
+   "tần ô"
+  ]
+ },
+ {
+  "id": "trung-hap-tom-nam",
+  "ten": "Trứng hấp tôm nấm",
+  "ho_mon": "trứng hấp",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "trung-hap-kieu-nhat",
+  "ten": "Trứng hấp kiểu Nhật",
+  "ho_mon": "trứng hấp",
+  "hang": 2,
+  "thieu": [
+   "thanh cá giả"
+  ]
+ },
+ {
+  "id": "trung-hap-hau-rong-bien",
+  "ten": "Trứng hấp hàu rong biển",
+  "ho_mon": "trứng hấp",
+  "hang": 3,
+  "thieu": [
+   "hàu sữa"
+  ]
+ },
+ {
+  "id": "trung-hap-hai-san",
+  "ten": "Trứng hấp hải sản",
+  "ho_mon": "trứng hấp",
+  "hang": 4,
+  "thieu": [
+   "nghêu",
+   "thanh cá giả"
+  ]
+ },
+ {
+  "id": "trung-hap",
+  "ten": "Trứng hấp",
+  "ho_mon": "trứng hấp",
+  "hang": 5,
+  "thieu": [
+   "bắp hạt",
+   "nấm nút"
+  ]
+ },
+ {
+  "id": "cha-trung-hap",
+  "ten": "Chả trứng hấp",
+  "ho_mon": "trứng hấp",
+  "hang": 6,
+  "thieu": [
+   "bún tàu",
+   "dầu màu điều",
+   "trứng muối"
+  ]
+ },
+ {
+  "id": "trung-hap-rau-cu",
+  "ten": "Trứng hấp rau củ",
+  "ho_mon": "trứng hấp",
+  "hang": 7,
+  "thieu": [
+   "nước cốt gừng",
+   "sen",
+   "óc heo",
+   "đậu que"
+  ]
+ },
+ {
+  "id": "ca-nuong-mu-tat",
+  "ten": "Cá nướng mù tạt",
+  "ho_mon": "cá nướng",
+  "hang": 1,
+  "thieu": [
+   "lòng đỏ trứng"
+  ]
+ },
+ {
+  "id": "ca-nuong-cham-muoi-ot-xanh",
+  "ten": "Cách làm món cá nướng chấm muối ớt xanh đổi vị cuối tuần",
+  "ho_mon": "cá nướng",
+  "hang": 2,
+  "thieu": [
+   "cá điêu hồng"
+  ]
+ },
+ {
+  "id": "ca-nuong-cham-muoi-ot-xanh-2",
+  "ten": "Cá nướng chấm muối ớt xanh",
+  "ho_mon": "cá nướng",
+  "hang": 3,
+  "thieu": [
+   "cá điêu hồng"
+  ]
+ },
+ {
+  "id": "ca-nuong-pa-pinh-top",
+  "ten": "Cá nướng Pa Pỉnh Tộp",
+  "ho_mon": "cá nướng",
+  "hang": 4,
+  "thieu": [
+   "húng lủi",
+   "hạt mắc khén"
+  ]
+ },
+ {
+  "id": "ca-nuong-xot-mayo-khoai-tay",
+  "ten": "Cá nướng xốt Mayo khoai tây",
+  "ho_mon": "cá nướng",
+  "hang": 5,
+  "thieu": [
+   "cá bớp fillet",
+   "lá oregano khô"
+  ]
+ },
+ {
+  "id": "ca-nuong-muoi-ot",
+  "ten": "Cá nướng muối ớt",
+  "ho_mon": "cá nướng",
+  "hang": 6,
+  "thieu": [
+   "cá tượng",
+   "dụng cụ",
+   "lá sen",
+   "muối hột"
+  ]
+ },
+ {
+  "id": "ca-nuong-thao-moc",
+  "ten": "Cá nướng thảo mộc",
+  "ho_mon": "cá nướng",
+  "hang": 7,
+  "thieu": [
+   "cá tầm phi lê",
+   "giấy bạc",
+   "lá thyme",
+   "muối hồng hymalaya",
+   "oregano",
+   "rosemary"
+  ]
+ },
+ {
+  "id": "cai-bo-xoi-xao-thit",
+  "ten": "Cải bó xôi xào thịt",
+  "ho_mon": "xào thịt",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "dau-que-xao-thit",
+  "ten": "Đậu que xào thịt",
+  "ho_mon": "xào thịt",
+  "hang": 2,
+  "thieu": [
+   "đậu que"
+  ]
+ },
+ {
+  "id": "khoai-tay-xao-thit-bo",
+  "ten": "Khoai tây xào thịt bò",
+  "ho_mon": "xào thịt",
+  "hang": 3,
+  "thieu": [
+   "thịt bò philê mềm"
+  ]
+ },
+ {
+  "id": "rau-cu-xao-thit-cua",
+  "ten": "Rau củ xào thịt cua",
+  "ho_mon": "xào thịt",
+  "hang": 4,
+  "thieu": [
+   "thịt càng cua"
+  ]
+ },
+ {
+  "id": "banh-da-xao-thit-ga-chua-ngot",
+  "ten": "Bánh đa xào thịt gà chua ngọt",
+  "ho_mon": "xào thịt",
+  "hang": 5,
+  "thieu": [
+   "ketchup",
+   "thịt gà"
+  ]
+ },
+ {
+  "id": "bun-gao-xao-thit-bo",
+  "ten": "Bún gạo xào thịt bò",
+  "ho_mon": "xào thịt",
+  "hang": 6,
+  "thieu": [
+   "bông hẹ",
+   "thịt bò filet"
+  ]
+ },
+ {
+  "id": "du-du-xao-thit-ga",
+  "ten": "Thử tài làm món đu đủ xào thịt gà dai ngon hấp dẫn",
+  "ho_mon": "xào thịt",
+  "hang": 7,
+  "thieu": [
+   "bông hẹ",
+   "lá rau quế",
+   "đu đủ hườm"
+  ]
+ },
+ {
+  "id": "cu-san-xao-thit",
+  "ten": "Củ sắn xào thịt",
+  "ho_mon": "xào thịt",
+  "hang": 8,
+  "thieu": [
+   "bông hẹ",
+   "hành ngò",
+   "thông thường"
+  ]
+ },
+ {
+  "id": "chan-nam-xao-thit-ga",
+  "ten": "Chân nấm xào thịt gà",
+  "ho_mon": "xào thịt",
+  "hang": 9,
+  "thieu": [
+   "hành ngò",
+   "mỡ nước",
+   "mực khô",
+   "thịt đùi gà ta góc tư"
+  ]
+ },
+ {
+  "id": "khoai-tay-xao-thit-bo-pho-mai",
+  "ten": "Khoai tây xào thịt bò phô mai",
+  "ho_mon": "xào thịt",
+  "hang": 10,
+  "thieu": [
+   "dầu ô liu",
+   "ngò tây",
+   "phô mai mozzarella",
+   "thịt bò"
+  ]
+ },
+ {
+  "id": "mi-y-xao-thit-bo-bam",
+  "ten": "Mì Ý xào thịt bò băm",
+  "ho_mon": "xào thịt",
+  "hang": 11,
+  "thieu": [
+   "mì ý",
+   "ngò tây",
+   "thịt bò",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "canh-cua-rau-can",
+  "ten": "Canh cua rau cần",
+  "ho_mon": "canh cua",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "canh-cua-dong-rong-bien",
+  "ten": "Canh cua đồng rong biển",
+  "ho_mon": "canh cua",
+  "hang": 2,
+  "thieu": [
+   "rong biểm wakame"
+  ]
+ },
+ {
+  "id": "canh-cua-rau-nhut",
+  "ten": "Canh cua rau nhút",
+  "ho_mon": "canh cua",
+  "hang": 3,
+  "thieu": [
+   "khoai sọ",
+   "rau nhút"
+  ]
+ },
+ {
+  "id": "canh-cua-rau-day",
+  "ten": "Canh cua rau đay",
+  "ho_mon": "canh cua",
+  "hang": 4,
+  "thieu": [
+   "gạch cua",
+   "nêm sẵn bún riêu cua",
+   "rau đay"
+  ]
+ },
+ {
+  "id": "banh-canh-cua-phong-tom",
+  "ten": "Bánh canh cua phồng tôm",
+  "ho_mon": "canh cua",
+  "hang": 5,
+  "thieu": [
+   "bánh phồng tôm",
+   "gạch cua",
+   "thịt bắp đùi heo"
+  ]
+ },
+ {
+  "id": "banh-canh-cua",
+  "ten": "Bánh canh cua",
+  "ho_mon": "canh cua",
+  "hang": 6,
+  "thieu": [
+   "càng cua",
+   "gạch cua",
+   "muối hột",
+   "thịt giò heo"
+  ]
+ },
+ {
+  "id": "tom-muc-chien-gion",
+  "ten": "Tôm mực chiên giòn",
+  "ho_mon": "mực chiên",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "goi-rau-muc-chien-gion",
+  "ten": "Gỏi râu mực chiên giòn",
+  "ho_mon": "mực chiên",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "goi-muc-chien",
+  "ten": "Gỏi mực chiên",
+  "ho_mon": "mực chiên",
+  "hang": 3,
+  "thieu": [
+   "húng lủi",
+   "mực lá"
+  ]
+ },
+ {
+  "id": "muc-chien-gion-sot-tac",
+  "ten": "Mực chiên giòn sốt tắc",
+  "ho_mon": "mực chiên",
+  "hang": 4,
+  "thieu": [
+   "mực lá",
+   "quả tắc",
+   "rau xà lách xoong"
+  ]
+ },
+ {
+  "id": "salad-muc-chien",
+  "ten": "Salad mực chiên",
+  "ho_mon": "mực chiên",
+  "hang": 5,
+  "thieu": [
+   "bắp hạt đông lạnh",
+   "lá quế",
+   "đậu bi đông lạnh"
+  ]
+ },
+ {
+  "id": "vien-cha-muc-chien-gion",
+  "ten": "Bật mí cách làm viên chả mực chiên giòn ngon bất bại",
+  "ho_mon": "mực chiên",
+  "hang": 6,
+  "thieu": [
+   "bột xù",
+   "mỡ gáy",
+   "mực lá dày"
+  ]
+ },
+ {
+  "id": "muc-chien-ngu-sac",
+  "ten": "Mực chiên ngũ sắc",
+  "ho_mon": "mực chiên",
+  "hang": 7,
+  "thieu": [
+   "bột nghệ",
+   "lá cẩm",
+   "lá dứa",
+   "mè đen"
+  ]
+ },
+ {
+  "id": "tau-hu-ky-cuon-muc-chien",
+  "ten": "Tàu hủ ky cuộn mực chiên",
+  "ho_mon": "mực chiên",
+  "hang": 8,
+  "thieu": [
+   "khoai môn",
+   "mực lá sơ",
+   "tàu hủ ky",
+   "xốt mè"
+  ]
+ },
+ {
+  "id": "cha-muc-chien",
+  "ten": "Chả mực chiên",
+  "ho_mon": "mực chiên",
+  "hang": 9,
+  "thieu": [
+   "bột xù",
+   "củ năng",
+   "mỡ gáy",
+   "mực nang",
+   "tương xí muội",
+   "đầu hành"
+  ]
+ },
+ {
+  "id": "salad-rong-nho",
+  "ten": "Salad rong nho",
+  "ho_mon": "salad rong",
+  "hang": 1,
+  "thieu": [
+   "ngò tây"
+  ]
+ },
+ {
+  "id": "salad-rong-bien-thanh-cua",
+  "ten": "Salad rong biển thanh cua",
+  "ho_mon": "salad rong",
+  "hang": 2,
+  "thieu": [
+   "hạnh nhân",
+   "xốt mè aji-xốt"
+  ]
+ },
+ {
+  "id": "salad-rong-nho-ca-hoi",
+  "ten": "Salad rong nho cá hồi",
+  "ho_mon": "salad rong",
+  "hang": 3,
+  "thieu": [
+   "cam mỹ",
+   "cá hồi xông khói"
+  ]
+ },
+ {
+  "id": "salad-rong-sun-trung-muoi",
+  "ten": "Salad rong sụn trứng muối",
+  "ho_mon": "salad rong",
+  "hang": 4,
+  "thieu": [
+   "rong sụn ngâm",
+   "thịt ba rọi xông khói"
+  ]
+ },
+ {
+  "id": "salad-rong-nho-xot-cam",
+  "ten": "Salad rong nho xốt cam",
+  "ho_mon": "salad rong",
+  "hang": 5,
+  "thieu": [
+   "cam mỹ",
+   "rau mầm tím",
+   "trứng cá hồi"
+  ]
+ },
+ {
+  "id": "goi-ga-rau-ram",
+  "ten": "Gỏi gà rau răm",
+  "ho_mon": "gỏi gà",
+  "hang": 1,
+  "thieu": [
+   "bắp chuối",
+   "gà ta"
+  ]
+ },
+ {
+  "id": "goi-ga-gion",
+  "ten": "Gỏi gà giòn",
+  "ho_mon": "gỏi gà",
+  "hang": 2,
+  "thieu": [
+   "bánh phồng tôm",
+   "lá quế"
+  ]
+ },
+ {
+  "id": "goi-ga-dua-leo",
+  "ten": "Gỏi gà dưa leo",
+  "ho_mon": "gỏi gà",
+  "hang": 3,
+  "thieu": [
+   "húng lủi",
+   "vỏ chanh mài"
+  ]
+ },
+ {
+  "id": "goi-ga-can-tay",
+  "ten": "Gỏi gà cần tây",
+  "ho_mon": "gỏi gà",
+  "hang": 4,
+  "thieu": [
+   "gà ta",
+   "gạo nấu cháo",
+   "đậu rồng non"
+  ]
+ },
+ {
+  "id": "goi-ga-sua-sa-tac",
+  "ten": "Thử ngay món gỏi gà sứa sả tắc đậm đà bắt miệng",
+  "ho_mon": "gỏi gà",
+  "hang": 5,
+  "thieu": [
+   "gà ta",
+   "hoa chuối",
+   "lá chanh",
+   "sứa ngâm chua"
+  ]
+ },
+ {
+  "id": "goi-ga-hoa-sung",
+  "ten": "Gỏi gà hoa súng",
+  "ho_mon": "gỏi gà",
+  "hang": 6,
+  "thieu": [
+   "cọng súng",
+   "gà ta",
+   "hoa súng",
+   "lá cóc non",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "ca-tim-kho-nam-thit-bam",
+  "ten": "Cà tím kho nấm thịt băm",
+  "ho_mon": "kho nấm",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "dau-hu-kho-nam-rom-2",
+  "ten": "Đậu hủ kho nấm rơm",
+  "ho_mon": "kho nấm",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "gio-heo-kho-nam-dong-co",
+  "ten": "Giò heo kho nấm đông cô",
+  "ho_mon": "kho nấm",
+  "hang": 3,
+  "thieu": [
+   "giò heo"
+  ]
+ },
+ {
+  "id": "mit-non-kho-nam",
+  "ten": "Mít non kho nấm",
+  "ho_mon": "kho nấm",
+  "hang": 4,
+  "thieu": [
+   "mít non"
+  ]
+ },
+ {
+  "id": "suon-kho-nam",
+  "ten": "Sườn kho nấm",
+  "ho_mon": "kho nấm",
+  "hang": 5,
+  "thieu": [
+   "sườn heo"
+  ]
+ },
+ {
+  "id": "cu-hu-dua-kho-nam",
+  "ten": "Củ hũ dừa kho nấm",
+  "ho_mon": "kho nấm",
+  "hang": 6,
+  "thieu": [
+   "củ hũ dừa",
+   "poa-ro"
+  ]
+ },
+ {
+  "id": "mi-can-kho-nam-chao-la-dua",
+  "ten": "Mì căn kho nấm - Cháo lá dứa",
+  "ho_mon": "kho nấm",
+  "hang": 7,
+  "thieu": [
+   "gạo mới",
+   "lá dứa",
+   "mì căn",
+   "nếp mới",
+   "poa rô",
+   "tiêu sọ"
+  ]
+ },
+ {
+  "id": "ca-nuc-kho-top-mo",
+  "ten": "Cá nục kho tóp mỡ",
+  "ho_mon": "nục kho",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "ca-nuc-kho-kieu-nhat",
+  "ten": "Cá nục kho kiểu Nhật",
+  "ho_mon": "nục kho",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "ca-nuc-kho-ruc",
+  "ten": "Cá nục kho rục",
+  "ho_mon": "nục kho",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "ca-nuc-kho-mia",
+  "ten": "Cá nục kho mía",
+  "ho_mon": "nục kho",
+  "hang": 4,
+  "thieu": [
+   "mía cây",
+   "ăn trưa kèm"
+  ]
+ },
+ {
+  "id": "ba-roi-tam-trung-chien-gion",
+  "ten": "Ba rọi tẩm trứng chiên giòn",
+  "ho_mon": "trứng chiên",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "ca-trung-chien-bo-toi",
+  "ten": "Cá trứng chiên bơ tỏi",
+  "ho_mon": "trứng chiên",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "trung-chien-dau-hu-thit-cua",
+  "ten": "Trứng chiên đậu hủ thịt cua",
+  "ho_mon": "trứng chiên",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "trung-chien-lap-xuong",
+  "ten": "Trứng chiên lạp xưởng",
+  "ho_mon": "trứng chiên",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "goi-trung-chien",
+  "ten": "Gỏi trứng chiên",
+  "ho_mon": "trứng chiên",
+  "hang": 5,
+  "thieu": []
+ },
+ {
+  "id": "trung-chien-ngai-cuu",
+  "ten": "Trứng chiên ngải cứu",
+  "ho_mon": "trứng chiên",
+  "hang": 6,
+  "thieu": [
+   "ngải cứu"
+  ]
+ },
+ {
+  "id": "trung-chien-rau-cu-xot-mayonnaise",
+  "ten": "Trứng chiên rau củ xốt mayonnaise",
+  "ho_mon": "trứng chiên",
+  "hang": 7,
+  "thieu": [
+   "đậu que"
+  ]
+ },
+ {
+  "id": "ca-trung-chien-gion",
+  "ten": "Cá trứng chiên giòn",
+  "ho_mon": "trứng chiên",
+  "hang": 8,
+  "thieu": [
+   "mè đen"
+  ]
+ },
+ {
+  "id": "com-nam-ca-ngu-tam-trung-chien",
+  "ten": "Cơm nắm cá ngừ tẩm trứng chiên",
+  "ho_mon": "trứng chiên",
+  "hang": 9,
+  "thieu": [
+   "cơm trắng dẻo"
+  ]
+ },
+ {
+  "id": "ca-trung-chien-xot-trung-muoi",
+  "ten": "Cá trứng chiên xốt trứng muối",
+  "ho_mon": "trứng chiên",
+  "hang": 10,
+  "thieu": [
+   "lòng đỏ trứng muối",
+   "màu điều"
+  ]
+ },
+ {
+  "id": "thit-ba-roi-tam-trung-chien-gion",
+  "ten": "Thịt Ba Rọi Tẩm Trứng Chiên Giòn",
+  "ho_mon": "trứng chiên",
+  "hang": 11,
+  "thieu": [
+   "lá thyme",
+   "trứng ga"
+  ]
+ },
+ {
+  "id": "trung-chien-com-xanh",
+  "ten": "Trứng chiên cốm xanh",
+  "ho_mon": "trứng chiên",
+  "hang": 12,
+  "thieu": [
+   "cốm xanh khô",
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "vit-kho-chuoi-xanh",
+  "ten": "Vịt kho chuối xanh",
+  "ho_mon": "vịt kho",
+  "hang": 1,
+  "thieu": [
+   "thịt vịt"
+  ]
+ },
+ {
+  "id": "vit-kho-ngu-vi",
+  "ten": "Vịt kho ngũ vị",
+  "ho_mon": "vịt kho",
+  "hang": 2,
+  "thieu": [
+   "đùi vịt góc tư"
+  ]
+ },
+ {
+  "id": "vit-kho-dua-gung-non",
+  "ten": "Vịt kho dưa gừng non",
+  "ho_mon": "vịt kho",
+  "hang": 3,
+  "thieu": [
+   "dưa gừng non",
+   "vịt"
+  ]
+ },
+ {
+  "id": "vit-kho-sau",
+  "ten": "Vịt kho sấu",
+  "ho_mon": "vịt kho",
+  "hang": 4,
+  "thieu": [
+   "sấu",
+   "thịt vịt"
+  ]
+ },
+ {
+  "id": "vit-kho-chanh-muoi",
+  "ten": "Vịt kho chanh muối",
+  "ho_mon": "vịt kho",
+  "hang": 5,
+  "thieu": [
+   "chanh muối",
+   "vịt",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "vit-kho-rau-cu",
+  "ten": "Vịt kho rau củ",
+  "ho_mon": "vịt kho",
+  "hang": 6,
+  "thieu": [
+   "caramel",
+   "đùi vịt góc tư",
+   "đậu que"
+  ]
+ },
+ {
+  "id": "vit-kho-rieng-ot-kho",
+  "ten": "Vịt kho riềng ớt khô",
+  "ho_mon": "vịt kho",
+  "hang": 7,
+  "thieu": [
+   "aji hạt nêm heo",
+   "riềng",
+   "vịt"
+  ]
+ },
+ {
+  "id": "suon-kho-giam-mat-ong",
+  "ten": "Sườn kho giấm mật ong",
+  "ho_mon": "sườn kho",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "suon-kho-bap-non",
+  "ten": "Sườn kho bắp non",
+  "ho_mon": "sườn kho",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "suon-kho-khoai-tay",
+  "ten": "Sườn kho khoai tây",
+  "ho_mon": "sườn kho",
+  "hang": 3,
+  "thieu": [
+   "củ nén"
+  ]
+ },
+ {
+  "id": "suon-kho-que-mat-ong",
+  "ten": "Sườn kho quế mật ong",
+  "ho_mon": "sườn kho",
+  "hang": 4,
+  "thieu": [
+   "bột quế",
+   "quế thanh"
+  ]
+ },
+ {
+  "id": "canh-tom-vien-nam-mong-toi",
+  "ten": "Canh tôm nấm mồng tơi",
+  "ho_mon": "canh tôm",
+  "hang": 1,
+  "thieu": [
+   "cọng ngò"
+  ]
+ },
+ {
+  "id": "canh-tom-la-ot",
+  "ten": "Canh tôm lá ớt",
+  "ho_mon": "canh tôm",
+  "hang": 2,
+  "thieu": [
+   "lá ớt",
+   "ớt đỏ"
+  ]
+ },
+ {
+  "id": "canh-tom-khoai-mai",
+  "ten": "Canh tôm khoai mài",
+  "ho_mon": "canh tôm",
+  "hang": 3,
+  "thieu": [
+   "củ mài",
+   "rau om"
+  ]
+ },
+ {
+  "id": "canh-tom-bap-vien",
+  "ten": "Canh tôm bắp viên",
+  "ho_mon": "canh tôm",
+  "hang": 4,
+  "thieu": [
+   "su hào",
+   "tôm đất"
+  ]
+ },
+ {
+  "id": "canh-tom-rau-can-nuoc",
+  "ten": "Canh tôm rau cần nước",
+  "ho_mon": "canh tôm",
+  "hang": 5,
+  "thieu": [
+   "mỡ nước",
+   "tiêu sọ"
+  ]
+ },
+ {
+  "id": "canh-tom-banh-gao",
+  "ten": "Canh tôm bánh gạo",
+  "ho_mon": "canh tôm",
+  "hang": 6,
+  "thieu": [
+   "bánh gạo hàn quốc",
+   "màu điều"
+  ]
+ },
+ {
+  "id": "canh-tom-bo-ngot-2",
+  "ten": "Canh tôm bồ ngót",
+  "ho_mon": "canh tôm",
+  "hang": 7,
+  "thieu": [
+   "bắp vàng",
+   "rau bồ ngót",
+   "tôm đất"
+  ]
+ },
+ {
+  "id": "canh-tom-moc-hat-sen",
+  "ten": "Bí quyết nấu canh tôm mọc hạt sen thanh ngọt tiêu nhiệt",
+  "ho_mon": "canh tôm",
+  "hang": 8,
+  "thieu": [
+   "bóc vỏ",
+   "cọng ngò",
+   "hành ngò"
+  ]
+ },
+ {
+  "id": "canh-tom-chua-cay",
+  "ten": "Canh tôm chua cay",
+  "ho_mon": "canh tôm",
+  "hang": 9,
+  "thieu": [
+   "bắp chuối",
+   "lá rau quế",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "heo-nuong-bap-cai-chua",
+  "ten": "Heo nướng bắp cải chua",
+  "ho_mon": "heo nướng",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "heo-nuong-han-quoc",
+  "ten": "Heo nướng Hàn Quốc",
+  "ho_mon": "heo nướng",
+  "hang": 2,
+  "thieu": [
+   "thịt cổ heo"
+  ]
+ },
+ {
+  "id": "tim-heo-nuong-ngu-vi",
+  "ten": "Tim heo nướng ngũ vị",
+  "ho_mon": "heo nướng",
+  "hang": 3,
+  "thieu": [
+   "tim heo"
+  ]
+ },
+ {
+  "id": "heo-nuong-mo-he",
+  "ten": "Heo nướng mỡ hẹ",
+  "ho_mon": "heo nướng",
+  "hang": 4,
+  "thieu": [
+   "gốc ngò",
+   "hẹ tăm"
+  ]
+ },
+ {
+  "id": "ma-heo-nuong-tao",
+  "ten": "Má heo nướng táo",
+  "ho_mon": "heo nướng",
+  "hang": 5,
+  "thieu": [
+   "bột ớt hàn quốc",
+   "thịt má heo"
+  ]
+ },
+ {
+  "id": "duoi-heo-nuong-chao",
+  "ten": "Đuôi heo nướng chao",
+  "ho_mon": "heo nướng",
+  "hang": 6,
+  "thieu": [
+   "chao trắng",
+   "đuôi heo"
+  ]
+ },
+ {
+  "id": "ca-hoi-kho-nuoc-tuong",
+  "ten": "Cá hồi kho nước tương",
+  "ho_mon": "kho nước",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "ca-ngu-kho-nuoc-mia",
+  "ten": "Cá ngừ kho nước mía",
+  "ho_mon": "kho nước",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "ca-thu-nhat-kho-nuoc-dua",
+  "ten": "Cá thu Nhật kho nước dừa",
+  "ho_mon": "kho nước",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "dau-bap-kho-nuoc-tuong",
+  "ten": "Đậu bắp kho nước tương",
+  "ho_mon": "kho nước",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "ca-thu-kho-nuoc-tuong",
+  "ten": "Cá thu kho nước tương",
+  "ho_mon": "kho nước",
+  "hang": 5,
+  "thieu": [
+   "rượu nếp"
+  ]
+ },
+ {
+  "id": "vit-kho-nuoc-tuong",
+  "ten": "Vịt kho nước tương",
+  "ho_mon": "kho nước",
+  "hang": 6,
+  "thieu": [
+   "vịt"
+  ]
+ },
+ {
+  "id": "ngheu-kho-nuoc-tuong",
+  "ten": "Nghêu kho nước tương",
+  "ho_mon": "kho nước",
+  "hang": 7,
+  "thieu": [
+   "thịt nghêu đông lạnh"
+  ]
+ },
+ {
+  "id": "ech-kho-nuoc-tuong",
+  "ten": "Ếch kho nước tương",
+  "ho_mon": "kho nước",
+  "hang": 8,
+  "thieu": [
+   "lá lốt",
+   "đùi ếch"
+  ]
+ },
+ {
+  "id": "bo-kho-nuoc-dua",
+  "ten": "Bò kho nước dừa",
+  "ho_mon": "kho nước",
+  "hang": 9,
+  "thieu": [
+   "ngò gai",
+   "quế chi",
+   "xốt cà paste",
+   "đinh hương"
+  ]
+ },
+ {
+  "id": "ga-xao-mang-tay",
+  "ten": "Gà xào măng tây",
+  "ho_mon": "gà xào",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "ga-xao-tuong-hot",
+  "ten": "Gà xào tương hột",
+  "ho_mon": "gà xào",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "ga-xao-thom-bong-cai",
+  "ten": "Gà xào thơm bông cải",
+  "ho_mon": "gà xào",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "ga-xao-xot-tao",
+  "ten": "Gà xào xốt táo",
+  "ho_mon": "gà xào",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "gan-ga-xao-chua-ngot",
+  "ten": "Gan gà xào chua ngọt",
+  "ho_mon": "gà xào",
+  "hang": 5,
+  "thieu": [
+   "gan gà"
+  ]
+ },
+ {
+  "id": "me-ga-xao-cay",
+  "ten": "Mề gà xào cay",
+  "ho_mon": "gà xào",
+  "hang": 6,
+  "thieu": [
+   "ăn trưa kèm"
+  ]
+ },
+ {
+  "id": "canh-ga-xao-ot-xiem",
+  "ten": "Cánh gà xào ớt xiêm",
+  "ho_mon": "gà xào",
+  "hang": 7,
+  "thieu": [
+   "bột nghệ"
+  ]
+ },
+ {
+  "id": "ga-xao-vi-thai",
+  "ten": "Gà xào vị Thái",
+  "ho_mon": "gà xào",
+  "hang": 8,
+  "thieu": [
+   "gà má đùi"
+  ]
+ },
+ {
+  "id": "ga-xao-giam-gung",
+  "ten": "Gà xào giấm gừng",
+  "ho_mon": "gà xào",
+  "hang": 9,
+  "thieu": [
+   "ngò gai"
+  ]
+ },
+ {
+  "id": "long-ga-xao-tieu-xanh",
+  "ten": "Lòng gà xào tiêu xanh",
+  "ho_mon": "gà xào",
+  "hang": 10,
+  "thieu": [
+   "lòng gà"
+  ]
+ },
+ {
+  "id": "ga-xao-ngu-sac",
+  "ten": "Cách làm gà xào ngũ sắc đẹp mắt, thơm ngon cho cả nhà",
+  "ho_mon": "gà xào",
+  "hang": 11,
+  "thieu": [
+   "hạt điều lạt"
+  ]
+ },
+ {
+  "id": "ga-xao-tieu-den",
+  "ten": "Gà xào tiêu đen",
+  "ho_mon": "gà xào",
+  "hang": 12,
+  "thieu": [
+   "rượu nếp"
+  ]
+ },
+ {
+  "id": "ga-xao-ca-ri",
+  "ten": "Gà xào cà ri",
+  "ho_mon": "gà xào",
+  "hang": 13,
+  "thieu": [
+   "lá chanh"
+  ]
+ },
+ {
+  "id": "ga-xao-nam",
+  "ten": "Gà xào nấm",
+  "ho_mon": "gà xào",
+  "hang": 14,
+  "thieu": [
+   "lá boaro"
+  ]
+ },
+ {
+  "id": "long-ga-xao-mien",
+  "ten": "Lòng gà xào miến",
+  "ho_mon": "gà xào",
+  "hang": 15,
+  "thieu": [
+   "lòng gà"
+  ]
+ },
+ {
+  "id": "cuon-ga-xao-xot-me",
+  "ten": "Cuốn gà xào xốt mè",
+  "ho_mon": "gà xào",
+  "hang": 16,
+  "thieu": [
+   "lá chanh"
+  ]
+ },
+ {
+  "id": "dau-bap-thit-ga-xao-chao",
+  "ten": "Đậu bắp thịt gà xào chao",
+  "ho_mon": "gà xào",
+  "hang": 17,
+  "thieu": [
+   "chao",
+   "rau om"
+  ]
+ },
+ {
+  "id": "ga-xao-hat-dieu",
+  "ten": "Gà xào hạt điều",
+  "ho_mon": "gà xào",
+  "hang": 18,
+  "thieu": [
+   "hạt điều sẵn",
+   "nước cốt gừng"
+  ]
+ },
+ {
+  "id": "ga-xao-hanh-nhan",
+  "ten": "Gà xào hạnh nhân",
+  "ho_mon": "gà xào",
+  "hang": 19,
+  "thieu": [
+   "hạnh nhân",
+   "su hào"
+  ]
+ },
+ {
+  "id": "ga-xao-cay",
+  "ten": "Gà xào cay",
+  "ho_mon": "gà xào",
+  "hang": 20,
+  "thieu": [
+   "bột ớt việt nam",
+   "lá lốt",
+   "mì căn ống"
+  ]
+ },
+ {
+  "id": "ga-xao-chua-ngot",
+  "ten": "Gà xào chua ngọt",
+  "ho_mon": "gà xào",
+  "hang": 21,
+  "thieu": [
+   "hành ngò",
+   "hạt điều",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "ga-xao-lan-mayonnaise",
+  "ten": "Gà xào lăn Mayonnaise",
+  "ho_mon": "gà xào",
+  "hang": 22,
+  "thieu": [
+   "lá cà ri",
+   "rau om",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "ga-xao-nuoc-tuong",
+  "ten": "Gà xào nước tương",
+  "ho_mon": "gà xào",
+  "hang": 23,
+  "thieu": [
+   "lá quế",
+   "tiêu sọ",
+   "ớt đà lạt vàng",
+   "ớt đà lạt xanh",
+   "ớt đà lạt đỏ"
+  ]
+ },
+ {
+  "id": "ga-xao-cham-cheo",
+  "ten": "Gà xào chẩm chéo",
+  "ho_mon": "gà xào",
+  "hang": 24,
+  "thieu": [
+   "gà da giòn bình định",
+   "húng lủi bắc",
+   "hạt dổi",
+   "hạt mắc khén",
+   "ngò gai",
+   "tỏi bắc",
+   "ớt thóc xanh"
+  ]
+ },
+ {
+  "id": "cha-bo-chien",
+  "ten": "Chả bò chiên",
+  "ho_mon": "bò chiên",
+  "hang": 1,
+  "thieu": [
+   "bột xù",
+   "thịt bò"
+  ]
+ },
+ {
+  "id": "salad-thit-bo-chien",
+  "ten": "Salad thịt bò chiên",
+  "ho_mon": "bò chiên",
+  "hang": 2,
+  "thieu": [
+   "khoai môn cau",
+   "thịt thăn bò"
+  ]
+ },
+ {
+  "id": "bo-chien-mot-nang",
+  "ten": "Bò chiên một nắng",
+  "ho_mon": "bò chiên",
+  "hang": 3,
+  "thieu": [
+   "bò phi lê",
+   "lá chanh",
+   "lá lốt"
+  ]
+ },
+ {
+  "id": "thit-bo-chien-mam-bo-hoc",
+  "ten": "Thịt bò chiên mắm bò hóc",
+  "ho_mon": "bò chiên",
+  "hang": 4,
+  "thieu": [
+   "lá lốt",
+   "mắm bò hóc",
+   "thịt bò"
+  ]
+ },
+ {
+  "id": "nem-thit-bo-chien-xu",
+  "ten": "Nem thịt bò chiên xù",
+  "ho_mon": "bò chiên",
+  "hang": 5,
+  "thieu": [
+   "bột nghệ",
+   "bột xù",
+   "thịt bò",
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "thit-bo-chien-tron-cai-mam",
+  "ten": "Thịt bò chiên trộn cải mầm",
+  "ho_mon": "bò chiên",
+  "hang": 6,
+  "thieu": [
+   "cà bi",
+   "cải mầm",
+   "thịt thăn bò",
+   "ăn trưa kèm"
+  ]
+ },
+ {
+  "id": "uc-ga-hap-cai-thao",
+  "ten": "Ức gà hấp cải thảo",
+  "ho_mon": "gà hấp",
+  "hang": 1,
+  "thieu": [
+   "cải thảo"
+  ]
+ },
+ {
+  "id": "ga-hap-tu-quy-chay",
+  "ten": "Gà hấp tứ quý chay",
+  "ho_mon": "gà hấp",
+  "hang": 2,
+  "thieu": [
+   "lá tàu hủ ky khô"
+  ]
+ },
+ {
+  "id": "ga-hap-cai-be-xanh",
+  "ten": "Gà hấp cải bẹ xanh",
+  "ho_mon": "gà hấp",
+  "hang": 3,
+  "thieu": [
+   "gà ta",
+   "thuốc muối"
+  ]
+ },
+ {
+  "id": "ga-hap-la-e",
+  "ten": "Gà hấp lá é",
+  "ho_mon": "gà hấp",
+  "hang": 4,
+  "thieu": [
+   "gà tre",
+   "lá é"
+  ]
+ },
+ {
+  "id": "nam-dui-ga-hap-cai-xanh",
+  "ten": "Nấm đùi gà hấp cải xanh",
+  "ho_mon": "gà hấp",
+  "hang": 5,
+  "thieu": [
+   "bông kim châm khô",
+   "kỷ tử"
+  ]
+ },
+ {
+  "id": "ga-hap-hanh-ram",
+  "ten": "Gà hấp hành răm",
+  "ho_mon": "gà hấp",
+  "hang": 6,
+  "thieu": [
+   "gà ta",
+   "mỡ gà thắng",
+   "đầu hành trắng"
+  ]
+ },
+ {
+  "id": "nam-dui-ga-hap-tia-to",
+  "ten": "Nấm đùi gà hấp tía tô",
+  "ho_mon": "gà hấp",
+  "hang": 7,
+  "thieu": [
+   "chao trắng",
+   "kỉ tử",
+   "đẳng sâm"
+  ]
+ },
+ {
+  "id": "ga-hap-rieng-sa",
+  "ten": "Gà hấp riềng sả",
+  "ho_mon": "gà hấp",
+  "hang": 8,
+  "thieu": [
+   "gà ta",
+   "lá chanh",
+   "muối hột",
+   "riềng"
+  ]
+ },
+ {
+  "id": "ga-hap-la-sen",
+  "ten": "Gà hấp lá sen",
+  "ho_mon": "gà hấp",
+  "hang": 9,
+  "thieu": [
+   "bột nghệ",
+   "gà ta",
+   "kỷ tử",
+   "quế chi",
+   "riềng",
+   "thảo quả",
+   "đẳng sâm"
+  ]
+ },
+ {
+  "id": "ech-xao-lan",
+  "ten": "Ếch xào lăn",
+  "ho_mon": "xào lăn",
+  "hang": 1,
+  "thieu": [
+   "rau om",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "luon-xao-lan",
+  "ten": "Lươn xào lăn",
+  "ho_mon": "xào lăn",
+  "hang": 2,
+  "thieu": [
+   "bún tàu",
+   "dừa khô nạo",
+   "ngò gai",
+   "rau om",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "luoi-heo-xao-lan",
+  "ten": "Lưỡi heo xào lăn",
+  "ho_mon": "xào lăn",
+  "hang": 3,
+  "thieu": [
+   "bún tàu",
+   "lưỡi heo",
+   "ngò gai",
+   "rau om",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "thit-be-xao-lan",
+  "ten": "Thịt bê xào lăn",
+  "ho_mon": "xào lăn",
+  "hang": 4,
+  "thieu": [
+   "bún tàu",
+   "mộc nhĩ",
+   "thịt bê",
+   "tàu hủ ky lá chiên",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "oc-xao-lan-la-cach",
+  "ten": "Ốc xào lăn lá cách",
+  "ho_mon": "xào lăn",
+  "hang": 5,
+  "thieu": [
+   "bún tàu",
+   "bạc hà",
+   "bột càri",
+   "lá cách",
+   "thịt ốc lác",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "xao-lan-chay-thao-moc",
+  "ten": "Xào lăn chay thảo mộc",
+  "ho_mon": "xào lăn",
+  "hang": 6,
+  "thieu": [
+   "bột ca ri",
+   "chuối sáp",
+   "lá nhàu",
+   "mì căn",
+   "poa rô",
+   "tàu hũ ky lá chiên giòn",
+   "đậu phọng"
+  ]
+ },
+ {
+  "id": "muc-xao-sa-ot",
+  "ten": "Mực xào sả ớt",
+  "ho_mon": "mực xào",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "muc-xao-xot-tieu-xanh",
+  "ten": "Mực xào xốt tiêu xanh",
+  "ho_mon": "mực xào",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "muc-xao-ot-kho-caramen",
+  "ten": "Mực xào ớt khô Caramen",
+  "ho_mon": "mực xào",
+  "hang": 3,
+  "thieu": [
+   "mực lá"
+  ]
+ },
+ {
+  "id": "tom-muc-xao-rau-nhut",
+  "ten": "Tôm mực xào rau nhút",
+  "ho_mon": "mực xào",
+  "hang": 4,
+  "thieu": [
+   "rau nhút lặt sạch"
+  ]
+ },
+ {
+  "id": "muc-xao-dau-ha-lan",
+  "ten": "Mực xào đậu Hà Lan",
+  "ho_mon": "mực xào",
+  "hang": 5,
+  "thieu": [
+   "mực sữa",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "tom-muc-xao-tieu-xanh",
+  "ten": "Tôm mực xào tiêu xanh",
+  "ho_mon": "mực xào",
+  "hang": 6,
+  "thieu": [
+   "mực lá",
+   "rượu mai quế lộ"
+  ]
+ },
+ {
+  "id": "muc-xao-dua-cai",
+  "ten": "Mực xào dưa cải",
+  "ho_mon": "mực xào",
+  "hang": 7,
+  "thieu": [
+   "dưa cải",
+   "hành ngò",
+   "tiêu sọ"
+  ]
+ },
+ {
+  "id": "muc-xao-hoa-trung",
+  "ten": "Mực xào hoa trứng",
+  "ho_mon": "mực xào",
+  "hang": 8,
+  "thieu": [
+   "bột xù",
+   "mực lá",
+   "trứng muối"
+  ]
+ },
+ {
+  "id": "ca-hap-mong-toi",
+  "ten": "Cá hấp mồng tơi",
+  "ho_mon": "cá hấp",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "ca-hap-nuoc-tuong",
+  "ten": "Cá hấp nước tương",
+  "ho_mon": "cá hấp",
+  "hang": 2,
+  "thieu": [
+   "cá điêu hồng"
+  ]
+ },
+ {
+  "id": "goi-ca-hap-kieu-nhat",
+  "ten": "Gỏi cá hấp kiểu Nhật",
+  "ho_mon": "cá hấp",
+  "hang": 3,
+  "thieu": [
+   "rau tần ô"
+  ]
+ },
+ {
+  "id": "ca-hap-cu-sen-2",
+  "ten": "Cá hấp củ sen",
+  "ho_mon": "cá hấp",
+  "hang": 4,
+  "thieu": [
+   "kỉ tử"
+  ]
+ },
+ {
+  "id": "ca-hap-tau-xi",
+  "ten": "Cá hấp tàu xì",
+  "ho_mon": "cá hấp",
+  "hang": 5,
+  "thieu": [
+   "cá chẽm",
+   "hạt tàu xì"
+  ]
+ },
+ {
+  "id": "ca-hap-nguu-bang",
+  "ten": "Cá hấp ngưu bàng",
+  "ho_mon": "cá hấp",
+  "hang": 6,
+  "thieu": [
+   "cá điêu hồng",
+   "ngưu bàng"
+  ]
+ },
+ {
+  "id": "bun-rieu-cua",
+  "ten": "Bún riêu cua",
+  "ho_mon": "bún riêu",
+  "hang": 1,
+  "thieu": [
+   "bún riêu cua",
+   "huyết heo",
+   "ngò gai"
+  ]
+ },
+ {
+  "id": "bun-rieu-cua-bap-bo",
+  "ten": "Bún riêu cua bắp bò",
+  "ho_mon": "bún riêu",
+  "hang": 2,
+  "thieu": [
+   "bắp chuối",
+   "chả bò",
+   "nêm sẵn bún riêu cua"
+  ]
+ },
+ {
+  "id": "bun-rieu-cua-xi-quach-2",
+  "ten": "Bún riêu cua xí quách",
+  "ho_mon": "bún riêu",
+  "hang": 3,
+  "thieu": [
+   "gạch cua",
+   "mỡ có tóp mỡ",
+   "ngò gai",
+   "xương ống"
+  ]
+ },
+ {
+  "id": "lau-ca-chinh",
+  "ten": "Lẩu cá chình",
+  "ho_mon": "lẩu cá",
+  "hang": 1,
+  "thieu": [
+   "cá chình"
+  ]
+ },
+ {
+  "id": "lau-ca-hong-nhung-giam",
+  "ten": "Lẩu cá hồng nhúng giấm",
+  "ho_mon": "lẩu cá",
+  "hang": 2,
+  "thieu": [
+   "cá điêu hồng phi lê"
+  ]
+ },
+ {
+  "id": "lau-ca-hoi-chanh-day",
+  "ten": "Lẩu cá hồi chanh dây",
+  "ho_mon": "lẩu cá",
+  "hang": 3,
+  "thieu": [
+   "bánh phồng tôm"
+  ]
+ },
+ {
+  "id": "lau-ca-vien-nau-sau",
+  "ten": "Lẩu cá viên nấu sấu",
+  "ho_mon": "lẩu cá",
+  "hang": 4,
+  "thieu": [
+   "sấu quả"
+  ]
+ },
+ {
+  "id": "lau-ca-ro-phi",
+  "ten": "Lẩu cá rô phi",
+  "ho_mon": "lẩu cá",
+  "hang": 5,
+  "thieu": [
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "lau-ca-khoai-chua-cay",
+  "ten": "Lẩu cá khoai chua cay",
+  "ho_mon": "lẩu cá",
+  "hang": 6,
+  "thieu": [
+   "cá khoai",
+   "lá chanh"
+  ]
+ },
+ {
+  "id": "lau-ca-ngat-kim-chi",
+  "ten": "Lẩu cá ngát kim chi",
+  "ho_mon": "lẩu cá",
+  "hang": 7,
+  "thieu": [
+   "cá ngát",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "lau-ca-lang-bong-so-dua",
+  "ten": "Lẩu cá lăng bông so đũa",
+  "ho_mon": "lẩu cá",
+  "hang": 8,
+  "thieu": [
+   "bông so đũa",
+   "cá lăng",
+   "rau nhút"
+  ]
+ },
+ {
+  "id": "lau-ca-dia",
+  "ten": "Lẩu cá dìa",
+  "ho_mon": "lẩu cá",
+  "hang": 9,
+  "thieu": [
+   "cá dìa",
+   "ngò gai",
+   "rau om",
+   "rau ăn lẩu"
+  ]
+ },
+ {
+  "id": "lau-ca-lang-vi-thai",
+  "ten": "Lẩu cá lăng vị Thái",
+  "ho_mon": "lẩu cá",
+  "hang": 10,
+  "thieu": [
+   "cá lăng",
+   "lá chanh",
+   "ơt hiểm xanh",
+   "ơt hiểm đỏ"
+  ]
+ },
+ {
+  "id": "lau-ca-lang-mang-chua",
+  "ten": "Lẩu cá lăng măng chua",
+  "ho_mon": "lẩu cá",
+  "hang": 11,
+  "thieu": [
+   "cá lăng",
+   "măng chua",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "lau-ca-duoi-la-giang-2",
+  "ten": "Lẩu cá đuối lá giang",
+  "ho_mon": "lẩu cá",
+  "hang": 12,
+  "thieu": [
+   "cá đuối",
+   "lá giang",
+   "măng chua",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "lau-ca-co",
+  "ten": "Lẩu cá cờ chua cay thanh mát, thịt cá chắc ngon",
+  "ho_mon": "lẩu cá",
+  "hang": 13,
+  "thieu": [
+   "cá cờ",
+   "dầu màu điều",
+   "măng chua",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "lau-ca-bop",
+  "ten": "Lẩu cá bớp",
+  "ho_mon": "lẩu cá",
+  "hang": 14,
+  "thieu": [
+   "cá bớp",
+   "hoa chuối",
+   "lá chanh",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "lau-ca-keo-la-giang",
+  "ten": "Lẩu cá kèo lá giang",
+  "ho_mon": "lẩu cá",
+  "hang": 15,
+  "thieu": [
+   "cá kèo",
+   "lá giang",
+   "ngò gai",
+   "rau nhút",
+   "rau om"
+  ]
+ },
+ {
+  "id": "mi-udon-xao-bo",
+  "ten": "Mì udon xào bò",
+  "ho_mon": "xào bò",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "mi-goi-xao-bo",
+  "ten": "Mì gói xào bò",
+  "ho_mon": "xào bò",
+  "hang": 2,
+  "thieu": [
+   "thịt bò"
+  ]
+ },
+ {
+  "id": "nui-xao-bo",
+  "ten": "Nui xào bò",
+  "ho_mon": "xào bò",
+  "hang": 3,
+  "thieu": [
+   "thịt bò phi lê",
+   "xốt cà chua hộp"
+  ]
+ },
+ {
+  "id": "goi-cuon-3-loai",
+  "ten": "Gỏi cuốn 3 loại",
+  "ho_mon": "gỏi cuốn",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "goi-cuon-mayonnaise",
+  "ten": "Gỏi cuốn Mayonnaise",
+  "ho_mon": "gỏi cuốn",
+  "hang": 2,
+  "thieu": [
+   "thịt nguội"
+  ]
+ },
+ {
+  "id": "goi-cuon-tom",
+  "ten": "Gỏi cuốn tôm",
+  "ho_mon": "gỏi cuốn",
+  "hang": 3,
+  "thieu": [
+   "xốt mè aji-xốt"
+  ]
+ },
+ {
+  "id": "goi-cuon-chay-xot-dau-phong",
+  "ten": "Gỏi cuốn chay xốt đậu phộng",
+  "ho_mon": "gỏi cuốn",
+  "hang": 4,
+  "thieu": [
+   "lá hẹ",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "goi-cuon-ca-hoi",
+  "ten": "Gỏi cuốn cá hồi",
+  "ho_mon": "gỏi cuốn",
+  "hang": 5,
+  "thieu": [
+   "cải mầm cay",
+   "dầu ô liu"
+  ]
+ },
+ {
+  "id": "salad-muc-ong-rong-bien",
+  "ten": "Salad mực ống rong biển",
+  "ho_mon": "salad mực",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "salad-muc-mang-tay",
+  "ten": "Salad mực măng tây",
+  "ho_mon": "salad mực",
+  "hang": 2,
+  "thieu": [
+   "hạt điều"
+  ]
+ },
+ {
+  "id": "salad-muc-pho-tai",
+  "ten": "Cách chế biến món salad mực phổ tai tươi ngon",
+  "ho_mon": "salad mực",
+  "hang": 3,
+  "thieu": [
+   "caramel",
+   "mực lá"
+  ]
+ },
+ {
+  "id": "salad-muc-pho-tai-2",
+  "ten": "Salad mực phổ tai",
+  "ho_mon": "salad mực",
+  "hang": 4,
+  "thieu": [
+   "mực lá",
+   "đường tiêu"
+  ]
+ },
+ {
+  "id": "salad-muc-ong",
+  "ten": "Salad mực ống",
+  "ho_mon": "salad mực",
+  "hang": 5,
+  "thieu": [
+   "củ radish",
+   "hỗn hợp gia vị lá thơm",
+   "rau mầm tím"
+  ]
+ },
+ {
+  "id": "suon-non-kho-dua-cai",
+  "ten": "Sườn non kho dưa cải",
+  "ho_mon": "non kho",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "suon-non-kho-xa-bau",
+  "ten": "Sườn non kho xá bấu",
+  "ho_mon": "non kho",
+  "hang": 2,
+  "thieu": [
+   "xá bấu",
+   "ớ hiểm khô"
+  ]
+ },
+ {
+  "id": "suon-non-kho-khe",
+  "ten": "Sườn non kho khế",
+  "ho_mon": "non kho",
+  "hang": 3,
+  "thieu": [
+   "khế chua",
+   "ot hiểm"
+  ]
+ },
+ {
+  "id": "suon-non-kho-chao",
+  "ten": "Sườn non kho chao",
+  "ho_mon": "non kho",
+  "hang": 4,
+  "thieu": [
+   "caramel",
+   "chao trắng"
+  ]
+ },
+ {
+  "id": "mi-can-nhoi-ro-ti",
+  "ten": "Mì căn nhồi rô ti",
+  "ho_mon": "mì căn",
+  "hang": 1,
+  "thieu": [
+   "mì căn cuốn ống"
+  ]
+ },
+ {
+  "id": "mi-can-xot-nam",
+  "ten": "Mì căn xốt nấm",
+  "ho_mon": "mì căn",
+  "hang": 2,
+  "thieu": [
+   "mì căn",
+   "poa-rô"
+  ]
+ },
+ {
+  "id": "mi-can-xao-bap-non",
+  "ten": "Mì căn xào bắp non",
+  "ho_mon": "mì căn",
+  "hang": 3,
+  "thieu": [
+   "boaro có lá",
+   "mì căn",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "tom-nuong-hoang-kim",
+  "ten": "Tôm nướng hoàng kim",
+  "ho_mon": "tôm nướng",
+  "hang": 1,
+  "thieu": [
+   "lòng đỏ trứng muối",
+   "tôm càng"
+  ]
+ },
+ {
+  "id": "tom-nuong-muoi-ot",
+  "ten": "Tôm nướng muối ớt",
+  "ho_mon": "tôm nướng",
+  "hang": 2,
+  "thieu": [
+   "cơm gấc",
+   "ớt ba tri"
+  ]
+ },
+ {
+  "id": "tom-nuong-la-chuc",
+  "ten": "Tôm nướng lá chúc",
+  "ho_mon": "tôm nướng",
+  "hang": 3,
+  "thieu": [
+   "lá chuối",
+   "lá chúc"
+  ]
+ },
+ {
+  "id": "tom-nuong-la-chuoi",
+  "ten": "Tôm nướng lá chuối",
+  "ho_mon": "tôm nướng",
+  "hang": 4,
+  "thieu": [
+   "giấy bạc",
+   "lá chanh bắc",
+   "lá chuối"
+  ]
+ },
+ {
+  "id": "tom-nuong-mo-chai",
+  "ten": "Tôm nướng mỡ chài",
+  "ho_mon": "tôm nướng",
+  "hang": 5,
+  "thieu": [
+   "mỡ chài",
+   "mỡ hành",
+   "tôm đông lạnh",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "tom-nuong-banh-hoi",
+  "ten": "Tôm nướng bánh hỏi",
+  "ho_mon": "tôm nướng",
+  "hang": 6,
+  "thieu": [
+   "bánh hỏi",
+   "mỡ hành",
+   "tôm càng",
+   "đậu phộng",
+   "đồ chua"
+  ]
+ },
+ {
+  "id": "ca-keo-chien-me",
+  "ten": "Cá kèo chiên mè",
+  "ho_mon": "chiên mè",
+  "hang": 1,
+  "thieu": [
+   "cá kèo",
+   "mè đen"
+  ]
+ },
+ {
+  "id": "suon-cuon-bacon-chien-me",
+  "ten": "Sườn cuộn bacon chiên mè",
+  "ho_mon": "chiên mè",
+  "hang": 2,
+  "thieu": [
+   "bacon",
+   "mè đen",
+   "tiêu lốp"
+  ]
+ },
+ {
+  "id": "cang-cua-chien-me-xot-mayo",
+  "ten": "Càng cua chiên mè xốt Mayo",
+  "ho_mon": "chiên mè",
+  "hang": 3,
+  "thieu": [
+   "càng cua",
+   "mè đen",
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "ca-la-lot-chien-me",
+  "ten": "Cá lá lốt chiên mè",
+  "ho_mon": "chiên mè",
+  "hang": 4,
+  "thieu": [
+   "lá lốt",
+   "mè đen",
+   "que xiên tre dài"
+  ]
+ },
+ {
+  "id": "ca-vien-chien-me",
+  "ten": "Cá viên chiên mè",
+  "ho_mon": "chiên mè",
+  "hang": 5,
+  "thieu": [
+   "bột xù",
+   "chanh muối",
+   "lá chúc",
+   "mè đen",
+   "mạch nha"
+  ]
+ },
+ {
+  "id": "suon-chien-cay",
+  "ten": "Sườn chiên cay",
+  "ho_mon": "sườn chiên",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "suon-chien-mayonnaise-sa-te",
+  "ten": "Sườn chiên mayonnaise sa tế",
+  "ho_mon": "sườn chiên",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "suon-chien-xot-nam",
+  "ten": "Sườn chiên xốt nấm",
+  "ho_mon": "sườn chiên",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "suon-chien-xot-chanh-day",
+  "ten": "Sườn chiên xốt chanh dây",
+  "ho_mon": "sườn chiên",
+  "hang": 4,
+  "thieu": [
+   "nước cốt tỏi"
+  ]
+ },
+ {
+  "id": "suon-chien-giam-do",
+  "ten": "Sườn chiên giấm đỏ",
+  "ho_mon": "sườn chiên",
+  "hang": 5,
+  "thieu": [
+   "màu điều"
+  ]
+ },
+ {
+  "id": "suon-chien-xot-man",
+  "ten": "Sườn chiên xốt mận",
+  "ho_mon": "sườn chiên",
+  "hang": 6,
+  "thieu": [
+   "xốt mận"
+  ]
+ },
+ {
+  "id": "suon-chien-la-lot",
+  "ten": "Sườn chiên lá lốt",
+  "ho_mon": "sườn chiên",
+  "hang": 7,
+  "thieu": [
+   "bột xù",
+   "lá lốt"
+  ]
+ },
+ {
+  "id": "thit-heo-kho-thom",
+  "ten": "Thịt heo kho thơm",
+  "ho_mon": "heo kho",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "thit-gio-heo-kho-xa-xi",
+  "ten": "Thịt giò heo kho xá xị",
+  "ho_mon": "heo kho",
+  "hang": 2,
+  "thieu": [
+   "thịt giò heo"
+  ]
+ },
+ {
+  "id": "heo-kho-tau",
+  "ten": "Heo kho tàu",
+  "ho_mon": "heo kho",
+  "hang": 3,
+  "thieu": [
+   "nêm sẵn thịt kho tàu"
+  ]
+ },
+ {
+  "id": "tai-heo-kho-cai-chua",
+  "ten": "Tai heo kho cải chua",
+  "ho_mon": "heo kho",
+  "hang": 4,
+  "thieu": [
+   "ngò gai",
+   "tai heo"
+  ]
+ },
+ {
+  "id": "luoi-heo-kho-que",
+  "ten": "Lưỡi heo kho quế",
+  "ho_mon": "heo kho",
+  "hang": 5,
+  "thieu": [
+   "bột quế",
+   "lưỡi heo",
+   "ngò gai",
+   "quế chi"
+  ]
+ },
+ {
+  "id": "gio-heo-kho-que",
+  "ten": "Giò heo kho quế",
+  "ho_mon": "heo kho",
+  "hang": 6,
+  "thieu": [
+   "cà phê đen",
+   "giò heo",
+   "hành baro",
+   "lá thơm",
+   "mạch nha",
+   "rút xương",
+   "thui da",
+   "tiêu sọ"
+  ]
+ },
+ {
+  "id": "ca-hoi-nuong-tac-mat-ong",
+  "ten": "Cá hồi nướng tắc mật ong",
+  "ho_mon": "hồi nướng",
+  "hang": 1,
+  "thieu": [
+   "fillet cá hồi lóc"
+  ]
+ },
+ {
+  "id": "ca-hoi-nuong-xot-mayo",
+  "ten": "Cá hồi nướng xốt Mayo",
+  "ho_mon": "hồi nướng",
+  "hang": 2,
+  "thieu": [
+   "phi lê cá hồi còn da"
+  ]
+ },
+ {
+  "id": "ca-hoi-nuong-mia",
+  "ten": "Cá hồi nướng mía",
+  "ho_mon": "hồi nướng",
+  "hang": 3,
+  "thieu": [
+   "mía chẻ",
+   "thịt ba rọi xông khói"
+  ]
+ },
+ {
+  "id": "nui-tron-ca-hoi-nuong-mayonnaise",
+  "ten": "Nui trộn cá hồi nướng Mayonnaise",
+  "ho_mon": "hồi nướng",
+  "hang": 4,
+  "thieu": [
+   "bột xù",
+   "phô mai bột",
+   "thịt heo xông khói"
+  ]
+ },
+ {
+  "id": "ca-hoi-nuong-la-thom",
+  "ten": "Cá hồi nướng lá thơm",
+  "ho_mon": "hồi nướng",
+  "hang": 5,
+  "thieu": [
+   "dầu oliu",
+   "hạt hạnh nhân",
+   "lá quế",
+   "lá thơm"
+  ]
+ },
+ {
+  "id": "thit-nuong-ot-chuong",
+  "ten": "Thịt nướng ớt chuông",
+  "ho_mon": "thịt nướng",
+  "hang": 1,
+  "thieu": [
+   "lá hương thảo"
+  ]
+ },
+ {
+  "id": "bun-thit-nuong",
+  "ten": "Bún thịt nướng",
+  "ho_mon": "thịt nướng",
+  "hang": 2,
+  "thieu": [
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "thit-nuong-xi-muoi",
+  "ten": "Thịt nướng xí muội",
+  "ho_mon": "thịt nướng",
+  "hang": 3,
+  "thieu": [
+   "que xiên tre",
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "bun-thit-nuong-mayonnaise",
+  "ten": "Bún thịt nướng mayonnaise",
+  "ho_mon": "thịt nướng",
+  "hang": 4,
+  "thieu": [
+   "nước cốt tỏi",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "thit-nuong-bbq",
+  "ten": "Thịt nướng BBQ",
+  "ho_mon": "thịt nướng",
+  "hang": 5,
+  "thieu": [
+   "bột ớt",
+   "lá mè"
+  ]
+ },
+ {
+  "id": "cha-tom-la-chuc",
+  "ten": "Chả tôm lá chúc",
+  "ho_mon": "chả tôm",
+  "hang": 1,
+  "thieu": [
+   "lá chúc"
+  ]
+ },
+ {
+  "id": "banh-quay-nhoi-cha-tom",
+  "ten": "Bánh quẩy nhồi chả tôm",
+  "ho_mon": "chả tôm",
+  "hang": 2,
+  "thieu": [
+   "bánh quẩy"
+  ]
+ },
+ {
+  "id": "cha-tom-nhan-pho-mai",
+  "ten": "Chả tôm nhân phô mai",
+  "ho_mon": "chả tôm",
+  "hang": 3,
+  "thieu": [
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "cha-tom-oc-huong",
+  "ten": "Chả tôm ốc hương",
+  "ho_mon": "chả tôm",
+  "hang": 4,
+  "thieu": [
+   "ngò gai",
+   "ốc hương"
+  ]
+ },
+ {
+  "id": "canh-cha-tom-chum-ngay",
+  "ten": "Canh chả tôm chùm ngây",
+  "ho_mon": "chả tôm",
+  "hang": 5,
+  "thieu": [
+   "lá chùm ngây",
+   "tôm đông lạnh"
+  ]
+ },
+ {
+  "id": "sandwich-kep-cha-tom",
+  "ten": "Sandwich kẹp chả tôm",
+  "ho_mon": "chả tôm",
+  "hang": 6,
+  "thieu": [
+   "bột xù",
+   "mỡ gáy",
+   "tôm đông lạnh"
+  ]
+ },
+ {
+  "id": "muc-nhoi-cha-tom-nuong",
+  "ten": "Mực nhồi chả tôm nướng",
+  "ho_mon": "chả tôm",
+  "hang": 7,
+  "thieu": [
+   "lá chúc",
+   "rau mầm",
+   "tôm đông lạnh không vỏ"
+  ]
+ },
+ {
+  "id": "cha-tom-xien-que-nuong-me",
+  "ten": "Chả tôm xiên que nướng mè",
+  "ho_mon": "chả tôm",
+  "hang": 8,
+  "thieu": [
+   "dụng cụ",
+   "mỡ gáy",
+   "tiêu sọ",
+   "đầu hành"
+  ]
+ },
+ {
+  "id": "cha-tom-thit-mac-khen",
+  "ten": "Chả tôm thịt mắc khén",
+  "ho_mon": "chả tôm",
+  "hang": 9,
+  "thieu": [
+   "lá chanh",
+   "lá quế",
+   "mắc khén",
+   "ngò gai",
+   "nước cốt thơm",
+   "su hào",
+   "xay"
+  ]
+ },
+ {
+  "id": "cuon-cha-tom",
+  "ten": "Cuốn chả tôm",
+  "ho_mon": "chả tôm",
+  "hang": 10,
+  "thieu": [
+   "bánh hỏi",
+   "cải mầm",
+   "dụng cụ",
+   "ngó sen ngâm chua",
+   "rau cuốn",
+   "tôm khô",
+   "đậu que",
+   "ớt ngâm chua"
+  ]
+ },
+ {
+  "id": "thit-heo-xao-nuoc-tuong-gung",
+  "ten": "Thịt heo xào nước tương gừng",
+  "ho_mon": "heo xào",
+  "hang": 1,
+  "thieu": [
+   "thịt thăn heo"
+  ]
+ },
+ {
+  "id": "sun-heo-xao-thom",
+  "ten": "Sụn heo xào thơm",
+  "ho_mon": "heo xào",
+  "hang": 2,
+  "thieu": [
+   "dẻ sụn heo"
+  ]
+ },
+ {
+  "id": "cat-heo-xao-bi-ngoi",
+  "ten": "Cật heo xào bí ngòi",
+  "ho_mon": "heo xào",
+  "hang": 3,
+  "thieu": [
+   "bí ngòi vàng",
+   "bí ngòi xanh",
+   "cật heo"
+  ]
+ },
+ {
+  "id": "luoi-heo-xao-rieng-xa",
+  "ten": "Lưỡi heo xào riềng sả",
+  "ho_mon": "heo xào",
+  "hang": 4,
+  "thieu": [
+   "lá chanh",
+   "lưỡi heo",
+   "riềng"
+  ]
+ },
+ {
+  "id": "tim-heo-xao-mang-tay",
+  "ten": "Tim heo xào măng tây",
+  "ho_mon": "heo xào",
+  "hang": 5,
+  "thieu": [
+   "hành tăm",
+   "rượu brandy",
+   "tim heo",
+   "tỏi lý sơn"
+  ]
+ },
+ {
+  "id": "long-heo-xao-thom",
+  "ten": "Lòng heo xào thơm",
+  "ho_mon": "heo xào",
+  "hang": 6,
+  "thieu": [
+   "gan heo",
+   "lòng non",
+   "tim heo",
+   "ớt đà lạt đỏ"
+  ]
+ },
+ {
+  "id": "canh-khe-ca-com",
+  "ten": "Canh khế cá cơm",
+  "ho_mon": "cá cơm",
+  "hang": 1,
+  "thieu": [
+   "cá cơm",
+   "khế chua"
+  ]
+ },
+ {
+  "id": "goi-dua-leo-kho-ca-com",
+  "ten": "Gỏi dưa leo khô cá cơm",
+  "ho_mon": "cá cơm",
+  "hang": 2,
+  "thieu": [
+   "khô cá cơm",
+   "xoài xanh"
+  ]
+ },
+ {
+  "id": "ca-com-bap-chien-pho-mai",
+  "ten": "Cá cơm, bắp chiên phô mai",
+  "ho_mon": "cá cơm",
+  "hang": 3,
+  "thieu": [
+   "bắp hạt",
+   "cá cơm",
+   "phô mai bột"
+  ]
+ },
+ {
+  "id": "ca-com-than-chien-me-sauce-mam-tac",
+  "ten": "Cá cơm than chiên mè xốt mắm tắc",
+  "ho_mon": "cá cơm",
+  "hang": 4,
+  "thieu": [
+   "cá cơm than",
+   "mè đen",
+   "xoài keo"
+  ]
+ },
+ {
+  "id": "canh-cai-chua-nau-ca-com",
+  "ten": "Canh cải chua nấu cá cơm",
+  "ho_mon": "cá cơm",
+  "hang": 5,
+  "thieu": [
+   "cá cơm",
+   "ngò gai",
+   "rau om"
+  ]
+ },
+ {
+  "id": "kho-ca-com-kho-khe",
+  "ten": "Khô cá cơm kho khế",
+  "ho_mon": "cá cơm",
+  "hang": 6,
+  "thieu": [
+   "củ nén",
+   "khô cá cơm",
+   "khế chua xanh",
+   "tiêu hạt"
+  ]
+ },
+ {
+  "id": "banh-canh-chay",
+  "ten": "Bánh canh chay",
+  "ho_mon": "bánh canh",
+  "hang": 1,
+  "thieu": [
+   "su hào"
+  ]
+ },
+ {
+  "id": "banh-canh-vit",
+  "ten": "Bánh canh vịt",
+  "ho_mon": "bánh canh",
+  "hang": 2,
+  "thieu": [
+   "củ nén",
+   "thịt vịt"
+  ]
+ },
+ {
+  "id": "banh-canh-khoai-tim",
+  "ten": "Bánh canh khoai tím",
+  "ho_mon": "bánh canh",
+  "hang": 3,
+  "thieu": [
+   "giò heo",
+   "hành ngò",
+   "thịt càng cua"
+  ]
+ },
+ {
+  "id": "ca-chien-xot-me",
+  "ten": "Cá chiên xốt me",
+  "ho_mon": "cá chiên",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "ca-chien-ngam-nuoc-tuong",
+  "ten": "Cá chiên ngâm nước tương",
+  "ho_mon": "cá chiên",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "ca-chien-xoc-toi",
+  "ten": "Cá chiên xóc tỏi",
+  "ho_mon": "cá chiên",
+  "hang": 3,
+  "thieu": [
+   "lá quế"
+  ]
+ },
+ {
+  "id": "salad-ca-chien-gion",
+  "ten": "Salad cá chiên giòn",
+  "ho_mon": "cá chiên",
+  "hang": 4,
+  "thieu": [
+   "cá chẽm"
+  ]
+ },
+ {
+  "id": "ca-chien-xot-nam",
+  "ten": "Cá chiên xốt nấm",
+  "ho_mon": "cá chiên",
+  "hang": 5,
+  "thieu": [
+   "hành tỏi gừng"
+  ]
+ },
+ {
+  "id": "ca-chien-xot-cam",
+  "ten": "Cá chiên xốt cam",
+  "ho_mon": "cá chiên",
+  "hang": 6,
+  "thieu": [
+   "bột cam",
+   "cá chẽm"
+  ]
+ },
+ {
+  "id": "ca-chien-bong-dien-dien",
+  "ten": "Cá chiên bông điên điển",
+  "ho_mon": "cá chiên",
+  "hang": 7,
+  "thieu": [
+   "cá lòng tong",
+   "rau mầm non"
+  ]
+ },
+ {
+  "id": "ca-chien-gion-xot-chanh-ot",
+  "ten": "Cá chiên giòn xốt chanh ớt",
+  "ho_mon": "cá chiên",
+  "hang": 8,
+  "thieu": [
+   "húng lủi",
+   "phi lê cá bớp"
+  ]
+ },
+ {
+  "id": "ca-chien-hoa-cuc",
+  "ten": "Cá chiên hoa cúc",
+  "ho_mon": "cá chiên",
+  "hang": 9,
+  "thieu": [
+   "xốt cà hộp",
+   "ớt đà lạt xanh",
+   "ớt đà lạt đỏ"
+  ]
+ },
+ {
+  "id": "banh-ca-chien",
+  "ten": "Bánh cá chiên",
+  "ho_mon": "cá chiên",
+  "hang": 10,
+  "thieu": [
+   "bột nghệ",
+   "củ nén",
+   "mỡ gáy"
+  ]
+ },
+ {
+  "id": "cua-lot-xao-chua-ngot",
+  "ten": "Cua lột xào chua ngọt",
+  "ho_mon": "xào chua",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "trung-cut-xao-chua-ngot",
+  "ten": "Trứng cút xào chua ngọt",
+  "ho_mon": "xào chua",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "muc-xao-chua-cay",
+  "ten": "Mực xào chua cay",
+  "ho_mon": "xào chua",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "bach-tuoc-xao-chua-cay",
+  "ten": "Bạch tuộc xào chua cay",
+  "ho_mon": "xào chua",
+  "hang": 4,
+  "thieu": [
+   "bạch tuộc"
+  ]
+ },
+ {
+  "id": "suon-xao-chua-ngot",
+  "ten": "Sườn xào chua ngọt",
+  "ho_mon": "xào chua",
+  "hang": 5,
+  "thieu": [
+   "lòng trắng trứng"
+  ]
+ },
+ {
+  "id": "doi-truong-xao-chua-cay",
+  "ten": "Dồi trường xào chua cay",
+  "ho_mon": "xào chua",
+  "hang": 6,
+  "thieu": [
+   "dồi trường"
+  ]
+ },
+ {
+  "id": "oc-bien-xao-chua-ngot",
+  "ten": "Ốc biển xào chua ngọt",
+  "ho_mon": "xào chua",
+  "hang": 7,
+  "thieu": [
+   "ốc biển"
+  ]
+ },
+ {
+  "id": "gan-heo-xao-chua-ngot",
+  "ten": "Gan heo xào chua ngọt",
+  "ho_mon": "xào chua",
+  "hang": 8,
+  "thieu": [
+   "gan heo",
+   "tương chua ngọt"
+  ]
+ },
+ {
+  "id": "pho-xao-chua-ngot",
+  "ten": "Phở xào chua ngọt",
+  "ho_mon": "xào chua",
+  "hang": 9,
+  "thieu": [
+   "hẹ lá",
+   "mực lá",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "so-long-xao-chua-ngot",
+  "ten": "Sò lông xào chua ngọt",
+  "ho_mon": "xào chua",
+  "hang": 10,
+  "thieu": [
+   "rau quế",
+   "sò lông",
+   "tương xí muội"
+  ]
+ },
+ {
+  "id": "ech-xao-chua-ngot",
+  "ten": "Ếch xào chua ngọt",
+  "ho_mon": "xào chua",
+  "hang": 11,
+  "thieu": [
+   "củ kiệu chua",
+   "rượu nếp",
+   "đùi ếch",
+   "ớt đà lạt vàng",
+   "ớt đà lạt xanh",
+   "ớt đà lạt đỏ"
+  ]
+ },
+ {
+  "id": "lau-ga-ham-sa",
+  "ten": "Lẩu gà hầm sả",
+  "ho_mon": "lẩu gà",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "lau-ga-hanh-can",
+  "ten": "Lẩu gà hành cần",
+  "ho_mon": "lẩu gà",
+  "hang": 2,
+  "thieu": [
+   "gà mái dầu"
+  ]
+ },
+ {
+  "id": "lau-ga-chua-cay",
+  "ten": "Lẩu gà chua cay",
+  "ho_mon": "lẩu gà",
+  "hang": 3,
+  "thieu": [
+   "gà ta",
+   "khoai môn cau"
+  ]
+ },
+ {
+  "id": "lau-ga-nau-giam",
+  "ten": "Lẩu gà nấu giấm",
+  "ho_mon": "lẩu gà",
+  "hang": 4,
+  "thieu": [
+   "cần nước",
+   "gà ta"
+  ]
+ },
+ {
+  "id": "lau-ga-tu-xuyen",
+  "ten": "Lẩu gà tứ xuyên",
+  "ho_mon": "lẩu gà",
+  "hang": 5,
+  "thieu": [
+   "gà ta",
+   "hoa xuyên tiêu thơm",
+   "kỷ tử"
+  ]
+ },
+ {
+  "id": "lau-ga-com-me",
+  "ten": "Lẩu gà cơm mẻ",
+  "ho_mon": "lẩu gà",
+  "hang": 6,
+  "thieu": [
+   "gà tre",
+   "riềng",
+   "ớt đỏ sừng"
+  ]
+ },
+ {
+  "id": "lau-ga-ot-hiem",
+  "ten": "Lẩu gà ớt hiểm",
+  "ho_mon": "lẩu gà",
+  "hang": 7,
+  "thieu": [
+   "gà ta",
+   "kỷ tử",
+   "muối hột"
+  ]
+ },
+ {
+  "id": "lau-ga-mac-khen",
+  "ten": "Lẩu gà mắc khén",
+  "ho_mon": "lẩu gà",
+  "hang": 8,
+  "thieu": [
+   "gà tre",
+   "hạt mắc khén",
+   "hạt điều khô",
+   "kỷ tử"
+  ]
+ },
+ {
+  "id": "lau-ga-thai-lan",
+  "ten": "Lẩu gà Thái Lan",
+  "ho_mon": "lẩu gà",
+  "hang": 9,
+  "thieu": [
+   "lá chanh bắc",
+   "rau chuối",
+   "rau nhút",
+   "riềng"
+  ]
+ },
+ {
+  "id": "salad-tom-dau-tay-tao-do",
+  "ten": "Salad tôm dâu tây táo đỏ",
+  "ho_mon": "salad tôm",
+  "hang": 1,
+  "thieu": [
+   "dâu tây"
+  ]
+ },
+ {
+  "id": "salad-tom-lanh",
+  "ten": "Salad tôm lạnh",
+  "ho_mon": "salad tôm",
+  "hang": 2,
+  "thieu": [
+   "củ radish",
+   "đậu que nhật"
+  ]
+ },
+ {
+  "id": "salad-tom-va-thit-hun-khoi",
+  "ten": "Salad tôm và thịt hun khói",
+  "ho_mon": "salad tôm",
+  "hang": 3,
+  "thieu": [
+   "rau mầm",
+   "thịt ba chỉ hun khói"
+  ]
+ },
+ {
+  "id": "salad-tom-thanh-mat",
+  "ten": "Salad tôm thanh mát",
+  "ho_mon": "salad tôm",
+  "hang": 4,
+  "thieu": [
+   "trứng cá hồi đen",
+   "vỏ chanh mài"
+  ]
+ },
+ {
+  "id": "salad-tom-xot-kem",
+  "ten": "Salad tôm xốt kem",
+  "ho_mon": "salad tôm",
+  "hang": 5,
+  "thieu": [
+   "lá húng lủi",
+   "rau câu đã ngâm",
+   "xoài keo"
+  ]
+ },
+ {
+  "id": "bap-bo-kho-chua-ngot",
+  "ten": "Bắp bò kho chua ngọt",
+  "ho_mon": "bò kho",
+  "hang": 1,
+  "thieu": [
+   "chao trắng",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "thit-bo-kho-tau",
+  "ten": "Thịt bò kho tàu",
+  "ho_mon": "bò kho",
+  "hang": 2,
+  "thieu": [
+   "kiệu chua",
+   "thịt bò bắp"
+  ]
+ },
+ {
+  "id": "bap-bo-kho-thom",
+  "ten": "Bắp bò kho thơm",
+  "ho_mon": "bò kho",
+  "hang": 3,
+  "thieu": [
+   "dầu màu điều",
+   "quế chi"
+  ]
+ },
+ {
+  "id": "thit-bo-kho-que",
+  "ten": "Thịt bò kho quế",
+  "ho_mon": "bò kho",
+  "hang": 4,
+  "thieu": [
+   "quế chi",
+   "thịt bò bắp",
+   "xốt tương đậu nành"
+  ]
+ },
+ {
+  "id": "bo-kho-dua-kieu",
+  "ten": "Bò kho dưa kiệu",
+  "ho_mon": "bò kho",
+  "hang": 5,
+  "thieu": [
+   "bột nghệ",
+   "dưa kiệu",
+   "ngò gai",
+   "ớt satế"
+  ]
+ },
+ {
+  "id": "bo-kho-chay",
+  "ten": "Bò kho chay",
+  "ho_mon": "bò kho",
+  "hang": 6,
+  "thieu": [
+   "bột bò kho",
+   "chiên vàng",
+   "tàu hũ ki mềm",
+   "đậu hạt hà lan"
+  ]
+ },
+ {
+  "id": "bo-kho-khoai-so",
+  "ten": "Bò kho khoai sọ",
+  "ho_mon": "bò kho",
+  "hang": 7,
+  "thieu": [
+   "bột nghệ",
+   "ketchup",
+   "khoai sọ",
+   "ngò gai",
+   "rượu vang đỏ",
+   "thịt cổ bò"
+  ]
+ },
+ {
+  "id": "bo-kho",
+  "ten": "Công thức nấu bò kho đậm vị cho bữa sáng năng lượng",
+  "ho_mon": "bò kho",
+  "hang": 8,
+  "thieu": [
+   "bột bò kho",
+   "lá cà ri",
+   "màu điều",
+   "ngò gai",
+   "rau quế",
+   "tai vị"
+  ]
+ },
+ {
+  "id": "goi-rau-mam-tom-muc",
+  "ten": "Gỏi rau mầm tôm mực",
+  "ho_mon": "gỏi rau",
+  "hang": 1,
+  "thieu": [
+   "rau mầm"
+  ]
+ },
+ {
+  "id": "goi-rau-can-thit-bo",
+  "ten": "Gỏi rau cần thịt bò",
+  "ho_mon": "gỏi rau",
+  "hang": 2,
+  "thieu": [
+   "thịt bò phi lê"
+  ]
+ },
+ {
+  "id": "goi-rau-ma-tai-heo",
+  "ten": "Gỏi rau má tai heo",
+  "ho_mon": "gỏi rau",
+  "hang": 3,
+  "thieu": [
+   "tai heo"
+  ]
+ },
+ {
+  "id": "goi-rau-ma-tom-kho-chien-gion",
+  "ten": "Gỏi rau má tôm khô chiên giòn",
+  "ho_mon": "gỏi rau",
+  "hang": 4,
+  "thieu": [
+   "tôm khô"
+  ]
+ },
+ {
+  "id": "goi-rau-ma",
+  "ten": "Gỏi rau má",
+  "ho_mon": "gỏi rau",
+  "hang": 5,
+  "thieu": [
+   "bánh phồng tôm chiên"
+  ]
+ },
+ {
+  "id": "goi-rau-muong-chien-gion",
+  "ten": "Gỏi rau muống chiên giòn",
+  "ho_mon": "gỏi rau",
+  "hang": 6,
+  "thieu": [
+   "khô cá sặc",
+   "xoài keo"
+  ]
+ },
+ {
+  "id": "goi-rau-mam",
+  "ten": "Gỏi rau mầm",
+  "ho_mon": "gỏi rau",
+  "hang": 7,
+  "thieu": [
+   "bánh phồng tôm",
+   "rau mầm",
+   "đường cát trắng"
+  ]
+ },
+ {
+  "id": "goi-rau-mam-tom",
+  "ten": "Gỏi rau mầm tôm",
+  "ho_mon": "gỏi rau",
+  "hang": 8,
+  "thieu": [
+   "bánh phồng tôm",
+   "rau mầm",
+   "tép tỏi",
+   "đường cát trắng"
+  ]
+ },
+ {
+  "id": "goi-rau-nuoc-tuong",
+  "ten": "Gỏi rau nước tương",
+  "ho_mon": "gỏi rau",
+  "hang": 9,
+  "thieu": [
+   "bột nghệ",
+   "bột ớt",
+   "rau kinh giới",
+   "rau mầm"
+  ]
+ },
+ {
+  "id": "suon-kho-cu-sen",
+  "ten": "Sườn non kho củ sen",
+  "ho_mon": "kho củ",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "muc-kho-cu-cai",
+  "ten": "Mực kho củ cải",
+  "ho_mon": "kho củ",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "ca-loc-kho-cu-cai",
+  "ten": "Cá lóc kho củ cải",
+  "ho_mon": "kho củ",
+  "hang": 3,
+  "thieu": [
+   "rau ghém"
+  ]
+ },
+ {
+  "id": "thit-gio-heo-kho-cu-cai",
+  "ten": "Thịt giò heo kho củ cải",
+  "ho_mon": "kho củ",
+  "hang": 4,
+  "thieu": [
+   "thịt giò heo"
+  ]
+ },
+ {
+  "id": "vit-kho-cu-cai-man",
+  "ten": "Vịt kho củ cải mặn",
+  "ho_mon": "kho củ",
+  "hang": 5,
+  "thieu": [
+   "thịt vịt"
+  ]
+ },
+ {
+  "id": "thit-heo-quay-kho-cu-hu-dua",
+  "ten": "Thịt heo quay kho củ hũ dừa",
+  "ho_mon": "kho củ",
+  "hang": 6,
+  "thieu": [
+   "củ hũ dừa"
+  ]
+ },
+ {
+  "id": "luon-kho-cu-nen",
+  "ten": "Lươn kho củ nén",
+  "ho_mon": "kho củ",
+  "hang": 7,
+  "thieu": [
+   "củ nén"
+  ]
+ },
+ {
+  "id": "suon-kho-cu-nang",
+  "ten": "Sườn kho củ năng",
+  "ho_mon": "kho củ",
+  "hang": 8,
+  "thieu": [
+   "củ năng",
+   "nước cốt me"
+  ]
+ },
+ {
+  "id": "ca-lang-kho-cu-nen",
+  "ten": "Cá lăng kho củ nén",
+  "ho_mon": "kho củ",
+  "hang": 9,
+  "thieu": [
+   "cá lăng",
+   "củ nén"
+  ]
+ },
+ {
+  "id": "vit-kho-cu-hu-dua",
+  "ten": "Vịt kho củ hũ dừa",
+  "ho_mon": "kho củ",
+  "hang": 10,
+  "thieu": [
+   "củ hũ dừa",
+   "lá gừng",
+   "thịt vịt xiêm"
+  ]
+ },
+ {
+  "id": "muop-xao-dau-phong",
+  "ten": "Mướp xào đậu phộng",
+  "ho_mon": "xào đậu",
+  "hang": 1,
+  "thieu": [
+   "chả chay chiên",
+   "đậu phộng vỏ đỏ khô"
+  ]
+ },
+ {
+  "id": "ca-thu-kho-ca-tim",
+  "ten": "Cá thu kho cà tím",
+  "ho_mon": "kho cà",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "ca-doi-kho-ca-chua",
+  "ten": "Cá đối kho cà chua",
+  "ho_mon": "kho cà",
+  "hang": 2,
+  "thieu": [
+   "cá đối"
+  ]
+ },
+ {
+  "id": "ca-lang-kho-ca-bi",
+  "ten": "Cá lăng kho cà bi",
+  "ho_mon": "kho cà",
+  "hang": 3,
+  "thieu": [
+   "cá lăng"
+  ]
+ },
+ {
+  "id": "ca-ro-kho-ca-na",
+  "ten": "Cá rô kho cà na",
+  "ho_mon": "kho cà",
+  "hang": 4,
+  "thieu": [
+   "cà na muối xổi"
+  ]
+ },
+ {
+  "id": "ca-saba-kho-ca-xot-mayonnaise",
+  "ten": "Cá saba kho cà xốt mayonnaise",
+  "ho_mon": "kho cà",
+  "hang": 5,
+  "thieu": [
+   "cá saba"
+  ]
+ },
+ {
+  "id": "luon-kho-ca-tim",
+  "ten": "Lươn kho cà tím",
+  "ho_mon": "kho cà",
+  "hang": 6,
+  "thieu": [
+   "nước cốt me"
+  ]
+ },
+ {
+  "id": "ca-ro-kho-ca-bat-2",
+  "ten": "Cá rô kho cà bát",
+  "ho_mon": "kho cà",
+  "hang": 7,
+  "thieu": [
+   "cà bát",
+   "riềng"
+  ]
+ },
+ {
+  "id": "thit-quay-kho-ca-phao",
+  "ten": "Thịt quay kho cà pháo",
+  "ho_mon": "kho cà",
+  "hang": 8,
+  "thieu": [
+   "thịt quay",
+   "tiêu lốp khô"
+  ]
+ },
+ {
+  "id": "chuoi-dau-kho-tuong-sa",
+  "ten": "Chuối đậu kho tương sả",
+  "ho_mon": "kho tương",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "mit-kho-tuong",
+  "ten": "Mít kho tương",
+  "ho_mon": "kho tương",
+  "hang": 2,
+  "thieu": [
+   "mít non"
+  ]
+ },
+ {
+  "id": "ca-dieu-hong-kho-tuong-hot",
+  "ten": "Cá điêu hồng kho tương hột",
+  "ho_mon": "kho tương",
+  "hang": 3,
+  "thieu": [
+   "cá điêu hồng",
+   "tiêu sọ bể"
+  ]
+ },
+ {
+  "id": "chan-gio-kho-tuong-sa",
+  "ten": "Chân giò kho tương sả",
+  "ho_mon": "kho tương",
+  "hang": 4,
+  "thieu": [
+   "ớt đà lạt vàng",
+   "ớt đà lạt đỏ"
+  ]
+ },
+ {
+  "id": "ca-dieu-hong-kho-tuong-ban",
+  "ten": "Cá điêu hồng kho tương bần",
+  "ho_mon": "kho tương",
+  "hang": 5,
+  "thieu": [
+   "cá điêu hồng",
+   "củ riềng",
+   "tương bần"
+  ]
+ },
+ {
+  "id": "oc-buou-kho-gung",
+  "ten": "Ốc bươu kho gừng",
+  "ho_mon": "kho gừng",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "ba-roi-kho-gung",
+  "ten": "Ba rọi kho gừng",
+  "ho_mon": "kho gừng",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "ca-chim-kho-gung-ot",
+  "ten": "Cá chim kho gừng ớt",
+  "ho_mon": "kho gừng",
+  "hang": 3,
+  "thieu": [
+   "nước cốt gừng"
+  ]
+ },
+ {
+  "id": "ngheu-kho-gung",
+  "ten": "Nghêu kho gừng",
+  "ho_mon": "kho gừng",
+  "hang": 4,
+  "thieu": [
+   "thịt nghêu"
+  ]
+ },
+ {
+  "id": "ca-tre-kho-gung",
+  "ten": "Cá trê kho gừng",
+  "ho_mon": "kho gừng",
+  "hang": 5,
+  "thieu": [
+   "cá trê vàng"
+  ]
+ },
+ {
+  "id": "dau-kho-gung",
+  "ten": "Đậu kho gừng",
+  "ho_mon": "kho gừng",
+  "hang": 6,
+  "thieu": [
+   "chả chay",
+   "đậu cô ve",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "cuon-dau-hu-kho-gung",
+  "ten": "Cuốn đậu hủ kho gừng",
+  "ho_mon": "kho gừng",
+  "hang": 7,
+  "thieu": [
+   "bông hẹ chần",
+   "poa-rô",
+   "ơt sừng"
+  ]
+ },
+ {
+  "id": "ca-tre-kho-gung-nghe",
+  "ten": "Cá trê kho gừng nghệ",
+  "ho_mon": "kho gừng",
+  "hang": 8,
+  "thieu": [
+   "cá trê vàng",
+   "lá gừng non",
+   "màu điều dầu",
+   "thịt bạ rọi"
+  ]
+ },
+ {
+  "id": "ga-kho-cu-cai-muoi",
+  "ten": "Gà kho củ cải muối",
+  "ho_mon": "gà kho",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "nam-dui-ga-kho-gung",
+  "ten": "Nấm đùi gà kho gừng",
+  "ho_mon": "gà kho",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "ga-kho-me",
+  "ten": "Cách làm gà kho me chua ngọt, mặn mà, cực bắt cơm tối",
+  "ho_mon": "gà kho",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "canh-ga-kho-bap-non",
+  "ten": "Cánh gà kho bắp non",
+  "ho_mon": "gà kho",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "ga-kho-nam",
+  "ten": "Gà kho nấm",
+  "ho_mon": "gà kho",
+  "hang": 5,
+  "thieu": []
+ },
+ {
+  "id": "me-ga-kho-thom",
+  "ten": "Mề gà kho thơm",
+  "ho_mon": "gà kho",
+  "hang": 6,
+  "thieu": []
+ },
+ {
+  "id": "nam-dui-ga-kho-mang-tay",
+  "ten": "Nấm đùi gà kho măng tây",
+  "ho_mon": "gà kho",
+  "hang": 7,
+  "thieu": []
+ },
+ {
+  "id": "ga-kho-rau-cu",
+  "ten": "Gà kho rau củ",
+  "ho_mon": "gà kho",
+  "hang": 8,
+  "thieu": []
+ },
+ {
+  "id": "long-ga-kho-tuong",
+  "ten": "Lòng gà kho tương",
+  "ho_mon": "gà kho",
+  "hang": 9,
+  "thieu": [
+   "lòng gà"
+  ]
+ },
+ {
+  "id": "thit-ga-kho-kim-chi",
+  "ten": "Thịt gà kho kim chi",
+  "ho_mon": "gà kho",
+  "hang": 10,
+  "thieu": [
+   "hẹ lá"
+  ]
+ },
+ {
+  "id": "thit-ga-kho-rau-ram",
+  "ten": "Thịt gà kho rau răm",
+  "ho_mon": "gà kho",
+  "hang": 11,
+  "thieu": [
+   "thịt gà"
+  ]
+ },
+ {
+  "id": "canh-ga-kho-khoai-mon",
+  "ten": "Cánh gà kho khoai môn",
+  "ho_mon": "gà kho",
+  "hang": 12,
+  "thieu": [
+   "khoai môn cao",
+   "đậu cô ve"
+  ]
+ },
+ {
+  "id": "ga-kho-hanh-phi",
+  "ten": "Gà kho hành phi",
+  "ho_mon": "gà kho",
+  "hang": 13,
+  "thieu": [
+   "con gà ta",
+   "ớt hiềm"
+  ]
+ },
+ {
+  "id": "ga-kho-nghe-chua-cay",
+  "ten": "Gà kho nghệ chua cay",
+  "ho_mon": "gà kho",
+  "hang": 14,
+  "thieu": [
+   "bột nghệ",
+   "nước cốt me"
+  ]
+ },
+ {
+  "id": "ga-kho-chao-mayonnaise",
+  "ten": "Gà kho chao Mayonnaise",
+  "ho_mon": "gà kho",
+  "hang": 15,
+  "thieu": [
+   "chao trắng",
+   "chao đỏ",
+   "khoai môn"
+  ]
+ },
+ {
+  "id": "bao-tu-ca-kho-tieu",
+  "ten": "Bao tử cá kho tiêu",
+  "ho_mon": "cá kho",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "trung-ca-kho-nghe",
+  "ten": "Trứng cá kho nghệ",
+  "ho_mon": "cá kho",
+  "hang": 2,
+  "thieu": [
+   "trứng cá thu"
+  ]
+ },
+ {
+  "id": "ca-kho-tau",
+  "ten": "Cá kho tàu",
+  "ho_mon": "cá kho",
+  "hang": 3,
+  "thieu": [
+   "cá saba"
+  ]
+ },
+ {
+  "id": "ca-kho-chuoi-xanh",
+  "ten": "Cá kho chuối xanh",
+  "ho_mon": "cá kho",
+  "hang": 4,
+  "thieu": [
+   "cá cam",
+   "riềng",
+   "trà xanh"
+  ]
+ },
+ {
+  "id": "ca-kho-quet",
+  "ten": "Cá kho quẹt",
+  "ho_mon": "cá kho",
+  "hang": 5,
+  "thieu": [
+   "khô cá cơm lạt",
+   "tiêu sọ",
+   "tôm khô"
+  ]
+ },
+ {
+  "id": "vit-quay-xao-thom",
+  "ten": "Vịt quay xào thơm",
+  "ho_mon": "xào thơm",
+  "hang": 1,
+  "thieu": [
+   "ức vịt quay"
+  ]
+ },
+ {
+  "id": "oc-xao-thom",
+  "ten": "Ốc xào thơm",
+  "ho_mon": "xào thơm",
+  "hang": 2,
+  "thieu": [
+   "lá chúc",
+   "ốc lác con"
+  ]
+ },
+ {
+  "id": "khoai-tay-xao-thach-konyaku",
+  "ten": "Khoai tây xào thạch Konnyaku",
+  "ho_mon": "tây xào",
+  "hang": 1,
+  "thieu": [
+   "konnyaku nâu"
+  ]
+ },
+ {
+  "id": "khoai-tay-xao-kim-chi",
+  "ten": "Khoai tây xào kim chi",
+  "ho_mon": "tây xào",
+  "hang": 2,
+  "thieu": [
+   "gà má đùi"
+  ]
+ },
+ {
+  "id": "khoai-tay-xao-ba-roi-xong-khoi",
+  "ten": "Khoai tây xào ba rọi xông khói",
+  "ho_mon": "tây xào",
+  "hang": 3,
+  "thieu": [
+   "ba rọi xông khói",
+   "húng lủi",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "gnocchi-khoai-tay-xao-bo",
+  "ten": "Gnocchi khoai tây xào bò",
+  "ho_mon": "tây xào",
+  "hang": 4,
+  "thieu": [
+   "lá quế tây",
+   "phô mai bột",
+   "thịt bò phi lê"
+  ]
+ },
+ {
+  "id": "pho-bo-bap-hoa",
+  "ten": "Phở bò bắp hoa",
+  "ho_mon": "phở bò",
+  "hang": 1,
+  "thieu": [
+   "bánh phở",
+   "nêm sẵn phở bò",
+   "thịt bò bắp hoa",
+   "thịt bò nạm"
+  ]
+ },
+ {
+  "id": "pho-bo",
+  "ten": "Bí quyết nấu phở bò chuẩn vị, tiết kiệm thời gian",
+  "ho_mon": "phở bò",
+  "hang": 2,
+  "thieu": [
+   "bánh phở",
+   "gàu bò",
+   "muối hột",
+   "ngò gai",
+   "thịt bò phi lê",
+   "xương ống bò"
+  ]
+ },
+ {
+  "id": "banh-rau-cu-chien",
+  "ten": "Mách bạn cách làm bánh rau củ chiên giòn ngon khó cưỡng",
+  "ho_mon": "củ chiên",
+  "hang": 1,
+  "thieu": [
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "rau-cu-chien-tam-nuoc-tuong",
+  "ten": "Rau củ chiên tẩm nước tương",
+  "ho_mon": "củ chiên",
+  "hang": 2,
+  "thieu": [
+   "tôm khô",
+   "đậu cô ve"
+  ]
+ },
+ {
+  "id": "trai-cay-va-rau-cu-chien-gion",
+  "ten": "Trái cây và rau củ chiên giòn",
+  "ho_mon": "củ chiên",
+  "hang": 3,
+  "thieu": [
+   "húng lũi",
+   "mè đen"
+  ]
+ },
+ {
+  "id": "banh-rau-cu-chien-gion",
+  "ten": "Bánh rau củ chiên giòn",
+  "ho_mon": "củ chiên",
+  "hang": 4,
+  "thieu": [
+   "bí ngòi",
+   "mực lá",
+   "tôm đất"
+  ]
+ },
+ {
+  "id": "rau-cu-chien-gion",
+  "ten": "Rau củ chiên giòn",
+  "ho_mon": "củ chiên",
+  "hang": 5,
+  "thieu": [
+   "bông bí",
+   "rau tần ô",
+   "đậu đũa"
+  ]
+ },
+ {
+  "id": "vang-dau-cuon-rau-cu-chien",
+  "ten": "Váng đậu cuộn rau củ chiên",
+  "ho_mon": "củ chiên",
+  "hang": 6,
+  "thieu": [
+   "sườn chay",
+   "váng đậu",
+   "ăng vàng",
+   "đậu cô ve",
+   "đồ chua"
+  ]
+ },
+ {
+  "id": "ca-dong-kho-dua-ca",
+  "ten": "Cá đổng kho dưa cà",
+  "ho_mon": "kho dưa",
+  "hang": 1,
+  "thieu": [
+   "cá đổng"
+  ]
+ },
+ {
+  "id": "thit-quay-kho-dua-cai",
+  "ten": "Thịt quay kho dưa cải",
+  "ho_mon": "kho dưa",
+  "hang": 2,
+  "thieu": [
+   "dưa cải",
+   "tai vị",
+   "tiêu sọ"
+  ]
+ },
+ {
+  "id": "bao-tu-kho-dua-cai-trung-cut",
+  "ten": "Bao tử kho dưa cải trứng cút",
+  "ho_mon": "kho dưa",
+  "hang": 3,
+  "thieu": [
+   "bao tử heo",
+   "dưa cải",
+   "hành ngò"
+  ]
+ },
+ {
+  "id": "ca-loc-xao-rau-can-nuoc",
+  "ten": "Cá lóc xào rau cần nước",
+  "ho_mon": "xào rau",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "muc-trung-xao-rau-ram",
+  "ten": "Mực trứng xào rau răm",
+  "ho_mon": "xào rau",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "hai-sam-xao-rau-cu",
+  "ten": "Hải sâm xào rau củ",
+  "ho_mon": "xào rau",
+  "hang": 3,
+  "thieu": [
+   "củ năng",
+   "hải sâm",
+   "đậu hà lan"
+  ]
+ },
+ {
+  "id": "ech-xao-cai-chua",
+  "ten": "Ếch xào cải chua",
+  "ho_mon": "ếch xào",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "ech-xao-sa-la-chanh",
+  "ten": "Ếch xào sả lá chanh",
+  "ho_mon": "ếch xào",
+  "hang": 2,
+  "thieu": [
+   "lá chanh"
+  ]
+ },
+ {
+  "id": "ech-xao-bon-bon",
+  "ten": "Ếch xào bồn bồn",
+  "ho_mon": "ếch xào",
+  "hang": 3,
+  "thieu": [
+   "bồn bồn ngâm chua",
+   "ngò gai"
+  ]
+ },
+ {
+  "id": "thit-ech-xao-giam-toi",
+  "ten": "Thịt ếch xào giấm tỏi",
+  "ho_mon": "ếch xào",
+  "hang": 4,
+  "thieu": [
+   "tiêu sọ",
+   "đùi ếch"
+  ]
+ },
+ {
+  "id": "ech-xao-la-lot",
+  "ten": "Ếch xào lá lốt",
+  "ho_mon": "ếch xào",
+  "hang": 5,
+  "thieu": [
+   "củ nén",
+   "lá lốt"
+  ]
+ },
+ {
+  "id": "ech-xao-tia-to",
+  "ten": "Ếch xào tía tô",
+  "ho_mon": "ếch xào",
+  "hang": 6,
+  "thieu": [
+   "bột nghệ",
+   "đùi ếch",
+   "đậu phộng"
+  ]
+ },
+ {
+  "id": "tom-thit-kho-mang",
+  "ten": "Tôm thịt kho măng",
+  "ho_mon": "thịt kho",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "ca-tim-nhoi-thit-kho",
+  "ten": "Cà tím nhồi thịt kho",
+  "ho_mon": "thịt kho",
+  "hang": 2,
+  "thieu": []
+ },
+ {
+  "id": "thit-kho-nuoc-dua",
+  "ten": "Thịt kho nước dừa",
+  "ho_mon": "thịt kho",
+  "hang": 3,
+  "thieu": []
+ },
+ {
+  "id": "thit-kho-cu-sen-tuong-hot",
+  "ten": "Thịt kho củ sen tương hột",
+  "ho_mon": "thịt kho",
+  "hang": 4,
+  "thieu": []
+ },
+ {
+  "id": "thit-kho-cu-kieu",
+  "ten": "Thịt kho củ kiệu",
+  "ho_mon": "thịt kho",
+  "hang": 5,
+  "thieu": [
+   "củ kiệu ngâm chua"
+  ]
+ },
+ {
+  "id": "bi-ho-lo-nhoi-thit-kho",
+  "ten": "Bí nhồi thịt kho",
+  "ho_mon": "thịt kho",
+  "hang": 6,
+  "thieu": [
+   "bí nhật"
+  ]
+ },
+ {
+  "id": "thit-kho-nuoc-tuong-giam",
+  "ten": "Thịt kho nước tương giấm",
+  "ho_mon": "thịt kho",
+  "hang": 7,
+  "thieu": [
+   "tai vị"
+  ]
+ },
+ {
+  "id": "thit-kho-dau-phong",
+  "ten": "Thịt kho đậu phộng",
+  "ho_mon": "thịt kho",
+  "hang": 8,
+  "thieu": [
+   "cơm dừa",
+   "đậu phộng sống"
+  ]
+ },
+ {
+  "id": "thit-kho-xot-tuong",
+  "ten": "Thịt kho xốt tương",
+  "ho_mon": "thịt kho",
+  "hang": 9,
+  "thieu": [
+   "bông cả",
+   "xốt tương"
+  ]
+ },
+ {
+  "id": "bap-cai-cuon-thit-kho-bo",
+  "ten": "Bắp cải cuộn thịt kho bơ",
+  "ho_mon": "thịt kho",
+  "hang": 10,
+  "thieu": [
+   "thịt bò",
+   "tép mỡ"
+  ]
+ },
+ {
+  "id": "tom-thit-kho-quet",
+  "ten": "Tôm thịt kho quẹt",
+  "ho_mon": "thịt kho",
+  "hang": 11,
+  "thieu": [
+   "mỡ gáy",
+   "thịt nách",
+   "tôm khô"
+  ]
+ },
+ {
+  "id": "thit-kho-hat-de",
+  "ten": "Thịt kho hạt dẻ",
+  "ho_mon": "thịt kho",
+  "hang": 12,
+  "thieu": [
+   "bún tàu",
+   "hạt dẻ",
+   "thịt nách có da"
+  ]
+ },
+ {
+  "id": "sup-toc-tien-bi-dao",
+  "ten": "Súp tóc tiên bí đao",
+  "ho_mon": "bí đao",
+  "hang": 1,
+  "thieu": [
+   "bí đao",
+   "tóc tiên"
+  ]
+ },
+ {
+  "id": "rau-muong-xao-mam-ruoc",
+  "ten": "Rau muống xào mắm ruốc",
+  "ho_mon": "rau muống",
+  "hang": 1,
+  "thieu": []
+ },
+ {
+  "id": "bach-tuoc-xao-rau-muong",
+  "ten": "Bạch tuộc xào rau muống",
+  "ho_mon": "rau muống",
+  "hang": 2,
+  "thieu": [
+   "bạch tuộc"
+  ]
+ },
+ {
+  "id": "canh-rau-muong-khoai-so",
+  "ten": "Canh rau muống khoai sọ",
+  "ho_mon": "rau muống",
+  "hang": 3,
+  "thieu": [
+   "khoai sọ"
+  ]
+ },
+ {
+  "id": "thit-bo-tron-rau-muong-che",
+  "ten": "Thịt bò trộn rau muống chẻ",
+  "ho_mon": "rau muống",
+  "hang": 4,
+  "thieu": [
+   "thịt bò filet"
+  ]
+ },
+ {
+  "id": "rau-muong-ngam-chua",
+  "ten": "Rau muống ngâm chua",
+  "ho_mon": "rau muống",
+  "hang": 5,
+  "thieu": [
+   "phèn chua",
+   "tre chẻ để gài"
+  ]
+ },
+ {
+  "id": "vit-quay-kho-trung-cut",
+  "ten": "Vịt quay kho trứng cút",
+  "ho_mon": "quay kho",
+  "hang": 1,
+  "thieu": []
+ }
+]
