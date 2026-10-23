@@ -66,13 +66,30 @@ def main():
                  "reason": "không phải đồ ăn (danh mục không thuộc thực phẩm)"}
                 for url, p in full.items() if url not in have and p["category"] in NON_FOOD_CATEGORIES]
     result += rest
+
+    # (5) đợt 2: sản phẩm mở rộng cho tất cả món phổ biến (đã duyệt + đã dò trùng). Đứng SAU phần (4) để nhận id nối tiếp.
+    additions_v2 = json.loads((REVIEW / "catalog_additions_v2_final.json").read_text(encoding="utf-8"))["additions"]
+    taken = {p["name"] for p in result}
+    added_v2 = []
+    for a in additions_v2:
+        if a["name"] in taken:
+            raise SystemExit(f"sản phẩm thêm mới đợt 2 '{a['name']}' trùng tên với sản phẩm đã có")
+        taken.add(a["name"])
+        added_v2.append({
+            "name": a["name"], "brand": None, "category": a["category"], "price": None, "unit": a["unit"],
+            "product_url": None, "image_url": None, "image_urls": [], "image_paths": [],
+            "source": "manual_added_v2", "crawled_at": None, "raw_name": a["name"],
+            "placeholder_fields": ["price", "name", "unit", "category", "image"],
+            "needed_for_ingredient": a["ingredient"],
+        })
+    result += added_v2
     EXCLUDED.write_text(json.dumps(excluded, ensure_ascii=False, indent=1), encoding="utf-8")
 
     OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     src = Counter(p.get("added_from") or p["source"] for p in result)
     print(f"-> {OUT.relative_to(ROOT)}: {len(result)} sản phẩm")
     print(f"   catalog đang dùng: {len(current)} | chọn thêm từ catalog đầy đủ: {len(picked)} | thêm mới (chưa có giá): {len(added)}"
-          f" | phần còn lại của catalog đầy đủ: {len(rest)} | loại (không phải đồ ăn): {len(excluded)}")
+          f" | phần còn lại của catalog đầy đủ: {len(rest)} | loại (không phải đồ ăn): {len(excluded)} | thêm mới đợt 2: {len(added_v2)}")
     assert len(current) + len(picked) + len(rest) + len(excluded) == len(full) + (len(current) - len({p["product_url"] for p in current}))
     print("   theo nguồn:", dict(src))
     print("   thêm từ catalog đầy đủ:", [p["name"][:42] for p in picked][:6], "...")
