@@ -1,9 +1,9 @@
 """Thử tìm công thức bằng câu hỏi tự nhiên (sau load_recipes.py và embed_recipes.py).
 
 Chạy từ thư mục grocery-store-ai:
-    .venv\\Scripts\\python scripts\\search_recipes.py "canh chua cá lóc"
-    .venv\\Scripts\\python scripts\\search_recipes.py "món nướng cho 4 người"
-    .venv\\Scripts\\python scripts\\search_recipes.py "canh chua ca loc" --mode ingredient -k 10
+    .venv\\Scripts\\python scripts\\recipe_rag\\search_recipes.py "canh chua cá lóc"
+    .venv\\Scripts\\python scripts\\recipe_rag\\search_recipes.py "món nướng cho 4 người"
+    .venv\\Scripts\\python scripts\\recipe_rag\\search_recipes.py "canh chua ca loc" --mode ingredient -k 10
 
 --mode card        (mặc định) so câu hỏi với thẻ món
 --mode ingredient  so câu hỏi với từng nguyên liệu; món nào có nguyên liệu khớp nhất thì đứng trên

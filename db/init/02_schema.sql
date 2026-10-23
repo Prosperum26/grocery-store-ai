@@ -1,5 +1,5 @@
 -- Schema ai_db: công thức, nguyên liệu và embedding (bge-m3, 1024 chiều).
--- Nguồn dữ liệu: data/processed/recipes_clean.json (xem scripts/build_recipes_clean.py).
+-- Nguồn dữ liệu: data/recipe_rag/processed/recipes_clean.json (xem scripts/recipe_rag/build_recipes_clean.py).
 -- ai_db KHÔNG giữ catalog hay giỏ hàng: ghép nguyên liệu -> sản phẩm do Medusa quản lý (theo catalog_id).
 
 -- Một dòng cho mỗi công thức.
@@ -16,7 +16,7 @@ CREATE TABLE recipe (
     cooking_steps      jsonb NOT NULL DEFAULT '[]',
     usage_notes        jsonb NOT NULL DEFAULT '[]',
     tips               jsonb NOT NULL DEFAULT '[]',
-    in_target_set      boolean NOT NULL DEFAULT false, -- thuộc 100 món mục tiêu đã có giỏ hàng (data/final/recipes_v1.json)
+    in_target_set      boolean NOT NULL DEFAULT false, -- thuộc 100 món mục tiêu đã có giỏ hàng (data/recipe_rag/final/recipes_v1.json)
     created_at         timestamptz NOT NULL DEFAULT now()
 );
 

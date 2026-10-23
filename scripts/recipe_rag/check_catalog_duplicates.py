@@ -1,14 +1,14 @@
 """Dò sản phẩm thêm mới (catalog_additions_v2.json) có trùng với catalog hiện tại hoặc trùng nhau không.
 
 Chạy từ thư mục grocery-store-ai:
-    .venv\Scripts\python scripts\check_catalog_duplicates.py
+    .venv\Scripts\python scripts\recipe_rag\check_catalog_duplicates.py
 
 So sánh trên "tên lõi" (bỏ quy cách như 500g, 2 lít, hộp 10 quả). Ba kiểu nghi trùng:
   A. tên lõi giống hệt hoặc rất giống (difflib >= 0.88)
   B. mọi từ của tên lõi mới đều có trong tên sản phẩm cũ, và sản phẩm cũ không dài hơn tên mới quá 2 từ
      (ví dụ 'Giá đỗ' và 'Giá đỗ khay 200g')
   C. find_matches (luật khớp của pipeline) trả về sản phẩm cũ cho nguyên liệu đích
-Ghi data/review/catalog_additions_v2_duplicates.json để xử lý; không sửa gì khác.
+Ghi data/recipe_rag/review/catalog_additions_v2_duplicates.json để xử lý; không sửa gì khác.
 """
 import difflib
 import json
@@ -18,8 +18,8 @@ from pathlib import Path
 
 from build_recipe_shortlist import find_matches, load_full_catalog
 
-ROOT = Path(__file__).resolve().parents[1]
-REVIEW = ROOT / "data" / "review"
+ROOT = Path(__file__).resolve().parents[2]
+REVIEW = ROOT / "data" / "recipe_rag" / "review"
 OUT = REVIEW / "catalog_additions_v2_duplicates.json"
 QTY = re.compile(r"\b(khay|gói|goi|hũ|chai|lon|hộp|túi|bó|con|lọ|tuýp|cây|lố|vỉ|bịch)?\s*\d+([.,]\d+)?\s*(g|gr|kg|ml|l|lít|quả|trái|lá|bông|cái|con|gói|viên|lát|miếng)?\b", re.I)
 
@@ -34,7 +34,7 @@ def core(name):
 def main():
     additions = json.loads((REVIEW / "catalog_additions_v2.json").read_text(encoding="utf-8"))["additions"]
     old_add = json.loads((REVIEW / "catalog_additions_v1.json").read_text(encoding="utf-8"))["additions"]
-    cat = json.loads((ROOT / "data" / "raw" / "catalogs" / "products_clean_recipes_v2.json").read_text(encoding="utf-8"))
+    cat = json.loads((ROOT / "data" / "recipe_rag" / "raw" / "catalogs" / "products_clean_recipes_v2.json").read_text(encoding="utf-8"))
     existing = [{"name": p["name"], "category": p["category"], "src": "catalog"} for p in cat]
     existing += [{"name": a["name"], "category": a["category"], "src": "added_v1"} for a in old_add if a["name"] not in {e["name"] for e in existing}]
     full = load_full_catalog()

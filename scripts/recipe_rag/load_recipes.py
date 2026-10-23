@@ -1,12 +1,12 @@
 """Nạp công thức và nguyên liệu đã chuẩn hóa vào ai_db (bảng recipe, recipe_ingredient).
 
 Chạy từ thư mục grocery-store-ai:
-    .venv\\Scripts\\python scripts\\load_recipes.py              # nạp lần đầu (bảng phải đang trống)
-    .venv\\Scripts\\python scripts\\load_recipes.py --reset      # XÓA SẠCH rồi nạp lại (cả embedding, phải embed lại)
-    .venv\\Scripts\\python scripts\\load_recipes.py --limit 20 --dry-run   # thử 20 món, không lưu gì
+    .venv\\Scripts\\python scripts\\recipe_rag\\load_recipes.py              # nạp lần đầu (bảng phải đang trống)
+    .venv\\Scripts\\python scripts\\recipe_rag\\load_recipes.py --reset      # XÓA SẠCH rồi nạp lại (cả embedding, phải embed lại)
+    .venv\\Scripts\\python scripts\\recipe_rag\\load_recipes.py --limit 20 --dry-run   # thử 20 món, không lưu gì
 
-Đầu vào : data/processed/recipes_clean.json   2.527 công thức (scripts/build_recipes_clean.py)
-          data/final/recipes_v1.json          100 công thức mục tiêu -> cột in_target_set
+Đầu vào : data/recipe_rag/processed/recipes_clean.json   2.527 công thức (scripts/recipe_rag/build_recipes_clean.py)
+          data/recipe_rag/final/recipes_v1.json          100 công thức mục tiêu -> cột in_target_set
 Cần ai_db đang chạy (docker compose up -d) và file .env.
 """
 import argparse
@@ -18,7 +18,7 @@ from psycopg.types.json import Jsonb
 
 from ai_db import connect
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def to_int(value):
@@ -46,8 +46,8 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="làm hết nhưng hoàn tác, không lưu gì")
     args = parser.parse_args()
 
-    recipes = json.loads((ROOT / "data" / "processed" / "recipes_clean.json").read_text(encoding="utf-8"))
-    target_ids = {r["id"] for r in json.loads((ROOT / "data" / "final" / "recipes_v1.json").read_text(encoding="utf-8"))}
+    recipes = json.loads((ROOT / "data" / "recipe_rag" / "processed" / "recipes_clean.json").read_text(encoding="utf-8"))
+    target_ids = {r["id"] for r in json.loads((ROOT / "data" / "recipe_rag" / "final" / "recipes_v1.json").read_text(encoding="utf-8"))}
     if args.limit:
         recipes = recipes[: args.limit]
     ids = [r["id"] for r in recipes]

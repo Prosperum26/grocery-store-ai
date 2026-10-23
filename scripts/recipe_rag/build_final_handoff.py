@@ -1,9 +1,9 @@
 """Sinh bộ file BÀN GIAO cho bên web: catalog có id, nguyên liệu -> catalog_id, công thức + giỏ hàng.
 
 Chạy từ thư mục grocery-store-ai (sau build_ingredient_matches.py, build_catalog_v2.py, build_catalog_ids.py):
-    .venv\\Scripts\\python scripts\\build_final_handoff.py
+    .venv\\Scripts\\python scripts\\recipe_rag\\build_final_handoff.py
 
-Đầu ra (data/final/):
+Đầu ra (data/recipe_rag/final/):
     catalog_v1.json / catalog_v1.csv   catalog hoàn chỉnh, mỗi sản phẩm có catalog_id KHÓA CỨNG
     ingredient_to_catalog_v1.json      nguyên liệu -> danh sách catalog_id (cái đầu = mặc định)
     recipes_v1.json                    100 công thức, nguyên liệu gốc và giỏ hàng (catalog_id + số gói)
@@ -24,10 +24,10 @@ from pathlib import Path
 from build_catalog_clean import clean_product
 from build_catalog_ids import key_of, load_registry
 
-ROOT = Path(__file__).resolve().parents[1]
-REVIEW = ROOT / "data" / "review"
-FINAL = ROOT / "data" / "final"
-CATALOG_V2 = ROOT / "data" / "raw" / "catalogs" / "products_clean_recipes_v2.json"
+ROOT = Path(__file__).resolve().parents[2]
+REVIEW = ROOT / "data" / "recipe_rag" / "review"
+FINAL = ROOT / "data" / "recipe_rag" / "final"
+CATALOG_V2 = ROOT / "data" / "recipe_rag" / "raw" / "catalogs" / "products_clean_recipes_v2.json"
 BASE_UNIT = {"g": ("w", 1), "kg": ("w", 1000), "ml": ("v", 1), "lít": ("v", 1000)}
 
 
@@ -76,8 +76,8 @@ def main():
     raw_catalog = json.loads(CATALOG_V2.read_text(encoding="utf-8"))
     ingredient_map = json.loads((REVIEW / "ingredient_catalog_map_v1.json").read_text(encoding="utf-8"))["ingredients"]
     additions = json.loads((REVIEW / "catalog_additions_v1.json").read_text(encoding="utf-8"))["additions"]
-    shortlist = json.loads((ROOT / "data" / "processed" / "recipes_shortlist.json").read_text(encoding="utf-8"))
-    recipes_clean = {r["id"]: r for r in json.loads((ROOT / "data" / "processed" / "recipes_clean.json").read_text(encoding="utf-8"))}
+    shortlist = json.loads((ROOT / "data" / "recipe_rag" / "processed" / "recipes_shortlist.json").read_text(encoding="utf-8"))
+    recipes_clean = {r["id"]: r for r in json.loads((ROOT / "data" / "recipe_rag" / "processed" / "recipes_clean.json").read_text(encoding="utf-8"))}
     addition_ingredient = {a["name"]: a["ingredient"] for a in additions}
 
     # ---------- catalog_v1 ----------

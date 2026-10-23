@@ -1,13 +1,13 @@
 """Đọc quyết định đã duyệt (ingredient_matches_review_v2.xlsx) -> bảng ghép chính thức nguyên liệu -> sản phẩm.
 
 Chạy từ thư mục grocery-store-ai (sau build_review_v2.py):
-    .venv\\Scripts\\python scripts\\build_ingredient_matches.py
+    .venv\\Scripts\\python scripts\\recipe_rag\\build_ingredient_matches.py
 
-Đầu vào : data/review/ingredient_matches_review_v2.xlsx   quyết định của người duyệt
-          data/review/catalog_additions_v1.json           sản phẩm cần thêm vào catalog
-          data/raw/catalogs/products_clean.json           catalog đầy đủ
-          data/processed/recipes_shortlist.json           100 công thức mục tiêu
-Đầu ra  : data/review/ingredient_catalog_map_v1.json      BẢNG GHÉP CHÍNH THỨC
+Đầu vào : data/recipe_rag/review/ingredient_matches_review_v2.xlsx   quyết định của người duyệt
+          data/recipe_rag/review/catalog_additions_v1.json           sản phẩm cần thêm vào catalog
+          data/recipe_rag/raw/catalogs/products_clean.json           catalog đầy đủ
+          data/recipe_rag/processed/recipes_shortlist.json           100 công thức mục tiêu
+Đầu ra  : data/recipe_rag/review/ingredient_catalog_map_v1.json      BẢNG GHÉP CHÍNH THỨC
 
 Mỗi nguyên liệu có `status`:
     matched          ghép được sản phẩm có sẵn trong catalog (products[0] được chọn sẵn, các cái sau là lựa chọn khác)
@@ -29,11 +29,11 @@ from openpyxl import load_workbook
 from build_catalog_clean import clean_product
 from build_recipe_shortlist import FULL_CATALOG
 
-ROOT = Path(__file__).resolve().parents[1]
-REVIEW = ROOT / "data" / "review"
+ROOT = Path(__file__).resolve().parents[2]
+REVIEW = ROOT / "data" / "recipe_rag" / "review"
 SRC = REVIEW / "ingredient_matches_review_v2.xlsx"
 ADDITIONS = REVIEW / "catalog_additions_v1.json"
-SHORTLIST = ROOT / "data" / "processed" / "recipes_shortlist.json"
+SHORTLIST = ROOT / "data" / "recipe_rag" / "processed" / "recipes_shortlist.json"
 OUT = REVIEW / "ingredient_catalog_map_v1.json"
 DISAMBIGUATION = REVIEW / "catalog_disambiguation_v1.json"
 MAX_CANDIDATES = 8

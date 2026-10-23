@@ -25,28 +25,18 @@ Repository này được chuẩn bị cho hai hướng phát triển:
 
 ```text
 grocery-store-ai/
-├── .env.example
-├── .gitignore
-├── README.md
-├── requirements.txt
-├── notebooks/
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── recipes_vn.json
-├── weights/
-└── src/
-	├── main.py
-	├── config/
-	├── api/
-	│   └── v1/
-	├── schemas/
-	├── services/
-	├── ml/
-	└── utils/
+├── src/                 # mã FastAPI chạy thật (chung cho hai module)
+├── scripts/{recipe_rag,reorder}/     # pipeline dữ liệu, huấn luyện, đo đạc (chạy tay)
+├── data/{recipe_rag,reorder}/        # dữ liệu theo module
+├── notebooks/{recipe_rag,reorder}/
+├── docs/                # STRUCTURE.md (quy ước), recipe_rag/, reorder/
+├── tests/{recipe_rag,reorder}/
+├── db/, docker-compose.yml           # ai_db: Postgres + pgvector
+├── weights/             # mô hình, không commit
+├── .env.example, .gitignore, requirements*.txt
 ```
 
-Các module Python hiện chỉ là skeleton và docstring định hướng. Chưa có logic nghiệp vụ, inference hoặc xử lý API.
+Quy ước đặt file cho hai nhánh nằm ở `docs/STRUCTURE.md`; hướng dẫn chạy module RAG nằm ở `docs/recipe_rag/README.md`. Trong `src/`, các module Python phần lớn vẫn là skeleton; logic của `recipe_rag` hiện nằm ở `scripts/recipe_rag/` và chưa đưa vào service.
 
 ## Khởi chạy ban đầu
 

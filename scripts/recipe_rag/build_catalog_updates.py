@@ -1,12 +1,12 @@
 """Liệt kê sản phẩm cần thêm vào catalog để đủ nguyên liệu cho tập công thức mục tiêu.
 
 Chạy từ thư mục grocery-store-ai (sau build_recipe_shortlist.py):
-    python scripts/build_catalog_updates.py
+    python scripts/recipe_rag/build_catalog_updates.py
 
-Đầu vào : data/processed/recipes_shortlist.json            100 công thức đã chọn
-          data/raw/catalogs/products_clean_recipes.json      catalog đang dùng (đã lọc)
-          data/raw/catalogs/products_clean.json              catalog đầy đủ
-Đầu ra  : data/raw/catalogs/product_clean_recipes_updates_v1.json
+Đầu vào : data/recipe_rag/processed/recipes_shortlist.json            100 công thức đã chọn
+          data/recipe_rag/raw/catalogs/products_clean_recipes.json      catalog đang dùng (đã lọc)
+          data/recipe_rag/raw/catalogs/products_clean.json              catalog đầy đủ
+Đầu ra  : data/recipe_rag/raw/catalogs/product_clean_recipes_updates_v1.json
 
 Chỉ gồm nguyên liệu CORE của các công thức đã chọn mà catalog đang dùng KHÔNG có
 (khớp đúng/tiền tố trên tên đã chuẩn hóa, cùng luật với build_recipe_shortlist.py).
@@ -23,9 +23,9 @@ from pathlib import Path
 from build_catalog_clean import clean_product
 from build_recipe_shortlist import find_matches  # dùng chung đúng một luật khớp
 
-ROOT = Path(__file__).resolve().parents[1]
-CATALOGS = ROOT / "data" / "raw" / "catalogs"
-SHORTLIST = ROOT / "data" / "processed" / "recipes_shortlist.json"
+ROOT = Path(__file__).resolve().parents[2]
+CATALOGS = ROOT / "data" / "recipe_rag" / "raw" / "catalogs"
+SHORTLIST = ROOT / "data" / "recipe_rag" / "processed" / "recipes_shortlist.json"
 OUT = CATALOGS / "product_clean_recipes_updates_v1.json"
 MAX_PRODUCTS = 3  # số sản phẩm lấy từ catalog đầy đủ cho mỗi nguyên liệu
 FIELDS = ["name", "brand", "category", "price", "unit", "product_url", "image_url",

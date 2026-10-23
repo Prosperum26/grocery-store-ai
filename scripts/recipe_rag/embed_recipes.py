@@ -1,9 +1,9 @@
 """Embed công thức bằng bge-m3 (1024 chiều) rồi lưu vào recipe_embedding trong ai_db.
 
 Chạy từ thư mục grocery-store-ai (sau load_recipes.py):
-    .venv\\Scripts\\python scripts\\embed_recipes.py                      # cả 2 loại chunk, tự dùng GPU nếu có
-    .venv\\Scripts\\python scripts\\embed_recipes.py --chunks card        # chỉ thẻ món (nhanh nhất)
-    .venv\\Scripts\\python scripts\\embed_recipes.py --device cpu         # ép dùng CPU (chậm hơn nhiều)
+    .venv\\Scripts\\python scripts\\recipe_rag\\embed_recipes.py                      # cả 2 loại chunk, tự dùng GPU nếu có
+    .venv\\Scripts\\python scripts\\recipe_rag\\embed_recipes.py --chunks card        # chỉ thẻ món (nhanh nhất)
+    .venv\\Scripts\\python scripts\\recipe_rag\\embed_recipes.py --device cpu         # ép dùng CPU (chậm hơn nhiều)
 
 Hai loại chunk (xem db/init/02_schema.sql):
   card        1 chunk mỗi món: tên (kèm bản không dấu), mô tả, các nguyên liệu chính
@@ -64,7 +64,7 @@ def main():
 
     with connect() as conn:
         if conn.execute("select count(*) from recipe").fetchone()[0] == 0:
-            raise SystemExit("recipe đang trống. Chạy scripts/load_recipes.py trước.")
+            raise SystemExit("recipe đang trống. Chạy scripts/recipe_rag/load_recipes.py trước.")
 
         if args.chunks in ("card", "both"):
             rows = conn.execute(

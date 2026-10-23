@@ -1,6 +1,6 @@
-"""Chuẩn hóa tên nguyên liệu: data/raw/recipes/recipes.json -> data/processed/recipes_clean.json.
+"""Chuẩn hóa tên nguyên liệu: data/recipe_rag/raw/recipes/recipes.json -> data/recipe_rag/processed/recipes_clean.json.
 
-Chạy từ thư mục grocery-store-ai:  python scripts/build_recipes_clean.py
+Chạy từ thư mục grocery-store-ai:  python scripts/recipe_rag/build_recipes_clean.py
 
 Mỗi dòng nguyên liệu thô (raw_text) được tách thành 1 hoặc nhiều nguyên liệu dạng:
     {raw_text, name, quantity, unit, role}
@@ -15,10 +15,10 @@ import unicodedata
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / "data" / "raw" / "recipes" / "recipes.json"
-OUT = ROOT / "data" / "processed" / "recipes_clean.json"
-VOCAB = ROOT / "data" / "processed" / "ingredient_vocab.csv"
+ROOT = Path(__file__).resolve().parents[2]
+SRC = ROOT / "data" / "recipe_rag" / "raw" / "recipes" / "recipes.json"
+OUT = ROOT / "data" / "recipe_rag" / "processed" / "recipes_clean.json"
+VOCAB = ROOT / "data" / "recipe_rag" / "processed" / "ingredient_vocab.csv"
 
 # --- Bảng luật (chỉnh ở đây khi xem báo cáo thấy còn tên bẩn) -------------------
 

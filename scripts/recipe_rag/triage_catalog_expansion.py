@@ -1,15 +1,15 @@
 """Duyệt sơ bộ danh sách sản phẩm đề xuất, để người chỉ phải xem phần nhỏ thật sự cần quyết định.
 
 Chạy từ thư mục grocery-store-ai (sau suggest_catalog_expansion.py và khi bạn đã duyệt sheet gop_ten_de_xuat):
-    .venv\\Scripts\\python scripts\\triage_catalog_expansion.py candidates   # tính lại danh sách theo quyết định của bạn
-    .venv\\Scripts\\python scripts\\triage_catalog_expansion.py apply        # ghép quyết định sơ bộ của AI -> Excel gọn
+    .venv\\Scripts\\python scripts\\recipe_rag\\triage_catalog_expansion.py candidates   # tính lại danh sách theo quyết định của bạn
+    .venv\\Scripts\\python scripts\\recipe_rag\\triage_catalog_expansion.py apply        # ghép quyết định sơ bộ của AI -> Excel gọn
 
 Hai bước:
  1. candidates: đọc file duyệt của bạn (CHỈ ĐỌC, không sửa), dùng các quyết định "gop" ở sheet gop_ten_de_xuat để tính lại
-    món nào còn thiếu gì, rồi ghi data/review/catalog_expansion_candidates_v2.json. Danh sách này ngắn hơn nhiều vì bản
+    món nào còn thiếu gì, rồi ghi data/recipe_rag/review/catalog_expansion_candidates_v2.json. Danh sách này ngắn hơn nhiều vì bản
     đầu chỉ giả định 79 gợi ý gộp tên được chấp nhận, trong khi bạn đã chấp nhận hàng trăm.
  2. apply: đọc catalog_expansion_ai_decisions_v1.json (quyết định sơ bộ của AI cho từng sản phẩm, có lý do và độ chắc chắn)
-    và ghi data/review/catalog_expansion_triage_v1.xlsx với sheet can_ban_quyet (chỉ mục AI không chắc hoặc ảnh hưởng lớn),
+    và ghi data/recipe_rag/review/catalog_expansion_triage_v1.xlsx với sheet can_ban_quyet (chỉ mục AI không chắc hoặc ảnh hưởng lớn),
     ai_da_quyet (để bạn kiểm ngẫu nhiên) và tom_tat. Quyết định cuối cùng vẫn là của bạn.
 """
 import json
@@ -23,8 +23,8 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from build_recipe_shortlist import EXCLUDED_CATEGORIES, PANTRY, find_matches, load_full_catalog
 from suggest_catalog_expansion import classify, not_purchasable, popular_families
 
-ROOT = Path(__file__).resolve().parents[1]
-REVIEW = ROOT / "data" / "review"
+ROOT = Path(__file__).resolve().parents[2]
+REVIEW = ROOT / "data" / "recipe_rag" / "review"
 SRC = REVIEW / "catalog_expansion_review_v1.xlsx"
 CANDIDATES = REVIEW / "catalog_expansion_candidates_v2.json"
 RECIPES = REVIEW / "catalog_expansion_recipes_v2.json"       # từng món: họ món, hạng, còn thiếu gì (để tính độ phủ)
@@ -51,7 +51,7 @@ def build_candidates():
             user_no.add(r["nguyen_lieu_thieu"])
     print(f"quyết định của bạn ở gop_ten_de_xuat: gộp {len(user_alias)}, không gộp {len(user_no)}, chưa điền {len(alias_rows) - len(user_alias) - len(user_no)}")
 
-    recipes = json.loads((ROOT / "data" / "processed" / "recipes_clean.json").read_text(encoding="utf-8"))
+    recipes = json.loads((ROOT / "data" / "recipe_rag" / "processed" / "recipes_clean.json").read_text(encoding="utf-8"))
     mapping = json.loads((REVIEW / "ingredient_catalog_map_v1.json").read_text(encoding="utf-8"))["ingredients"]
     additions = json.loads((REVIEW / "catalog_additions_v1.json").read_text(encoding="utf-8"))["additions"]
     catalog = load_full_catalog()

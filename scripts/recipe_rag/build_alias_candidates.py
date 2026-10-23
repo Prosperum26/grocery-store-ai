@@ -1,11 +1,11 @@
 """Gợi ý gộp tên đồng nghĩa và gợi ý ghép nguyên liệu -> sản phẩm catalog bằng bge-m3.
 
 Chạy từ thư mục grocery-store-ai (cần: pip install sentence-transformers):
-    python scripts/build_alias_candidates.py
+    python scripts/recipe_rag/build_alias_candidates.py
 
-Đầu vào : data/processed/recipes_clean.json, data/processed/catalog_clean.json
-Đầu ra  : data/processed/alias_candidates.csv     tên hiếm -> tên phổ biến giống nó (để duyệt tay)
-          data/processed/catalog_candidates.csv   mỗi nguyên liệu -> top-3 loại hàng trong catalog
+Đầu vào : data/recipe_rag/processed/recipes_clean.json, data/recipe_rag/processed/catalog_clean.json
+Đầu ra  : data/recipe_rag/processed/alias_candidates.csv     tên hiếm -> tên phổ biến giống nó (để duyệt tay)
+          data/recipe_rag/processed/catalog_candidates.csv   mỗi nguyên liệu -> top-3 loại hàng trong catalog
 Script CHỈ ĐỀ XUẤT. bge-m3 coi "ớt đỏ" và "ớt xanh" rất giống nhau, nên không tự gộp:
 người duyệt đánh dấu cột `accept`, rồi chép các dòng đúng vào ALIASES trong build_recipes_clean.py.
 """
@@ -18,8 +18,8 @@ from pathlib import Path
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-ROOT = Path(__file__).resolve().parents[1]
-PROC = ROOT / "data" / "processed"
+ROOT = Path(__file__).resolve().parents[2]
+PROC = ROOT / "data" / "recipe_rag" / "processed"
 MIN_COUNT_ALIAS = 3        # chỉ xét tên xuất hiện >= 3 lần
 MIN_COUNT_CATALOG = 5      # chỉ ghép catalog cho tên xuất hiện >= 5 lần
 ALIAS_SIM = 0.85           # ngưỡng cosine để đề xuất gộp (chưa tune, xem báo cáo)

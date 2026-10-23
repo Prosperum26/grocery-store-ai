@@ -1,9 +1,9 @@
 """Bộ BÀN GIAO v2 cho bên web: catalog mở rộng, nguyên liệu -> catalog_id, và giỏ hàng cho tất cả món phổ biến.
 
 Chạy từ thư mục grocery-store-ai (sau build_catalog_v2.py và build_catalog_ids.py):
-    .venv\\Scripts\\python scripts\\build_final_handoff_v2.py
+    .venv\\Scripts\\python scripts\\recipe_rag\\build_final_handoff_v2.py
 
-Đầu ra (data/final/, bộ v1 giữ nguyên):
+Đầu ra (data/recipe_rag/final/, bộ v1 giữ nguyên):
     catalog_v2.json / catalog_v2.csv   catalog đầy đủ, mỗi sản phẩm có catalog_id KHÓA CỨNG (id cũ không đổi)
     ingredient_to_catalog_v2.json      tên nguyên liệu (kể cả tên viết khác) -> danh sách catalog_id (cái đầu = mặc định)
     recipes_v2.json                    100 món mục tiêu + các món phổ biến, nguyên liệu gốc và giỏ hàng (catalog_id + số gói)
@@ -30,10 +30,10 @@ from build_final_handoff import packs_needed, parse_steps
 from build_recipe_shortlist import PANTRY, find_matches, load_full_catalog
 from suggest_catalog_expansion import not_purchasable
 
-ROOT = Path(__file__).resolve().parents[1]
-REVIEW = ROOT / "data" / "review"
-FINAL = ROOT / "data" / "final"
-CATALOG_V2 = ROOT / "data" / "raw" / "catalogs" / "products_clean_recipes_v2.json"
+ROOT = Path(__file__).resolve().parents[2]
+REVIEW = ROOT / "data" / "recipe_rag" / "review"
+FINAL = ROOT / "data" / "recipe_rag" / "final"
+CATALOG_V2 = ROOT / "data" / "recipe_rag" / "raw" / "catalogs" / "products_clean_recipes_v2.json"
 MAX_CHOICES = 5
 OUTPUTS = ["catalog_v2.json", "catalog_v2.csv", "ingredient_to_catalog_v2.json", "recipes_v2.json", "validation_report_v2.txt"]
 # Tên nguyên liệu mà luật khớp tự động bỏ sót (tên ngắn, tên dài, tên viết khác) -> mảnh tên sản phẩm trong catalog.
@@ -72,9 +72,9 @@ def main():
     decisions = json.loads((REVIEW / "catalog_expansion_ai_decisions_v1.json").read_text(encoding="utf-8"))["decisions"]
     adds = json.loads((REVIEW / "catalog_additions_v2_final.json").read_text(encoding="utf-8"))
     v1_entries = {e["ingredient"]: e for e in json.loads((FINAL / "ingredient_to_catalog_v1.json").read_text(encoding="utf-8"))}
-    recipes_clean = {r["id"]: r for r in json.loads((ROOT / "data" / "processed" / "recipes_clean.json").read_text(encoding="utf-8"))}
+    recipes_clean = {r["id"]: r for r in json.loads((ROOT / "data" / "recipe_rag" / "processed" / "recipes_clean.json").read_text(encoding="utf-8"))}
     expansion = json.loads((REVIEW / "catalog_expansion_recipes_v2.json").read_text(encoding="utf-8"))
-    shortlist_ids = [r["id"] for r in json.loads((ROOT / "data" / "processed" / "recipes_shortlist.json").read_text(encoding="utf-8"))]
+    shortlist_ids = [r["id"] for r in json.loads((ROOT / "data" / "recipe_rag" / "processed" / "recipes_shortlist.json").read_text(encoding="utf-8"))]
 
     wb = load_workbook(REVIEW / "catalog_expansion_review_v1.xlsx", read_only=True, data_only=True)
     rows = list(wb["gop_ten_de_xuat"].iter_rows(values_only=True))

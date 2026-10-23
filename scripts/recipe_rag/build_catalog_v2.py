@@ -1,29 +1,29 @@
 """Tạo catalog mới products_clean_recipes_v2.json = catalog đang dùng + sản phẩm đã chọn + sản phẩm thêm mới.
 
 Chạy từ thư mục grocery-store-ai (sau build_ingredient_matches.py):
-    .venv\\Scripts\\python scripts\\build_catalog_v2.py
+    .venv\\Scripts\\python scripts\\recipe_rag\\build_catalog_v2.py
 
-Đầu vào : data/raw/catalogs/products_clean_recipes.json   catalog đang dùng (KHÔNG bị sửa)
-          data/raw/catalogs/products_clean.json           catalog đầy đủ
-          data/review/ingredient_catalog_map_v1.json      bảng ghép chính thức
-          data/review/catalog_additions_v1.json           sản phẩm thêm mới
-Đầu ra  : data/raw/catalogs/products_clean_recipes_v2.json
+Đầu vào : data/recipe_rag/raw/catalogs/products_clean_recipes.json   catalog đang dùng (KHÔNG bị sửa)
+          data/recipe_rag/raw/catalogs/products_clean.json           catalog đầy đủ
+          data/recipe_rag/review/ingredient_catalog_map_v1.json      bảng ghép chính thức
+          data/recipe_rag/review/catalog_additions_v1.json           sản phẩm thêm mới
+Đầu ra  : data/recipe_rag/raw/catalogs/products_clean_recipes_v2.json
 
 Thứ tự bản ghi: (1) toàn bộ catalog đang dùng, (2) sản phẩm bảng ghép chọn nhưng catalog đang dùng chưa có
 (chép nguyên bản ghi từ catalog đầy đủ, thêm `added_from: "full_catalog"`), (3) sản phẩm thêm mới
 (`source: "manual_added_v1"`, `price: null`, `placeholder_fields` liệt kê trường cần nhóm điền/sửa),
 (4) phần còn lại của catalog đầy đủ (`added_from: "full_catalog_rest"`): vì catalog này là file để web hiển thị
 nên không được bỏ sản phẩm nào là thực phẩm. Chỉ loại các danh mục không phải đồ ăn (NON_FOOD_CATEGORIES),
-danh sách loại ghi ở data/review/catalog_excluded_v1.json.
+danh sách loại ghi ở data/recipe_rag/review/catalog_excluded_v1.json.
 Thứ tự (4) đứng CUỐI để sản phẩm mới nhận id nối tiếp, không đụng id đã khóa.
 """
 import json
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-CATALOGS = ROOT / "data" / "raw" / "catalogs"
-REVIEW = ROOT / "data" / "review"
+ROOT = Path(__file__).resolve().parents[2]
+CATALOGS = ROOT / "data" / "recipe_rag" / "raw" / "catalogs"
+REVIEW = ROOT / "data" / "recipe_rag" / "review"
 OUT = CATALOGS / "products_clean_recipes_v2.json"
 EXCLUDED = REVIEW / "catalog_excluded_v1.json"
 # Danh mục không phải đồ ăn: dao thớt, bàn chải đánh răng, dầu gội nhuộm tóc.

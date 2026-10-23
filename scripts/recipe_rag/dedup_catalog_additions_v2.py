@@ -1,21 +1,21 @@
 """Xử lý sản phẩm thêm mới nghi trùng (sau check_catalog_duplicates.py) -> catalog_additions_v2_final.json.
 
 Chạy từ thư mục grocery-store-ai:
-    .venv\Scripts\python scripts\dedup_catalog_additions_v2.py
+    .venv\Scripts\python scripts\recipe_rag\dedup_catalog_additions_v2.py
 
 Kết luận từng trường hợp do người rà soát (AI) đưa ra sau khi đọc báo cáo trùng:
   USE_EXISTING  trùng thật với sản phẩm đã có trong catalog -> KHÔNG thêm, nguyên liệu trỏ về sản phẩm cũ
   KEEP          khác sản phẩm nghi trùng (khác loại/quy cách) -> giữ nguyên là sản phẩm mới
   còn lại       nghi trùng với một sản phẩm MỚI khác (cùng mặt hàng) -> gộp vào sản phẩm xuất hiện trước
-Đầu ra: data/review/catalog_additions_v2_final.json
+Đầu ra: data/recipe_rag/review/catalog_additions_v2_final.json
     additions     sản phẩm mới thật sự cần thêm (đã gộp aliases)
     use_existing  {nguyên liệu đích: {"product": tên sản phẩm cũ, "aliases": [...]}}
 """
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-REVIEW = ROOT / "data" / "review"
+ROOT = Path(__file__).resolve().parents[2]
+REVIEW = ROOT / "data" / "recipe_rag" / "review"
 
 # tên sản phẩm mới (đúng như trong catalog_additions_v2.json) -> mảnh tên sản phẩm cũ trong catalog
 USE_EXISTING = {
@@ -50,7 +50,7 @@ KEEP = {"Chanh muối hũ 300g", "Cá đối 500g", "Củ từ 300g", "Gan heo k
 def main():
     data = json.loads((REVIEW / "catalog_additions_v2.json").read_text(encoding="utf-8"))
     adds = data["additions"]
-    cat = json.loads((ROOT / "data" / "raw" / "catalogs" / "products_clean_recipes_v2.json").read_text(encoding="utf-8"))
+    cat = json.loads((ROOT / "data" / "recipe_rag" / "raw" / "catalogs" / "products_clean_recipes_v2.json").read_text(encoding="utf-8"))
     report = json.loads((REVIEW / "catalog_additions_v2_duplicates.json").read_text(encoding="utf-8"))
     flagged_new = {(r["moi"], r["nguyen_lieu"]): [h["ten"] for h in r["trung_voi"] if h["nguon"] == "new_v2"] for r in report}
 

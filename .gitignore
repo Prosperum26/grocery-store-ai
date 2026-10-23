@@ -14,10 +14,14 @@ __pycache__/
 .env.local
 AI_TEAM_GUIDE.md
 
+# Dữ liệu theo module (xem docs/STRUCTURE.md): data/<module>/{raw,processed} là artifact tái tạo được, không commit
 data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+data/*/raw/
+data/*/processed/
+data/**/*.rar
 weights/*
 !weights/.gitkeep
 
@@ -27,4 +31,4 @@ weights/*
 *.pkl
 *.joblib
 
-data
+# KHÔNG ignore data/recipe_rag/{review,final,eval}: sổ catalog_id (khóa cứng), bảng ghép đã duyệt, bộ bàn giao cho web, bộ câu hỏi có nhãn.

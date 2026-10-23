@@ -1,6 +1,6 @@
 """Tạo ingredient_matches_review_v2.xlsx từ bản v1 người dùng đã duyệt.
 
-Chạy từ thư mục grocery-store-ai:  .venv\\Scripts\\python scripts\\build_review_v2.py [--force]
+Chạy từ thư mục grocery-store-ai:  .venv\\Scripts\\python scripts\\recipe_rag\\build_review_v2.py [--force]
 
 v1 KHÔNG bị sửa. v2 = v1 + các thay đổi:
   1. AI_FIXES: sửa các quyết định có vấn đề (đối chiếu ứng viên với dòng gốc trong công thức).
@@ -20,8 +20,8 @@ from openpyxl.styles import Alignment, Font, PatternFill
 
 from build_recipe_shortlist import PANTRY, find_matches, load_full_catalog
 
-ROOT = Path(__file__).resolve().parents[1]
-REVIEW = ROOT / "data" / "review"
+ROOT = Path(__file__).resolve().parents[2]
+REVIEW = ROOT / "data" / "recipe_rag" / "review"
 V1 = REVIEW / "ingredient_matches_review_v1.xlsx"
 V2 = REVIEW / "ingredient_matches_review_v2.xlsx"
 

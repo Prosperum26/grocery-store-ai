@@ -1,8 +1,8 @@
 """Gợi ý mở rộng catalog để phủ các món phổ biến, xuất Excel để duyệt tay.
 
 Chạy từ thư mục grocery-store-ai:
-    .venv\\Scripts\\python scripts\\suggest_catalog_expansion.py            # không ghi đè file đã duyệt
-    .venv\\Scripts\\python scripts\\suggest_catalog_expansion.py --force    # ghi đè (MẤT phần đã duyệt)
+    .venv\\Scripts\\python scripts\\recipe_rag\\suggest_catalog_expansion.py            # không ghi đè file đã duyệt
+    .venv\\Scripts\\python scripts\\recipe_rag\\suggest_catalog_expansion.py --force    # ghi đè (MẤT phần đã duyệt)
 
 Cách làm (mọi bước đều in số liệu để kiểm tra):
  1. MÓN PHỔ BIẾN: tên công thức được làm sạch rồi đếm các cụm 2 từ kiểu "canh chua", "gà nướng", "cơm chiên".
@@ -28,8 +28,8 @@ from openpyxl.styles import Alignment, Font, PatternFill
 
 from build_recipe_shortlist import EXCLUDED_CATEGORIES, PANTRY, find_matches, load_full_catalog
 
-ROOT = Path(__file__).resolve().parents[1]
-REVIEW = ROOT / "data" / "review"
+ROOT = Path(__file__).resolve().parents[2]
+REVIEW = ROOT / "data" / "recipe_rag" / "review"
 OUT = REVIEW / "catalog_expansion_review_v1.xlsx"
 MIN_FAMILY = 6          # một cụm tên phải lặp lại ít nhất ngần này công thức mới tính là "họ món phổ biến"
 
@@ -165,10 +165,10 @@ def classify(name):
 def main():
     if OUT.exists() and "--force" not in sys.argv:
         sys.exit(f"{OUT.name} đã tồn tại (có thể đã duyệt). Dùng --force để ghi đè.")
-    recipes = json.loads((ROOT / "data" / "processed" / "recipes_clean.json").read_text(encoding="utf-8"))
+    recipes = json.loads((ROOT / "data" / "recipe_rag" / "processed" / "recipes_clean.json").read_text(encoding="utf-8"))
     mapping = json.loads((REVIEW / "ingredient_catalog_map_v1.json").read_text(encoding="utf-8"))["ingredients"]
     additions = json.loads((REVIEW / "catalog_additions_v1.json").read_text(encoding="utf-8"))["additions"]
-    target_ids = {r["id"] for r in json.loads((ROOT / "data" / "final" / "recipes_v1.json").read_text(encoding="utf-8"))}
+    target_ids = {r["id"] for r in json.loads((ROOT / "data" / "recipe_rag" / "final" / "recipes_v1.json").read_text(encoding="utf-8"))}
     catalog = load_full_catalog()
     available = {a["ingredient"] for a in additions} | {m["ingredient"] for m in mapping if m["status"] != "not_in_catalog"}
     cache = {}

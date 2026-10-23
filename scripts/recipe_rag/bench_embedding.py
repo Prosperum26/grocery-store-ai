@@ -1,8 +1,8 @@
 """Đo tốc độ embed bge-m3 trên GPU (hoặc CPU) với đúng loại dữ liệu sẽ nạp vào ai_db.
 
 Chạy từ thư mục grocery-store-ai:
-    .venv\\Scripts\\python scripts\\bench_embedding.py            # GPU (mặc định nếu có CUDA)
-    .venv\\Scripts\\python scripts\\bench_embedding.py --device cpu  # CPU, chậm (vài phút)
+    .venv\\Scripts\\python scripts\\recipe_rag\\bench_embedding.py            # GPU (mặc định nếu có CUDA)
+    .venv\\Scripts\\python scripts\\recipe_rag\\bench_embedding.py --device cpu  # CPU, chậm (vài phút)
 Cần model đã có trong cache Hugging Face (lần đầu chạy build_alias_candidates.py đã tải).
 
 Đo 3 thứ:
@@ -10,7 +10,7 @@ Cần model đã có trong cache Hugging Face (lần đầu chạy build_alias_c
   2. 'cards'  thẻ món: tên + mô tả + nguyên liệu chính (~300 ký tự), loại chunk 'card' trong ai_db
   3. 'query'  một câu hỏi lẻ (độ trễ thật lúc người dùng tìm kiếm)
 Trên GPU còn so vector fp16 với fp32 (CPU) để chắc dùng fp16 không làm lệch kết quả.
-Kết quả ghi ở data/processed/bench_embedding_<device>.json (thư mục này bị .gitignore chặn).
+Kết quả ghi ở data/recipe_rag/processed/bench_embedding_<device>.json (thư mục này bị .gitignore chặn).
 """
 import argparse
 import json
@@ -21,8 +21,8 @@ import numpy as np
 import torch
 from sentence_transformers import SentenceTransformer
 
-ROOT = Path(__file__).resolve().parents[1]
-PROC = ROOT / "data" / "processed"
+ROOT = Path(__file__).resolve().parents[2]
+PROC = ROOT / "data" / "recipe_rag" / "processed"
 MODEL = "BAAI/bge-m3"
 
 

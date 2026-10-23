@@ -1,6 +1,6 @@
-"""Chuẩn hóa catalog: data/raw/catalogs/products_clean_recipes.json -> data/processed/catalog_clean.json.
+"""Chuẩn hóa catalog: data/recipe_rag/raw/catalogs/products_clean_recipes.json -> data/recipe_rag/processed/catalog_clean.json.
 
-Chạy từ thư mục grocery-store-ai:  python scripts/build_catalog_clean.py
+Chạy từ thư mục grocery-store-ai:  python scripts/recipe_rag/build_catalog_clean.py
 
 Dùng chung hàm `canonical` với build_recipes_clean.py để tên sản phẩm và tên nguyên liệu
 đi qua cùng một bộ luật, nhờ đó mới ghép được với nhau. Mỗi sản phẩm được tách thành:
@@ -17,9 +17,9 @@ from pathlib import Path
 
 from build_recipes_clean import canonical, nfc, parse_number, tidy
 
-ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / "data" / "raw" / "catalogs" / "products_clean_recipes.json"
-OUT = ROOT / "data" / "processed" / "catalog_clean.json"
+ROOT = Path(__file__).resolve().parents[2]
+SRC = ROOT / "data" / "recipe_rag" / "raw" / "catalogs" / "products_clean_recipes.json"
+OUT = ROOT / "data" / "recipe_rag" / "processed" / "catalog_clean.json"
 
 CONTAINERS = "gói|chai|hộp|bịch|lon|túi|khay|vỉ|hũ|thùng|lốc|bình|can|chén|ly|tô"
 # Quy cách: "gói 200g", "chai 1 lít", "500ml", "400gr". Container có thể vắng.

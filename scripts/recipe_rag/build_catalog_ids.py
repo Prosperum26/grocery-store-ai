@@ -1,11 +1,11 @@
 """Gán catalog_id cho từng sản phẩm của catalog v2 và KHÓA CỨNG.
 
 Chạy từ thư mục grocery-store-ai (sau build_catalog_v2.py):
-    .venv\\Scripts\\python scripts\\build_catalog_ids.py
+    .venv\\Scripts\\python scripts\\recipe_rag\\build_catalog_ids.py
 
-Đầu vào : data/raw/catalogs/products_clean_recipes_v2.json
-Đầu ra  : data/review/catalog_ids_v1.json     sổ đăng ký id (KHÓA CỨNG)
-          data/review/catalog_ids_v1.sha256   mã băm để phát hiện sửa tay
+Đầu vào : data/recipe_rag/raw/catalogs/products_clean_recipes_v2.json
+Đầu ra  : data/recipe_rag/review/catalog_ids_v1.json     sổ đăng ký id (KHÓA CỨNG)
+          data/recipe_rag/review/catalog_ids_v1.sha256   mã băm để phát hiện sửa tay
 
 QUY TẮC KHÓA ID (code thực thi, không chỉ ghi chú):
   1. Khóa nhận diện (key) của sản phẩm: "url:<product_url>" nếu có, không thì "manual:<tên nguyên liệu>"
@@ -24,10 +24,10 @@ import sys
 from datetime import date
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-CATALOG_V2 = ROOT / "data" / "raw" / "catalogs" / "products_clean_recipes_v2.json"
-REGISTRY = ROOT / "data" / "review" / "catalog_ids_v1.json"
-HASH_FILE = ROOT / "data" / "review" / "catalog_ids_v1.sha256"
+ROOT = Path(__file__).resolve().parents[2]
+CATALOG_V2 = ROOT / "data" / "recipe_rag" / "raw" / "catalogs" / "products_clean_recipes_v2.json"
+REGISTRY = ROOT / "data" / "recipe_rag" / "review" / "catalog_ids_v1.json"
+HASH_FILE = ROOT / "data" / "recipe_rag" / "review" / "catalog_ids_v1.sha256"
 ID_FORMAT = "CAT-{:06d}"
 
 README = [

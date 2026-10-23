@@ -1,8 +1,8 @@
 """Thử luồng RAG đầu-cuối: câu hỏi -> món -> giỏ hàng, và đo độ khớp nguyên liệu <-> sản phẩm catalog.
 
-Chạy từ thư mục grocery-store-ai (cần ai_db đang chạy, đã load_recipes + embed_recipes, và data/final/*_v2.json):
-    .venv\\Scripts\\python scripts\\test_rag_basket.py                        # chạy bộ câu hỏi thử + đo toàn bộ giỏ hàng
-    .venv\\Scripts\\python scripts\\test_rag_basket.py "gà kho gừng cho 4 người"   # thử 1 câu, in giỏ hàng chi tiết
+Chạy từ thư mục grocery-store-ai (cần ai_db đang chạy, đã load_recipes + embed_recipes, và data/recipe_rag/final/*_v2.json):
+    .venv\\Scripts\\python scripts\\recipe_rag\\test_rag_basket.py                        # chạy bộ câu hỏi thử + đo toàn bộ giỏ hàng
+    .venv\\Scripts\\python scripts\\recipe_rag\\test_rag_basket.py "gà kho gừng cho 4 người"   # thử 1 câu, in giỏ hàng chi tiết
 
 Ba phần:
   A. TÌM MÓN: mỗi câu hỏi có từ khóa món mong đợi (không dấu, mọi từ khóa phải có trong tên món).
@@ -10,7 +10,7 @@ Ba phần:
   B. GIỎ HÀNG: với món top-1, in từng nguyên liệu -> sản phẩm catalog mặc định, kèm độ giống bge-m3 và cách ghép.
   C. ĐỘ KHỚP TOÀN BỘ: mọi dòng giỏ hàng của mọi món trong recipes_v2.json: tên nguyên liệu vs tên sản phẩm.
      `chua_tu` = mọi từ của tên nguyên liệu đều có trong tên sản phẩm; `sim` = cosine bge-m3.
-Ghi data/review/rag_test_results.json để đưa vào notebook.
+Ghi data/recipe_rag/review/rag_test_results.json để đưa vào notebook.
 Điểm sim của tên sản phẩm bị kéo thấp vì tên có thương hiệu, quy cách (Bột chiên xù Miwon 200g): đọc theo phân bố, không theo một ngưỡng cứng.
 """
 import json
@@ -30,9 +30,9 @@ from sentence_transformers import SentenceTransformer
 from ai_db import connect
 from search_recipes import MODEL, split_servings
 
-ROOT = Path(__file__).resolve().parents[1]
-FINAL = ROOT / "data" / "final"
-OUT = ROOT / "data" / "review" / "rag_test_results.json"
+ROOT = Path(__file__).resolve().parents[2]
+FINAL = ROOT / "data" / "recipe_rag" / "final"
+OUT = ROOT / "data" / "recipe_rag" / "review" / "rag_test_results.json"
 
 # (câu hỏi, các từ khóa món mong đợi). Từ khóa viết không dấu thường; mọi từ khóa phải có trong tên món (so không dấu).
 QUERIES = [

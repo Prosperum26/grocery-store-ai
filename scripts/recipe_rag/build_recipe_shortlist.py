@@ -1,11 +1,11 @@
 """Lọc tập công thức mục tiêu: các món mà mọi nguyên liệu core đều có sản phẩm trong catalog.
 
-Chạy từ thư mục grocery-store-ai:  python scripts/build_recipe_shortlist.py
+Chạy từ thư mục grocery-store-ai:  python scripts/recipe_rag/build_recipe_shortlist.py
 
-Đầu vào : data/processed/recipes_clean.json, data/processed/catalog_clean.json,
-          data/raw/catalogs/products_clean.json (catalog đầy đủ, chưa lọc)
-Đầu ra  : data/processed/recipes_shortlist.json        100 công thức + sản phẩm khớp cho từng nguyên liệu
-          data/processed/recipes_shortlist_review.csv  mỗi dòng 1 nguyên liệu, để duyệt tay (cột accept)
+Đầu vào : data/recipe_rag/processed/recipes_clean.json, data/recipe_rag/processed/catalog_clean.json,
+          data/recipe_rag/raw/catalogs/products_clean.json (catalog đầy đủ, chưa lọc)
+Đầu ra  : data/recipe_rag/processed/recipes_shortlist.json        100 công thức + sản phẩm khớp cho từng nguyên liệu
+          data/recipe_rag/processed/recipes_shortlist_review.csv  mỗi dòng 1 nguyên liệu, để duyệt tay (cột accept)
 
 Quy tắc (đơn giản, có chủ đích, để duyệt tay chứ chưa phải ghép chính thức):
 - core   = nguyên liệu role "main" không nằm trong PANTRY. Chỉ core quyết định món có được chọn.
@@ -23,9 +23,9 @@ from pathlib import Path
 
 from build_catalog_clean import clean_product
 
-ROOT = Path(__file__).resolve().parents[1]
-PROC = ROOT / "data" / "processed"
-FULL_CATALOG = ROOT / "data" / "raw" / "catalogs" / "products_clean.json"
+ROOT = Path(__file__).resolve().parents[2]
+PROC = ROOT / "data" / "recipe_rag" / "processed"
+FULL_CATALOG = ROOT / "data" / "recipe_rag" / "raw" / "catalogs" / "products_clean.json"
 TARGET = 100
 MAX_MATCHES = 3  # số sản phẩm hiện cho mỗi nguyên liệu khi duyệt
 

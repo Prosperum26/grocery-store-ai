@@ -1,11 +1,11 @@
 """Tạo danh sách sản phẩm thêm mới đợt 2 (mở rộng cho tất cả món phổ biến) từ quyết định đã duyệt.
 
 Chạy từ thư mục grocery-store-ai (sau triage_catalog_expansion.py candidates):
-    .venv\Scripts\python scripts\build_catalog_additions_v2.py
+    .venv\Scripts\python scripts\recipe_rag\build_catalog_additions_v2.py
 
-Đầu vào : data/review/catalog_expansion_candidates_v2.json     nguyên liệu thiếu (814 tên)
-          data/review/catalog_expansion_ai_decisions_v1.json   quyết định đã duyệt (them / gop / che_bien_tu / bo)
-Đầu ra  : data/review/catalog_additions_v2.json
+Đầu vào : data/recipe_rag/review/catalog_expansion_candidates_v2.json     nguyên liệu thiếu (814 tên)
+          data/recipe_rag/review/catalog_expansion_ai_decisions_v1.json   quyết định đã duyệt (them / gop / che_bien_tu / bo)
+Đầu ra  : data/recipe_rag/review/catalog_additions_v2.json
 Mỗi sản phẩm mới ứng với một nguyên liệu "đích" (kết quả theo chuỗi gộp). `aliases` là các tên nguyên liệu
 trong công thức sẽ trỏ về sản phẩm này. gộp vào sản phẩm đã có hoặc `che_bien_tu` không thêm sản phẩm: ghi ở `maps_to_existing` (tên -> nguyên liệu gốc đã có).
 """
@@ -15,8 +15,8 @@ from pathlib import Path
 
 from triage_catalog_expansion import CANDIDATES, DECISIONS, resolve
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "data" / "review" / "catalog_additions_v2.json"
+ROOT = Path(__file__).resolve().parents[2]
+OUT = ROOT / "data" / "recipe_rag" / "review" / "catalog_additions_v2.json"
 
 
 def main():

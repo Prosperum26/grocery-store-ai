@@ -1,14 +1,14 @@
 """Sinh file Excel để duyệt tay: mỗi nguyên liệu core của tập công thức mục tiêu -> sản phẩm catalog.
 
 Chạy từ thư mục grocery-store-ai (cần openpyxl; sau build_recipe_shortlist.py):
-    .venv\\Scripts\\python scripts\\build_ingredient_review.py            # không ghi đè file đã có
-    .venv\\Scripts\\python scripts\\build_ingredient_review.py --force    # ghi đè (MẤT phần đã duyệt)
+    .venv\\Scripts\\python scripts\\recipe_rag\\build_ingredient_review.py            # không ghi đè file đã có
+    .venv\\Scripts\\python scripts\\recipe_rag\\build_ingredient_review.py --force    # ghi đè (MẤT phần đã duyệt)
 
-Đầu ra : data/review/ingredient_matches_review_v1.xlsx, gồm 3 sheet:
+Đầu ra : data/recipe_rag/review/ingredient_matches_review_v1.xlsx, gồm 3 sheet:
     huong_dan   cách điền
     nguyen_lieu mỗi dòng 1 nguyên liệu core, tối đa 5 sản phẩm ứng viên, cột `quyet_dinh` để điền
     pantry      danh sách đồ nhà có sẵn, cột `quyet_dinh` (giu / bo)
-File nằm ở data/review/ (KHÔNG phải data/processed/) để các script khác không ghi đè; nên commit
+File nằm ở data/recipe_rag/review/ (KHÔNG phải data/recipe_rag/processed/) để các script khác không ghi đè; nên commit
 file này sau khi duyệt vì nó là bảng ghép chính thức.
 """
 import json
@@ -21,10 +21,10 @@ from openpyxl.styles import Alignment, Font, PatternFill
 
 from build_recipe_shortlist import PANTRY, find_matches, load_full_catalog
 
-ROOT = Path(__file__).resolve().parents[1]
-SHORTLIST = ROOT / "data" / "processed" / "recipes_shortlist.json"
-PANTRY_CSV = ROOT / "data" / "processed" / "pantry_review.csv"
-OUT = ROOT / "data" / "review" / "ingredient_matches_review_v1.xlsx"
+ROOT = Path(__file__).resolve().parents[2]
+SHORTLIST = ROOT / "data" / "recipe_rag" / "processed" / "recipes_shortlist.json"
+PANTRY_CSV = ROOT / "data" / "recipe_rag" / "processed" / "pantry_review.csv"
+OUT = ROOT / "data" / "recipe_rag" / "review" / "ingredient_matches_review_v1.xlsx"
 MAX_CANDIDATES = 5
 
 GUIDE = [

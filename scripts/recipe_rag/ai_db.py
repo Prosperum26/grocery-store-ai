@@ -9,7 +9,7 @@ import psycopg
 from dotenv import dotenv_values
 from pgvector.psycopg import register_vector
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def connect():

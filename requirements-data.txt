@@ -1,7 +1,7 @@
 # Phụ thuộc thêm cho các script xử lý dữ liệu (scripts/) và notebook, KHÔNG cần khi chạy service.
 #   pip install -r requirements-data.txt
 -r requirements.txt
-openpyxl==3.1.5      # scripts/build_ingredient_review.py, build_review_v2.py, build_ingredient_matches.py (đọc/ghi Excel)
+openpyxl==3.1.5      # scripts/recipe_rag/build_ingredient_review.py, build_review_v2.py, build_ingredient_matches.py (đọc/ghi Excel)
 nbformat==5.11.1     # chạy và lưu notebook
 nbclient==0.11.0
 ipykernel==7.4.0
