@@ -40,6 +40,8 @@ File v2 nằm cạnh v1, v1 giữ nguyên để so sánh. Id của 1.775 sản p
 | :--- | :--- |
 | `catalog_v2.json` / `.csv` | 2.129 sản phẩm. 373 sản phẩm là thêm tay (`needs_review: true`): chưa có giá, ảnh; tên/đơn vị/danh mục là giá trị tạm. |
 | `ingredient_to_catalog_v2.json` | Tên nguyên liệu (kể cả tên viết khác) -> `catalog_ids`, phần tử đầu là mặc định. `via` cho biết ghép theo cách nào. |
+| `recipe_ingredients_v2.csv` | **Bảng phẳng dễ đọc**: mỗi dòng nguyên liệu của mỗi món (15.340 dòng) kèm sản phẩm catalog đã ghép (`catalog_id`, `product_name`, `packs`, `match_via`, `status`). Mở bằng Excel để lọc/kiểm. |
+| `recipes_matched_v2.json` | Cùng nội dung với CSV nhưng **JSON lồng nhau** (mở trong IDE thu gọn/mở rộng được): món → `ingredients[]` → `match` (sản phẩm đã ghép + `alternatives`). Là một mảng JSON thường, không phải JSONL. |
 | `recipes_v2.json` | 1.061 công thức (100 món mục tiêu + món phổ biến), mỗi món có `basket`, `family`, `family_rank`, `in_target_set`, `complete`. |
 | `validation_report_v2.txt` | Kết quả kiểm tra tự động và danh sách ghép chọn tay. |
 

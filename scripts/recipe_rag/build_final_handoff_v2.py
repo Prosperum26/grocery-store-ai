@@ -6,6 +6,8 @@ Chạy từ thư mục grocery-store-ai (sau build_catalog_v2.py và build_catal
 Đầu ra (data/recipe_rag/final/, bộ v1 giữ nguyên):
     catalog_v2.json / catalog_v2.csv   catalog đầy đủ, mỗi sản phẩm có catalog_id KHÓA CỨNG (id cũ không đổi)
     ingredient_to_catalog_v2.json      tên nguyên liệu (kể cả tên viết khác) -> danh sách catalog_id (cái đầu = mặc định)
+    recipe_ingredients_v2.csv          mỗi dòng nguyên liệu của mỗi món + sản phẩm catalog đã ghép (dễ đọc, lọc trong Excel)
+    recipes_matched_v2.json            cùng nội dung với CSV nhưng lồng nhau: món -> nguyên liệu -> sản phẩm đã ghép (JSON thường, không phải JSONL)
     recipes_v2.json                    100 món mục tiêu + các món phổ biến, nguyên liệu gốc và giỏ hàng (catalog_id + số gói)
     validation_report_v2.txt           kết quả kiểm tra tự động
 
@@ -35,7 +37,7 @@ REVIEW = ROOT / "data" / "recipe_rag" / "review"
 FINAL = ROOT / "data" / "recipe_rag" / "final"
 CATALOG_V2 = ROOT / "data" / "recipe_rag" / "raw" / "catalogs" / "products_clean_recipes_v2.json"
 MAX_CHOICES = 5
-OUTPUTS = ["catalog_v2.json", "catalog_v2.csv", "ingredient_to_catalog_v2.json", "recipes_v2.json", "validation_report_v2.txt"]
+OUTPUTS = ["catalog_v2.json", "catalog_v2.csv", "ingredient_to_catalog_v2.json", "recipes_v2.json", "recipe_ingredients_v2.csv", "recipes_matched_v2.json", "validation_report_v2.txt"]
 # Tên nguyên liệu mà luật khớp tự động bỏ sót (tên ngắn, tên dài, tên viết khác) -> mảnh tên sản phẩm trong catalog.
 # Người rà soát (AI) chọn tay; sản phẩm đầu tiên chứa mảnh tên đó được dùng. Kết quả in ở cuối báo cáo để kiểm.
 MANUAL_BY_SUBSTRING = {
@@ -201,6 +203,55 @@ def main():
                                                if b["kind"] == "core" and b["default_catalog_id"] in placeholder_ids}),
         })
     (FINAL / "recipes_v2.json").write_text(json.dumps(recipes, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    # bảng phẳng dễ đọc: mỗi dòng nguyên liệu của mỗi món -> sản phẩm đã ghép (tên sản phẩm, không chỉ id)
+    with (FINAL / "recipe_ingredients_v2.csv").open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["recipe_id", "recipe_name", "family", "ingredient", "kind", "raw_text", "quantity", "unit", "status",
+                    "catalog_id", "product_name", "category", "packs", "match_via", "other_catalog_ids"])
+        for r in recipes:
+            in_basket = {b["ingredient"]: b for b in r["basket"]}
+            for line in r["ingredients"]:
+                b = in_basket.get(line["ingredient"])
+                if line["kind"] == "side":
+                    status = "an_kem_khong_vao_gio"
+                elif b is None:
+                    status = "bo_khong_phai_hang_mua"
+                elif not b["catalog_ids"]:
+                    status = "chua_ghep_duoc"
+                else:
+                    status = "da_ghep"
+                prod = pack_of.get(b["default_catalog_id"]) if b and b["default_catalog_id"] else None
+                w.writerow([r["id"], r["name"], r["family"] or "", line["ingredient"], line["kind"], line["raw_text"], line["quantity"] if line["quantity"] is not None else "",
+                            line["unit"] or "", status, b["default_catalog_id"] if prod else "", prod["name"] if prod else "", prod["category"] if prod else "",
+                            b["packs"] if prod else "", how.get(line["ingredient"]) or "", " ".join(b["catalog_ids"][1:]) if b else ""])
+
+    # bản JSON lồng nhau: món -> từng dòng nguyên liệu -> sản phẩm đã ghép (kèm sản phẩm thay thế)
+    def product_view(cid):
+        c = pack_of[cid]
+        return {"catalog_id": cid, "product_name": c["name"], "category": c["category"], "unit": c["unit"]}
+
+    matched = []
+    for r in recipes:
+        in_basket = {b["ingredient"]: b for b in r["basket"]}
+        lines = []
+        for line in r["ingredients"]:
+            b = in_basket.get(line["ingredient"])
+            if line["kind"] == "side":
+                status, match = "an_kem_khong_vao_gio", None
+            elif b is None:
+                status, match = "bo_khong_phai_hang_mua", None
+            elif not b["catalog_ids"]:
+                status, match = "chua_ghep_duoc", None
+            else:
+                status = "da_ghep"
+                match = {**product_view(b["default_catalog_id"]), "packs": b["packs"], "match_via": how.get(line["ingredient"]),
+                         "alternatives": [product_view(c) for c in b["catalog_ids"][1:]]}
+            lines.append({"ingredient": line["ingredient"], "kind": line["kind"], "raw_text": line["raw_text"],
+                          "quantity": line["quantity"], "unit": line["unit"], "status": status, "match": match})
+        matched.append({"id": r["id"], "name": r["name"], "family": r["family"], "servings": r["servings"], "complete": r["complete"],
+                        "in_target_set": r["in_target_set"], "ingredients": lines})
+    (FINAL / "recipes_matched_v2.json").write_text(json.dumps(matched, ensure_ascii=False, indent=2), encoding="utf-8")
 
     entries = [{"ingredient": n, "catalog_ids": ids, "default_catalog_id": ids[0], "via": how[n]}
                for n, ids in sorted(cache.items()) if ids and ids != SKIP]
