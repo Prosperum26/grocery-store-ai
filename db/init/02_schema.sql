@@ -1,6 +1,6 @@
 -- Schema ai_db: công thức, nguyên liệu và embedding (bge-m3, 1024 chiều).
 -- Nguồn dữ liệu: data/recipe_rag/processed/recipes_clean.json (xem scripts/recipe_rag/build_recipes_clean.py).
--- ai_db KHÔNG giữ catalog hay giỏ hàng: ghép nguyên liệu -> sản phẩm do Medusa quản lý (theo catalog_id).
+-- Giỏ hàng dựng sẵn và catalog (không giá, ảnh, tồn kho) nằm ở 03_recipe_basket_and_catalog.sql; giá, ảnh, tồn kho do Medusa quản lý (theo catalog_id).
 
 -- Một dòng cho mỗi công thức.
 CREATE TABLE recipe (
