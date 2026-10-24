@@ -1,6 +1,6 @@
 # Kế hoạch: API tìm món và giỏ hàng nguyên liệu trên ai-service
 
-Trạng thái: bản nháp để nhóm thống nhất (2026-10-24). Tiếp nối issue #8. Mục có đánh dấu **[cần xác nhận]** là giả định chưa kiểm chứng.
+Trạng thái: bản nháp để nhóm thống nhất (2026-10-24). **GĐ 1 và 2 đã làm xong phần lõi (chưa có route HTTP)**: `src/services/recipe_service.py`, kiểm bằng `scripts/recipe_rag/check_search_service.py` và `pytest tests/recipe_rag`. Tiếp nối issue #8. Mục có đánh dấu **[cần xác nhận]** là giả định chưa kiểm chứng.
 
 ## 1. Quyết định đã chốt
 
