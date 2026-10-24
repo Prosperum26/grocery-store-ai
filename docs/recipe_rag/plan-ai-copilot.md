@@ -1,6 +1,6 @@
 # Kế hoạch: API tìm món và giỏ hàng nguyên liệu trên ai-service
 
-Trạng thái: bản nháp để nhóm thống nhất (2026-10-24). **GĐ 1 và 2 đã làm xong phần lõi (chưa có route HTTP)**: `src/services/recipe_service.py`, kiểm bằng `scripts/recipe_rag/check_search_service.py` và `pytest tests/recipe_rag`. Tiếp nối issue #8. Mục có đánh dấu **[cần xác nhận]** là giả định chưa kiểm chứng.
+Trạng thái: bản nháp để nhóm thống nhất (2026-10-24). **GĐ 1–4 đã làm xong phần lõi (chưa có route HTTP)**: `src/services/recipe_service.py`, kiểm bằng `scripts/recipe_rag/check_search_service.py` và `pytest tests/recipe_rag`. Tiếp nối issue #8. Mục có đánh dấu **[cần xác nhận]** là giả định chưa kiểm chứng.
 
 ## 1. Quyết định đã chốt
 
@@ -77,12 +77,12 @@ Cùng yêu cầu như `/v1/search`. Phản hồi:
   "ai": { "provider": "gemini", "model": "...", "recipe_id": "canh-chua-ca-loc",
           "explanation": "...",
           "item_notes": [ { "ingredient": "cá lóc", "note": "Nên mua khoảng 2 vỉ cho 4 người" } ],
-          "prep_notes": [ { "name": "nước me", "from_ingredient": "me", "steps": ["..."] } ],
+          "prep_notes": [ { "ingredient": "nước me", "steps": ["..."] } ],
           "follow_up_question": null },
   "ai_status": "ok",
   "latency_ms": 2300 }
 ```
-`ai` là `null` nếu lớp lời lỗi. `ai_status`: `ok` | `fallback_invalid` | `fallback_timeout` | `fallback_error` | `fallback_disabled`. Web luôn hiển thị được `data`.
+`ai` là `null` nếu lớp lời lỗi. `prep_notes[].ingredient` phải là nguyên liệu tự làm (`Item.derived = true`, nước me từ me…). `ai_status` thêm giá trị `skipped_no_match` khi `data.accepted=false` (không nhờ mô hình nói về món không đúng ý). `ai_status`: `ok` | `fallback_invalid` | `fallback_timeout` | `fallback_error` | `fallback_disabled`. Web luôn hiển thị được `data`.
 
 ### Admin (chỉ backend gọi)
 - `GET /admin/ai-settings`: danh sách nhà cung cấp (`enabled`, `priority`, `model`, `timeout_s`, `key_configured`), cờ `backup_only`.

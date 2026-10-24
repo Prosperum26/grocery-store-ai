@@ -13,3 +13,7 @@ torch==2.14.1
 numpy==2.4.6
 psycopg[binary]==3.3.6
 pgvector==0.5.1
+
+# Lớp lời AI: Gemini (chính) và Claude (dự phòng / demo)
+google-genai==2.33.0
+anthropic==2.3.0
