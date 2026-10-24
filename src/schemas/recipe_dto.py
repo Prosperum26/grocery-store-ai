@@ -34,6 +34,7 @@ class Item(BaseModel):
     raw_text: str
     need: Need | None                                          # None khi công thức không ghi lượng
     product: Product
+    derived: bool = False                                      # True: nguyên liệu tự làm từ sản phẩm này (nước me từ me), không bán sẵn
     default_qty: int                                           # 1 ở phần buy, 0 ở phần maybe_have
     pack_hint: int | None                                      # số gói gợi ý, chỉ khi lượng cần và quy cách cùng loại đơn vị
     alternatives: list[Alternative]

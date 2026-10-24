@@ -63,7 +63,7 @@ def build_basket(lines: list[dict], catalog: dict[str, dict], recipe_servings: i
         owned = strip_accents(ingredient) in have_norm or product.catalog_id.lower() in have_norm
         is_core = line["kind"] == "core" and not owned
         item = Item(ingredient=ingredient, kind=line["kind"], raw_text=line["raw_text"], need=need, product=product,
-                    default_qty=1 if is_core else 0,
+                    derived=match.get("match_via") == "quyet_dinh_che_bien_tu", default_qty=1 if is_core else 0,
                     pack_hint=pack_hint(need.quantity, need.unit, product) if need else None,
                     alternatives=[Alternative(catalog_id=a["catalog_id"], name=a["product_name"]) for a in match["alternatives"]])
         (buy if is_core else maybe).append(item)
@@ -79,10 +79,10 @@ class RecipeService:
         with self._connect() as conn:
             rows = conn.execute(
                 """select r.id, r.name, r.source_url, r.image_url, r.description, r.servings, r.time_minutes, r.difficulty,
-                          b.family, b.complete, b.ingredients
+                          r.prep_steps, r.cooking_steps, b.family, b.complete, b.ingredients
                    from recipe r join recipe_basket b on b.recipe_id = r.id order by r.id""").fetchall()
             catalog_rows = conn.execute("select catalog_id, name, category, unit, pack_size, pack_unit from catalog_product").fetchall()
-        cols = ["id", "name", "source_url", "image_url", "description", "servings", "time_minutes", "difficulty", "family", "complete", "ingredients"]
+        cols = ["id", "name", "source_url", "image_url", "description", "servings", "time_minutes", "difficulty", "prep_steps", "cooking_steps", "family", "complete", "ingredients"]
         self.recipes = {r[0]: dict(zip(cols, r)) for r in rows}
         self.ids = list(self.recipes)
         self.name_tokens = {rid: tokens(r["name"]) for rid, r in self.recipes.items()}
