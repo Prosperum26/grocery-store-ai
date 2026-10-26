@@ -18,8 +18,10 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+data/processed_*/
 weights/*
 !weights/.gitkeep
+!weights/model_metadata.json
 
 *.onnx
 *.parquet
