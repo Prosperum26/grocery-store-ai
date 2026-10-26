@@ -149,6 +149,24 @@ python -m scripts.train_lgbm --versions v4 --data-dir data/processed_tt3 --tag s
 - Oracle Recall@15 trên val = 0,601 (tính trực tiếp, thay cho ước lượng từ tỉ lệ 39% món mới). LightGBM đạt 0,434, khoảng 72%.
 - Chạy lại `select_threshold`: τ vẫn = 0,13. Không chạy lại test.
 
+### Kiểm tra bằng mắt: top-15 của 5 khách mẫu (val)
+
+Chạy với `--inspect 5` (5 khách lấy ngẫu nhiên, seed 42). Kết quả đầy đủ ở `data/processed/inspect_v4_inspect.md` (không commit) gồm top-15, 15 món mua nhiều nhất và đơn gần nhất của từng khách.
+
+| User | Số món đúng trong top-15 |
+| --- | --- |
+| 168532 | 7 |
+| 66191 | 3 |
+| 202814 | 8 |
+| 144589 | 3 |
+| 163899 | 8 |
+
+Nhận xét: đầu danh sách luôn là các món mua thường xuyên và vừa mua ở đơn trước (ví dụ user 66191: Flaky Biscuits 10/10 đơn, điểm 0,82). Món mua ít lần hay đã lâu không mua thì bị xếp xuống dưới. Phần cuối top-15 (điểm ~0,1) là các món mới mua một lần ở đơn gần nhất, ít khi trúng. Model không đoán được món khách chưa từng mua, đúng như giới hạn của tập candidate. Thứ tự này hợp lý.
+
+### Cấu hình máy
+
+Từ 2026-10-26, mỗi dòng trong `lgbm_runs.jsonl` và `model_metadata.json` có thêm trường `machine` (OS, CPU, số nhân, phiên bản Python và LightGBM). Các lần chạy trước đó không ghi máy. Máy dev hiện tại: Windows 11 (10.0.26300), Intel 64 Family 6 Model 154, LightGBM 4.7.0, seed 42.
+
 ### Mẫu cho lần sau
 
 - **Mục tiêu**:

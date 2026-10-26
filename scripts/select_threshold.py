@@ -35,7 +35,7 @@ import numpy as np
 import polars as pl
 from sklearn.isotonic import IsotonicRegression
 
-from scripts.train_lgbm import KEYS, WEIGHTS_DIR, load_split, to_matrix
+from scripts.train_lgbm import KEYS, WEIGHTS_DIR, load_split, machine_info, to_matrix
 from src.ml.feature_extractor import FEATURE_SETS
 
 ECE_LIMIT = 0.02
@@ -206,6 +206,7 @@ def main() -> None:
     data_meta = json.loads(data_meta_path.read_text(encoding="utf-8")) if data_meta_path.exists() else {}
     metadata = {
         "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+        "machine": machine_info(),
         "model_file": args.model.name,
         "feature_version": args.version,
         "feature_columns": cols,

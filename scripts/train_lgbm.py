@@ -17,6 +17,8 @@ Run:
 
 import argparse
 import json
+import os
+import platform
 from datetime import datetime
 from pathlib import Path
 
@@ -80,6 +82,17 @@ def train(
         valid_names=["val"],
         callbacks=[lgb.early_stopping(early_stop, verbose=False), lgb.log_evaluation(100)],
     )
+
+
+def machine_info() -> dict:
+    """Where a run happened, so numbers can be traced back to a machine."""
+    return {
+        "platform": platform.platform(),
+        "cpu": platform.processor(),
+        "n_cpu": os.cpu_count(),
+        "python": platform.python_version(),
+        "lightgbm": lgb.__version__,
+    }
 
 
 def importance(model: lgb.Booster) -> list[tuple[str, float]]:
@@ -186,6 +199,7 @@ def main() -> None:
             "version": version,
             "data": {k: data_meta.get(k) for k in ("n_users", "train_targets", "seed")},
             "params": params,
+            "machine": machine_info(),
             "best_iteration": model.best_iteration,
             "val_logloss": logloss,
             "val": val_m,
