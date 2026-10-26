@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-10-26T09:46:31+07:00",
+  "model_file": "lgbm_v4_selected.txt",
+  "feature_version": "v4",
+  "feature_columns": [
+    "up_cnt",
+    "up_orders_since",
+    "up_rate",
+    "streak_ratio",
+    "up_days_since",
+    "up_mean_gap",
+    "up_decay",
+    "in_last_1",
+    "in_last_2",
+    "in_last_3",
+    "u_n_orders",
+    "u_basket",
+    "u_reorder_rate",
+    "u_n_products",
+    "u_mean_dsp",
+    "u_pct_capped",
+    "p_reorder_ratio",
+    "a_reorder_ratio",
+    "ua_rate",
+    "t_dow",
+    "t_hour",
+    "t_dsp",
+    "t_dsp_capped"
+  ],
+  "top_k": 15,
+  "tau": 0.13,
+  "tau_selection": {
+    "split": "val",
+    "metric": "f1@15",
+    "grid": [
+      0.02,
+      0.6,
+      0.01
+    ],
+    "best": {
+      "tau": 0.13,
+      "f1@15": 0.3181,
+      "precision": 0.3211,
+      "recall": 0.3793,
+      "avg_items": 10.42,
+      "empty_orders": 0.0084
+    },
+    "no_tau": {
+      "tau": 0.0,
+      "f1@15": 0.2977,
+      "precision": 0.2704,
+      "recall": 0.4342,
+      "avg_items": 14.32,
+      "empty_orders": 0.0
+    }
+  },
+  "oracle_recall@15_val": 0.6012,
+  "calibration": {
+    "method": "none",
+    "ece_uniform": 0.0008,
+    "ece_quantile": 0.001,
+    "brier": 0.08151,
+    "brier_base_rate": 0.10216
+  },
+  "data": {
+    "n_users": 20000,
+    "seed": 42,
+    "min_orders": 5,
+    "train_targets": 3,
+    "max_candidates": 100,
+    "dsp_cap": 30
+  }
+}

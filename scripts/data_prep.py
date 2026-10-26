@@ -37,7 +37,8 @@ its gap is null, set to 0 and not flagged.
 Run:
     python -m scripts.data_prep --users 20000
     python -m scripts.data_prep --users 0        # all users
-Outputs data/processed/{train,val,test}.parquet and meta.json (git-ignored).
+Outputs data/processed/{train,val,test}.parquet, {split}_truth.parquet
+and meta.json (git-ignored).
 """
 
 import argparse
@@ -149,8 +150,8 @@ def targets_of(orders: pl.DataFrame, role: str) -> pl.DataFrame:
 
 def make_split(
     orders: pl.DataFrame, hist: pl.DataFrame, prod: pl.DataFrame, role: str
-) -> tuple[pl.DataFrame, int]:
-    """Return (labelled examples, number of items in the true baskets)."""
+) -> tuple[pl.DataFrame, pl.DataFrame]:
+    """Return (labelled examples, true baskets: user_id, t_order, product_id)."""
     targets = targets_of(orders, role)
     examples = extract_features(hist, targets, prod)
 
@@ -165,7 +166,7 @@ def make_split(
         on=["user_id", "t_order", "product_id"],
         how="left",
     ).with_columns(pl.col("label").fill_null(0))
-    return labelled, truth.height
+    return labelled, truth
 
 
 def check_no_leakage(df: pl.DataFrame) -> None:
@@ -197,9 +198,12 @@ def prepare(
     out_dir.mkdir(parents=True, exist_ok=True)
     report = {}
     for role in SPLITS:
-        df, n_truth = make_split(orders, hist, prod, role)
+        df, truth = make_split(orders, hist, prod, role)
         check_no_leakage(df)
         df.write_parquet(out_dir / f"{role}.parquet")
+        # Full baskets, new products included, for Recall/NDCG of models.
+        truth.write_parquet(out_dir / f"{role}_truth.parquet")
+        n_truth = truth.height
         report[role] = {
             "users": df["user_id"].n_unique(),
             "rows": df.height,
