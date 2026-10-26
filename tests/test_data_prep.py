@@ -92,7 +92,7 @@ def test_sample_is_reproducible_and_exact():
 def test_no_leakage_and_labels():
     orders, hist, prod = _toy()
     for role, t_order in [("train", 4), ("val", 5), ("test", 6)]:
-        df, n_truth = make_split(orders, hist, prod, role)
+        df, truth = make_split(orders, hist, prod, role)
         check_no_leakage(df)
         assert df["t_order"].unique().to_list() == [t_order]
         assert df["u_n_orders"].unique().to_list() == [t_order - 1]
@@ -100,7 +100,7 @@ def test_no_leakage_and_labels():
         # Product 2 is first bought in the test order: never a candidate.
         assert 2 not in labels
         assert labels == {1: 1, 3: 0}
-        assert n_truth == (2 if role == "test" else 1)
+        assert truth.height == (2 if role == "test" else 1)
 
 
 def test_item_stats_ignore_label_orders():
