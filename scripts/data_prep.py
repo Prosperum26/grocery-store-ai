@@ -1,5 +1,4 @@
 """Instacart preparation and leave-last-out split per user.
-Mô tả z đầy đủ chưa =))
 
 Steps
 -----
@@ -14,8 +13,8 @@ Steps
        order  n         -> test
        order  n-1       -> val
        orders 1 .. n-2  -> train
-   Train label orders are the last `train_targets` train orders (default 1:
-   order n-2). Earlier train orders only feed features.
+   Train label orders are the last `train_targets` train orders (default 3:
+   orders n-2, n-3, n-4, the selected configuration). Earlier train orders only feed features.
 
 Why leave-last-out
 ------------------
@@ -234,7 +233,7 @@ def main() -> None:
     parser.add_argument("--out-dir", type=Path, default=OUT_DIR)
     parser.add_argument("--users", type=int, default=20_000, help="0 = all users")
     parser.add_argument(
-        "--train-targets", type=int, default=1,
+        "--train-targets", type=int, default=3,
         help="number of last train orders used as labels",
     )
     args = parser.parse_args()

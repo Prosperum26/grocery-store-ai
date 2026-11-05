@@ -18,7 +18,7 @@
 5. Write tau and everything /predict needs into weights/model_metadata.json.
 
 Run:
-    python -m scripts.select_threshold --data-dir data/processed_tt3
+    python -m scripts.select_threshold
 """
 
 import argparse
@@ -35,6 +35,7 @@ import numpy as np
 import polars as pl
 from sklearn.isotonic import IsotonicRegression
 
+from scripts.data_prep import OUT_DIR
 from scripts.train_lgbm import KEYS, WEIGHTS_DIR, load_split, machine_info, to_matrix
 from src.ml.feature_extractor import FEATURE_SETS
 
@@ -141,11 +142,27 @@ def plot(curves: dict[str, pl.DataFrame], path: Path) -> None:
     fig.savefig(path, dpi=120)
 
 
+def plot_tau(sweep: list[dict], best_tau: float, path: Path) -> None:
+    """F1@15, precision and recall against tau, as in the tau table of the report."""
+    taus = [r["tau"] for r in sweep]
+    fig, ax = plt.subplots(figsize=(6, 4))
+    for key, label in (("f1@15", "F1@15"), ("precision", "Precision"), ("recall", "Recall")):
+        ax.plot(taus, [r[key] for r in sweep], label=label)
+    ax.axvline(best_tau, linestyle="--", color="grey", label=f"τ = {best_tau}")
+    ax.set_xlabel("τ")
+    ax.set_title("Đường cong τ (val)")
+    ax.legend()
+    ax.grid(alpha=0.3)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fig.tight_layout()
+    fig.savefig(path, dpi=120)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    parser.add_argument("--data-dir", type=Path, default=Path("data/processed_tt3"))
+    parser.add_argument("--data-dir", type=Path, default=OUT_DIR)
     parser.add_argument("--model", type=Path, default=WEIGHTS_DIR / "lgbm_v4_selected.txt")
     parser.add_argument("--version", default="v4")
     args = parser.parse_args()
@@ -197,6 +214,7 @@ def main() -> None:
         print(f"{r['tau']:>5.2f} {r['f1@15']:>7.4f} {r['precision']:>7.4f} {r['recall']:>7.4f}"
               f" {r['avg_items']:>6.2f} {r['empty_orders']:>6.3f}")
     print(f"best tau = {best['tau']}")
+    plot_tau(sweep, best["tau"], FIG_DIR / "tau_curve_val.png")
     no_tau = f1_at_tau(scored, truth, 0.0)
     oracle = oracle_recall(val, truth)
     print(f"no tau (same F1 definition): {no_tau}")
@@ -216,6 +234,13 @@ def main() -> None:
                           "best": best, "no_tau": no_tau},
         "oracle_recall@15_val": oracle,
         "calibration": calibration,
+        "split": {
+            "method": "leave-last-out per user",
+            "test": "order n",
+            "val": "order n-1",
+            "train": "orders 1..n-2; the last train_targets of them are labels",
+            "why": "Instacart has no absolute dates, so a global time cut is impossible",
+        },
         "data": {k: data_meta.get(k) for k in ("n_users", "seed", "min_orders", "train_targets",
                                                 "max_candidates", "dsp_cap")},
     }

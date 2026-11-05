@@ -45,7 +45,8 @@ from scripts.data_prep import (
 
 KEYS = ["user_id", "t_order"]
 TOP_N = 20
-EVAL_SPLITS = ("val", "test")
+# Test is scored only by scripts/final_eval.py, once.
+EVAL_SPLITS = ("val",)
 METRICS = ("recall@15", "ndcg@15", "f1@15", "precision@20")
 
 

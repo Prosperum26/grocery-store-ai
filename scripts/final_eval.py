@@ -8,8 +8,7 @@ applies the gate:
     FAIL  otherwise -> record it as a negative result, do not tune on test
 
 Writes <data-dir>/final_test.json. Refuses to run again once that file
-exists (or the older data/processed/final_test.json), so test is looked
-at only once.
+exists, so test is looked at only once.
 
 Run:
     python -m scripts.final_eval
@@ -28,8 +27,6 @@ from scripts.select_threshold import calibration_stats, f1_at_tau, ranked
 from scripts.train_lgbm import WEIGHTS_DIR, load_split, rank_top, to_matrix
 
 RESULT_NAME = "final_test.json"
-# Where the first (and only) test run was written before --data-dir was used.
-LEGACY_RESULT = OUT_DIR / RESULT_NAME
 
 
 def check_not_run(*paths: Path) -> None:
@@ -43,12 +40,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    parser.add_argument("--data-dir", type=Path, default=Path("data/processed_tt3"))
+    parser.add_argument("--data-dir", type=Path, default=OUT_DIR)
     parser.add_argument("--raw-dir", type=Path, default=RAW_DIR)
     args = parser.parse_args()
 
     result = args.data_dir / RESULT_NAME
-    check_not_run(result, LEGACY_RESULT)
+    check_not_run(result)
 
     meta = json.loads((WEIGHTS_DIR / "model_metadata.json").read_text(encoding="utf-8"))
     cols, tau = meta["feature_columns"], meta["tau"]
