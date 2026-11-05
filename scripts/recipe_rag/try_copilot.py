@@ -22,6 +22,7 @@ from src.services.claude_service import ClaudeProvider            # noqa: E402
 from src.services.copilot_facts import SYSTEM_PROMPT, build_user_prompt  # noqa: E402
 from src.services.copilot_service import CopilotService, ProviderConfig  # noqa: E402
 from src.services.gemini_service import GeminiProvider            # noqa: E402
+from src.services.openrouter_service import OpenRouterProvider    # noqa: E402
 from src.services.recipe_service import RecipeService             # noqa: E402
 
 
@@ -54,6 +55,11 @@ def main():
         if not key:
             raise SystemExit("Thiếu ANTHROPIC_API_KEY trong .env")
         providers["claude"] = ClaudeProvider(key, settings.claude_model)
+    if "openrouter" in wanted:
+        key = settings.openrouter_api_key.get_secret_value()
+        if not key:
+            raise SystemExit("Thiếu OPENROUTER_API_KEY trong .env")
+        providers["openrouter"] = OpenRouterProvider(key, settings.openrouter_model)
     configs = [ProviderConfig(name, True, i) for i, name in enumerate(wanted, 1) if name in providers]
     service = CopilotService(recipes, providers, settings, config_source=lambda: configs)
     print(service.answer(request).model_dump_json(indent=1))

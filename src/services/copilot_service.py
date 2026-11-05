@@ -42,7 +42,8 @@ class CallRecord:
 def configs_from_settings(settings: Settings) -> list[ProviderConfig]:
     """Cấu hình bật/tắt tạm đọc từ .env; GĐ 5 thay bằng đọc bảng ai_provider_setting."""
     return [ProviderConfig("gemini", settings.ai_gemini_enabled, settings.ai_gemini_priority),
-            ProviderConfig("claude", settings.ai_claude_enabled, settings.ai_claude_priority)]
+            ProviderConfig("claude", settings.ai_claude_enabled, settings.ai_claude_priority),
+            ProviderConfig("openrouter", settings.ai_openrouter_enabled, settings.ai_openrouter_priority)]
 
 
 def check_answer(answer: AiAnswer, data: SearchResponse, candidate_ids: list[str]) -> AiAnswer:

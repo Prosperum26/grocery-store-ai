@@ -20,6 +20,7 @@ from src.schemas.recipe_dto import SearchRequest                     # noqa: E40
 from src.services.claude_service import ClaudeProvider               # noqa: E402
 from src.services.copilot_service import CopilotService, ProviderConfig  # noqa: E402
 from src.services.gemini_service import GeminiProvider               # noqa: E402
+from src.services.openrouter_service import OpenRouterProvider       # noqa: E402
 from src.services.recipe_service import RecipeService, build_basket  # noqa: E402
 
 SUGGEST_COUNT = 8
@@ -45,6 +46,8 @@ def load_services():
         providers["gemini"] = GeminiProvider(settings.gemini_api_key.get_secret_value(), settings.gemini_model)
     if settings.anthropic_api_key.get_secret_value():
         providers["claude"] = ClaudeProvider(settings.anthropic_api_key.get_secret_value(), settings.claude_model)
+    if settings.openrouter_api_key.get_secret_value():
+        providers["openrouter"] = OpenRouterProvider(settings.openrouter_api_key.get_secret_value(), settings.openrouter_model)
     return settings, recipes, providers
 
 
@@ -68,10 +71,11 @@ with st.sidebar:
     st.write(f"Ngưỡng nhận kết quả: **{settings.search_threshold}**")
     st.subheader("AI")
     enabled = {}
-    for name, label in (("gemini", "Gemini"), ("claude", "Claude")):
+    default_on = "openrouter" if "openrouter" in providers else next(iter(providers), None)   # mặc định bật một nhà cung cấp có khóa
+    for name, label in (("gemini", "Gemini"), ("claude", "Claude"), ("openrouter", "OpenRouter")):
         has_key = name in providers
         enabled[name] = st.toggle(f"{label} " + ("(có khóa)" if has_key else "(chưa có khóa trong .env)"),
-                                  value=has_key and name == "gemini", disabled=not has_key, key=f"toggle_{name}")
+                                  value=name == default_on, disabled=not has_key, key=f"toggle_{name}")
     if not providers:
         st.caption("Không có khóa nào: demo chạy ở chế độ code dựng, vẫn đủ món và giỏ hàng.")
     servings_override = st.number_input("Số người (0 = theo công thức)", min_value=0, max_value=50, value=0)
