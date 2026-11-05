@@ -127,7 +127,7 @@ def test_prediction_point_for_live_user():
     hist = _history()
     at = prediction_point(hist, dow=5, hour=18, days_since_last=45)
     row = at.row(0, named=True)
-    assert row["t_order"] == 5 and row["t_day"] == 21 + 45
+    assert row["t_order"] == 5 and row["t_day"] == 21 + 30
     assert row["t_dsp"] == 30 and row["t_dsp_capped"] == 1  # capped like Instacart
     df = extract_features(hist, at, item_stats(hist))
     assert sorted(df["product_id"].to_list()) == [1, 2, 3]

@@ -75,10 +75,13 @@ def item_stats(history: pl.DataFrame) -> pl.DataFrame:
 def prediction_point(
     history: pl.DataFrame, dow: int, hour: int, days_since_last: float
 ) -> pl.DataFrame:
-    """Prediction point for each user's next, not yet placed, order."""
+    """Prediction point for each user's next, not yet placed, order.
+
+    t_day adds the capped gap, like the training timeline.
+    """
     return history.group_by("user_id").agg(
         t_order=pl.col("order_number").max() + 1,
-        t_day=pl.col("day").max() + days_since_last,
+        t_day=pl.col("day").max() + min(days_since_last, 30),
         t_dow=pl.lit(dow),
         t_hour=pl.lit(hour),
         t_dsp=pl.lit(float(min(days_since_last, 30))),
