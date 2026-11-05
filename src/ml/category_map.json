@@ -1,0 +1,19 @@
+{
+  "_note": "shelf_life_days là GIẢ ĐỊNH của nhóm theo từng danh mục, catalog chưa có hạn sử dụng thật. Cần người có chuyên môn rà lại.",
+  "min_lot_days": 2,
+  "not_due_enabled": false,
+  "not_due_ratio": 0.5,
+  "categories": {
+    "rau-cu": {"shelf_life_days": 5, "aisles": [83, 16, 123]},
+    "trai-cay": {"shelf_life_days": 7, "aisles": [24, 32]},
+    "thit": {"shelf_life_days": 3, "aisles": [122, 35, 7, 49, 106, 96]},
+    "hai-san": {"shelf_life_days": 2, "aisles": [39, 15]},
+    "trung-sua": {"shelf_life_days": 14, "aisles": [86, 84, 120, 21, 2, 36, 53, 91, 108]},
+    "gao-do-kho": {"shelf_life_days": 180, "aisles": [63, 68, 131, 18, 117, 59, 81]},
+    "gia-vi": {"shelf_life_days": 365, "aisles": [104, 72, 19, 66, 29, 89, 5, 110]},
+    "do-uong": {"shelf_life_days": 180, "aisles": [115, 77, 98, 94, 26, 64, 90, 31, 27]},
+    "mi-an-lien": {"shelf_life_days": 180, "aisles": [4, 69, 1, 13]},
+    "banh-keo-an-vat": {"shelf_life_days": 90, "aisles": [45, 61, 107, 78, 3, 23, 125, 50, 46]},
+    "dong-lanh-che-bien": {"shelf_life_days": 90, "aisles": [38, 34, 116, 129, 52, 42, 37, 119, 79]}
+  }
+}
