@@ -32,7 +32,8 @@ Với mỗi khách, dự đoán những món **đã từng mua** sẽ có trong 
 
 - So với TIFU-KNN: Recall@15 **+0,014**, NDCG@15 **+0,017**.
 - Kết quả trên test rất gần val (Recall@15: 0,431 trên test, 0,434 trên val), nên không có dấu hiệu overfit vào val.
-- **Mức trần**: khoảng 39% món trong giỏ thật là món khách chưa từng mua. Các món này nằm ngoài tập candidate, nên không phương pháp nào ở đây đoán được. Recall@15 của một oracle xếp mọi món đúng trong candidate lên đầu (vẫn giới hạn 15 món) là **0,601 trên val**. LightGBM đạt 0,434 trên val, khoảng 72% mức trần đó. Oracle được tính trên val (`scripts/select_threshold.py`) để không phải xem test lần nữa.
+- **Trần candidate**: top-100 candidate bao phủ 61,1% số món trong đơn thật trên test (60,4% trên val), lấy từ `recall_ceiling` trong `data/processed/meta.json`.
+- **Mức trần**: khoảng 39% món trong giỏ thật là món khách chưa từng mua. Các món này nằm ngoài tập candidate của LightGBM và `personal_freq`, nên hai phương pháp này không thể đoán được (popularity và TIFU-KNN thì có thể, vì gợi ý cả món khách chưa mua). Recall@15 của một oracle xếp mọi món đúng trong candidate lên đầu (vẫn giới hạn 15 món) là **0,601 trên val**. LightGBM đạt 0,434 trên val, khoảng 72% mức trần đó. Oracle được tính trên val (`scripts/select_threshold.py`) để không phải xem test lần nữa.
 
 ## Model
 
@@ -69,29 +70,62 @@ Với mỗi khách, dự đoán những món **đã từng mua** sẽ có trong 
   Bảng này chia precision cho số món thực sự được gợi ý (không chia cho 15), nên khác F1@15 ở bảng kết quả (0,285). So sánh đúng là hai dòng val cùng định nghĩa: cắt bằng τ tăng F1@15 thêm **+0,020** (0,298 → 0,318), đổi lại recall giảm 0,055 và danh sách ngắn hơn khoảng 4 món.
 - τ được ghi trong `weights/model_metadata.json`, cùng danh sách feature, tên file model và cách calibration. Code không viết cứng τ.
 
+![Đường cong τ](figures/tau_curve_val.png)
+
+## So sánh ở danh sách ngắn (val, 2026-11-05)
+
+Backend hiện chỉ gợi ý 5 món, nên đã đo thêm ở @5 bằng [scripts/eval_topk.py](../scripts/eval_topk.py). Khoảng tin cậy 95% lấy từ bootstrap ghép cặp theo đơn (2.000 lần). Phần này chỉ dùng val, nên chưa phải kết quả của gate.
+
+| Phương pháp | Recall@5 | Precision@5 | NDCG@5 | Có ít nhất 1 món đúng |
+| --- | --- | --- | --- | --- |
+| personal_freq | 0,2414 | 0,3668 | 0,4302 | 80,1% |
+| TIFU-KNN | 0,2529 | 0,3870 | 0,4528 | 81,0% |
+| LightGBM, không τ | **0,2627** | **0,4012** | **0,4688** | **82,4%** |
+| LightGBM, τ = 0,13 | 0,2538 | 0,3945 | 0,4620 | 80,9% |
+
+| Chênh lệch Recall (khoảng tin cậy 95%) | @5 | @15 |
+| --- | --- | --- |
+| LightGBM − personal_freq | +0,0213 (0,0195 đến 0,0229) | +0,0265 (0,0250 đến 0,0280) |
+| LightGBM − TIFU-KNN | +0,0098 (0,0083 đến 0,0113) | +0,0109 (0,0095 đến 0,0122) |
+| LightGBM τ − TIFU-KNN | +0,0009 (−0,0007 đến +0,0024) | −0,0440 (−0,0462 đến −0,0418) |
+
+- LightGBM hơn baseline ở cả @5 và @15, nhưng mức hơn nhỏ.
+- τ = 0,13 được chọn cho top-15. Áp vào top-5 thì mọi chỉ số đều giảm và lợi thế về Recall so với TIFU-KNN không còn rõ. Nếu chỉ hiện 5 món, không nên dùng τ này.
+- Gate so Recall@15 khi chưa cắt theo τ, nên kết quả gate không áp dụng cho cấu hình có τ.
+
+## Đưa model vào phục vụ (val, 2026-11-05)
+
+- **ONNX**: `weights/lgbm_v4_selected.onnx` (opset 15). Trên 1.096.031 dòng val, sai lệch xác suất tối đa 2,6e-7, và top-15 của cả 20.000 đơn không đổi.
+- **`POST /api/v1/predict`**: nhận lịch sử đơn của một khách, trả danh sách món. Không dự đoán số lượng. Chưa có xác thực, nên chỉ được mở trong mạng nội bộ. Backend chưa gọi endpoint này.
+- **Latency CPU, Train/serve**: số đo nằm trong `latency_cpu` và `train_serve_check` của `weights/model_metadata.json`. Latency đo trong tiến trình, không tính mạng.
+- **τ**: chỉ áp dụng khi `top_k` bằng 15, vì τ được chọn cho top-15 và làm giảm chỉ số ở top-5.
+- **Ghép danh mục**: 11 danh mục được ghép tay với aisle trong `src/ml/category_map.json`, bao phủ 82,2% lượt mua Instacart. Catalog chưa có lịch sử bán, nên `p_reorder_ratio` và `a_reorder_ratio` dùng chung một tỉ lệ theo danh mục (`weights/category_stats.json`). Mô phỏng trên val cho thấy mức giảm nhỏ: Recall@5 0,2627 → 0,2595, Recall@15 0,4342 → 0,4301. Đây vẫn là dữ liệu Instacart, không nói được gì về hành vi khách Bách Hóa Xanh.
+- **Luật hạn sử dụng**: catalog không có hạn dùng, nên hạn theo danh mục là giả định của nhóm.
+  - `lot_expiring` (lô còn dưới 2 ngày): luôn bật, nhưng chỉ có tác dụng khi backend gửi hạn của lô.
+  - `not_due` (hàng còn dùng được và chưa tới nửa chu kỳ mua): **tắt mặc định**. Trên val, luật này làm Recall@5 giảm từ 0,2627 xuống 0,2423 và Recall@15 từ 0,4342 xuống 0,3952. Món bị loại có tỉ lệ được mua 22,0%, gấp đôi mức trung bình 11,6%. Khách Instacart mua lại sớm hơn luật giả định, nên cần đo lại trên dữ liệu thật trước khi bật.
+
 ## Hạn chế
 
 - **Không gợi ý được món mới**: 39% giỏ hàng là món khách chưa từng mua. Muốn vượt mức trần 0,60 thì cần thêm nguồn candidate, ví dụ món phổ biến trong aisle khách hay mua.
 - **Val được dùng cho early stopping, chọn τ và đo calibration**, nên các con số trên val có thể hơi lạc quan. Kết quả test (ECE 0,0013, F1@15 với τ 0,316 so với 0,318 trên val) cho thấy ảnh hưởng này không đáng kể.
-- **Chỉ chạy trên 20.000 khách.** Chưa chạy trên toàn bộ khoảng 200.000 khách.
+- **Chỉ chạy trên 20.000 khách.** Chưa chạy trên toàn bộ khoảng 200.000 khách. TIFU-KNN chỉ tìm láng giềng trong mẫu này, nên kết quả so sánh có thể đổi.
+- **Test của baseline đã được xem nhiều hơn một lần** khi tune TIFU-KNN (script cũ tính cả test mỗi lần chạy). Điều này chỉ có thể có lợi cho baseline. Từ 2026-11-05, `baselines.py` mặc định chỉ tính val.
+- **Instacart không có mùa vụ, khuyến mãi, hạn sử dụng**, nên không thể kết luận model học được các yếu tố này.
 - **Instacart không có ngày tuyệt đối**, nên split dựa trên thứ tự đơn của từng khách, không phải mốc thời gian chung.
 - **Áp cho Bách Hóa Xanh**: feature không phụ thuộc mã sản phẩm, nhưng phân phối hành vi mua có thể khác Instacart. Cần đo lại trên dữ liệu thật trước khi đưa vào sử dụng.
 
 ## Tái lập kết quả
 
 ```bash
-python -m scripts.data_prep --users 20000                                         # baseline, val/test
-python -m scripts.data_prep --users 20000 --train-targets 3 --out-dir data/processed_tt3
-python -m scripts.baselines --users 20000
-python -m scripts.train_lgbm --versions v4 --data-dir data/processed_tt3 --tag selected --save-model
-python -m scripts.select_threshold --data-dir data/processed_tt3                  # τ, calibration, metadata
-python -m scripts.final_eval                                                      # test, chạy một lần
+python -m scripts.run_pipeline   # từ data/raw đến hết; không chạy lại test nếu đã có final_test.json
 ```
 
-Kết quả gốc: `data/processed/final_test.json` (các lần chạy sau ghi vào `<data-dir>/final_test.json`), `data/processed*/lgbm_runs.jsonl`, `weights/model_metadata.json`. Nhật ký chi tiết của từng lần chạy: [experiments.md](experiments.md).
+Đã chạy lại ngày 2026-11-05: toàn bộ ablation, chỉnh tham số và model được chọn (517 vòng, NDCG@15 val 0,4505), baseline trên val, τ và calibration đều ra đúng số cũ. Giữa hai lần sinh dữ liệu chỉ có `up_decay` lệch tối đa 1,8e-15 (nhiễu dấu phẩy động). Test không chạy lại. File model của lần chạy test cũ không còn để so từng byte, nên việc model mới trùng model đã test được suy ra từ các số trên val.
+
+Kết quả gốc: `data/processed/final_test.json`, `data/processed/lgbm_runs.jsonl`, `weights/model_metadata.json`. Nhật ký chi tiết của từng lần chạy: [experiments.md](experiments.md).
 
 ## Bước tiếp theo
 
-1. Chuyển model sang ONNX (đã kiểm tra converter với model đồ chơi), và viết `/predict` dùng `extract_features` cùng τ đọc từ metadata.
+1. Chuyển model sang ONNX (đã kiểm tra converter với model đồ chơi), và viết `/predict` dùng `extract_features`. Chọn lại τ theo đúng số món sẽ hiển thị.
 2. Chạy toàn bộ pipeline trên toàn bộ khách.
 3. Thử thêm nguồn candidate ngoài lịch sử mua để vượt mức trần 0,60.

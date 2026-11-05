@@ -15,7 +15,7 @@ File này ghi lại kết quả của từng lần chạy baseline và model, đ
 
 Quy tắc:
 - Chỉ chọn tham số trên **val**. Chạy **test** cho cấu hình đã chốt, không tune lại theo kết quả test.
-- Kết quả gốc của mỗi lần chạy nằm ở `data/processed/baselines.json` (không commit). Chép số liệu vào đây để lưu lại lâu dài.
+- Kết quả gốc của baseline trên val nằm ở `data/processed/baselines.json`, trên test ở `data/processed/final_test.json` (không commit). Chép số liệu vào đây để lưu lại lâu dài.
 
 Lệnh chạy:
 
@@ -57,7 +57,8 @@ python -m scripts.baselines --users 20000 --group-size 7 --r-b 0.9 --r-g 0.7 --k
 Thiết lập: `objective = binary`, early stopping theo logloss trên val (dừng sau 50 vòng không cải thiện), không dùng `scale_pos_weight`. Tham số mặc định: `learning_rate = 0,05`, `num_leaves = 63`, `min_data_in_leaf = 100`, `feature_fraction = 0,9`, `bagging_fraction = 0,9`. Xếp hạng theo xác suất dự đoán, lấy top-20 cho mỗi đơn. Dữ liệu: 20.000 user, seed 42. Feature của từng lượt xem trong [features.md](features.md).
 
 ```bash
-python -m scripts.train_lgbm --versions v0,v1,v2,v3,v4 --tag ablation
+python -m scripts.data_prep --users 20000 --train-targets 1 --out-dir data/processed_tt1   # thư mục tạm, xóa sau khi chạy
+python -m scripts.train_lgbm --versions v0,v1,v2,v3,v4 --data-dir data/processed_tt1 --tag ablation
 ```
 
 Kết quả gốc của mỗi lần chạy nằm trong `data/processed/lgbm_runs.jsonl` (không commit).
@@ -88,8 +89,8 @@ Kết quả gốc của mỗi lần chạy nằm trong `data/processed/lgbm_runs
 Model được chọn: **v4, `train_targets = 3`, tham số mặc định**, lưu tại `weights/lgbm_v4_selected.txt` (không commit). Chưa chạy trên test.
 
 ```bash
-python -m scripts.data_prep --users 20000 --train-targets 3 --out-dir data/processed_tt3
-python -m scripts.train_lgbm --versions v4 --data-dir data/processed_tt3 --tag selected --save-model
+python -m scripts.data_prep --users 20000
+python -m scripts.train_lgbm --versions v4 --tag selected --save-model
 ```
 
 ### Feature importance (v4, tỉ lệ gain)
@@ -149,9 +150,15 @@ python -m scripts.train_lgbm --versions v4 --data-dir data/processed_tt3 --tag s
 - Oracle Recall@15 trên val = 0,601 (tính trực tiếp, thay cho ước lượng từ tỉ lệ 39% món mới). LightGBM đạt 0,434, khoảng 72%.
 - Chạy lại `select_threshold`: τ vẫn = 0,13. Không chạy lại test.
 
+### 2026-11-05: gộp dữ liệu, chạy lại toàn bộ, đo @5 (chỉ val)
+
+- Dọn dữ liệu: xóa `data/processed/test.zip` (702 MB, bộ parquet cũ không còn dùng), bỏ bộ `train_targets = 1` khỏi đĩa và chuyển `data/processed_tt3` thành `data/processed`. Bộ `train_targets = 1` chỉ được tạo tạm khi chạy `scripts/run_pipeline.py`.
+- Chạy lại `run_pipeline`: mọi dòng ablation và chỉnh tham số trùng số cũ, τ vẫn = 0,13. ONNX probe: sai lệch 1,1e-7 cả có và không có categorical. Không chạy lại test.
+- Đo @5, @10, @15 kèm bootstrap: xem [report.md](report.md). Recall@5: LightGBM 0,2627, TIFU-KNN 0,2529, personal_freq 0,2414. τ = 0,13 làm giảm mọi chỉ số ở top-5.
+
 ### Kiểm tra bằng mắt: top-15 của 5 khách mẫu (val)
 
-Chạy với `--inspect 5` (5 khách lấy ngẫu nhiên, seed 42). Kết quả đầy đủ ở `data/processed/inspect_v4_inspect.md` (không commit) gồm top-15, 15 món mua nhiều nhất và đơn gần nhất của từng khách.
+Chạy với `--inspect 5` (5 khách lấy ngẫu nhiên, seed 42). Kết quả đầy đủ ở `data/processed/inspect_v4_selected.md` (không commit) gồm top-15, 15 món mua nhiều nhất và đơn gần nhất của từng khách.
 
 | User | Số món đúng trong top-15 |
 | --- | --- |

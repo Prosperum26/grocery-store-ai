@@ -1,5 +1,12 @@
 {
-  "created_at": "2026-10-26T09:46:31+07:00",
+  "created_at": "2026-11-05T19:59:23+07:00",
+  "machine": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "n_cpu": 12,
+    "python": "3.11.9",
+    "lightgbm": "4.7.0"
+  },
   "model_file": "lgbm_v4_selected.txt",
   "feature_version": "v4",
   "feature_columns": [
@@ -62,6 +69,13 @@
     "brier": 0.08151,
     "brier_base_rate": 0.10216
   },
+  "split": {
+    "method": "leave-last-out per user",
+    "test": "order n",
+    "val": "order n-1",
+    "train": "orders 1..n-2; the last train_targets of them are labels",
+    "why": "Instacart has no absolute dates, so a global time cut is impossible"
+  },
   "data": {
     "n_users": 20000,
     "seed": 42,
@@ -69,5 +83,47 @@
     "train_targets": 3,
     "max_candidates": 100,
     "dsp_cap": 30
+  },
+  "onnx": {
+    "file": "lgbm_v4_selected.onnx",
+    "opset": 15,
+    "parity": {
+      "split": "val",
+      "rows": 1096031,
+      "rows_with_nan": 609151,
+      "max_abs_diff": 2.5933089548013655e-07,
+      "p99_abs_diff": 1.1478966240041626e-07,
+      "orders_with_different_top15": 0,
+      "orders": 20000,
+      "limit": 0.0001
+    }
+  },
+  "latency_cpu": {
+    "created_at": "2026-11-05T20:23:58+07:00",
+    "machine": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "n_cpu": 12,
+      "python": "3.11.9",
+      "lightgbm": "4.7.0"
+    },
+    "requests": 500,
+    "scope": "in-process POST /api/v1/predict, no network, one ONNX thread",
+    "p50_ms": 24.6,
+    "p95_ms": 32.5,
+    "p99_ms": 36.8,
+    "max_ms": 84.7,
+    "median_purchase_lines": 92,
+    "max_purchase_lines": 1303
+  },
+  "train_serve_check": {
+    "requests": 500,
+    "skipped": [
+      "a_reorder_ratio",
+      "p_reorder_ratio",
+      "t_dow",
+      "t_hour"
+    ],
+    "above_tolerance": {}
   }
 }
