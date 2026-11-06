@@ -12,13 +12,11 @@ from src.schemas.copilot_dto import AiAnswer, AiResult, CopilotResponse, ItemNot
 from src.schemas.recipe_dto import SearchRequest, SearchResponse
 from src.services.copilot_facts import SYSTEM_PROMPT, build_user_prompt, candidates_of
 from src.services.llm_provider import LlmProvider, ProviderInvalid
-from src.services.provider_chain import CallRecord, ProviderConfig, run_chain  # noqa: F401  (CallRecord, ProviderConfig: nơi khác import từ đây)
-from src.utils.logger import get_logger
+from src.services.provider_chain import CallRecord, ProviderConfig, log_call, run_chain  # noqa: F401  (CallRecord, ProviderConfig: nơi khác import từ đây)
 
 if TYPE_CHECKING:                                   # chỉ để gõ kiểu: tránh nạp torch khi chỉ cần kiểm lớp lời
     from src.services.recipe_service import RecipeService
 
-log = get_logger("copilot")
 MAX_EXPLANATION_CHARS = 800
 MAX_PREP_STEPS = 8
 
@@ -62,12 +60,7 @@ class CopilotService:
         self.providers = providers
         self.settings = settings
         self.config_source = config_source or (lambda: configs_from_settings(settings))
-        self.recorder = recorder or self._log_record
-
-    @staticmethod
-    def _log_record(rec: CallRecord) -> None:
-        log.info("provider=%s model=%s status=%s latency_ms=%d tokens_in=%s tokens_out=%s",
-                 rec.provider, rec.model, rec.status, rec.latency_ms, rec.tokens_in, rec.tokens_out)
+        self.recorder = recorder or log_call
 
     def _steps_of(self, recipe_id: str) -> str:
         r = self.recipes.recipes[recipe_id]

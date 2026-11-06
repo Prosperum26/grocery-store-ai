@@ -11,6 +11,9 @@ from pydantic import BaseModel
 
 from src.config.settings import Settings
 from src.services.llm_provider import LlmProvider, ProviderError, ProviderInvalid, ProviderTimeout
+from src.utils.logger import get_logger
+
+log = get_logger("ai")
 
 ATTEMPTS_ON_INVALID = 2         # lần đầu + một lần thử lại kèm lý do
 
@@ -31,6 +34,11 @@ class CallRecord:
     latency_ms: int
     tokens_in: int | None
     tokens_out: int | None
+
+
+def log_call(rec: CallRecord) -> None:
+    log.info("provider=%s model=%s status=%s latency_ms=%d tokens_in=%s tokens_out=%s",
+             rec.provider, rec.model, rec.status, rec.latency_ms, rec.tokens_in, rec.tokens_out)
 
 
 @dataclass
