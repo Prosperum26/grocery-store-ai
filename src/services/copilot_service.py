@@ -6,14 +6,17 @@ Nguyên tắc: phần `data` luôn do code dựng và luôn được trả về.
 import time
 from collections.abc import Callable
 from dataclasses import dataclass
+from typing import TYPE_CHECKING
 
 from src.config.settings import Settings
 from src.schemas.copilot_dto import AiAnswer, AiResult, CopilotResponse, ItemNote, PrepNote
 from src.schemas.recipe_dto import SearchRequest, SearchResponse
 from src.services.copilot_facts import SYSTEM_PROMPT, build_user_prompt, candidates_of
 from src.services.llm_provider import LlmProvider, ProviderError, ProviderInvalid, ProviderTimeout
-from src.services.recipe_service import RecipeService
 from src.utils.logger import get_logger
+
+if TYPE_CHECKING:                                   # chỉ để gõ kiểu: tránh nạp torch khi chỉ cần kiểm lớp lời
+    from src.services.recipe_service import RecipeService
 
 log = get_logger("copilot")
 MAX_EXPLANATION_CHARS = 800
@@ -71,7 +74,7 @@ def check_answer(answer: AiAnswer, data: SearchResponse, candidate_ids: list[str
 
 
 class CopilotService:
-    def __init__(self, recipes: RecipeService, providers: dict[str, LlmProvider], settings: Settings,
+    def __init__(self, recipes: "RecipeService", providers: dict[str, LlmProvider], settings: Settings,
                  config_source: Callable[[], list[ProviderConfig]] | None = None,
                  recorder: Callable[[CallRecord], None] | None = None):
         self.recipes = recipes
