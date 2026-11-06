@@ -7,6 +7,7 @@ from fastapi import FastAPI
 from src.api.router import api_router
 from src.config.settings import get_settings
 from src.ml.embedder import Embedder
+from src.services.ask_service import AskService
 from src.services.copilot_service import CopilotService
 from src.services.providers import providers_from_settings
 from src.services.recipe_service import RecipeService
@@ -18,7 +19,9 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     settings = get_settings()
     recipes = RecipeService(settings, Embedder(settings.embedding_model))
     app.state.recipes = recipes
-    app.state.copilot = CopilotService(recipes, providers_from_settings(settings), settings)
+    providers = providers_from_settings(settings)
+    app.state.copilot = CopilotService(recipes, providers, settings)
+    app.state.ask = AskService(recipes, providers, settings)
     yield
 
 
