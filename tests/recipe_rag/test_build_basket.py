@@ -1,5 +1,5 @@
 from src.schemas.recipe_dto import Product
-from src.services.recipe_service import build_basket, pack_hint
+from src.services.basket import build_basket, pack_hint
 
 
 def product(pack_size, pack_unit):
