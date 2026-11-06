@@ -25,6 +25,9 @@ class Settings(BaseSettings):
     search_top_k: int = 5
     search_default_servings: int = 4    # khi công thức không ghi khẩu phần và khách cũng không nói
 
+    # Backend Medusa gọi service này kèm header X-Internal-Key (hợp đồng: grocery-store-backend/docs/contracts/ai-service.md)
+    ai_internal_key: SecretStr = SecretStr("")
+
     # Lớp lời AI (khóa chỉ nằm ở .env, không ghi vào DB hay log)
     gemini_api_key: SecretStr = SecretStr("")
     anthropic_api_key: SecretStr = SecretStr("")
