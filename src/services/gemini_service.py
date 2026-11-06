@@ -1,7 +1,7 @@
 """Gemini provider: gọi Gemini Developer API, ép trả JSON đúng schema AiAnswer."""
 from google import genai
 from google.genai import errors, types
-from pydantic import ValidationError
+from pydantic import BaseModel, ValidationError
 
 from src.schemas.copilot_dto import AiAnswer
 from src.services.llm_provider import ProviderError, ProviderInvalid, ProviderResult, ProviderTimeout
@@ -14,11 +14,11 @@ class GeminiProvider:
         self.model = model
         self._client = genai.Client(api_key=api_key)
 
-    def generate(self, system: str, user: str, timeout_s: float) -> ProviderResult:
+    def generate(self, system: str, user: str, timeout_s: float, output: type[BaseModel] = AiAnswer) -> ProviderResult:
         config = types.GenerateContentConfig(
             system_instruction=system,
             response_mime_type="application/json",
-            response_schema=AiAnswer,                                   # SDK lấy JSON schema từ model Pydantic
+            response_schema=output,                                     # SDK lấy JSON schema từ model Pydantic
             http_options=types.HttpOptions(timeout=int(timeout_s * 1000)),  # SDK tính timeout bằng mili giây
         )
         try:
@@ -32,7 +32,7 @@ class GeminiProvider:
         if not response.text:
             raise ProviderInvalid("Gemini trả về rỗng")
         try:
-            answer = AiAnswer.model_validate_json(response.text)        # tự kiểm tra, không tin response.parsed
+            answer = output.model_validate_json(response.text)          # tự kiểm tra, không tin response.parsed
         except ValidationError as e:
             raise ProviderInvalid(f"JSON không đúng schema: {e.error_count()} lỗi") from e
         usage = response.usage_metadata

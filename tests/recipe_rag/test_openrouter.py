@@ -1,5 +1,6 @@
 """Kiểm OpenRouterProvider không cần mạng: thay httpx.post bằng hàm giả."""
 import httpx
+from pydantic import BaseModel
 import pytest
 
 from src.schemas.copilot_dto import AiAnswer
@@ -60,3 +61,21 @@ def test_unexpected_body_is_invalid(monkeypatch):
     fake_post(monkeypatch, payload={"oops": 1})
     with pytest.raises(ProviderInvalid):
         OpenRouterProvider("k", "m/x").generate("s", "u", 5)
+
+
+class Plain(BaseModel):
+    answer: str
+
+
+def test_custom_output_schema_is_sent_and_parsed(monkeypatch):
+    sent = fake_post(monkeypatch, payload=reply('{"answer": "Ít cay hơn thì bỏ ớt."}'))
+    result = OpenRouterProvider("k", "m/x").generate("s", "u", 5, output=Plain)
+    assert result.answer == Plain(answer="Ít cay hơn thì bỏ ớt.")
+    assert sent["body"]["response_format"]["json_schema"]["name"] == "Plain"
+    assert sent["body"]["response_format"]["json_schema"]["schema"]["properties"].keys() == {"answer"}
+
+
+def test_answer_for_another_schema_is_invalid(monkeypatch):
+    fake_post(monkeypatch, payload=reply(GOOD.model_dump_json()))            # JSON của AiAnswer, nhưng yêu cầu Plain
+    with pytest.raises(ProviderInvalid):
+        OpenRouterProvider("k", "m/x").generate("s", "u", 5, output=Plain)

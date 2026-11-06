@@ -2,6 +2,8 @@
 from dataclasses import dataclass
 from typing import Protocol
 
+from pydantic import BaseModel
+
 from src.schemas.copilot_dto import AiAnswer
 
 
@@ -19,7 +21,7 @@ class ProviderInvalid(ProviderError):
 
 @dataclass
 class ProviderResult:
-    answer: AiAnswer
+    answer: BaseModel          # đúng kiểu `output` đã yêu cầu (mặc định AiAnswer)
     model: str
     tokens_in: int | None
     tokens_out: int | None
@@ -29,4 +31,4 @@ class LlmProvider(Protocol):
     name: str
     model: str
 
-    def generate(self, system: str, user: str, timeout_s: float) -> ProviderResult: ...
+    def generate(self, system: str, user: str, timeout_s: float, output: type[BaseModel] = AiAnswer) -> ProviderResult: ...

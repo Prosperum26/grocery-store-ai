@@ -1,6 +1,6 @@
 """OpenRouter provider: một khóa gọi được nhiều mô hình, giao diện kiểu OpenAI. Cùng schema AiAnswer với Gemini / Claude."""
 import httpx
-from pydantic import ValidationError
+from pydantic import BaseModel, ValidationError
 
 from src.schemas.copilot_dto import AiAnswer
 from src.services.llm_provider import ProviderError, ProviderInvalid, ProviderResult, ProviderTimeout
@@ -16,13 +16,13 @@ class OpenRouterProvider:
         self.model = model
         self._api_key = api_key
 
-    def generate(self, system: str, user: str, timeout_s: float) -> ProviderResult:
+    def generate(self, system: str, user: str, timeout_s: float, output: type[BaseModel] = AiAnswer) -> ProviderResult:
         body = {
             "model": self.model,
             "max_tokens": MAX_OUTPUT_TOKENS,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
             "response_format": {"type": "json_schema",
-                                "json_schema": {"name": "AiAnswer", "strict": True, "schema": AiAnswer.model_json_schema()}},
+                                "json_schema": {"name": output.__name__, "strict": True, "schema": output.model_json_schema()}},
             "provider": {"require_parameters": True},       # chỉ chọn nơi chạy thật sự hỗ trợ json_schema, không âm thầm bỏ qua
         }
         try:
@@ -41,7 +41,7 @@ class OpenRouterProvider:
         if not text:
             raise ProviderInvalid("OpenRouter trả về rỗng")
         try:
-            answer = AiAnswer.model_validate_json(text)
+            answer = output.model_validate_json(text)
         except ValidationError as e:
             raise ProviderInvalid(f"JSON không đúng schema: {e.error_count()} lỗi") from e
         usage = data.get("usage") or {}
