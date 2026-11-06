@@ -71,3 +71,20 @@ class SearchResponse(BaseModel):
     accepted: bool                                             # False: không có món đủ gần, results là món gần nhất
     threshold: float
     results: list[SearchResult]
+
+
+class RecipeDetailRequest(BaseModel):
+    recipe_id: str = Field(min_length=1, max_length=100)
+    servings: int | None = Field(default=None, ge=1, le=50)    # bỏ trống thì lấy khẩu phần của công thức
+    have: list[str] = Field(default_factory=list, max_length=50)
+
+
+class RecipeDetailResponse(BaseModel):
+    """Một món đầy đủ: các bước nấu (do code lấy từ công thức) và giỏ nguyên liệu nhân theo số người."""
+    recipe: RecipeInfo
+    servings: int
+    complete: bool                                             # False: còn nguyên liệu chưa ghép được với catalog
+    prep_steps: list[str]
+    cooking_steps: list[str]
+    basket: Basket
+    not_in_basket: list[str]                                   # dòng công thức không vào giỏ (đồ ăn kèm, chưa ghép được), đúng chữ công thức

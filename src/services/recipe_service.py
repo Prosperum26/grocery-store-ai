@@ -7,8 +7,9 @@ from pgvector.psycopg import register_vector
 
 from src.config.settings import Settings
 from src.ml.embedder import Embedder
-from src.schemas.recipe_dto import RecipeInfo, SearchRequest, SearchResponse, SearchResult
+from src.schemas.recipe_dto import RecipeDetailRequest, RecipeDetailResponse, SearchRequest, SearchResponse, SearchResult
 from src.services.basket import BASE_UNIT, build_basket, pack_hint  # noqa: F401  (giữ import cũ chạy được)
+from src.services.recipe_detail import build_recipe_detail, recipe_info
 from src.utils.text_cleaner import keywords, split_servings, tokens
 
 KEYWORD_LIMIT = 10
@@ -83,10 +84,16 @@ class RecipeService:
             servings = request.servings or servings_in_query or recipe_servings
             sim = sims.get(rid, 0.0)
             results.append(SearchResult(
-                recipe=RecipeInfo(id=rid, name=r["name"], family=r["family"], servings=recipe_servings, time_minutes=r["time_minutes"],
-                                  difficulty=r["difficulty"], description=r["description"], image_url=r["image_url"], source_url=r["source_url"]),
+                recipe=recipe_info(r, recipe_servings),
                 score=round(sim, 4), matched_by=("both" if rid in lexical and rid in in_semantic else "keyword" if rid in lexical else "semantic"),
                 complete=r["complete"],
                 basket=build_basket(r["ingredients"], self.catalog, recipe_servings, servings, request.have)))
         servings_shown = request.servings or servings_in_query or (results[0].recipe.servings if results else self.settings.search_default_servings)
         return SearchResponse(query=text, servings=servings_shown, accepted=accepted, threshold=self.settings.search_threshold, results=results)
+
+    def detail(self, request: RecipeDetailRequest) -> RecipeDetailResponse | None:
+        """Một món theo id (không cần embedding, nên nhanh); None khi không có món đó."""
+        recipe = self.recipes.get(request.recipe_id)
+        if recipe is None:
+            return None
+        return build_recipe_detail(recipe, self.catalog, request.servings, request.have, self.settings.search_default_servings)
