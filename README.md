@@ -47,7 +47,7 @@ py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-uvicorn src.main:app --reload
+uvicorn src.main:app --reload --port 8100
 ```
 
 ### macOS / Linux
@@ -57,10 +57,12 @@ python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-uvicorn src.main:app --reload
+uvicorn src.main:app --reload --port 8100
 ```
 
-Sau khi phần application được triển khai, Swagger UI sẽ dùng tại `http://localhost:8000/docs`.
+Service chạy ở cổng **8100** (cổng 8000 là của storefront). Swagger UI: `http://localhost:8100/docs`.
+Khởi động mất khoảng 10 giây vì nạp bge-m3 và dữ liệu món một lần; cần `ai_db` đang chạy (`docker compose up -d`).
+Các route nghiệp vụ (`/api/v1/search`, `/api/v1/copilot`) cần header `X-Internal-Key` trùng `AI_INTERNAL_KEY` trong `.env`; `GET /api/v1/health` thì không.
 
 ## Cấu hình môi trường
 
