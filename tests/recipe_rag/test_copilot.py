@@ -43,7 +43,7 @@ class FakeProvider:
     def __init__(self, name, script):
         self.name, self.model, self.script, self.calls, self.prompts = name, f"{name}-model", list(script), 0, []
 
-    def generate(self, system, user, timeout_s):
+    def generate(self, system, user, timeout_s, output=AiAnswer):
         self.calls += 1
         self.prompts.append(user)
         step = self.script.pop(0)

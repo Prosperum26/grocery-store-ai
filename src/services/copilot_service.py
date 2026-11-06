@@ -5,14 +5,14 @@ Nguyên tắc: phần `data` luôn do code dựng và luôn được trả về.
 """
 import time
 from collections.abc import Callable
-from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
 from src.config.settings import Settings
 from src.schemas.copilot_dto import AiAnswer, AiResult, CopilotResponse, ItemNote, PrepNote
 from src.schemas.recipe_dto import SearchRequest, SearchResponse
 from src.services.copilot_facts import SYSTEM_PROMPT, build_user_prompt, candidates_of
-from src.services.llm_provider import LlmProvider, ProviderError, ProviderInvalid, ProviderTimeout
+from src.services.llm_provider import LlmProvider, ProviderInvalid
+from src.services.provider_chain import CallRecord, ProviderConfig, run_chain  # noqa: F401  (CallRecord, ProviderConfig: nơi khác import từ đây)
 from src.utils.logger import get_logger
 
 if TYPE_CHECKING:                                   # chỉ để gõ kiểu: tránh nạp torch khi chỉ cần kiểm lớp lời
@@ -21,25 +21,6 @@ if TYPE_CHECKING:                                   # chỉ để gõ kiểu: tr
 log = get_logger("copilot")
 MAX_EXPLANATION_CHARS = 800
 MAX_PREP_STEPS = 8
-ATTEMPTS_ON_INVALID = 2         # lần đầu + một lần thử lại kèm lý do
-
-
-@dataclass
-class ProviderConfig:
-    name: str
-    enabled: bool
-    priority: int
-
-
-@dataclass
-class CallRecord:
-    """Một lần gọi nhà cung cấp, để ghi log / thống kê (GĐ 6 sẽ ghi vào ai_call_log)."""
-    provider: str
-    model: str
-    status: str                 # ok | invalid | timeout | error
-    latency_ms: int
-    tokens_in: int | None
-    tokens_out: int | None
 
 
 def configs_from_settings(settings: Settings) -> list[ProviderConfig]:
@@ -101,40 +82,12 @@ class CopilotService:
 
         if not data.accepted or not data.results:
             return done(None, "skipped_no_match")          # không có món đủ gần: không nhờ mô hình nói về món không đúng ý
-        configs = sorted((c for c in self.config_source() if c.enabled and c.name in self.providers), key=lambda c: c.priority)
-        if not configs:
-            return done(None, "fallback_disabled")
 
         candidates = candidates_of(data, self.settings.copilot_candidates)
         candidate_ids = [c.recipe.id for c in candidates]
         prompt = build_user_prompt(request.query, data, self._steps_of, self.settings.copilot_candidates, request.have)
-        status = "fallback_error"
-        for cfg in configs:
-            provider = self.providers[cfg.name]
-            user = prompt
-            for _ in range(ATTEMPTS_ON_INVALID):
-                if time.perf_counter() - start > self.settings.ai_total_budget_s:
-                    return done(None, "fallback_timeout")
-                t0 = time.perf_counter()
-                try:
-                    result = provider.generate(SYSTEM_PROMPT, user, self.settings.ai_timeout_s)
-                    answer = check_answer(result.answer, data, candidate_ids)
-                except ProviderTimeout:
-                    self._record(provider, "timeout", t0)
-                    status = "fallback_timeout"
-                    break                                   # không thử lại cùng nhà cung cấp sau khi hết giờ
-                except ProviderInvalid as e:
-                    self._record(provider, "invalid", t0)
-                    status = "fallback_invalid"
-                    user = prompt + f"\n\nLần trước câu trả lời bị từ chối vì: {e}. Hãy trả lời lại đúng schema và đúng quy tắc."
-                    continue
-                except ProviderError:
-                    self._record(provider, "error", t0)
-                    status = "fallback_error"
-                    break
-                self.recorder(CallRecord(provider.name, result.model, "ok", int((time.perf_counter() - t0) * 1000), result.tokens_in, result.tokens_out))
-                return done(AiResult(**answer.model_dump(), provider=provider.name, model=result.model), "ok")
-        return done(None, status)
-
-    def _record(self, provider: LlmProvider, status: str, t0: float) -> None:
-        self.recorder(CallRecord(provider.name, provider.model, status, int((time.perf_counter() - t0) * 1000), None, None))
+        outcome = run_chain(self.providers, self.config_source(), SYSTEM_PROMPT, prompt, AiAnswer,
+                            lambda answer: check_answer(answer, data, candidate_ids), self.settings, start, self.recorder)
+        if outcome.answer is None:
+            return done(None, outcome.status)
+        return done(AiResult(**outcome.answer.model_dump(), provider=outcome.provider, model=outcome.model), "ok")
