@@ -1,4 +1,6 @@
 """OpenRouter provider: một khóa gọi được nhiều mô hình, giao diện kiểu OpenAI. Cùng schema AiAnswer với Gemini / Claude."""
+import time
+
 import httpx
 from pydantic import BaseModel, ValidationError
 
@@ -25,12 +27,23 @@ class OpenRouterProvider:
                                 "json_schema": {"name": output.__name__, "strict": True, "schema": output.model_json_schema()}},
             "provider": {"require_parameters": True},       # chỉ chọn nơi chạy thật sự hỗ trợ json_schema, không âm thầm bỏ qua
         }
+        # httpx tính thời gian chờ theo từng pha, không phải tổng; nên đọc theo luồng và tự canh hạn chót.
+        deadline = time.monotonic() + timeout_s
         try:
-            response = httpx.post(URL, json=body, headers={"Authorization": f"Bearer {self._api_key}"}, timeout=timeout_s)
+            with httpx.stream("POST", URL, json=body, headers={"Authorization": f"Bearer {self._api_key}"},
+                              timeout=timeout_s) as streamed:
+                content = bytearray()
+                for chunk in streamed.iter_bytes():
+                    if time.monotonic() > deadline:
+                        raise ProviderTimeout("OpenRouter vượt quá tổng thời gian cho phép")
+                    content += chunk
+                response = httpx.Response(streamed.status_code, content=bytes(content), request=streamed.request)
         except httpx.TimeoutException as e:
             raise ProviderTimeout("OpenRouter hết thời gian chờ") from e
         except httpx.HTTPError as e:
             raise ProviderError(f"OpenRouter {type(e).__name__}") from e
+        if time.monotonic() > deadline:
+            raise ProviderTimeout("OpenRouter vượt quá tổng thời gian cho phép")
         if response.status_code != 200:
             raise ProviderError(f"OpenRouter API {response.status_code}: {_error_message(response)}")
         try:

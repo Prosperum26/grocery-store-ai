@@ -1,4 +1,6 @@
-"""Kiểm OpenRouterProvider không cần mạng: thay httpx.post bằng hàm giả."""
+"""Kiểm OpenRouterProvider không cần mạng: thay httpx.stream bằng hàm giả."""
+from contextlib import contextmanager
+
 import httpx
 from pydantic import BaseModel
 import pytest
@@ -14,13 +16,14 @@ GOOD = AiAnswer(recipe_id="a", explanation="ok", item_notes=[], prep_notes=[], f
 def fake_post(monkeypatch, status=200, payload=None, raises=None):
     sent = {}
 
-    def post(url, json, headers, timeout):
+    @contextmanager
+    def stream(method, url, json, headers, timeout):
         sent.update(url=url, body=json, headers=headers, timeout=timeout)
         if raises:
             raise raises
-        return httpx.Response(status, json=payload, request=httpx.Request("POST", url))
+        yield httpx.Response(status, json=payload, request=httpx.Request(method, url))
 
-    monkeypatch.setattr(openrouter_service.httpx, "post", post)
+    monkeypatch.setattr(openrouter_service.httpx, "stream", stream)
     return sent
 
 
@@ -79,3 +82,12 @@ def test_answer_for_another_schema_is_invalid(monkeypatch):
     fake_post(monkeypatch, payload=reply(GOOD.model_dump_json()))            # JSON của AiAnswer, nhưng yêu cầu Plain
     with pytest.raises(ProviderInvalid):
         OpenRouterProvider("k", "m/x").generate("s", "u", 5, output=Plain)
+
+
+def test_total_deadline_is_enforced_even_when_each_phase_is_fast(monkeypatch):
+    """Từng đoạn đến kịp nhưng tổng quá hạn thì vẫn là ProviderTimeout (httpx chỉ canh từng pha)."""
+    fake_post(monkeypatch, payload=reply(GOOD.model_dump_json()))
+    clock = iter([0.0, 100.0, 100.0, 100.0])
+    monkeypatch.setattr(openrouter_service.time, "monotonic", lambda: next(clock))
+    with pytest.raises(ProviderTimeout):
+        OpenRouterProvider("k", "m/x").generate("s", "u", 5)
