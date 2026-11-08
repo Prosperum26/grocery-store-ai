@@ -38,7 +38,8 @@ grocery-store-ai/
 
 ### `.gitignore`: cái gì commit, cái gì không
 - **Không commit:** `data/<module>/raw/`, `data/<module>/processed/`, `*.rar`, `weights/*`, `.onnx .parquet .npy .pkl .joblib`, `.env`.
-- **Có commit** (module `recipe_rag`): `data/recipe_rag/review/` (kể cả `catalog_ids_v1.json` và `.sha256`, là sổ id khóa cứng, **mất là không khôi phục được**), `data/recipe_rag/final/` (bộ bàn giao cho web), `data/recipe_rag/eval/` (bộ câu hỏi có nhãn).
+- **Có commit** (module `recipe_rag`): `data/recipe_rag/review/` (kể cả `catalog_ids_v1.json` và `.sha256`, là sổ id khóa cứng, **mất là không khôi phục được**), `data/recipe_rag/eval/` (bộ câu hỏi có nhãn).
+- **Gửi riêng, không commit:** `data/recipe_rag/final/` (bộ bàn giao cho web, ~25 MB). Chỉ `final/README.md` được commit, ghi cách lấy file.
 - Module `reorder` nên làm tương tự: thứ gì tái tạo được từ code + dữ liệu thô thì không commit; thứ gì là quyết định/nhãn/bàn giao thì commit.
 
 ### Requirements

@@ -31,4 +31,7 @@ weights/*
 *.pkl
 *.joblib
 
-# KHÔNG ignore data/recipe_rag/{review,final,eval}: sổ catalog_id (khóa cứng), bảng ghép đã duyệt, bộ bàn giao cho web, bộ câu hỏi có nhãn.
+# KHÔNG ignore data/recipe_rag/{review,eval}: sổ catalog_id (khóa cứng), bảng ghép đã duyệt, bộ câu hỏi có nhãn.
+# Bộ bàn giao data/recipe_rag/final/ (~25 MB) không commit, gửi riêng; chỉ giữ README hướng dẫn lấy file.
+data/recipe_rag/final/*
+!data/recipe_rag/final/README.md

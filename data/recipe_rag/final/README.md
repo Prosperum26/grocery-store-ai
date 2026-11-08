@@ -1,5 +1,10 @@
 # Bộ file bàn giao cho bên web (v1)
 
+> **File trong thư mục này không còn được commit** (từ 2026-11-08, ~25 MB). Xin bộ file từ nhóm AI rồi chép vào
+> `data/recipe_rag/final/`. Cần tối thiểu `catalog_v2.json`, `recipes_matched_v2.json`, `recipes_v2.json` và
+> `recipes_v1.json` để chạy `scripts/recipe_rag/load_recipes.py` và `load_basket_data.py` (nạp `ai_db`).
+> Bản cuối cùng có trong lịch sử git là commit `feee81e` (`git show feee81e:data/recipe_rag/final/<file>`).
+
 Sinh bởi `scripts/build_final_handoff.py`. Giá không nằm trong catalog: bên web tự đặt giá.
 
 | File | Nội dung |
