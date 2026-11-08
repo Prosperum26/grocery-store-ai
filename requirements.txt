@@ -1,10 +1,25 @@
+# Phụ thuộc chạy của ai-service (đã ghim đúng phiên bản đã kiểm chứng trong .venv, Python 3.11).
+#   python -m venv .venv  &&  .venv\Scripts\pip install -r requirements.txt
+# torch dưới đây chạy được cả CPU lẫn GPU. Máy có card NVIDIA nên cài thêm bản CUDA: xem requirements-gpu.txt.
 fastapi==0.158.0
 uvicorn[standard]==0.54.0
 pydantic==2.14.1
 pydantic-settings==2.16.1
 python-dotenv==1.2.4
-polars==2.0.0
+
+# Embedding (bge-m3) và vector DB
+sentence-transformers==6.1.0
+torch==2.14.1
 numpy==2.4.6
+psycopg[binary]==3.3.6
+pgvector==0.5.1
+
+# Lớp lời AI: Gemini (chính) và Claude (dự phòng / demo)
+google-genai==2.33.0
+anthropic==2.3.0
+
+# Predictive reorder: LightGBM -> ONNX, phân tích dữ liệu, test
+polars==2.0.0
 scipy==1.17.1
 lightgbm==4.7.0
 scikit-learn==1.9.1

@@ -2,9 +2,11 @@ from datetime import datetime, timedelta, timezone
 
 import numpy as np
 import pytest
+from fastapi import FastAPI
 from fastapi.testclient import TestClient
 
-from src.main import app
+from src.api.router import api_router
+from src.config.settings import Settings, get_settings
 from src.ml.feature_extractor import FEATURE_SETS
 from src.ml.shelf_life_rules import RuleConfig, suppression_reason
 from src.schemas.reorder_dto import PredictRequest
@@ -126,23 +128,32 @@ def test_not_due_is_off_unless_enabled():
     assert suppression_reason("gao", 5, 30, None, off) is None
 
 
-def test_route_returns_503_without_a_model_and_422_on_naive_dates(monkeypatch):
-    monkeypatch.setattr("src.main.ReorderService.from_weights", _missing)
-    with TestClient(app) as client:
-        assert client.get("/api/v1/health").json()["reorder_model_loaded"] is False
-        assert client.post("/api/v1/predict", json={"orders": []}).status_code == 503
-        bad = {"orders": [{"placed_at": "2026-01-01T00:00:00", "lines": [{"product_id": "a"}]}]}
-        assert client.post("/api/v1/predict", json=bad).status_code == 422
+KEY = {"X-Internal-Key": "k1"}
 
 
-def test_route_predicts(monkeypatch):
-    monkeypatch.setattr("src.main.ReorderService.from_weights", lambda _: service())
-    with TestClient(app) as client:
-        body = {"orders": [order(0, ("a", "gao"))], "at": (START + timedelta(days=9)).isoformat()}
-        r = client.post("/api/v1/predict", json=body)
+def client(reorder_service) -> TestClient:
+    """App riêng chỉ có router, không chạy lifespan thật (không nạp bge-m3 hay ai_db)."""
+    app = FastAPI()
+    app.include_router(api_router)
+    app.state.reorder_service = reorder_service
+    app.dependency_overrides[get_settings] = lambda: Settings(ai_internal_key="k1")
+    return TestClient(app)
+
+
+def test_route_returns_503_without_a_model_and_422_on_naive_dates():
+    c = client(None)
+    assert c.get("/api/v1/health").json()["reorder_model_loaded"] is False
+    assert c.post("/api/v1/predict", json={"orders": []}, headers=KEY).status_code == 503
+    bad = {"orders": [{"placed_at": "2026-01-01T00:00:00", "lines": [{"product_id": "a"}]}]}
+    assert c.post("/api/v1/predict", json=bad, headers=KEY).status_code == 422
+
+
+def test_route_requires_internal_key():
+    assert client(service()).post("/api/v1/predict", json={"orders": []}).status_code == 401
+
+
+def test_route_predicts():
+    body = {"orders": [order(0, ("a", "gao"))], "at": (START + timedelta(days=9)).isoformat()}
+    r = client(service()).post("/api/v1/predict", json=body, headers=KEY)
     assert r.status_code == 200
     assert r.json()["items"][0]["product_id"] == "a"
-
-
-def _missing(_):
-    raise FileNotFoundError("no model")

@@ -25,44 +25,18 @@ Repository này được chuẩn bị cho hai hướng phát triển:
 
 ```text
 grocery-store-ai/
-├── .env.example
-├── .gitignore
-├── README.md
-├── requirements.txt
-├── notebooks/
-├── data/
-│   ├── raw/                      # CSV Instacart (không commit)
-│   └── processed/                # parquet, kết quả chạy (không commit)
-├── docs/
-│   ├── report.md                 # báo cáo predictive reorder
-│   ├── features.md               # bảng mô tả feature
-│   ├── experiments.md            # nhật ký thí nghiệm
-│   └── figures/
-├── scripts/
-│   ├── data_prep.py              # lọc dữ liệu, chia split, candidate
-│   ├── baselines.py              # popularity, personal_freq, TIFU-KNN
-│   ├── tifuknn.py
-│   ├── train_lgbm.py             # train, ablation, inspect
-│   ├── select_threshold.py       # chọn τ, calibration
-│   ├── final_eval.py             # model gate trên test
-│   ├── eval_topk.py              # so sánh @5, @10, @15 kèm bootstrap (chỉ val)
-│   ├── run_pipeline.py           # chạy cả pipeline từ data/raw
-│   └── onnx_probe.py
-├── tests/
-├── weights/                      # model (không commit), model_metadata.json (commit)
-└── src/
-    ├── main.py
-    ├── config/
-    ├── api/
-    │   └── v1/
-    ├── schemas/
-    ├── services/
-    ├── ml/
-    │   └── feature_extractor.py  # extract_features: dùng chung cho train và /predict
-    └── utils/
+├── src/                 # mã FastAPI chạy thật (chung cho hai module)
+├── scripts/{recipe_rag,reorder}/     # pipeline dữ liệu, huấn luyện, đo đạc (chạy tay)
+├── data/{recipe_rag,reorder}/        # dữ liệu theo module
+├── notebooks/{recipe_rag,reorder}/
+├── docs/                # STRUCTURE.md (quy ước), recipe_rag/, reorder/
+├── tests/{recipe_rag,reorder}/
+├── db/, docker-compose.yml           # ai_db: Postgres + pgvector
+├── weights/             # mô hình, không commit
+├── .env.example, .gitignore, requirements*.txt
 ```
 
-Phần predictive reorder (chuẩn bị dữ liệu, feature, baseline, LightGBM) đã có code, nằm ở `scripts/` và `src/ml/feature_extractor.py`. Các module API (`src/api`, `src/services`) vẫn chỉ là skeleton.
+Quy ước đặt file cho hai nhánh nằm ở `docs/STRUCTURE.md`; hướng dẫn chạy module RAG nằm ở `docs/recipe_rag/README.md`. Trong `src/`, các module Python phần lớn vẫn là skeleton; logic của `recipe_rag` hiện nằm ở `scripts/recipe_rag/` và chưa đưa vào service.
 
 ## Predictive reorder: dự đoán mua lại
 
@@ -174,17 +148,17 @@ python -m scripts.train_lgbm --versions v4
 python -m scripts.export_onnx            # weights/lgbm_v4_selected.onnx, kiểm tra parity trên val
 python -m scripts.build_category_stats   # weights/category_stats.json, mô phỏng trên val
 python -m scripts.bench_latency          # latency CPU, đối chiếu feature train/serve
-uvicorn src.main:app --reload
+uvicorn src.main:app --reload --port 8100
 ```
 
 ```bash
-curl -X POST http://localhost:8000/api/v1/predict -H "Content-Type: application/json" -d '{
+curl -X POST http://localhost:8100/api/v1/predict -H "Content-Type: application/json" -H "X-Internal-Key: <AI_INTERNAL_KEY>" -d '{
   "orders": [{"placed_at": "2026-10-01T09:00:00+07:00",
               "lines": [{"product_id": "prod_1", "category": "rau-cu"}]}],
   "at": "2026-10-20T09:00:00+07:00", "top_k": 5}'
 ```
 
-Thiếu file model hoặc thống kê thì service vẫn chạy và `/predict` trả 503. Endpoint chưa có xác thực, chỉ dùng trong mạng nội bộ.
+Thiếu file model hoặc thống kê thì service vẫn chạy và `/predict` trả 503. Như các endpoint khác, `/predict` cần header `X-Internal-Key`.
 
 ### Tài liệu
 
@@ -195,6 +169,7 @@ Thiếu file model hoặc thống kê thì service vẫn chạy và `/predict` t
 | [docs/experiments.md](docs/experiments.md)               | Nhật ký thí nghiệm: baseline, ablation, tune, τ                      |
 | [scripts/data_prep.py](scripts/data_prep.py) (docstring) | Cách lọc dữ liệu, chia split, xử lý `days_since_prior_order = 30` |
 
+
 ## Khởi chạy ban đầu
 
 ### Windows PowerShell
@@ -204,7 +179,7 @@ py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-uvicorn src.main:app --reload
+uvicorn src.main:app --reload --port 8100
 ```
 
 Nếu PowerShell chặn `Activate.ps1` vì không cho chạy script, chạy lệnh sau một lần rồi kích hoạt lại:
@@ -220,10 +195,12 @@ python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-uvicorn src.main:app --reload
+uvicorn src.main:app --reload --port 8100
 ```
 
-Sau khi phần application được triển khai, Swagger UI sẽ dùng tại `http://localhost:8000/docs`.
+Service chạy ở cổng **8100** (cổng 8000 là của storefront). Swagger UI: `http://localhost:8100/docs`.
+Khởi động mất khoảng 10 giây vì nạp bge-m3 và dữ liệu món một lần; cần `ai_db` đang chạy (`docker compose up -d`).
+Các route nghiệp vụ (`/api/v1/search`, `/api/v1/copilot`) cần header `X-Internal-Key` trùng `AI_INTERNAL_KEY` trong `.env`; `GET /api/v1/health` thì không.
 
 ## Cấu hình môi trường
 

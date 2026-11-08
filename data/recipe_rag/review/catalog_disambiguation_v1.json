@@ -1,0 +1,15 @@
+{
+  "_readme": [
+    "Một số sản phẩm TRÙNG TÊN nhưng khác product_url (thường là khác quy cách). Bảng ghép chỉ biết tên sản phẩm,",
+    "nên với các tên trùng ở đây phải chọn rõ đúng url. Thêm tên trùng mới vào bảng ghép mà chưa có ở đây thì build_ingredient_matches.py báo lỗi.",
+    "Chọn đã được rà bằng tay theo công thức (xem cột lý do)."
+  ],
+  "choices": {
+    "Gừng": {"product_url": "https://www.bachhoaxanh.com/cu/gung-100g", "reason": "gói 100g; còn lại là túi 200g"},
+    "Bắp mỹ giòn ngọt": {"product_url": "https://www.bachhoaxanh.com/cu/bap-my-1-trai", "reason": "công thức dùng ½ trái hay 200g; bản kia là gói từ 3 trái trở lên"},
+    "Cá nục làm sạch": {"product_url": "https://www.bachhoaxanh.com/ca-tom-muc-ech/ca-nuc-lam-sach-500g", "reason": "có ghi rõ 500g"},
+    "Mướp hương": {"product_url": "https://www.bachhoaxanh.com/cu/muop-huong", "reason": "mua lẻ theo trái; bản kia là túi 1kg"},
+    "Nấm hương hộp 150g": {"product_url": "https://www.bachhoaxanh.com/nam-tuoi/nam-huong-150gr", "reason": "hai url cùng là hộp 150g, lấy bản đầu"},
+    "Nấm kim châm Trung Quốc": {"product_url": "https://www.bachhoaxanh.com/nam-tuoi/3-goi-nam-kim-cham-noi-dia-trung-150g", "reason": "url kia thực ra là nấm đùi gà baby 400g (tên bị crawl nhầm); đây là gói 3 hộp nên chỉ làm lựa chọn phụ"}
+  }
+}
