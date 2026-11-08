@@ -45,6 +45,9 @@ class Settings(BaseSettings):
     ai_openrouter_priority: int = 3
     copilot_candidates: int = 3         # số món ứng viên đưa cho mô hình chọn
 
+    # Predictive reorder: thư mục chứa model ONNX + metadata
+    weights_dir: Path = ROOT / "weights"
+
 
 _settings: Settings | None = None
 

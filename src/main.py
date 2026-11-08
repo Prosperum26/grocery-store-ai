@@ -1,4 +1,5 @@
 """FastAPI application entry point."""
+import logging
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 
@@ -11,6 +12,7 @@ from src.services.ask_service import AskService
 from src.services.copilot_service import CopilotService
 from src.services.providers import providers_from_settings
 from src.services.recipe_service import RecipeService
+from src.services.reorder_service import ReorderService
 
 
 @asynccontextmanager
@@ -22,6 +24,12 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     providers = providers_from_settings(settings)
     app.state.copilot = CopilotService(recipes, providers, settings)
     app.state.ask = AskService(recipes, providers, settings)
+    # Thiếu model reorder không được làm sập cả service: /predict trả 503.
+    try:
+        app.state.reorder_service = ReorderService.from_weights(settings.weights_dir)
+    except (FileNotFoundError, KeyError) as error:
+        logging.getLogger(__name__).warning("reorder model not loaded: %r", error)
+        app.state.reorder_service = None
     yield
 
 

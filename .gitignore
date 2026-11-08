@@ -22,8 +22,11 @@ data/processed/*
 data/*/raw/
 data/*/processed/
 data/**/*.rar
+data/processed_*/
 weights/*
 !weights/.gitkeep
+!weights/model_metadata.json
+!weights/category_stats.json
 
 *.onnx
 *.parquet
