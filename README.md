@@ -25,28 +25,18 @@ Repository này được chuẩn bị cho hai hướng phát triển:
 
 ```text
 grocery-store-ai/
-├── .env.example
-├── .gitignore
-├── README.md
-├── requirements.txt
-├── notebooks/
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── recipes_vn.json
-├── weights/
-└── src/
-	├── main.py
-	├── config/
-	├── api/
-	│   └── v1/
-	├── schemas/
-	├── services/
-	├── ml/
-	└── utils/
+├── src/                 # mã FastAPI chạy thật (chung cho hai module)
+├── scripts/{recipe_rag,reorder}/     # pipeline dữ liệu, huấn luyện, đo đạc (chạy tay)
+├── data/{recipe_rag,reorder}/        # dữ liệu theo module
+├── notebooks/{recipe_rag,reorder}/
+├── docs/                # STRUCTURE.md (quy ước), recipe_rag/, reorder/
+├── tests/{recipe_rag,reorder}/
+├── db/, docker-compose.yml           # ai_db: Postgres + pgvector
+├── weights/             # mô hình, không commit
+├── .env.example, .gitignore, requirements*.txt
 ```
 
-Các module Python hiện chỉ là skeleton và docstring định hướng. Chưa có logic nghiệp vụ, inference hoặc xử lý API.
+Quy ước đặt file cho hai nhánh nằm ở `docs/STRUCTURE.md`; hướng dẫn chạy module RAG nằm ở `docs/recipe_rag/README.md`. Trong `src/`, các module Python phần lớn vẫn là skeleton; logic của `recipe_rag` hiện nằm ở `scripts/recipe_rag/` và chưa đưa vào service.
 
 ## Khởi chạy ban đầu
 
@@ -57,7 +47,7 @@ py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-uvicorn src.main:app --reload
+uvicorn src.main:app --reload --port 8100
 ```
 
 ### macOS / Linux
@@ -67,10 +57,12 @@ python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-uvicorn src.main:app --reload
+uvicorn src.main:app --reload --port 8100
 ```
 
-Sau khi phần application được triển khai, Swagger UI sẽ dùng tại `http://localhost:8000/docs`.
+Service chạy ở cổng **8100** (cổng 8000 là của storefront). Swagger UI: `http://localhost:8100/docs`.
+Khởi động mất khoảng 10 giây vì nạp bge-m3 và dữ liệu món một lần; cần `ai_db` đang chạy (`docker compose up -d`).
+Các route nghiệp vụ (`/api/v1/search`, `/api/v1/copilot`) cần header `X-Internal-Key` trùng `AI_INTERNAL_KEY` trong `.env`; `GET /api/v1/health` thì không.
 
 ## Cấu hình môi trường
 

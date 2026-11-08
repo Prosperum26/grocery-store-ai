@@ -1,0 +1,5624 @@
+{
+ "ghi_chu": "Quyết định sơ bộ của AI (Claude) cho từng sản phẩm đề xuất. KHÔNG phải quyết định cuối: người duyệt có quyền sửa. 'chac_chan': cao/trung_binh/thap.",
+ "decisions": {
+  "đậu phộng": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Dùng ở 15 món; catalog chỉ có đậu phộng vị snack",
+   "ten_de_xuat": "Đậu phộng gói 200g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 200g"
+  },
+  "ngò gai": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Catalog đã có sản phẩm gộp 'Ngò gai, rau om'",
+   "muc_tieu": "Ngò gai, rau om 50g"
+  },
+  "bột xù": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng mặt hàng với 'bột chiên xù' đã ghép",
+   "muc_tieu": "Bột chiên xù đa dụng Miwon 200g"
+  },
+  "gà ta": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Thịt gà ta là hàng thiết yếu, catalog chưa có",
+   "ten_de_xuat": "Gà ta khay 500g",
+   "danh_muc": "Thịt gà, vịt",
+   "don_vi": "khay 500g"
+  },
+  "thịt bò phi lê": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Thăn nội bò, dùng nhiều tên gọi khác (file, philê, thăn); gộp các tên đó về đây",
+   "ten_de_xuat": "Thịt bò phi lê khay 300g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "khay 300g"
+  },
+  "mè đen": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Hạt mè đen dùng nhiều, catalog chỉ có ngũ cốc",
+   "ten_de_xuat": "Mè đen gói 100g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 100g"
+  },
+  "rau om": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Catalog đã có sản phẩm gộp 'Ngò gai, rau om'",
+   "muc_tieu": "Ngò gai, rau om 50g"
+  },
+  "thịt bò": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Thịt bò tươi chung, catalog chỉ có bò hộp/cháo",
+   "ten_de_xuat": "Thịt bò khay 500g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "khay 500g"
+  },
+  "đậu hà lan": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau quen thuộc, catalog chỉ có đậu Hà Lan muối snack",
+   "ten_de_xuat": "Đậu Hà Lan khay 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "khay 200g"
+  },
+  "nghêu": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Hải sản phổ biến (canh, xào)",
+   "ten_de_xuat": "Nghêu 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "bí đao": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau phổ biến nấu canh",
+   "ten_de_xuat": "Bí đao 500g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "500g"
+  },
+  "cá cơm": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Cá phổ biến (kho, chiên)",
+   "ten_de_xuat": "Cá cơm tươi 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "300g"
+  },
+  "lá chúc": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau thơm, ít bán lẻ nhưng có ở chợ siêu thị",
+   "ten_de_xuat": "Lá chúc 50g",
+   "danh_muc": "Rau lá",
+   "don_vi": "50g"
+  },
+  "mì ý": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Catalog có mì Spaghetti trong danh mục Mì Ý",
+   "muc_tieu": "Mì Spaghetti San Remo số 5 gói 250g"
+  },
+  "ngò tây": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau thơm phương Tây (parsley), khác ngò rí",
+   "ten_de_xuat": "Ngò tây 50g",
+   "danh_muc": "Rau lá",
+   "don_vi": "50g"
+  },
+  "thịt nguội": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng cho bánh mì, sandwich",
+   "ten_de_xuat": "Thịt nguội lát gói 200g",
+   "danh_muc": "Xúc xích, lạp xưởng, giò chả",
+   "don_vi": "gói 200g"
+  },
+  "thịt vịt": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Thịt vịt tươi chung, catalog chưa có",
+   "ten_de_xuat": "Thịt vịt khay 500g",
+   "danh_muc": "Thịt gà, vịt",
+   "don_vi": "khay 500g"
+  },
+  "bò phi lê": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng thăn nội bò với 'thịt bò phi lê'",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "su hào": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Củ phổ biến",
+   "ten_de_xuat": "Su hào 500g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "500g"
+  },
+  "bánh phở": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Bánh phở tươi dùng nấu phở, catalog chưa có",
+   "ten_de_xuat": "Bánh phở tươi 500g",
+   "danh_muc": "Bún các loại",
+   "don_vi": "500g"
+  },
+  "bông thiên lý": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau theo mùa dùng xào, canh",
+   "ten_de_xuat": "Bông thiên lý 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "bắp chuối": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng cho gỏi, ăn kèm",
+   "ten_de_xuat": "Bắp chuối 1 bắp",
+   "danh_muc": "Củ, quả",
+   "don_vi": "1 bắp"
+  },
+  "chao trắng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Catalog có chao, chưa chắc đúng loại chao trắng",
+   "muc_tieu": "Chao đậu nành chay Bông Mai 170g"
+  },
+  "cải thảo": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau phổ biến, catalog chỉ có kim chi cải thảo",
+   "ten_de_xuat": "Cải thảo 500g",
+   "danh_muc": "Rau lá",
+   "don_vi": "500g"
+  },
+  "ham chay": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đồ chay đặc thù, chỉ cần nếu hỗ trợ món chay",
+   "ten_de_xuat": "Ham chay 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "200g"
+  },
+  "khế chua": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng nấu canh chua (họ món lớn)",
+   "ten_de_xuat": "Khế 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "lá hương thảo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau thơm phương Tây cho món nướng",
+   "ten_de_xuat": "Lá hương thảo tươi 20g",
+   "danh_muc": "Rau lá",
+   "don_vi": "20g"
+  },
+  "lòng đỏ trứng muối": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Là lòng đỏ của trứng vịt muối (đã có sản phẩm trứng muối)",
+   "muc_tieu": "trứng vịt muối"
+  },
+  "nêm sẵn phở bò": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Sản phẩm nhãn Ajinomoto; kiểm tra có bán thật",
+   "ten_de_xuat": "Gia vị nêm sẵn phở bò Aji-Quick gói 57g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "gói 57g"
+  },
+  "rau mầm": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau ăn sống, salad",
+   "ten_de_xuat": "Rau mầm 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "thịt giò heo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Giò heo = chân giò; catalog có 'Chân giò heo' (chưa rõ bán thịt hay nguyên chân)",
+   "muc_tieu": "Chân giò heo"
+  },
+  "thịt thăn heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Phần thịt heo phổ biến",
+   "ten_de_xuat": "Thịt thăn heo khay 500g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "khay 500g"
+  },
+  "bún riêu cua": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Dòng gốc là gói nêm sẵn Aji-Quick đã có trong catalog",
+   "muc_tieu": "Gia vị nêm sẵn bún riêu cua Aji-Quick"
+  },
+  "chả chay chiên": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đồ chay đặc thù",
+   "ten_de_xuat": "Chả chay 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "200g"
+  },
+  "cá chình": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá hiếm",
+   "ten_de_xuat": "Cá chình 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cá kèo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cá miền Tây hay dùng nấu canh chua, kho",
+   "ten_de_xuat": "Cá kèo 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "300g"
+  },
+  "cọng ngò": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Là phần cọng của ngò rí",
+   "muc_tieu": "ngò rí"
+  },
+  "da heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng nấu, hầm",
+   "ten_de_xuat": "Da heo 500g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "500g"
+  },
+  "dâu tây": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Trái cây phổ biến",
+   "ten_de_xuat": "Dâu tây 250g",
+   "danh_muc": "Trái cây",
+   "don_vi": "250g"
+  },
+  "fillet cá hồi lóc": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng phi lê cá hồi đã ghép",
+   "muc_tieu": "cá hồi phi lê"
+  },
+  "huyết heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Nguyên liệu cháo, bún",
+   "ten_de_xuat": "Huyết heo 200g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "200g"
+  },
+  "konnyaku nâu": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Nguyên liệu Nhật hiếm",
+   "ten_de_xuat": "Thạch konnyaku 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "200g"
+  },
+  "lòng đỏ trứng": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Lấy từ trứng gà",
+   "muc_tieu": "trứng gà"
+  },
+  "mì căn cuốn ống": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cùng nhóm mì căn",
+   "muc_tieu": "mì căn (đề xuất)"
+  },
+  "mỡ gáy": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng làm chả, nem",
+   "ten_de_xuat": "Mỡ gáy heo 300g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "300g"
+  },
+  "thịt bò bắp hoa": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Bắp hoa là một phần của bắp bò; catalog có 'Bắp bò'",
+   "muc_tieu": "Bắp bò"
+  },
+  "thịt bò nạm": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Phần bò phổ biến cho hầm, phở",
+   "ten_de_xuat": "Thịt bò nạm khay 500g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "khay 500g"
+  },
+  "thịt hàu sữa": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Hải sản dùng nấu súp",
+   "ten_de_xuat": "Thịt hàu sữa 200g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "200g"
+  },
+  "tóc tiên": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau biển hiếm",
+   "ten_de_xuat": "Tóc tiên 100g",
+   "danh_muc": "Rong biển",
+   "don_vi": "100g"
+  },
+  "tôm càng": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Hải sản cao cấp, theo mùa",
+   "ten_de_xuat": "Tôm càng xanh 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "tương tàu xì": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gia vị Hoa; khác tương hột",
+   "ten_de_xuat": "Tương tàu xì 200g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "200g"
+  },
+  "tương đỏ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "'Tương đỏ' ở món phở là tương ớt",
+   "muc_tieu": "tương ớt"
+  },
+  "xá bấu": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Người dùng quyết định thêm (duyệt triage)",
+   "ten_de_xuat": "Củ cải muối xá bấu hũ 500g",
+   "danh_muc": "Cá mắm, dưa mắm",
+   "don_vi": "hũ 500g"
+  },
+  "đậu phộng vỏ đỏ khô": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Một loại đậu phộng, gộp lại",
+   "muc_tieu": "đậu phộng (đề xuất)"
+  },
+  "ớ hiểm khô": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gõ nhầm 'ớt hiểm khô'",
+   "muc_tieu": "ớt khô"
+  },
+  "ức vịt quay": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Món đã chế biến sẵn, ít bán lẻ",
+   "ten_de_xuat": "Ức vịt quay 200g",
+   "danh_muc": "Thịt gà, vịt",
+   "don_vi": "200g"
+  },
+  "xốt mè aji-xốt": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Sản phẩm nhãn Ajinomoto, dùng ở 7 món; kiểm tra có bán thật",
+   "ten_de_xuat": "Xốt mè rang Aji-Xốt chai 260g",
+   "danh_muc": "Tương ớt-đen, mayonnaise",
+   "don_vi": "chai 260g"
+  },
+  "lá quế": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "'Lá quế' là rau quế/húng quế",
+   "muc_tieu": "Rau húng quế khoảng 100g"
+  },
+  "cá điêu hồng": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Cá phổ biến (hấp, chiên)",
+   "ten_de_xuat": "Cá điêu hồng 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "bún tàu": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Bún tàu là miến",
+   "muc_tieu": "Miến khô Vifon gói 210g"
+  },
+  "mì căn": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đồ chay đặc thù",
+   "ten_de_xuat": "Mì căn 300g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "300g"
+  },
+  "tôm khô": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Hàng khô phổ biến, và 'khô' là mặt hàng riêng theo quy tắc đã chốt",
+   "ten_de_xuat": "Tôm khô 100g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 100g"
+  },
+  "tôm đất": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Tôm phổ biến",
+   "ten_de_xuat": "Tôm đất 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "300g"
+  },
+  "bánh phồng tôm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Catalog có bánh phồng tôm (danh mục snack nên hệ thống chưa tự ghép)",
+   "muc_tieu": "Bánh phồng tôm chiên sẵn Mikiri gói 125g"
+  },
+  "bí ngòi vàng": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau phổ biến nhóm bí ngòi (gộp cả vàng và xanh)",
+   "ten_de_xuat": "Bí ngòi 300g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "300g"
+  },
+  "củ nén": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Củ gia vị miền Nam, khác hành tím",
+   "ten_de_xuat": "Củ nén 100g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "100g"
+  },
+  "hạnh nhân": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Hạt dùng cho món, catalog chỉ có bánh/kẹo hạnh nhân",
+   "ten_de_xuat": "Hạnh nhân lát gói 100g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 100g"
+  },
+  "hẹ lá": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau thơm phổ biến",
+   "ten_de_xuat": "Hẹ lá 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "khoai môn cau": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Một giống khoai môn",
+   "muc_tieu": "khoai môn (đề xuất)"
+  },
+  "thịt nghêu": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Nghêu đã bóc vỏ; gộp vào nghêu",
+   "muc_tieu": "nghêu (đề xuất)"
+  },
+  "đậu cô ve": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau phổ biến",
+   "ten_de_xuat": "Đậu cô ve 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "bacon": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Dùng ở nhiều món Âu",
+   "ten_de_xuat": "Thịt xông khói bacon gói 200g",
+   "danh_muc": "Xúc xích, lạp xưởng, giò chả",
+   "don_vi": "gói 200g"
+  },
+  "bạch tuộc": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Hải sản phổ biến",
+   "ten_de_xuat": "Bạch tuộc 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "củ radish": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Khác củ cải trắng",
+   "ten_de_xuat": "Củ cải đỏ radish 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "dưa kiệu": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ăn kèm phổ biến (ngày Tết, thịt kho)",
+   "ten_de_xuat": "Củ kiệu ngâm chua hũ 300g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "hũ 300g"
+  },
+  "gà má đùi": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Bạn đã chọn không gộp vào 'Má đùi gà cắt sẵn'",
+   "ten_de_xuat": "Gà má đùi khay 500g",
+   "danh_muc": "Thịt gà, vịt",
+   "don_vi": "khay 500g"
+  },
+  "heo quay": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Món chế biến sẵn, ít bán lẻ trong siêu thị nhỏ",
+   "ten_de_xuat": "Heo quay 300g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "300g"
+  },
+  "khoai môn": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Củ phổ biến, catalog chỉ có bánh nhân khoai môn",
+   "ten_de_xuat": "Khoai môn 500g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "500g"
+  },
+  "kiệu chua": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cùng mặt hàng kiệu ngâm chua",
+   "muc_tieu": "dưa kiệu (đề xuất)"
+  },
+  "lá boaro": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Lá của hành boa rô",
+   "muc_tieu": "boarô (đề xuất)"
+  },
+  "mía lau": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Dùng nấu nước dùng, hiếm",
+   "ten_de_xuat": "Mía lau 500g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "500g"
+  },
+  "mít non": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng nấu gỏi, kho",
+   "ten_de_xuat": "Mít non 500g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "500g"
+  },
+  "nêm sẵn bún riêu cua": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Catalog đã có đúng sản phẩm này",
+   "muc_tieu": "Gia vị nêm sẵn bún riêu cua Aji-Quick"
+  },
+  "poa-rô": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cách viết khác của boa rô",
+   "muc_tieu": "boarô (đề xuất)"
+  },
+  "sườn heo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Sườn heo chung, đã có sườn non, sườn cốt lết",
+   "muc_tieu": "Sườn non heo nhập khẩu"
+  },
+  "thanh cá giả": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Thanh cá giả là surimi",
+   "muc_tieu": "Thanh surimi vị cua 3N Foods gói 250g"
+  },
+  "thịt bò bắp": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng bắp bò đã có",
+   "muc_tieu": "Bắp bò"
+  },
+  "thịt thăn bò": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Thăn bò gần với phi lê (thăn nội)",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "tôm chay": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đồ chay đặc thù",
+   "ten_de_xuat": "Tôm chay 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "200g"
+  },
+  "ăn trưa kèm": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Dòng mô tả thực đơn, không phải nguyên liệu"
+  },
+  "đậu que": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau phổ biến",
+   "ten_de_xuat": "Đậu que 300g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "300g"
+  },
+  "bánh quẩy": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ăn kèm cháo, phở",
+   "ten_de_xuat": "Bánh quẩy gói 150g",
+   "danh_muc": "Bánh tươi, Sandwich",
+   "don_vi": "gói 150g"
+  },
+  "bánh ướt tròn": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng cuốn chả, thịt nướng",
+   "ten_de_xuat": "Bánh ướt 500g",
+   "danh_muc": "Bún các loại",
+   "don_vi": "500g"
+  },
+  "bông hành": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Bông của hành lá/hành hoa",
+   "muc_tieu": "hành lá"
+  },
+  "bắp nếp": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Khác bắp Mỹ",
+   "ten_de_xuat": "Bắp nếp 2 trái",
+   "danh_muc": "Củ, quả",
+   "don_vi": "2 trái"
+  },
+  "bồn bồn ngâm chua": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đặc sản miền Tây",
+   "ten_de_xuat": "Bồn bồn ngâm chua 300g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "300g"
+  },
+  "chanh núm vàng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Một giống chanh, dùng chanh có sẵn",
+   "muc_tieu": "Chanh không hạt túi 250g (4 trái)"
+  },
+  "chả bò": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Giò chả",
+   "ten_de_xuat": "Chả bò 200g",
+   "danh_muc": "Xúc xích, lạp xưởng, giò chả",
+   "don_vi": "200g"
+  },
+  "cá điêu hồng phi lê": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phi lê cùng loài cá",
+   "muc_tieu": "cá điêu hồng (đề xuất)"
+  },
+  "cá đối": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cá biển",
+   "ten_de_xuat": "Cá đối 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cá đổng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cá hường là cá đổng",
+   "muc_tieu": "Cá hường làm sạch"
+  },
+  "cơm gấc": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gấc để nấu xôi, hiếm",
+   "ten_de_xuat": "Gấc 1 trái",
+   "danh_muc": "Củ, quả",
+   "don_vi": "1 trái"
+  },
+  "cải xanh": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau phổ biến",
+   "ten_de_xuat": "Cải xanh 300g",
+   "danh_muc": "Rau lá",
+   "don_vi": "300g"
+  },
+  "dẻ sụn heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Phụ phẩm hiếm",
+   "ten_de_xuat": "Dẻ sụn heo 300g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "300g"
+  },
+  "dừa khô nạo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng làm bánh, chè",
+   "ten_de_xuat": "Dừa nạo sợi 100g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 100g"
+  },
+  "gà mái dầu": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gà mái dầu là gà ta già",
+   "muc_tieu": "gà ta (đề xuất)"
+  },
+  "gàu bò": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phần bò phổ biến cho phở, lẩu",
+   "ten_de_xuat": "Gầu bò 500g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "500g"
+  },
+  "gạo thường": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Catalog có gạo thơm, nếp, lứt nhưng chưa thấy gạo thường (cần bạn kiểm tra danh mục Gạo)",
+   "ten_de_xuat": "Gạo thường 1kg",
+   "danh_muc": "Gạo, nếp",
+   "don_vi": "1kg"
+  },
+  "hạt điều": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Catalog có hạt điều (danh mục snack nên hệ thống chưa tự ghép)",
+   "muc_tieu": "Hạt điều vỏ lụa Bà Tư Bình Phước 160g"
+  },
+  "khô cá cơm": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Hàng khô",
+   "ten_de_xuat": "Khô cá cơm 100g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 100g"
+  },
+  "lá tàu hủ ky khô": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Catalog có tàu hũ ky lá",
+   "muc_tieu": "Tàu hũ ky lá An Nhiên gói 100g"
+  },
+  "lá ớt": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau hiếm",
+   "ten_de_xuat": "Lá ớt 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "200g"
+  },
+  "lòng non": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phụ phẩm dùng nấu cháo, xào",
+   "ten_de_xuat": "Lòng non heo 300g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "300g"
+  },
+  "muối hột": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Muối hạt đã có (pantry)",
+   "muc_tieu": "Muối hạt thiên nhiên Ông Chà Và 1kg"
+  },
+  "nêm sẵn thịt kho tàu": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Sản phẩm nhãn Ajinomoto; kiểm tra có bán thật",
+   "ten_de_xuat": "Gia vị nêm sẵn thịt kho tàu Aji-Quick gói 30g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "gói 30g"
+  },
+  "ot hiểm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ thiếu dấu 'ớt hiểm'",
+   "muc_tieu": "ớt hiểm"
+  },
+  "phi lê cá hồi còn da": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng phi lê cá hồi đã ghép",
+   "muc_tieu": "cá hồi phi lê"
+  },
+  "rong biểm wakame": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gõ nhầm 'rong biển'; rong biển Nhật",
+   "ten_de_xuat": "Rong biển wakame khô 50g",
+   "danh_muc": "Rong biển",
+   "don_vi": "gói 50g"
+  },
+  "thăn bò": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Thăn bò gần với phi lê",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "thịt cổ heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phần heo phổ biến cho nướng",
+   "ten_de_xuat": "Thịt cổ heo khay 500g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "khay 500g"
+  },
+  "tiêu lốp": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Một loại tiêu xay, gộp vào tiêu (pantry)",
+   "muc_tieu": "tiêu"
+  },
+  "trứng cá thu": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Bạn đã chọn không gộp; hiếm",
+   "ten_de_xuat": "Trứng cá thu 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "300g"
+  },
+  "tỏi dầu": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Dòng gốc là 'tỏi phi dầu', catalog có dầu tỏi phi",
+   "muc_tieu": "Dầu tỏi phi Nguyên Bảo hũ 120g"
+  },
+  "xoài xanh": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Bạn đã chọn không gộp vào xoài tứ quý",
+   "ten_de_xuat": "Xoài xanh 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "xương ống bò": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng nấu phở, hầm",
+   "ten_de_xuat": "Xương ống bò 1kg",
+   "danh_muc": "Thịt bò",
+   "don_vi": "1kg"
+  },
+  "óc heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Phụ phẩm hiếm",
+   "ten_de_xuat": "Óc heo 1 bộ",
+   "danh_muc": "Thịt heo",
+   "don_vi": "1 bộ"
+  },
+  "đùi vịt góc tư": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Đùi vịt gộp vào thịt vịt",
+   "muc_tieu": "Thịt vịt khay 500g"
+  },
+  "đậu pháp": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Đậu Pháp (cô ve Nhật) là đậu cô ve",
+   "muc_tieu": "đậu cô ve (đề xuất)"
+  },
+  "đậu que nhật": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Đậu que Nhật gần với đậu cô ve",
+   "muc_tieu": "đậu cô ve (đề xuất)"
+  },
+  "ốc lác con": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Ốc hiếm",
+   "ten_de_xuat": "Ốc lác 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "ớt ba tri": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Người dùng quyết định thêm (duyệt triage)",
+   "ten_de_xuat": "Ớt ba tri gói 100g",
+   "danh_muc": "Tiêu, sa tế, ớt bột",
+   "don_vi": "gói 100g"
+  },
+  "ớt đỏ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ớt đỏ nhỏ tươi; catalog có ớt sừng đỏ",
+   "muc_tieu": "Ớt sừng đỏ tươi gói 100g"
+  },
+  "húng lủi": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau thơm dùng ở 7 món",
+   "ten_de_xuat": "Húng lủi 50g",
+   "danh_muc": "Rau lá",
+   "don_vi": "50g"
+  },
+  "mực lá": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Hải sản phổ biến",
+   "ten_de_xuat": "Mực lá 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "300g"
+  },
+  "bắp hạt": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Catalog có bắp tách hạt",
+   "muc_tieu": "Bắp Mỹ tách hạt khay 250g"
+  },
+  "tiêu sọ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Tiêu sọ xay, gộp vào tiêu (pantry)",
+   "muc_tieu": "tiêu"
+  },
+  "tương xí muội": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gần với tương ớt xí muội đã ghép",
+   "muc_tieu": "Tương ớt xí muội Cholimex 270g"
+  },
+  "lá chanh": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau thơm dùng ở 4 món",
+   "ten_de_xuat": "Lá chanh 50g",
+   "danh_muc": "Rau lá",
+   "don_vi": "50g"
+  },
+  "lá lốt": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau cuốn thịt, ăn kèm; catalog chỉ có bò lá lốt chế biến",
+   "ten_de_xuat": "Lá lốt 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "lưỡi heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phụ phẩm dùng ở 4 món",
+   "ten_de_xuat": "Lưỡi heo 500g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "500g"
+  },
+  "phô mai bột": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Bạn đã chọn không gộp vào 'Bột phô mai Ottogi'; xác nhận vì có thể trùng",
+   "ten_de_xuat": "Phô mai bột 100g",
+   "danh_muc": "Bột các loại",
+   "don_vi": "gói 100g"
+  },
+  "bông hẹ": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau theo mùa",
+   "ten_de_xuat": "Bông hẹ 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "200g"
+  },
+  "bột bánh cuốn": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Bạn đã chọn không gộp",
+   "ten_de_xuat": "Bột bánh cuốn gói 400g",
+   "danh_muc": "Bột các loại",
+   "don_vi": "gói 400g"
+  },
+  "giò heo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Giò heo là chân giò",
+   "muc_tieu": "Chân giò heo"
+  },
+  "gạch cua": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Gạch cua 100g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "100g"
+  },
+  "quế chi": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gia vị khô phổ biến",
+   "ten_de_xuat": "Quế que 50g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "gói 50g"
+  },
+  "rau tần ô": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau ăn lẩu, nấu canh",
+   "ten_de_xuat": "Rau tần ô 300g",
+   "danh_muc": "Rau lá",
+   "don_vi": "300g"
+  },
+  "tai heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phụ phẩm dùng làm nộm",
+   "ten_de_xuat": "Tai heo 500g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "500g"
+  },
+  "thịt càng cua": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Thịt cua đã dự định thêm",
+   "muc_tieu": "Thịt cua khay 200g"
+  },
+  "tim heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phụ phẩm",
+   "ten_de_xuat": "Tim heo 300g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "300g"
+  },
+  "bí ngòi xanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gộp bí ngòi",
+   "muc_tieu": "bí ngòi vàng (đề xuất)"
+  },
+  "cam mỹ": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Trái cây",
+   "ten_de_xuat": "Cam Mỹ 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "caramel": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Nước màu caramel làm từ đường",
+   "muc_tieu": "đường"
+  },
+  "cá hồi xông khói": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Bạn đã chọn không gộp vào cá hồi phi lê",
+   "ten_de_xuat": "Cá hồi xông khói gói 100g",
+   "danh_muc": "Thủy hải sản, thịt đông",
+   "don_vi": "gói 100g"
+  },
+  "cá saba": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cá biển Nhật",
+   "ten_de_xuat": "Cá saba 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "củ năng": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Củ dùng làm nhân",
+   "ten_de_xuat": "Củ năng 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "dưa cải": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Dưa cải là cải chua",
+   "muc_tieu": "Cải chua Ngọc Phú gói 450g"
+  },
+  "dầu màu điều": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Dầu màu điều là dầu điều đã thêm",
+   "muc_tieu": "Dầu điều chai 250ml"
+  },
+  "hành ngò": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Catalog có sản phẩm gộp 'Hành lá, ngò rí'",
+   "muc_tieu": "Hành lá, ngò rí"
+  },
+  "khoai sọ": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Củ phổ biến",
+   "ten_de_xuat": "Khoai sọ 500g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "500g"
+  },
+  "lá chuối": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Gói thực phẩm",
+   "ten_de_xuat": "Lá chuối 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "200g"
+  },
+  "lá cách": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau thơm hiếm",
+   "ten_de_xuat": "Lá cách 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "mì vàng": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Mì tươi dùng xào, nấu",
+   "ten_de_xuat": "Mì vàng tươi 500g",
+   "danh_muc": "Mì Ý, mì trứng",
+   "don_vi": "500g"
+  },
+  "mỡ hành": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Làm từ hành lá và dầu ăn",
+   "muc_tieu": "hành lá"
+  },
+  "ngò đường": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Hai nguyên liệu 'ngò' và 'đường' bị dính thành một tên"
+  },
+  "thịt ba rọi xông khói": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Ba rọi xông khói là bacon",
+   "muc_tieu": "bacon (đề xuất)"
+  },
+  "trứng cá chuồn": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Trứng cá chuồn 50g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "50g"
+  },
+  "vịt": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Vịt chung",
+   "muc_tieu": "Thịt vịt khay 500g"
+  },
+  "vỏ chanh mài": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Mài từ vỏ chanh",
+   "muc_tieu": "chanh"
+  },
+  "đùi ếch": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Đùi ếch là thịt ếch",
+   "muc_tieu": "Thịt ếch làm sạch khay 250g"
+  },
+  "ba rọi xông khói": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ba rọi xông khói là bacon",
+   "muc_tieu": "bacon (đề xuất)"
+  },
+  "bacon xông khói": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng bacon",
+   "muc_tieu": "bacon (đề xuất)"
+  },
+  "boaro có lá": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng boa rô",
+   "muc_tieu": "boarô (đề xuất)"
+  },
+  "bông so đũa": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau theo mùa nấu canh chua",
+   "ten_de_xuat": "Bông so đũa 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "bồn bồn muối chua": {
+   "quyet_dinh": "gop",
+   "chac_chan": "thap",
+   "ly_do": "Cùng bồn bồn chua",
+   "muc_tieu": "bồn bồn ngâm chua (đề xuất)"
+  },
+  "càng cua": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hải sản hiếm",
+   "ten_de_xuat": "Càng cua 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cá bống trứng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá hiếm",
+   "ten_de_xuat": "Cá bống trứng 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "300g"
+  },
+  "cá lăng": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cá sông",
+   "ten_de_xuat": "Cá lăng 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cải rổ": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau xanh",
+   "ten_de_xuat": "Cải rổ 300g",
+   "danh_muc": "Rau lá",
+   "don_vi": "300g"
+  },
+  "cật heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Phụ phẩm",
+   "ten_de_xuat": "Cật heo 300g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "300g"
+  },
+  "củ hũ dừa": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Củ hũ dừa 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "củ mài": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Củ mài 300g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "300g"
+  },
+  "dưa gừng non": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Dưa gừng hũ 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "hũ 200g"
+  },
+  "dầu hàu chay": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ nhầm 'dầu hào chay'",
+   "muc_tieu": "Dầu hào chay Maggi từ nấm hương chai 350g"
+  },
+  "gân bò lạng": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng nấu phở, hầm",
+   "ten_de_xuat": "Gân bò 300g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "300g"
+  },
+  "hành tím+ tỏi củ": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Hai nguyên liệu (hành tím, tỏi) bị dính thành một tên; cả hai đã có"
+  },
+  "hàu sữa": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng hàu sữa",
+   "muc_tieu": "thịt hàu sữa (đề xuất)"
+  },
+  "húng lũi": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ nhầm 'húng lủi'",
+   "muc_tieu": "húng lủi (đề xuất)"
+  },
+  "hải sâm": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hải sản cao cấp",
+   "ten_de_xuat": "Hải sâm 250g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "250g"
+  },
+  "khăn lông bò": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Phụ phẩm lẩu",
+   "ten_de_xuat": "Khăn lông bò 300g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "300g"
+  },
+  "lá cải xanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Lá của cải xanh",
+   "muc_tieu": "cải xanh (đề xuất)"
+  },
+  "lá trà xanh non": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Lá trà xanh non 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "200g"
+  },
+  "mì koreno": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Mì ăn liền đã có (thương hiệu Koreno)",
+   "muc_tieu": "mì"
+  },
+  "mía chẻ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cùng mía",
+   "muc_tieu": "mía lau (đề xuất)"
+  },
+  "mù tạc vàng": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gia vị Âu; kiểm tra chính tả 'tạc/tạt'",
+   "ten_de_xuat": "Mù tạt vàng 150g",
+   "danh_muc": "Tương ớt-đen, mayonnaise",
+   "don_vi": "150g"
+  },
+  "mỡ có tóp mỡ": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rán từ mỡ heo",
+   "muc_tieu": "Mỡ heo sạch nguyên chất MEATDeli hũ 330g"
+  },
+  "nước cốt gừng": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Vắt từ gừng (bạn đã chọn không gộp vào 1 gợi ý khác)",
+   "muc_tieu": "gừng"
+  },
+  "que xiên tre": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Dụng cụ, không phải thực phẩm"
+  },
+  "rau ghém": {
+   "quyet_dinh": "bo",
+   "chac_chan": "trung_binh",
+   "ly_do": "Là đĩa rau ăn kèm tổng hợp, không phải một sản phẩm"
+  },
+  "rau nhút": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau theo mùa",
+   "ten_de_xuat": "Rau nhút 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "tai vị": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Người dùng quyết định thêm (duyệt triage)",
+   "ten_de_xuat": "Hoa hồi (đại hồi) gói 100g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "gói 100g"
+  },
+  "thuốc muối": {
+   "quyet_dinh": "bo",
+   "chac_chan": "thap",
+   "ly_do": "Không rõ là gì (có thể baking soda); cần bạn xem"
+  },
+  "thịt ba chỉ hun khói": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ba chỉ hun khói là bacon",
+   "muc_tieu": "bacon (đề xuất)"
+  },
+  "thịt bò file mềm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "File mềm là phi lê",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "thịt bò philê mềm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Philê mềm là phi lê",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "tiêu sọ bể": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Tiêu giã bể",
+   "muc_tieu": "tiêu"
+  },
+  "xương ống": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Xương ống bò",
+   "muc_tieu": "xương ống bò (đề xuất)"
+  },
+  "xốt cà chua hộp": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Xốt cà chua là tương cà",
+   "muc_tieu": "tương cà"
+  },
+  "xốt phô mai caesar aji-xốt": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Sản phẩm nhãn Ajinomoto, chỉ dùng ở 1 món",
+   "ten_de_xuat": "Xốt phô mai Caesar Aji-Xốt chai 260g",
+   "danh_muc": "Tương ớt-đen, mayonnaise",
+   "don_vi": "chai 260g"
+  },
+  "xốt phô mai cay aji-xốt": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Sản phẩm nhãn Ajinomoto, chỉ dùng ở 1 món",
+   "ten_de_xuat": "Xốt phô mai cay Aji-Xốt chai 260g",
+   "danh_muc": "Tương ớt-đen, mayonnaise",
+   "don_vi": "chai 260g"
+  },
+  "thịt gà": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng dạng xay; catalog chỉ có cháo gà",
+   "ten_de_xuat": "Thịt gà xay khay 300g",
+   "danh_muc": "Thịt gà, vịt",
+   "don_vi": "khay 300g"
+  },
+  "bí ngòi": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gộp bí ngòi",
+   "muc_tieu": "bí ngòi vàng (đề xuất)"
+  },
+  "bạc hà": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau nấu canh chua (họ món lớn)",
+   "ten_de_xuat": "Bạc hà (dọc mùng) 300g",
+   "danh_muc": "Rau lá",
+   "don_vi": "300g"
+  },
+  "bột quế": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gia vị khô",
+   "ten_de_xuat": "Bột quế 50g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "gói 50g"
+  },
+  "cá chẽm": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Cá phổ biến",
+   "ten_de_xuat": "Cá chẽm 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "dầu oliu": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Dầu ăn dùng cho món Âu",
+   "ten_de_xuat": "Dầu ô liu chai 250ml",
+   "danh_muc": "Dầu ăn",
+   "don_vi": "chai 250ml"
+  },
+  "ketchup": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Ketchup là tương cà",
+   "muc_tieu": "tương cà"
+  },
+  "lá cà ri": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau thơm cho món cà ri",
+   "ten_de_xuat": "Lá cà ri 30g",
+   "danh_muc": "Rau lá",
+   "don_vi": "30g"
+  },
+  "lá quế tây": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Quế tây là húng quế (basil)",
+   "muc_tieu": "Rau húng quế khoảng 100g"
+  },
+  "nước cốt tỏi": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Vắt từ tỏi (bạn đã chọn không gộp vào 1 gợi ý khác)",
+   "muc_tieu": "tỏi"
+  },
+  "phèn chua": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm, dùng làm trong nước",
+   "ten_de_xuat": "Phèn chua 100g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "100g"
+  },
+  "rau quế": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Rau quế là húng quế",
+   "muc_tieu": "Rau húng quế khoảng 100g"
+  },
+  "riềng": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Củ gia vị phổ biến (mắm tôm, nhiều món)",
+   "ten_de_xuat": "Riềng 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "xoài keo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Trái cây",
+   "ten_de_xuat": "Xoài keo 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "bao tử heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Phụ phẩm; bạn đã chọn không gộp",
+   "ten_de_xuat": "Bao tử heo 400g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "400g"
+  },
+  "bánh gạo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Catalog có bánh gạo Hàn Quốc đông lạnh",
+   "muc_tieu": "Bánh gạo Tteokbokki có xốt HT Food 400g"
+  },
+  "bánh xếp kiểu nhật gyoza": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Món nhãn Ajinomoto, hàng đông lạnh",
+   "ten_de_xuat": "Bánh xếp gyoza Nhật gói 300g",
+   "danh_muc": "Hàng đông chế biến",
+   "don_vi": "gói 300g"
+  },
+  "bóc vỏ": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Từ mô tả sơ chế (bóc vỏ) dính vào tên"
+  },
+  "bông hẹ chần": {
+   "quyet_dinh": "gop",
+   "chac_chan": "thap",
+   "ly_do": "Cùng bông hẹ",
+   "muc_tieu": "bông hẹ (đề xuất)"
+  },
+  "bông hẹ non": {
+   "quyet_dinh": "gop",
+   "chac_chan": "thap",
+   "ly_do": "Cùng bông hẹ",
+   "muc_tieu": "bông hẹ (đề xuất)"
+  },
+  "bơ mặn": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Bơ làm bếp",
+   "ten_de_xuat": "Bơ mặn 200g",
+   "danh_muc": "Dầu hào, giấm, bơ",
+   "don_vi": "200g"
+  },
+  "chà bông gà": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ăn kèm cháo, bánh mì",
+   "ten_de_xuat": "Chà bông 100g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "100g"
+  },
+  "cà na muối xổi": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đặc sản",
+   "ten_de_xuat": "Cà na muối 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "200g"
+  },
+  "cá cam": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá hiếm",
+   "ten_de_xuat": "Cá cam 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cá cơm than": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cùng cá cơm",
+   "muc_tieu": "cá cơm tươi (đề xuất)"
+  },
+  "cá dứa": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá hiếm",
+   "ten_de_xuat": "Cá dứa 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cái vị": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Mảnh vỡ của 'tai vị' (lỗi tách chữ)"
+  },
+  "cải xoong": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau ăn kèm",
+   "ten_de_xuat": "Cải xoong 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "200g"
+  },
+  "cần nước": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau nấu canh",
+   "ten_de_xuat": "Rau cần nước 300g",
+   "danh_muc": "Rau lá",
+   "don_vi": "300g"
+  },
+  "cồi sò điệp": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Hải sản",
+   "ten_de_xuat": "Cồi sò điệp 200g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "200g"
+  },
+  "giam gạo": {
+   "quyet_dinh": "bo",
+   "chac_chan": "thap",
+   "ly_do": "Không rõ (có thể là 'rang gạo'); cần bạn xem"
+  },
+  "giấy bạc": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Dụng cụ, không phải thực phẩm"
+  },
+  "gà tre": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gà tre là gà ta nhỏ",
+   "muc_tieu": "gà ta (đề xuất)"
+  },
+  "gạo nấu cháo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gạo thường",
+   "muc_tieu": "gạo thường (đề xuất)"
+  },
+  "gốc ngò": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Phần gốc của ngò rí",
+   "muc_tieu": "ngò rí"
+  },
+  "hạt mắc khén": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị Tây Bắc, hiếm",
+   "ten_de_xuat": "Hạt mắc khén 20g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "gói 20g"
+  },
+  "hẹ tăm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cùng nhóm hẹ",
+   "muc_tieu": "hẹ lá (đề xuất)"
+  },
+  "khác": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Dòng 'khác: Muối' không phải nguyên liệu"
+  },
+  "khô cá sửu": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Khô cá sủ 100g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "100g"
+  },
+  "kỉ tử": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ khác dấu",
+   "muc_tieu": "kỷ tử (đề xuất)"
+  },
+  "lá chanh bắc": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Lá chanh bắc là lá chúc",
+   "muc_tieu": "lá chúc (đề xuất)"
+  },
+  "lá hẹ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng hẹ",
+   "muc_tieu": "hẹ lá (đề xuất)"
+  },
+  "lá é": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau thơm hiếm",
+   "ten_de_xuat": "Lá é 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "lòng vịt": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Phụ phẩm",
+   "ten_de_xuat": "Lòng vịt 300g",
+   "danh_muc": "Thịt gà, vịt",
+   "don_vi": "300g"
+  },
+  "màu nước dành dành": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Dành dành 50g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "50g"
+  },
+  "mía cây": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng mía",
+   "muc_tieu": "mía lau (đề xuất)"
+  },
+  "mắm bò hóc": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đặc sản Khmer",
+   "ten_de_xuat": "Mắm bò hóc 200g",
+   "danh_muc": "Nước chấm, mắm",
+   "don_vi": "200g"
+  },
+  "mộc nhĩ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Mộc nhĩ là nấm mèo",
+   "muc_tieu": "Nấm mèo thái 50g"
+  },
+  "mực tẩm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Catalog có mực tẩm (danh mục khô chế biến nên chưa tự ghép)",
+   "muc_tieu": "Mực xé tẩm gia vị Đầm Sen hộp 100g"
+  },
+  "mỳ ý": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ khác dấu 'mì Ý'",
+   "muc_tieu": "Mì Spaghetti San Remo số 5 gói 250g"
+  },
+  "nghêu sống": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng nghêu",
+   "muc_tieu": "nghêu (đề xuất)"
+  },
+  "que xiên": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Dụng cụ, không phải thực phẩm"
+  },
+  "que xiên tre dài": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Dụng cụ, không phải thực phẩm"
+  },
+  "quả tắc": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Quả tắc là tắc",
+   "muc_tieu": "Tắc trái túi 200g"
+  },
+  "quế thanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Quế thanh là quế que",
+   "muc_tieu": "quế chi (đề xuất)"
+  },
+  "rau nhút lặt sạch": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng rau nhút",
+   "muc_tieu": "rau nhút (đề xuất)"
+  },
+  "rau xà lách xoong": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cải xoong (watercress)",
+   "muc_tieu": "cải xoong (đề xuất)"
+  },
+  "rau đay": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau nấu canh",
+   "ten_de_xuat": "Rau đay 300g",
+   "danh_muc": "Rau lá",
+   "don_vi": "300g"
+  },
+  "rong sụn ngâm": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Rong sụn 100g",
+   "danh_muc": "Rong biển",
+   "don_vi": "100g"
+  },
+  "sấu": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Trái cây theo mùa",
+   "ten_de_xuat": "Sấu 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "sấu quả": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng sấu",
+   "muc_tieu": "sấu (đề xuất)"
+  },
+  "sụn gà": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phụ phẩm",
+   "ten_de_xuat": "Sụn gà 300g",
+   "danh_muc": "Thịt gà, vịt",
+   "don_vi": "300g"
+  },
+  "thịt bê": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Thịt bê 300g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "300g"
+  },
+  "thịt bò filet": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Filet là phi lê",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "thịt heo xông khói": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Heo xông khói là bacon",
+   "muc_tieu": "bacon (đề xuất)"
+  },
+  "thịt thăn ngoại": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phần bò sirloin",
+   "ten_de_xuat": "Thịt thăn ngoại bò 300g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "300g"
+  },
+  "thịt vế cua": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cùng thịt cua",
+   "muc_tieu": "Thịt cua khay 200g"
+  },
+  "trà xanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Catalog có trà xanh (danh mục trà nên chưa tự ghép)",
+   "muc_tieu": "Trà xanh nụ Moncha hoa lài hộp 50g"
+  },
+  "trứng cá hồi đen": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Caviar, rất hiếm",
+   "ten_de_xuat": "Trứng cá hồi đen 50g",
+   "danh_muc": "Thủy hải sản, thịt đông",
+   "don_vi": "50g"
+  },
+  "tàu hủ ky lá chiên": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cùng tàu hũ ky",
+   "muc_tieu": "Tàu hũ ky lá An Nhiên gói 100g"
+  },
+  "tỏi tây": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau củ phổ biến",
+   "ten_de_xuat": "Tỏi tây 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "xá lách": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ khác dấu 'xà lách'",
+   "muc_tieu": "xà lách"
+  },
+  "xốt tương đậu nành": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Xốt tương đậu nành LISA là nước tương",
+   "muc_tieu": "nước tương"
+  },
+  "đường tiêu": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Hai nguyên liệu (đường, tiêu) bị dính; cả hai là pantry"
+  },
+  "đậu rồng non": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau",
+   "ten_de_xuat": "Đậu rồng 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "ốc hương": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hải sản hiếm",
+   "ten_de_xuat": "Ốc hương 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "300g"
+  },
+  "ớt đà lạt vàng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Ớt Đà Lạt (ớt chuông)",
+   "muc_tieu": "Ớt chuông xanh-vàng-đỏ"
+  },
+  "ớt đà lạt đỏ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Ớt Đà Lạt (ớt chuông)",
+   "muc_tieu": "Ớt chuông xanh-vàng-đỏ"
+  },
+  "bột nghệ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đã có bột nghệ",
+   "muc_tieu": "Nghệ bột nguyên chất Vipep 35g"
+  },
+  "kỷ tử": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dược liệu dùng nấu chè, súp",
+   "ten_de_xuat": "Kỷ tử 50g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 50g"
+  },
+  "bột ớt": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đã có ớt bột",
+   "muc_tieu": "Ớt bột cay Hàn Quốc Dh Food 90g"
+  },
+  "chanh muối": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dùng pha nước, nấu",
+   "ten_de_xuat": "Chanh muối hũ 300g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "hũ 300g"
+  },
+  "lá dứa": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau thơm làm xôi, chè",
+   "ten_de_xuat": "Lá dứa 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "lá thơm": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Hỗn hợp thảo mộc khô (herbes)",
+   "ten_de_xuat": "Gia vị lá thơm lọ 10g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "lọ 10g"
+  },
+  "mạch nha": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Mạch nha lọ 300g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "lọ 300g"
+  },
+  "rau mầm tím": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng rau mầm",
+   "muc_tieu": "rau mầm (đề xuất)"
+  },
+  "tôm đông lạnh": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Đông lạnh là mặt hàng riêng theo quy tắc đã chốt",
+   "ten_de_xuat": "Tôm đông lạnh 500g",
+   "danh_muc": "Thủy hải sản, thịt đông",
+   "don_vi": "gói 500g"
+  },
+  "xốt tương": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Xốt tương LISA là nước tương",
+   "muc_tieu": "nước tương"
+  },
+  "đậu đũa": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau phổ biến",
+   "ten_de_xuat": "Đậu đũa 300g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "300g"
+  },
+  "bánh phồng tôm chiên": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Catalog có đúng sản phẩm này (danh mục snack nên chưa tự ghép)",
+   "muc_tieu": "Bánh phồng tôm chiên sẵn Mikiri gói 125g"
+  },
+  "bông a-ti-sô": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Bông atiso 1 bông",
+   "danh_muc": "Củ, quả",
+   "don_vi": "1 bông"
+  },
+  "bông bí": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau ăn kèm, xào",
+   "ten_de_xuat": "Bông bí 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "bông kim châm khô": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Hàng khô",
+   "ten_de_xuat": "Hoa kim châm khô 50g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 50g"
+  },
+  "bắp hạt đông lạnh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Bắp tách hạt đã có",
+   "muc_tieu": "Bắp Mỹ tách hạt khay 250g"
+  },
+  "bắp mĩ hạt": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ khác dấu",
+   "muc_tieu": "Bắp Mỹ tách hạt khay 250g"
+  },
+  "bột càri": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đã có bột cà ri",
+   "muc_tieu": "Bột cà ri tẩm ướp Vianco 10g"
+  },
+  "bột ớt hàn quốc": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đúng sản phẩm đã có",
+   "muc_tieu": "Ớt bột cay Hàn Quốc Dh Food 90g"
+  },
+  "ca rốt": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ thiếu dấu 'cà rốt'",
+   "muc_tieu": "cà rốt"
+  },
+  "chà bông tôm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cùng nhóm chà bông",
+   "muc_tieu": "chà bông gà (đề xuất)"
+  },
+  "cà ri bột": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đã có bột cà ri",
+   "muc_tieu": "Bột cà ri tẩm ướp Vianco 10g"
+  },
+  "cá bớp fillet": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá hiếm",
+   "ten_de_xuat": "Cá bớp 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cá trê vàng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá đồng",
+   "ten_de_xuat": "Cá trê 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cá đối có trứng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng cá đối",
+   "muc_tieu": "cá đối (đề xuất)"
+  },
+  "cải mầm cay": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Cải mầm cay 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "củ kiệu ngâm chua": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng kiệu ngâm chua",
+   "muc_tieu": "dưa kiệu (đề xuất)"
+  },
+  "củ riềng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng riềng",
+   "muc_tieu": "riềng (đề xuất)"
+  },
+  "da hoành thánh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Da hoành thánh là lá hoành thánh (đã thêm)",
+   "muc_tieu": "Lá hoành thánh gói 200g"
+  },
+  "dầu ô liu": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng dầu ô liu",
+   "muc_tieu": "dầu oliu (đề xuất)"
+  },
+  "dầu ôliu": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng dầu ô liu",
+   "muc_tieu": "dầu oliu (đề xuất)"
+  },
+  "dồi trường": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Phụ phẩm hiếm",
+   "ten_de_xuat": "Dồi trường 300g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "300g"
+  },
+  "gan gà": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phụ phẩm",
+   "ten_de_xuat": "Gan gà 300g",
+   "danh_muc": "Thịt gà, vịt",
+   "don_vi": "300g"
+  },
+  "giá trụng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Giá đỗ (đã có)",
+   "muc_tieu": "Giá mầm sạch 300g"
+  },
+  "hoa chuối": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Hoa chuối là bắp chuối",
+   "muc_tieu": "bắp chuối (đề xuất)"
+  },
+  "hoa xuyên tiêu thơm": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị Hoa, hiếm",
+   "ten_de_xuat": "Hoa tiêu Tứ Xuyên 50g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "gói 50g"
+  },
+  "hành bắc": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Hành bắc là hành lá",
+   "muc_tieu": "hành lá"
+  },
+  "hành tăm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hành tăm là củ nén",
+   "muc_tieu": "củ nén (đề xuất)"
+  },
+  "hành tỏi gừng": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Ba nguyên liệu bị dính thành một tên; đều đã có"
+  },
+  "hạt hạnh nhân": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng hạnh nhân",
+   "muc_tieu": "hạnh nhân (đề xuất)"
+  },
+  "hạt tàu xì": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cùng nhóm tàu xì",
+   "muc_tieu": "tương tàu xì (đề xuất)"
+  },
+  "hỗn hợp gia vị lá thơm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cùng gia vị lá thơm",
+   "muc_tieu": "lá thơm (đề xuất)"
+  },
+  "khô cá cơm lạt": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng khô cá cơm",
+   "muc_tieu": "khô cá cơm (đề xuất)"
+  },
+  "lá chùm ngây": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau hiếm",
+   "ten_de_xuat": "Lá chùm ngây 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "200g"
+  },
+  "lá húng lủi": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng húng lủi",
+   "muc_tieu": "húng lủi (đề xuất)"
+  },
+  "lá mè": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Lá mè Hàn là tía tô Hàn (gần tía tô)",
+   "muc_tieu": "Tía tô khoảng 100g"
+  },
+  "lá oregano khô": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gia vị khô",
+   "ten_de_xuat": "Lá oregano khô 10g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "lọ 10g"
+  },
+  "lê hàn quốc": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Trái cây hiếm",
+   "ten_de_xuat": "Lê Hàn Quốc 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "lòng gà": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Phụ phẩm",
+   "ten_de_xuat": "Lòng gà 300g",
+   "danh_muc": "Thịt gà, vịt",
+   "don_vi": "300g"
+  },
+  "lòng trắng trứng": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Lấy từ trứng gà",
+   "muc_tieu": "trứng gà"
+  },
+  "màu điều": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Màu điều là dầu điều",
+   "muc_tieu": "Dầu điều chai 250ml"
+  },
+  "măng le": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Măng theo mùa",
+   "ten_de_xuat": "Măng tươi 300g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "300g"
+  },
+  "mỡ chài": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Mỡ chài 200g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "200g"
+  },
+  "mỡ nước": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Mỡ nước là mỡ heo rán",
+   "muc_tieu": "Mỡ heo sạch nguyên chất MEATDeli hũ 330g"
+  },
+  "mực sữa": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Mực nhỏ gộp vào mực ống",
+   "muc_tieu": "Mực ống"
+  },
+  "ngồng cải": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Ngồng cải là cải ngồng (đã có)",
+   "muc_tieu": "Cải ngồng gói 400g"
+  },
+  "nấm mối": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Nấm mối 200g",
+   "danh_muc": "Nấm các loại",
+   "don_vi": "200g"
+  },
+  "nấm nút": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Nấm phổ biến",
+   "ten_de_xuat": "Nấm mỡ nút 200g",
+   "danh_muc": "Nấm các loại",
+   "don_vi": "200g"
+  },
+  "rau câu đã ngâm": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hàng khô",
+   "ten_de_xuat": "Rau câu sợi khô 50g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 50g"
+  },
+  "rượu brandy": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rượu nấu ăn",
+   "ten_de_xuat": "Rượu Brandy 350ml",
+   "danh_muc": "Rượu",
+   "don_vi": "chai 350ml"
+  },
+  "rượu nếp": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rượu nấu ăn, khác rượu trắng",
+   "ten_de_xuat": "Rượu nếp 500ml",
+   "danh_muc": "Rượu",
+   "don_vi": "chai 500ml"
+  },
+  "sườn chay": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Catalog có sườn chay",
+   "muc_tieu": "Sườn non chay Hương Vị gói 150g"
+  },
+  "sườn heo non": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng sườn non",
+   "muc_tieu": "Sườn non heo nhập khẩu"
+  },
+  "sứa ngâm chua": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Sứa ngâm chua 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "200g"
+  },
+  "thịt bò file": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "File là phi lê",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "thịt bò mềm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Thịt bò mềm thường là phi lê",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "thịt bắp đùi heo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng đùi heo",
+   "muc_tieu": "Thịt đùi heo"
+  },
+  "thịt má heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phần heo",
+   "ten_de_xuat": "Thịt má heo 500g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "500g"
+  },
+  "thịt ốc lác": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Bạn đã chọn không gộp; hiếm",
+   "ten_de_xuat": "Thịt ốc lác 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "300g"
+  },
+  "tre chẻ để gài": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Dụng cụ, không phải thực phẩm"
+  },
+  "trứng cá hồi": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Bạn đã chọn không gộp; hiếm",
+   "ten_de_xuat": "Trứng cá hồi 50g",
+   "danh_muc": "Thủy hải sản, thịt đông",
+   "don_vi": "50g"
+  },
+  "tương bần": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gia vị chấm",
+   "ten_de_xuat": "Tương bần 250g",
+   "danh_muc": "Nước chấm, mắm",
+   "don_vi": "250g"
+  },
+  "tỏi lý sơn": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Tỏi Lý Sơn là một giống tỏi (pantry)",
+   "muc_tieu": "tỏi"
+  },
+  "tổ ong bò": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Phụ phẩm hiếm",
+   "ten_de_xuat": "Tổ ong bò 300g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "300g"
+  },
+  "xôi": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Là món ăn, không phải nguyên liệu"
+  },
+  "đậu bi đông lạnh": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hiếm",
+   "ten_de_xuat": "Đậu bi 200g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "200g"
+  },
+  "đậu đỏ khô": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Hạt khô phổ biến",
+   "ten_de_xuat": "Đậu đỏ khô gói 200g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 200g"
+  },
+  "đẳng sâm": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Dược liệu hiếm",
+   "ten_de_xuat": "Đẳng sâm 50g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "50g"
+  },
+  "ơt sừng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ nhầm 'ớt sừng'",
+   "muc_tieu": "ớt sừng"
+  },
+  "ớt chao đỏ": {
+   "quyet_dinh": "bo",
+   "chac_chan": "thap",
+   "ly_do": "Không rõ nghĩa (ớt + chao đỏ?); cần bạn xem"
+  },
+  "ớt satế": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ liền 'sa tế'",
+   "muc_tieu": "sa tế"
+  },
+  "bí nhật": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Bí kabocha, dùng nấu canh, nhồi",
+   "ten_de_xuat": "Bí Nhật 500g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "500g"
+  },
+  "bột ca ri": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ khác 'bột cà ri'",
+   "muc_tieu": "Bột cà ri tẩm ướp Vianco 10g"
+  },
+  "chuối sáp": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Chuối nấu chín, ít dùng",
+   "ten_de_xuat": "Chuối sáp 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "lá nhàu": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau thơm hiếm",
+   "ten_de_xuat": "Lá nhàu 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "100g"
+  },
+  "poa rô": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cách viết khác của boa rô",
+   "muc_tieu": "boarô (đề xuất)"
+  },
+  "tàu hũ ky lá chiên giòn": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cùng tàu hũ ky",
+   "muc_tieu": "Tàu hũ ky lá An Nhiên gói 100g"
+  },
+  "đậu phọng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ khác 'đậu phộng'",
+   "muc_tieu": "đậu phộng (đề xuất)"
+  },
+  "đậu phụng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tên miền Nam của đậu phộng",
+   "muc_tieu": "đậu phộng (đề xuất)"
+  },
+  "măng chua": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau ăn kèm canh chua, catalog chưa có",
+   "ten_de_xuat": "Măng chua hũ 500g",
+   "danh_muc": "Cá mắm, dưa mắm",
+   "don_vi": "hũ 500g"
+  },
+  "nước cốt me": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Nước cốt me ép từ me",
+   "muc_tieu": "me"
+  },
+  "đồ chua": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ăn kèm bánh mì, bún",
+   "ten_de_xuat": "Đồ chua củ cải cà rốt hũ 300g",
+   "danh_muc": "Cá mắm, dưa mắm",
+   "don_vi": "hũ 300g"
+  },
+  "cà ri dầu": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị cà ri dạng dầu",
+   "ten_de_xuat": "Cà ri dầu gói 100g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "gói 100g"
+  },
+  "cải mầm": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau mầm dùng làm salad",
+   "ten_de_xuat": "Cải mầm khay 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "khay 100g"
+  },
+  "dụng cụ": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Que xiên là dụng cụ, không phải thực phẩm"
+  },
+  "bò chay": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Thịt chay làm sẵn",
+   "ten_de_xuat": "Thịt chay lát (gà/bò) gói 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "gói 200g"
+  },
+  "bột bò kho": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Gói gia vị bò kho",
+   "ten_de_xuat": "Gia vị bò kho gói 25g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "gói 25g"
+  },
+  "cá khoai": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá đặc sản món canh",
+   "ten_de_xuat": "Cá khoai 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cọng súng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau đặc sản món canh chua",
+   "ten_de_xuat": "Cọng súng bó 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 200g"
+  },
+  "gan heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Nội tạng phổ biến",
+   "ten_de_xuat": "Gan heo khay 300g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "khay 300g"
+  },
+  "rượu mai quế lộ": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rượu ướp gia vị",
+   "ten_de_xuat": "Rượu mai quế lộ chai 500ml",
+   "danh_muc": "Rượu",
+   "don_vi": "chai 500ml"
+  },
+  "trứng muối": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Dùng cho món xào, bánh",
+   "ten_de_xuat": "Trứng vịt muối hộp 4 quả",
+   "danh_muc": "Trứng gà, vịt, cút",
+   "don_vi": "hộp 4 quả"
+  },
+  "đậu rồng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau xào",
+   "ten_de_xuat": "Đậu rồng 250g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "250g"
+  },
+  "bánh hỏi": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Ăn kèm thịt nướng",
+   "ten_de_xuat": "Bánh hỏi 300g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "gói 300g"
+  },
+  "chả chay": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Thực phẩm chay làm sẵn, gộp chung",
+   "muc_tieu": "bò chay (đề xuất)"
+  },
+  "cà bi": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cà chua bi viết tắt",
+   "muc_tieu": "cà chua bi"
+  },
+  "giá đỗ": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau sống phổ biến",
+   "ten_de_xuat": "Giá đỗ khay 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "khay 200g"
+  },
+  "hành baro": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hành boa rô viết khác",
+   "muc_tieu": "boarô (đề xuất)"
+  },
+  "lá oregano": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị Tây",
+   "ten_de_xuat": "Lá oregano khô lọ 10g",
+   "danh_muc": "Tiêu, sa tế, ớt bột",
+   "don_vi": "lọ 10g"
+  },
+  "mỡ gà thắng": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "trung_binh",
+   "ly_do": "Mỡ gà thắng từ da gà, thay bằng dầu ăn",
+   "muc_tieu": "dầu ăn"
+  },
+  "rau càng cua": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau ăn kèm",
+   "ten_de_xuat": "Rau càng cua bó 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 100g"
+  },
+  "sốt cà chua đậm đặc": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Dùng cho mì Ý, hầm",
+   "ten_de_xuat": "Cà chua cô đặc (tomato paste) lon 70g",
+   "danh_muc": "Tương ớt-đen, mayonnaise",
+   "don_vi": "lon 70g"
+  },
+  "xốt kho quẹt": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Xốt dùng ngay",
+   "ten_de_xuat": "Xốt kho quẹt hũ 200g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "hũ 200g"
+  },
+  "đầu hành trắng": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Phần gốc của hành lá",
+   "muc_tieu": "hành lá"
+  },
+  "bacon hun khói": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng bacon",
+   "muc_tieu": "bacon (đề xuất)"
+  },
+  "bánh gạo hàn quốc": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Catalog có danh mục này nhưng tên chưa khớp; kiểm tra trùng",
+   "ten_de_xuat": "Bánh gạo Hàn Quốc gói 400g",
+   "danh_muc": "Bánh gạo Hàn Quốc",
+   "don_vi": "gói 400g"
+  },
+  "bánh mì sandwiches": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Bánh mì lát",
+   "ten_de_xuat": "Bánh mì sandwich gói 300g",
+   "danh_muc": "Bánh tươi, Sandwich",
+   "don_vi": "gói 300g"
+  },
+  "bó xôi": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau phổ biến",
+   "ten_de_xuat": "Cải bó xôi bó 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 200g"
+  },
+  "bột cam": {
+   "quyet_dinh": "bo",
+   "chac_chan": "trung_binh",
+   "ly_do": "Bột cam cho xốt cam, dùng nước cam"
+  },
+  "chiên vàng": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cách sơ chế, không phải nguyên liệu"
+  },
+  "cua giả": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Surimi",
+   "ten_de_xuat": "Thanh cua gói 200g",
+   "danh_muc": "Thủy hải sản, thịt đông",
+   "don_vi": "gói 200g"
+  },
+  "cua gạch": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cua có gạch",
+   "ten_de_xuat": "Cua gạch 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cà phê đen": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Dùng ướp, nấu",
+   "ten_de_xuat": "Cà phê đen xay gói 250g",
+   "danh_muc": "Cà phê pha phin",
+   "don_vi": "gói 250g"
+  },
+  "cá mặn chay": {
+   "quyet_dinh": "bo",
+   "chac_chan": "thap",
+   "ly_do": "Không rõ sản phẩm (cá mặn chay), cần bạn xem"
+  },
+  "cá tượng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá nguyên con",
+   "ten_de_xuat": "Cá tai tượng 800g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "800g"
+  },
+  "cơm gạo lức sấy giòn": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Ăn kèm",
+   "ten_de_xuat": "Cơm gạo lức sấy giòn gói 100g",
+   "danh_muc": "Ngũ cốc, yến mạch",
+   "don_vi": "gói 100g"
+  },
+  "dầu salad": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Dầu salad là dầu ăn",
+   "muc_tieu": "dầu ăn"
+  },
+  "giá đậu nành": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gộp với giá",
+   "muc_tieu": "giá đỗ (đề xuất)"
+  },
+  "gà chay": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Thịt chay làm sẵn",
+   "muc_tieu": "bò chay (đề xuất)"
+  },
+  "gừng cạo vỏ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Chỉ là sơ chế",
+   "muc_tieu": "gừng"
+  },
+  "heavy cream": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Dùng cho xốt",
+   "ten_de_xuat": "Kem tươi whipping cream hộp 200ml",
+   "danh_muc": "Sữa tươi",
+   "don_vi": "hộp 200ml"
+  },
+  "hoa bí": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau đặc sản",
+   "ten_de_xuat": "Hoa bí bó 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 200g"
+  },
+  "hoa súng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Dùng trong gỏi",
+   "ten_de_xuat": "Hoa súng bó 3 bông",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 3 bông"
+  },
+  "khô cá sặc": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Khô đặc sản",
+   "ten_de_xuat": "Khô cá sặc gói 200g",
+   "danh_muc": "Khô chế biến sẵn",
+   "don_vi": "gói 200g"
+  },
+  "khế chua xanh": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Trái cây nấu canh",
+   "ten_de_xuat": "Khế chua 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "lá cóc non": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau gỏi",
+   "ten_de_xuat": "Lá cóc non gói 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "gói 100g"
+  },
+  "lá sen": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gói nướng",
+   "ten_de_xuat": "Lá sen tươi bó 3 lá",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 3 lá"
+  },
+  "mì nưa": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Mì ít calo",
+   "ten_de_xuat": "Mì nưa (konjac) gói 250g",
+   "danh_muc": "Hủ tiếu, miến",
+   "don_vi": "gói 250g"
+  },
+  "mù tạt hạt": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gia vị Tây",
+   "ten_de_xuat": "Mù tạt hạt lọ 200g",
+   "danh_muc": "Tương ớt-đen, mayonnaise",
+   "don_vi": "lọ 200g"
+  },
+  "mực lá dày": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Hải sản tươi",
+   "ten_de_xuat": "Mực lá khay 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "khay 300g"
+  },
+  "ngưu bàng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Củ nấu canh, hấp",
+   "ten_de_xuat": "Củ ngưu bàng 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "ngải cứu": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau thuốc nam",
+   "ten_de_xuat": "Ngải cứu bó 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 100g"
+  },
+  "poa-ro": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hành boa rô viết khác",
+   "muc_tieu": "boarô (đề xuất)"
+  },
+  "rút xương": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cách sơ chế"
+  },
+  "súp miso": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Món phụ",
+   "ten_de_xuat": "Súp miso ăn liền hộp 8 gói",
+   "danh_muc": "Nước chấm, mắm",
+   "don_vi": "hộp 8 gói"
+  },
+  "sườn cây": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Sườn cây là loại sườn heo",
+   "muc_tieu": "sườn heo"
+  },
+  "thui da": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cách sơ chế"
+  },
+  "thịt lõi vai bò mỹ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Thịt bò chung",
+   "muc_tieu": "thịt bò (đề xuất)"
+  },
+  "tiêu hạt": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Gia vị phổ biến",
+   "ten_de_xuat": "Tiêu hạt gói 50g",
+   "danh_muc": "Tiêu, sa tế, ớt bột",
+   "don_vi": "gói 50g"
+  },
+  "tàu hũ ki mềm": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đồ chay",
+   "ten_de_xuat": "Tàu hũ ky mềm gói 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "gói 200g"
+  },
+  "tương đậu nành": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tương đậu nành là nước tương",
+   "muc_tieu": "nước tương"
+  },
+  "váng đậu": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đồ chay",
+   "ten_de_xuat": "Váng đậu tươi gói 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "gói 200g"
+  },
+  "xốt mận": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Xốt chấm",
+   "ten_de_xuat": "Xốt mận chai 250g",
+   "danh_muc": "Nước chấm, mắm",
+   "don_vi": "chai 250g"
+  },
+  "ăng vàng": {
+   "quyet_dinh": "bo",
+   "chac_chan": "thap",
+   "ly_do": "Không rõ ăng vàng là gì, cần bạn xem"
+  },
+  "đuôi heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Phần heo ít gặp",
+   "ten_de_xuat": "Đuôi heo khay 500g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "khay 500g"
+  },
+  "đâu hũ non": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai chính tả",
+   "muc_tieu": "đậu hũ"
+  },
+  "đầu hành hoa": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Phần gốc hành lá",
+   "muc_tieu": "hành lá"
+  },
+  "đậu hạt hà lan": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng mặt hàng",
+   "muc_tieu": "đậu hà lan"
+  },
+  "đồ chua nhật": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gộp đồ chua",
+   "muc_tieu": "đồ chua (đề xuất)"
+  },
+  "ớt đỏ sừng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Ớt tươi",
+   "ten_de_xuat": "Ớt sừng đỏ 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "ớt đà lạt xanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ớt Đà Lạt là ớt chuông",
+   "muc_tieu": "ớt chuông"
+  },
+  "khoai môn cao": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Loại khoai môn",
+   "muc_tieu": "khoai môn"
+  },
+  "đậu bi": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đậu tươi",
+   "ten_de_xuat": "Đậu bi 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "lá rau quế": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Rau quế",
+   "muc_tieu": "rau quế"
+  },
+  "xá xíu": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Thịt nướng làm sẵn",
+   "ten_de_xuat": "Thịt xá xíu khay 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "khay 200g"
+  },
+  "ba chỉ xông khói": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng bacon",
+   "muc_tieu": "bacon (đề xuất)"
+  },
+  "bột hành": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị bột",
+   "ten_de_xuat": "Bột hành lọ 50g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "lọ 50g"
+  },
+  "cá ngừ khô": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Katsuobushi",
+   "ten_de_xuat": "Cá ngừ khô bào gói 50g",
+   "danh_muc": "Khô chế biến sẵn",
+   "don_vi": "gói 50g"
+  },
+  "gan bò": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Nội tạng",
+   "ten_de_xuat": "Gan bò khay 300g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "khay 300g"
+  },
+  "hành poa-rô": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hành boa rô viết khác",
+   "muc_tieu": "boarô (đề xuất)"
+  },
+  "lá thyme": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị Tây",
+   "ten_de_xuat": "Lá thyme khô lọ 10g",
+   "danh_muc": "Tiêu, sa tế, ớt bột",
+   "don_vi": "lọ 10g"
+  },
+  "thịt nạc lưng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thịt heo nạc",
+   "muc_tieu": "thịt heo"
+  },
+  "tép tỏi": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Tép của củ tỏi",
+   "muc_tieu": "tỏi"
+  },
+  "tôm viên": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Viên tôm",
+   "ten_de_xuat": "Tôm viên đông lạnh gói 200g",
+   "danh_muc": "Viên đông, viên mát",
+   "don_vi": "gói 200g"
+  },
+  "xốt mè": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Xốt salad",
+   "ten_de_xuat": "Xốt mè rang chai 250ml",
+   "danh_muc": "Tương ớt-đen, mayonnaise",
+   "don_vi": "chai 250ml"
+  },
+  "đường cát trắng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Loại đường",
+   "muc_tieu": "đường"
+  },
+  "đậu phộng sống": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng đậu phộng",
+   "muc_tieu": "đậu phộng (đề xuất)"
+  },
+  "aji hạt nêm heo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hạt nêm",
+   "muc_tieu": "hạt nêm"
+  },
+  "bò thăn": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thăn bò",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "bắp hạt lon": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Bắp đóng hộp",
+   "ten_de_xuat": "Bắp hạt lon 340g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "lon 340g"
+  },
+  "bắp vàng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng bắp",
+   "muc_tieu": "bắp"
+  },
+  "bột cari": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Gia vị cà ri",
+   "ten_de_xuat": "Bột cà ri gói 50g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "gói 50g"
+  },
+  "cà bát": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cà kho",
+   "ten_de_xuat": "Cà bát 500g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "500g"
+  },
+  "cá chẽm fillet": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng cá chẽm phi lê",
+   "muc_tieu": "cá chẽm phi lê (đề xuất)"
+  },
+  "cá lòng tong": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá nhỏ",
+   "ten_de_xuat": "Cá lòng tong 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "300g"
+  },
+  "cá ngát": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá lẩu",
+   "ten_de_xuat": "Cá ngát 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cá tầm phi lê": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá phi lê",
+   "ten_de_xuat": "Cá tầm phi lê khay 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "khay 300g"
+  },
+  "gà quay": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Món làm sẵn",
+   "ten_de_xuat": "Gà quay nguyên con 1kg",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "con 1kg"
+  },
+  "gạo mới": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng gạo",
+   "muc_tieu": "gạo"
+  },
+  "hương thảo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hương thảo là rosemary",
+   "muc_tieu": "rosemary (đề xuất)"
+  },
+  "jambon": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Thịt nguội",
+   "ten_de_xuat": "Giăm bông gói 200g",
+   "danh_muc": "Xúc xích, lạp xưởng, giò chả",
+   "don_vi": "gói 200g"
+  },
+  "khoai tím": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Củ",
+   "ten_de_xuat": "Khoai lang tím 500g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "500g"
+  },
+  "lá cẩm": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Nhuộm màu xôi",
+   "ten_de_xuat": "Lá cẩm gói 50g",
+   "danh_muc": "Rau lá",
+   "don_vi": "gói 50g"
+  },
+  "lá sách": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Nội tạng bò",
+   "ten_de_xuat": "Lá sách bò khay 300g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "khay 300g"
+  },
+  "muối hồng hymalaya": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Muối đặc biệt",
+   "ten_de_xuat": "Muối hồng Himalaya hũ 200g",
+   "danh_muc": "Muối",
+   "don_vi": "hũ 200g"
+  },
+  "mì ý số": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Mì Ý",
+   "muc_tieu": "mì spaghetti"
+  },
+  "nếp mới": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gạo nếp",
+   "muc_tieu": "gạo nếp"
+  },
+  "oregano": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng lá oregano",
+   "muc_tieu": "lá oregano (đề xuất)"
+  },
+  "rau bồ ngót": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau nấu canh",
+   "ten_de_xuat": "Rau ngót bó 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 200g"
+  },
+  "rau mầm non": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Rau mầm",
+   "muc_tieu": "cải mầm (đề xuất)"
+  },
+  "rosemary": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị Tây",
+   "ten_de_xuat": "Rosemary khô lọ 10g",
+   "danh_muc": "Tiêu, sa tế, ớt bột",
+   "don_vi": "lọ 10g"
+  },
+  "rượu vang đỏ": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Nấu ăn",
+   "ten_de_xuat": "Rượu vang đỏ chai 750ml",
+   "danh_muc": "Rượu",
+   "don_vi": "chai 750ml"
+  },
+  "salad iceberg": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau salad",
+   "ten_de_xuat": "Xà lách iceberg 300g",
+   "danh_muc": "Rau lá",
+   "don_vi": "300g"
+  },
+  "sen": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hạt sen",
+   "ten_de_xuat": "Hạt sen tươi 200g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "200g"
+  },
+  "thịt cổ bò": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thịt bò chung",
+   "muc_tieu": "thịt bò (đề xuất)"
+  },
+  "thịt gấc": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Quả gấc nấu xôi, màu thực phẩm",
+   "ten_de_xuat": "Gấc trái 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "thịt nghêu đông lạnh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Nghêu",
+   "muc_tieu": "nghêu (đề xuất)"
+  },
+  "tim bò": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Nội tạng bò",
+   "ten_de_xuat": "Tim bò khay 300g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "khay 300g"
+  },
+  "tôm hấp": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tôm",
+   "muc_tieu": "tôm"
+  },
+  "tôm đông lạnh không vỏ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tôm",
+   "muc_tieu": "tôm"
+  },
+  "vỏ cam": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Vỏ của quả cam",
+   "muc_tieu": "cam"
+  },
+  "xốt okonomi": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Xốt Nhật",
+   "ten_de_xuat": "Xốt okonomi chai 300g",
+   "danh_muc": "Nước chấm, mắm",
+   "don_vi": "chai 300g"
+  },
+  "xốt tasbaco": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Xốt cay",
+   "ten_de_xuat": "Xốt Tabasco chai 60ml",
+   "danh_muc": "Tương ớt-đen, mayonnaise",
+   "don_vi": "chai 60ml"
+  },
+  "xốt ớt xanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Xốt cay ớt xanh",
+   "muc_tieu": "xốt tasbaco (đề xuất)"
+  },
+  "đu đủ hườm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đu đủ",
+   "muc_tieu": "đu đủ"
+  },
+  "đậu gà lon": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đậu đóng hộp",
+   "ten_de_xuat": "Đậu gà lon 400g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "lon 400g"
+  },
+  "ốc biển": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Ốc",
+   "ten_de_xuat": "Ốc biển khay 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "khay 500g"
+  },
+  "ớt paprika": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gia vị",
+   "ten_de_xuat": "Ớt paprika bột lọ 50g",
+   "danh_muc": "Tiêu, sa tế, ớt bột",
+   "don_vi": "lọ 50g"
+  },
+  "đầu hành": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Phần gốc hành lá",
+   "muc_tieu": "hành lá"
+  },
+  "thông thường": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Từ ghi chú, không phải nguyên liệu"
+  },
+  "rượu vang trắng": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Nấu ăn",
+   "ten_de_xuat": "Rượu vang trắng chai 750ml",
+   "danh_muc": "Rượu",
+   "don_vi": "chai 750ml"
+  },
+  "boarô": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hành lá loại boa rô",
+   "ten_de_xuat": "Hành boa rô bó 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 100g"
+  },
+  "bồn bồn": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau nấu canh chua",
+   "ten_de_xuat": "Bồn bồn tươi bó 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 200g"
+  },
+  "chao": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Catalog có danh mục Chao nhưng tên chưa khớp; kiểm tra trùng",
+   "ten_de_xuat": "Chao hũ 200g",
+   "danh_muc": "Chao",
+   "don_vi": "hũ 200g"
+  },
+  "thính gạo": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gạo rang xay",
+   "ten_de_xuat": "Thính gạo gói 100g",
+   "danh_muc": "Bột các loại",
+   "don_vi": "gói 100g"
+  },
+  "tàu hủ ky": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng tàu hũ ky",
+   "muc_tieu": "tàu hũ ki mềm (đề xuất)"
+  },
+  "tép": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Tép là tôm nhỏ",
+   "muc_tieu": "tôm"
+  },
+  "tương chua ngọt": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Xốt chấm",
+   "ten_de_xuat": "Tương chua ngọt chai 250g",
+   "danh_muc": "Nước chấm, mắm",
+   "don_vi": "chai 250g"
+  },
+  "đậu bi hà lan": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng đậu Hà Lan",
+   "muc_tieu": "đậu hà lan"
+  },
+  "baking sodo": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Bột nở",
+   "ten_de_xuat": "Baking soda gói 100g",
+   "danh_muc": "Bột các loại",
+   "don_vi": "gói 100g"
+  },
+  "bột pho mai": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng phô mai bột",
+   "muc_tieu": "phô mai bột (đề xuất)"
+  },
+  "bữa chiều": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Từ ghi chú, không phải nguyên liệu"
+  },
+  "cá chép giòn": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá chép",
+   "ten_de_xuat": "Cá chép 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cá hú": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá nấu canh",
+   "ten_de_xuat": "Cá hú khay 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "khay 500g"
+  },
+  "câu kỷ tử": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Nấu canh, hầm",
+   "ten_de_xuat": "Kỷ tử gói 50g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 50g"
+  },
+  "cơm dừa": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cơm của trái dừa",
+   "muc_tieu": "dừa"
+  },
+  "cải muối": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Dưa muối",
+   "ten_de_xuat": "Cải chua muối hũ 500g",
+   "danh_muc": "Cá mắm, dưa mắm",
+   "don_vi": "hũ 500g"
+  },
+  "dầu chiên": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Dầu ăn",
+   "muc_tieu": "dầu ăn"
+  },
+  "gân bò": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Phần bò",
+   "ten_de_xuat": "Gân bò khay 300g",
+   "danh_muc": "Thịt bò",
+   "don_vi": "khay 300g"
+  },
+  "hạt điều khô": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Hạt điều dùng nấu ăn; catalog chỉ có hạt khô ăn vặt",
+   "ten_de_xuat": "Hạt điều rang gói 200g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 200g"
+  },
+  "hẹ bông": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng bông hẹ",
+   "muc_tieu": "bông hẹ (đề xuất)"
+  },
+  "kem sữa": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Có thể thay bằng sữa tươi",
+   "muc_tieu": "sữa tươi"
+  },
+  "lá gừng non": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "trung_binh",
+   "ly_do": "Lá của cây gừng, thay bằng gừng",
+   "muc_tieu": "gừng"
+  },
+  "màu điều dầu": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Tạo màu món kho",
+   "ten_de_xuat": "Dầu điều gói 50ml",
+   "danh_muc": "Dầu ăn",
+   "don_vi": "chai 50ml"
+  },
+  "mì efu": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Mì chiên sẵn",
+   "ten_de_xuat": "Mì Efu gói 250g",
+   "danh_muc": "Mì ăn liền",
+   "don_vi": "gói 250g"
+  },
+  "mực lá sơ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng mực lá",
+   "muc_tieu": "mực lá dày (đề xuất)"
+  },
+  "nạc lưng heo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thịt heo nạc",
+   "muc_tieu": "thịt heo"
+  },
+  "nấm bạch tuyết": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Nấm",
+   "ten_de_xuat": "Nấm bạch tuyết gói 150g",
+   "danh_muc": "Nấm các loại",
+   "don_vi": "gói 150g"
+  },
+  "nấm trà khô": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Nấm khô",
+   "ten_de_xuat": "Nấm trà tân khô gói 100g",
+   "danh_muc": "Nấm các loại",
+   "don_vi": "gói 100g"
+  },
+  "phi lê cá bớp": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá phi lê",
+   "ten_de_xuat": "Cá bớp phi lê khay 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "khay 300g"
+  },
+  "tai vị thơm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hoa hồi",
+   "muc_tieu": "tai vị (đề xuất)"
+  },
+  "thịt bạ rọi": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai chính tả",
+   "muc_tieu": "ba rọi"
+  },
+  "thịt má đùi gà lóc xương": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Phần đùi gà",
+   "muc_tieu": "đùi gà"
+  },
+  "thịt quay": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Món làm sẵn",
+   "ten_de_xuat": "Thịt heo quay khay 300g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "khay 300g"
+  },
+  "tiêu lốp khô": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Tiêu hạt",
+   "muc_tieu": "tiêu hạt (đề xuất)"
+  },
+  "tiêu trắng bể": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Tiêu hạt",
+   "muc_tieu": "tiêu hạt (đề xuất)"
+  },
+  "tàu hủ ky chiên": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng tàu hũ ky",
+   "muc_tieu": "tàu hũ ki mềm (đề xuất)"
+  },
+  "tần ô": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau lẩu",
+   "ten_de_xuat": "Rau tần ô bó 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 200g"
+  },
+  "xốt okonomoyaki": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Viết khác",
+   "muc_tieu": "xốt okonomi (đề xuất)"
+  },
+  "ớt ngọt đà lạt": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ớt ngọt Đà Lạt",
+   "muc_tieu": "ớt chuông"
+  },
+  "ớt đà lạt đỏ vàng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ớt Đà Lạt",
+   "muc_tieu": "ớt chuông"
+  },
+  "dừa nạo": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dừa nạo sẵn",
+   "ten_de_xuat": "Dừa nạo sợi gói 200g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 200g"
+  },
+  "cua thịt": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Thịt cua",
+   "ten_de_xuat": "Thịt cua đông lạnh gói 200g",
+   "danh_muc": "Thủy hải sản, thịt đông",
+   "don_vi": "gói 200g"
+  },
+  "mayo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Viết tắt mayonnaise",
+   "muc_tieu": "mayonnaise"
+  },
+  "xay": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cách sơ chế"
+  },
+  "xốt cà hộp": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Cà chua đóng hộp",
+   "ten_de_xuat": "Cà chua hộp lon 400g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "lon 400g"
+  },
+  "đậu ngự": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đậu tươi",
+   "ten_de_xuat": "Đậu ngự 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "bông cả": {
+   "quyet_dinh": "bo",
+   "chac_chan": "thap",
+   "ly_do": "Không rõ nguyên liệu (rau ăn kèm), cần bạn xem"
+  },
+  "bưởi năm roi": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Loại bưởi",
+   "muc_tieu": "bưởi"
+  },
+  "cá chép": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng cá chép",
+   "muc_tieu": "cá chép giòn (đề xuất)"
+  },
+  "cá dìa": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá lẩu",
+   "ten_de_xuat": "Cá dìa 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cơm trắng dẻo": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cơm nấu từ gạo, không phải sản phẩm"
+  },
+  "gà phi lê": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gà phi lê là ức gà",
+   "muc_tieu": "ức gà"
+  },
+  "khoai cao": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng khoai môn cao",
+   "muc_tieu": "khoai môn cao"
+  },
+  "khoai tây tím": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Củ",
+   "ten_de_xuat": "Khoai tây tím 500g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "500g"
+  },
+  "mắc khén": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị Tây Bắc",
+   "ten_de_xuat": "Hạt mắc khén gói 50g",
+   "danh_muc": "Tiêu, sa tế, ớt bột",
+   "don_vi": "gói 50g"
+  },
+  "mực khô": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Khô",
+   "ten_de_xuat": "Mực khô con 100g",
+   "danh_muc": "Khô chế biến sẵn",
+   "don_vi": "gói 100g"
+  },
+  "mực nang": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Mực",
+   "muc_tieu": "mực lá dày (đề xuất)"
+  },
+  "nha đam": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau củ",
+   "ten_de_xuat": "Nha đam bẹ 500g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "500g"
+  },
+  "nước cốt thơm": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Ép từ thơm",
+   "muc_tieu": "thơm"
+  },
+  "rau chuối": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau ăn kèm",
+   "ten_de_xuat": "Rau chuối bào bó 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 200g"
+  },
+  "rau kinh giới": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau thơm",
+   "ten_de_xuat": "Rau kinh giới bó 50g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 50g"
+  },
+  "rau ăn lẩu": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Tên chung chung (nhóm rau)"
+  },
+  "snack tôm": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Snack ăn vặt dùng trang trí, không phải nguyên liệu chính"
+  },
+  "thảo quả": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị",
+   "ten_de_xuat": "Thảo quả gói 30g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "gói 30g"
+  },
+  "thịt đùi gà ta góc tư": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Phần đùi gà",
+   "muc_tieu": "đùi gà"
+  },
+  "tiêu đường": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Gõ nối từ 'tiêu, đường'"
+  },
+  "tôm bạc": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tôm",
+   "muc_tieu": "tôm"
+  },
+  "whipping cream": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng kem tươi",
+   "muc_tieu": "heavy cream (đề xuất)"
+  },
+  "xốt cà paste": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng tomato paste",
+   "muc_tieu": "sốt cà chua đậm đặc (đề xuất)"
+  },
+  "đinh hương": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị",
+   "ten_de_xuat": "Đinh hương gói 20g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "gói 20g"
+  },
+  "đu đủ hường": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đu đủ",
+   "muc_tieu": "đu đủ"
+  },
+  "đậu petit pois": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đậu Hà Lan",
+   "muc_tieu": "đậu hà lan"
+  },
+  "cơm nguội": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cơm nấu sẵn, không phải sản phẩm"
+  },
+  "nước cốt hành tím": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Ép từ hành tím",
+   "muc_tieu": "hành tím"
+  },
+  "cốm dẹp": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cốm",
+   "ten_de_xuat": "Cốm dẹp gói 200g",
+   "danh_muc": "Gạo, nếp",
+   "don_vi": "gói 200g"
+  },
+  "nướng tương": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Ghi chú cách làm"
+  },
+  "thịt nguội chay": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Đồ chay làm sẵn",
+   "muc_tieu": "bò chay (đề xuất)"
+  },
+  "đậu cô ve nhật": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đậu cô ve",
+   "muc_tieu": "đậu cô ve"
+  },
+  "chả quết heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Giò sống",
+   "ten_de_xuat": "Chả quết heo khay 200g",
+   "danh_muc": "Xúc xích, lạp xưởng, giò chả",
+   "don_vi": "khay 200g"
+  },
+  "cá bống mú": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá nguyên con",
+   "ten_de_xuat": "Cá bống mú 800g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "800g"
+  },
+  "dường": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai 'đường', trùng với đường"
+  },
+  "giá đỗ bỏ rể": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Chỉ là sơ chế",
+   "muc_tieu": "giá đỗ (đề xuất)"
+  },
+  "hoành thánh": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Nguyên liệu hoành thánh",
+   "ten_de_xuat": "Vỏ hoành thánh gói 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "gói 200g"
+  },
+  "hạt thông": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hạt",
+   "ten_de_xuat": "Hạt thông gói 100g",
+   "danh_muc": "Hạt khô",
+   "don_vi": "gói 100g"
+  },
+  "lá gừng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng lá gừng",
+   "muc_tieu": "lá gừng non (đề xuất)"
+  },
+  "muối trang trí": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Ghi chú trình bày"
+  },
+  "mì chiên giòn": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Mì",
+   "ten_de_xuat": "Mì chiên giòn gói 200g",
+   "danh_muc": "Mì ăn liền",
+   "don_vi": "gói 200g"
+  },
+  "ngó sen ngâm chua": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đồ chua",
+   "ten_de_xuat": "Ngó sen ngâm chua hũ 300g",
+   "danh_muc": "Cá mắm, dưa mắm",
+   "don_vi": "hũ 300g"
+  },
+  "nhộng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Đặc sản",
+   "ten_de_xuat": "Nhộng tằm 200g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "200g"
+  },
+  "phô mai mozzarella": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Phô mai",
+   "ten_de_xuat": "Phô mai mozzarella gói 200g",
+   "danh_muc": "Sữa chua",
+   "don_vi": "gói 200g"
+  },
+  "rau cuốn": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Tên chung chung (nhóm rau)"
+  },
+  "sò lông": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hải sản",
+   "ten_de_xuat": "Sò lông 1kg",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "1kg"
+  },
+  "thịt vịt xiêm": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Vịt",
+   "ten_de_xuat": "Vịt xiêm nguyên con 1.3kg",
+   "danh_muc": "Thịt gà, vịt",
+   "don_vi": "con 1.3kg"
+  },
+  "tép mỡ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tép là tôm nhỏ",
+   "muc_tieu": "tôm"
+  },
+  "tôm khô ngon": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tôm khô",
+   "muc_tieu": "tôm khô"
+  },
+  "ơt hiểm xanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai",
+   "muc_tieu": "ớt hiểm"
+  },
+  "ơt hiểm đỏ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai",
+   "muc_tieu": "ớt hiểm"
+  },
+  "ớt ngâm chua": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Ngâm chua",
+   "ten_de_xuat": "Ớt ngâm chua hũ 200g",
+   "danh_muc": "Cá mắm, dưa mắm",
+   "don_vi": "hũ 200g"
+  },
+  "chà bông heo": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Ăn kèm",
+   "ten_de_xuat": "Chà bông heo gói 100g",
+   "danh_muc": "Khô chế biến sẵn",
+   "don_vi": "gói 100g"
+  },
+  "cá chẽm phi lê": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cá phi lê",
+   "ten_de_xuat": "Cá chẽm phi lê khay 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "khay 300g"
+  },
+  "kèo nèo": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau đặc sản",
+   "ten_de_xuat": "Rau kèo nèo bó 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 100g"
+  },
+  "thịt nách": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thịt heo",
+   "muc_tieu": "thịt heo"
+  },
+  "vỏ hoành thánh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng sản phẩm",
+   "muc_tieu": "hoành thánh (đề xuất)"
+  },
+  "bơ phe": {
+   "quyet_dinh": "bo",
+   "chac_chan": "thap",
+   "ly_do": "Không rõ bơ phe, cần bạn xem"
+  },
+  "củ kiệu chua": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Đồ chua",
+   "ten_de_xuat": "Củ kiệu chua hũ 300g",
+   "danh_muc": "Cá mắm, dưa mắm",
+   "don_vi": "hũ 300g"
+  },
+  "dừa rám": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Dừa",
+   "muc_tieu": "dừa"
+  },
+  "hạt điều lạt": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hạt điều",
+   "muc_tieu": "hạt điều khô (đề xuất)"
+  },
+  "mứt phúc bồn tử": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Mứt",
+   "ten_de_xuat": "Mứt phúc bồn tử hũ 200g",
+   "danh_muc": "Đường",
+   "don_vi": "hũ 200g"
+  },
+  "thuốc bắc": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gói thuốc",
+   "ten_de_xuat": "Gói thuốc bắc nấu canh 50g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "gói 50g"
+  },
+  "thịt cua chay": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Đồ chay",
+   "muc_tieu": "bò chay (đề xuất)"
+  },
+  "thịt đùi ếch": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Ếch",
+   "ten_de_xuat": "Thịt ếch khay 300g",
+   "danh_muc": "Thủy hải sản, thịt đông",
+   "don_vi": "khay 300g"
+  },
+  "trứng ga": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Trứng gà",
+   "muc_tieu": "trứng gà"
+  },
+  "ăn trưa": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Từ ghi chú"
+  },
+  "đảng sâm": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Dược liệu",
+   "ten_de_xuat": "Đảng sâm gói 50g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "gói 50g"
+  },
+  "lá giang": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Rau nấu canh chua",
+   "ten_de_xuat": "Lá giang bó 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 100g"
+  },
+  "nấm mỡ": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Nấm",
+   "ten_de_xuat": "Nấm mỡ khay 200g",
+   "danh_muc": "Nấm các loại",
+   "don_vi": "khay 200g"
+  },
+  "cơm gạo nhật": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cơm nấu từ gạo Nhật, không phải sản phẩm"
+  },
+  "cá đuối": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá lẩu",
+   "ten_de_xuat": "Cá đuối 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cốm xanh khô": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cốm",
+   "muc_tieu": "cốm dẹp (đề xuất)"
+  },
+  "dâù ăn": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai",
+   "muc_tieu": "dầu ăn"
+  },
+  "hành khô": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hành khô là hành tím",
+   "muc_tieu": "hành tím"
+  },
+  "hạt dẻ": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hạt",
+   "ten_de_xuat": "Hạt dẻ gói 200g",
+   "danh_muc": "Hạt khô",
+   "don_vi": "gói 200g"
+  },
+  "khoai cau hấp": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Khoai",
+   "muc_tieu": "khoai môn"
+  },
+  "lá cà ry": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị Ấn",
+   "ten_de_xuat": "Lá cà ri bó 20g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 20g"
+  },
+  "lá tàu hủ ky": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tàu hũ ky",
+   "muc_tieu": "tàu hũ ki mềm (đề xuất)"
+  },
+  "thịt nách có da": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thịt heo",
+   "muc_tieu": "thịt heo"
+  },
+  "tôm bạc đất": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tôm",
+   "muc_tieu": "tôm"
+  },
+  "tôm khô ngâm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tôm khô",
+   "muc_tieu": "tôm khô"
+  },
+  "xuyên tiêu": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Tiêu",
+   "muc_tieu": "tiêu hạt (đề xuất)"
+  },
+  "ngò om": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng rau om",
+   "muc_tieu": "rau om"
+  },
+  "cơm mẻ": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị chua",
+   "ten_de_xuat": "Cơm mẻ hũ 200g",
+   "danh_muc": "Cá mắm, dưa mắm",
+   "don_vi": "hũ 200g"
+  },
+  "dọc mùng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau canh chua",
+   "ten_de_xuat": "Dọc mùng 300g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "300g"
+  },
+  "sake": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng rượu sake",
+   "muc_tieu": "rượu sake (đề xuất)"
+  },
+  "bạch quả": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hạt",
+   "ten_de_xuat": "Bạch quả lọ 100g",
+   "danh_muc": "Hạt khô",
+   "don_vi": "gói 100g"
+  },
+  "chem chép": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Sò",
+   "ten_de_xuat": "Chem chép 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "con gà ta": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gà ta",
+   "muc_tieu": "gà ta"
+  },
+  "cá cờ": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá lẩu",
+   "ten_de_xuat": "Cá cờ 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "cá nâu": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá",
+   "ten_de_xuat": "Cá nâu 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "gà đùi": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đùi gà",
+   "muc_tieu": "đùi gà"
+  },
+  "khế": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Khế",
+   "muc_tieu": "khế chua xanh (đề xuất)"
+  },
+  "kẹo đậu phộng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đậu phộng",
+   "muc_tieu": "đậu phộng (đề xuất)"
+  },
+  "mỡ + tóp mỡ": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Làm từ mỡ heo",
+   "muc_tieu": "thịt heo"
+  },
+  "rượu sake": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Nấu ăn",
+   "ten_de_xuat": "Rượu sake chai 300ml",
+   "danh_muc": "Rượu",
+   "don_vi": "chai 300ml"
+  },
+  "salad trộn dầu": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Ghi chú món"
+  },
+  "thịt bò -lê": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "thịt xá xíu": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cùng xá xíu",
+   "muc_tieu": "xá xíu (đề xuất)"
+  },
+  "tôm hấp đông lạnh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tôm",
+   "muc_tieu": "tôm"
+  },
+  "ớt hiềm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai",
+   "muc_tieu": "ớt hiểm"
+  },
+  "vỏ chanh vàng mài": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Vỏ chanh mài",
+   "muc_tieu": "chanh"
+  },
+  "cá bớp": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá",
+   "ten_de_xuat": "Cá bớp 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "500g"
+  },
+  "bắp chuối xanh": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau",
+   "ten_de_xuat": "Bắp chuối xanh 300g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "300g"
+  },
+  "cà ri đỏ": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Xốt cà ri",
+   "ten_de_xuat": "Cà ri đỏ gói 50g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "gói 50g"
+  },
+  "dâu": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Dâu",
+   "muc_tieu": "dâu tây"
+  },
+  "hạt ngò": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị",
+   "ten_de_xuat": "Hạt ngò gói 30g",
+   "danh_muc": "Bột nghệ, tỏi, hồi, quế,...",
+   "don_vi": "gói 30g"
+  },
+  "lá me đất": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau",
+   "ten_de_xuat": "Lá me đất bó 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 100g"
+  },
+  "lòng đỏ trứng muối tán": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Lòng đỏ trứng muối",
+   "muc_tieu": "trứng muối (đề xuất)"
+  },
+  "lườn vịt quay": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Món làm sẵn",
+   "ten_de_xuat": "Vịt quay khay 500g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "khay 500g"
+  },
+  "lạc": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Lạc là đậu phộng",
+   "muc_tieu": "đậu phộng (đề xuất)"
+  },
+  "thịt sầu riêng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Trái cây",
+   "ten_de_xuat": "Sầu riêng múi hộp 300g",
+   "danh_muc": "Trái cây",
+   "don_vi": "hộp 300g"
+  },
+  "trái vả": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Trái cây nấu canh",
+   "ten_de_xuat": "Trái vả 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "tôm bạc thẻ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tôm",
+   "muc_tieu": "tôm"
+  },
+  "tỏi bắc": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tỏi",
+   "muc_tieu": "tỏi"
+  },
+  "chao đỏ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Chao",
+   "muc_tieu": "chao (đề xuất)"
+  },
+  "cá liệt": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Cá trắng thay thế",
+   "muc_tieu": "cá diêu hồng"
+  },
+  "cốm dẹp màu xanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cốm",
+   "muc_tieu": "cốm dẹp (đề xuất)"
+  },
+  "củ sâm đất": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Củ",
+   "ten_de_xuat": "Củ sâm đất 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "hỗn hợp cải mầm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cải mầm",
+   "muc_tieu": "cải mầm (đề xuất)"
+  },
+  "nghêu vỏ còn sống": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Nghêu",
+   "muc_tieu": "nghêu (đề xuất)"
+  },
+  "phomai mozzarella": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Viết khác",
+   "muc_tieu": "phô mai mozzarella (đề xuất)"
+  },
+  "thơm còn phần đầu": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thơm",
+   "muc_tieu": "thơm"
+  },
+  "tàu hũ ki": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tàu hũ ky",
+   "muc_tieu": "tàu hũ ki mềm (đề xuất)"
+  },
+  "ớt đà lạt vàng đỏ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ớt Đà Lạt",
+   "muc_tieu": "ớt chuông"
+  },
+  "cốt chanh": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Nước cốt chanh",
+   "muc_tieu": "chanh"
+  },
+  "cốt dừa": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Nước cốt dừa",
+   "muc_tieu": "nước cốt dừa"
+  },
+  "hành củ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hành củ",
+   "muc_tieu": "hành tím"
+  },
+  "bỏ chỉ lưng": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cách sơ chế"
+  },
+  "cơm tấm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gạo tấm",
+   "muc_tieu": "gạo"
+  },
+  "dứa": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Dứa là thơm",
+   "muc_tieu": "thơm"
+  },
+  "hỗn hợp cà ry xanh": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị Thái",
+   "ten_de_xuat": "Cà ri xanh Thái gói 50g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "gói 50g"
+  },
+  "không xương": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cách sơ chế"
+  },
+  "lá dứa bản": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Tạo mùi",
+   "ten_de_xuat": "Lá dứa bó 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 100g"
+  },
+  "lá rau bó xôi chần": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Bó xôi",
+   "muc_tieu": "bó xôi (đề xuất)"
+  },
+  "lát thịt nguội": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thịt nguội",
+   "muc_tieu": "jambon (đề xuất)"
+  },
+  "mì linguine dẹp": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Mì Ý",
+   "muc_tieu": "mì spaghetti"
+  },
+  "phi lê cá lăng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá phi lê",
+   "ten_de_xuat": "Cá lăng phi lê khay 500g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "khay 500g"
+  },
+  "sườn chay khô": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Đồ chay",
+   "muc_tieu": "bò chay (đề xuất)"
+  },
+  "tinh dầu cà cuống": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị đặc sản",
+   "ten_de_xuat": "Tinh dầu cà cuống lọ 5ml",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "lọ 5ml"
+  },
+  "đường tán": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đường",
+   "muc_tieu": "đường"
+  },
+  "đậu bi bo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Đậu bi",
+   "muc_tieu": "đậu bi (đề xuất)"
+  },
+  "đậu đũa chần": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đậu đũa",
+   "muc_tieu": "đậu đũa"
+  },
+  "đọt khổ qua rừng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau",
+   "ten_de_xuat": "Đọt khổ qua rừng bó 200g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 200g"
+  },
+  "ớt muối": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Ớt",
+   "muc_tieu": "ớt"
+  },
+  "bánh ướt không nhân": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Bánh tươi",
+   "ten_de_xuat": "Bánh ướt gói 300g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "gói 300g"
+  },
+  "gà góc tư": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đùi gà",
+   "muc_tieu": "đùi gà"
+  },
+  "thịt bò fillet": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thịt bò phi lê",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "xốt ớt tabasco": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tabasco",
+   "muc_tieu": "xốt tasbaco (đề xuất)"
+  },
+  "da bò bía": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Da cuốn chả giò",
+   "ten_de_xuat": "Da bò bía tươi gói 200g",
+   "danh_muc": "Hàng mát chế biến",
+   "don_vi": "gói 200g"
+  },
+  "giá sạch": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Giá",
+   "muc_tieu": "giá đỗ (đề xuất)"
+  },
+  "gà nướng topping": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Ghi chú topping"
+  },
+  "gà ta góc tư": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đùi gà",
+   "muc_tieu": "đùi gà"
+  },
+  "hạt điều sẵn": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hạt điều",
+   "muc_tieu": "hạt điều khô (đề xuất)"
+  },
+  "khô cá minh": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Khô cá",
+   "ten_de_xuat": "Khô cá minh thái gói 200g",
+   "danh_muc": "Khô chế biến sẵn",
+   "don_vi": "gói 200g"
+  },
+  "soda": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Nước có ga",
+   "ten_de_xuat": "Soda lon 330ml",
+   "danh_muc": "Nước ngọt",
+   "don_vi": "lon 330ml"
+  },
+  "vắt ráo nước": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cách sơ chế"
+  },
+  "đậu petit poise": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đậu Hà Lan",
+   "muc_tieu": "đậu hà lan"
+  },
+  "đu đủ": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Trái cây",
+   "ten_de_xuat": "Đu đủ 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "bún tàu đậu xanh": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Miến",
+   "ten_de_xuat": "Miến đậu xanh gói 200g",
+   "danh_muc": "Hủ tiếu, miến",
+   "don_vi": "gói 200g"
+  },
+  "cá hồng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá nguyên con",
+   "ten_de_xuat": "Cá hồng 700g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "700g"
+  },
+  "cách gà công nghiệp": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cánh gà",
+   "muc_tieu": "cánh gà"
+  },
+  "lá khổ qua rừng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Khổ qua rừng",
+   "muc_tieu": "đọt khổ qua rừng (đề xuất)"
+  },
+  "lá é trắng": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau thơm",
+   "ten_de_xuat": "Lá é bó 50g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 50g"
+  },
+  "thit heo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai",
+   "muc_tieu": "thịt heo"
+  },
+  "ngó sen": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau",
+   "ten_de_xuat": "Ngó sen 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "bột ớt việt nam": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Ớt bột",
+   "muc_tieu": "ớt bột"
+  },
+  "gạch để riêng": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cách sơ chế"
+  },
+  "hàu thịt": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Hải sản",
+   "ten_de_xuat": "Hàu thịt khay 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "khay 300g"
+  },
+  "kem béo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Kem tươi",
+   "muc_tieu": "heavy cream (đề xuất)"
+  },
+  "lá me non": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Lá me",
+   "muc_tieu": "lá me đất (đề xuất)"
+  },
+  "mì căn ống": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Mì căn",
+   "muc_tieu": "mì căn"
+  },
+  "mỡ gà": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Mỡ lấy từ gà",
+   "muc_tieu": "thịt gà"
+  },
+  "thịt gà ta": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gà ta",
+   "muc_tieu": "gà ta"
+  },
+  "xương bọng gà": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Xương gà",
+   "muc_tieu": "thịt gà"
+  },
+  "cua thanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thanh cua",
+   "muc_tieu": "cua giả (đề xuất)"
+  },
+  "dưa chuột muối chua": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đồ chua",
+   "muc_tieu": "đồ chua (đề xuất)"
+  },
+  "nho xanh không hạt": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Trái cây",
+   "ten_de_xuat": "Nho xanh không hạt 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "thịt jambon": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Jambon",
+   "muc_tieu": "jambon (đề xuất)"
+  },
+  "xoài ngọt": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Xoài",
+   "muc_tieu": "xoài"
+  },
+  "xôi đậu xanh": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Món ăn kèm, không phải nguyên liệu"
+  },
+  "đậu đỏ": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Đậu",
+   "ten_de_xuat": "Đậu đỏ gói 200g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 200g"
+  },
+  "bắp hạt mỹ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Bắp hạt",
+   "muc_tieu": "bắp hạt lon (đề xuất)"
+  },
+  "cá tầm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cá tầm",
+   "muc_tieu": "cá tầm phi lê (đề xuất)"
+  },
+  "cơm trắng nấu khô": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cơm nấu sẵn"
+  },
+  "củ từ": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Củ",
+   "ten_de_xuat": "Củ từ 300g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "300g"
+  },
+  "gừng chiên": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Gừng chiên giòn",
+   "muc_tieu": "gừng"
+  },
+  "tỏi đâp giập": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tỏi",
+   "muc_tieu": "tỏi"
+  },
+  "xúc xích hun khói": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Xúc xích",
+   "ten_de_xuat": "Xúc xích hun khói gói 200g",
+   "danh_muc": "Xúc xích, lạp xưởng, giò chả",
+   "don_vi": "gói 200g"
+  },
+  "ớt tabasco": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tabasco",
+   "muc_tieu": "xốt tasbaco (đề xuất)"
+  },
+  "chôm chôm": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Trái cây",
+   "ten_de_xuat": "Chôm chôm 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "cơm gạo": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cơm nấu sẵn"
+  },
+  "cỏ xạ hương": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thyme",
+   "muc_tieu": "lá thyme (đề xuất)"
+  },
+  "hoa kim châm": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau khô",
+   "ten_de_xuat": "Hoa kim châm khô gói 50g",
+   "danh_muc": "Đậu, nấm, đồ khô",
+   "don_vi": "gói 50g"
+  },
+  "kimchi": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Đồ lên men",
+   "ten_de_xuat": "Kim chi cải thảo hũ 500g",
+   "danh_muc": "Cá mắm, dưa mắm",
+   "don_vi": "hũ 500g"
+  },
+  "nạc dăm": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Thịt heo",
+   "ten_de_xuat": "Nạc dăm heo khay 300g",
+   "danh_muc": "Thịt heo",
+   "don_vi": "khay 300g"
+  },
+  "thịt bò fillet mềm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thịt bò phi lê",
+   "muc_tieu": "thịt bò phi lê (đề xuất)"
+  },
+  "thịt đầu vai": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thịt heo",
+   "muc_tieu": "thịt heo"
+  },
+  "tương ớt hàn quốc - gochujang": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Xốt Hàn",
+   "ten_de_xuat": "Tương ớt Hàn Quốc Gochujang hũ 200g",
+   "danh_muc": "Tương ớt-đen, mayonnaise",
+   "don_vi": "hũ 200g"
+  },
+  "btkcg hương vị bơ tỏi": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gói gia vị",
+   "ten_de_xuat": "Gia vị chiên gà vị bơ tỏi gói 50g",
+   "danh_muc": "Gia vị nêm sẵn",
+   "don_vi": "gói 50g"
+  },
+  "gà da giòn bình định": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gà",
+   "muc_tieu": "đùi gà"
+  },
+  "húng lủi bắc": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Húng lủi",
+   "muc_tieu": "húng lủi"
+  },
+  "hạt dổi": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị Tây Bắc",
+   "ten_de_xuat": "Hạt dổi gói 20g",
+   "danh_muc": "Tiêu, sa tế, ớt bột",
+   "don_vi": "gói 20g"
+  },
+  "lá cần tây non": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cần tây",
+   "muc_tieu": "cần tây"
+  },
+  "nước cốt hành tỏi": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Ép từ tỏi hành",
+   "muc_tieu": "tỏi"
+  },
+  "quả xí muội đã ngâm": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Mứt, ô mai",
+   "ten_de_xuat": "Xí muội gói 100g",
+   "danh_muc": "Trái cây sấy",
+   "don_vi": "gói 100g"
+  },
+  "ớt thóc xanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Ớt nhỏ",
+   "muc_tieu": "ớt hiểm"
+  },
+  "bơ sáp": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Trái cây",
+   "ten_de_xuat": "Bơ sáp 500g",
+   "danh_muc": "Trái cây",
+   "don_vi": "500g"
+  },
+  "bụt giấm": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau củ",
+   "ten_de_xuat": "Trái bụt giấm 200g",
+   "danh_muc": "Củ, quả",
+   "don_vi": "200g"
+  },
+  "salad romaine": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Rau salad",
+   "ten_de_xuat": "Xà lách romaine 300g",
+   "danh_muc": "Rau lá",
+   "don_vi": "300g"
+  },
+  "thịt cá lăng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Cá lăng",
+   "muc_tieu": "phi lê cá lăng (đề xuất)"
+  },
+  "ớt xanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Ớt",
+   "muc_tieu": "ớt"
+  },
+  "bột cumin": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gia vị",
+   "ten_de_xuat": "Bột cumin lọ 50g",
+   "danh_muc": "Tiêu, sa tế, ớt bột",
+   "don_vi": "lọ 50g"
+  },
+  "bột ớt cay hàn quốc": {
+   "quyet_dinh": "them",
+   "chac_chan": "trung_binh",
+   "ly_do": "Gia vị",
+   "ten_de_xuat": "Bột ớt Hàn Quốc gói 100g",
+   "danh_muc": "Tiêu, sa tế, ớt bột",
+   "don_vi": "gói 100g"
+  },
+  "màu gạch tôm": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Dầu điều",
+   "muc_tieu": "màu điều dầu (đề xuất)"
+  },
+  "bánh mí sandwich": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai",
+   "muc_tieu": "bánh mì sandwiches (đề xuất)"
+  },
+  "bột xù trắng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Bột xù",
+   "muc_tieu": "bột xù"
+  },
+  "dưa chuột muối": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đồ chua",
+   "muc_tieu": "đồ chua (đề xuất)"
+  },
+  "dừa sấy": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Dừa",
+   "ten_de_xuat": "Dừa sấy gói 100g",
+   "danh_muc": "Trái cây sấy",
+   "don_vi": "gói 100g"
+  },
+  "muốn": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai 'muối'"
+  },
+  "mù tạc xanh": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Wasabi",
+   "muc_tieu": "wasabi (đề xuất)"
+  },
+  "thịt nguột": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai",
+   "muc_tieu": "jambon (đề xuất)"
+  },
+  "yaua không đường": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Sữa chua không đường",
+   "muc_tieu": "sữa chua"
+  },
+  "cà lách": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gõ sai",
+   "muc_tieu": "xà lách"
+  },
+  "dừa nạo sấy": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Dừa sấy",
+   "muc_tieu": "dừa sấy (đề xuất)"
+  },
+  "hành hoa": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hành lá",
+   "muc_tieu": "hành lá"
+  },
+  "thịt gà phi lê": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Ức gà",
+   "muc_tieu": "ức gà"
+  },
+  "chừa đuôi": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Cách sơ chế"
+  },
+  "dưa chua": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Đồ chua",
+   "muc_tieu": "đồ chua (đề xuất)"
+  },
+  "dưa nụ ngâm chua": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Gia vị Tây",
+   "ten_de_xuat": "Nụ bạch hoa (capers) hũ 100g",
+   "danh_muc": "Tương ớt-đen, mayonnaise",
+   "don_vi": "hũ 100g"
+  },
+  "trứng cá": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Trứng cá",
+   "ten_de_xuat": "Trứng cá hồi hũ 50g",
+   "danh_muc": "Thủy hải sản, thịt đông",
+   "don_vi": "hũ 50g"
+  },
+  "tôm càng lóng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tôm",
+   "muc_tieu": "tôm"
+  },
+  "tôm vột vỏ": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tôm",
+   "muc_tieu": "tôm"
+  },
+  "tôm đất to": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tôm",
+   "muc_tieu": "tôm"
+  },
+  "thính": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thính",
+   "muc_tieu": "thính gạo (đề xuất)"
+  },
+  "cá hanh": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá nguyên con",
+   "ten_de_xuat": "Cá hanh 800g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "800g"
+  },
+  "mỡ gáy heo": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Thịt heo",
+   "muc_tieu": "thịt heo"
+  },
+  "xốt ớt hàn quốc": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Gochujang",
+   "muc_tieu": "tương ớt hàn quốc - gochujang (đề xuất)"
+  },
+  "ớt bột dầu mè": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Ớt bột",
+   "muc_tieu": "ớt bột"
+  },
+  "dâu ngọt": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Dâu",
+   "muc_tieu": "dâu tây"
+  },
+  "dưa kiệu chua": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Kiệu chua",
+   "muc_tieu": "củ kiệu chua (đề xuất)"
+  },
+  "mứt cam": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Mứt",
+   "ten_de_xuat": "Mứt cam hũ 200g",
+   "danh_muc": "Đường",
+   "don_vi": "hũ 200g"
+  },
+  "tần dày lá sả cây": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Sả",
+   "muc_tieu": "sả"
+  },
+  "nấm nhật": {
+   "quyet_dinh": "gop",
+   "chac_chan": "trung_binh",
+   "ly_do": "Nấm Nhật",
+   "muc_tieu": "nấm đông cô"
+  },
+  "xốt tabaco": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tabasco",
+   "muc_tieu": "xốt tasbaco (đề xuất)"
+  },
+  "rau rừng": {
+   "quyet_dinh": "bo",
+   "chac_chan": "cao",
+   "ly_do": "Tên chung chung (nhóm rau)"
+  },
+  "hành boarô": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Hành boa rô",
+   "muc_tieu": "boarô (đề xuất)"
+  },
+  "tiêu bể": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Tiêu hạt",
+   "muc_tieu": "tiêu hạt (đề xuất)"
+  },
+  "cá thác": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Cá phi lê",
+   "ten_de_xuat": "Cá thác lát phi lê khay 300g",
+   "danh_muc": "Cá, hải sản",
+   "don_vi": "khay 300g"
+  },
+  "tóp mỡ": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Tóp mỡ chiên",
+   "ten_de_xuat": "Tóp mỡ gói 100g",
+   "danh_muc": "Khô chế biến sẵn",
+   "don_vi": "gói 100g"
+  },
+  "wasabi": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Gia vị Nhật",
+   "ten_de_xuat": "Wasabi tuýp 43g",
+   "danh_muc": "Tương ớt-đen, mayonnaise",
+   "don_vi": "tuýp 43g"
+  },
+  "lá cách non": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Rau",
+   "ten_de_xuat": "Lá cách bó 100g",
+   "danh_muc": "Rau lá",
+   "don_vi": "bó 100g"
+  },
+  "nấm đầu khỉ": {
+   "quyet_dinh": "them",
+   "chac_chan": "thap",
+   "ly_do": "Nấm",
+   "ten_de_xuat": "Nấm đầu khỉ khay 150g",
+   "danh_muc": "Nấm các loại",
+   "don_vi": "khay 150g"
+  },
+  "dầu boaro": {
+   "quyet_dinh": "che_bien_tu",
+   "chac_chan": "cao",
+   "ly_do": "Dầu phi hành boa rô",
+   "muc_tieu": "boarô (đề xuất)"
+  },
+  "bột cá dashi": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Gia vị Nhật",
+   "ten_de_xuat": "Bột dashi cá hộp 50g",
+   "danh_muc": "Hạt nêm, bột ngọt, bột canh",
+   "don_vi": "hộp 50g"
+  },
+  "cream cheese": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Phô mai",
+   "ten_de_xuat": "Phô mai kem (cream cheese) hộp 150g",
+   "danh_muc": "Sữa chua",
+   "don_vi": "hộp 150g"
+  },
+  "mirin": {
+   "quyet_dinh": "them",
+   "chac_chan": "cao",
+   "ly_do": "Gia vị Nhật",
+   "ten_de_xuat": "Mirin chai 500ml",
+   "danh_muc": "Nước chấm, mắm",
+   "don_vi": "chai 500ml"
+  },
+  "tương mè trắng": {
+   "quyet_dinh": "gop",
+   "chac_chan": "cao",
+   "ly_do": "Xốt mè",
+   "muc_tieu": "xốt mè (đề xuất)"
+  }
+ }
+}

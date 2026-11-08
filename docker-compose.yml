@@ -1,0 +1,28 @@
+# Postgres + pgvector riêng cho ai-service (database `ai_db`).
+# Tách khỏi `medusa-postgres` (image postgres:17 thường, không có pgvector) để không đụng dữ liệu của backend.
+# Chạy: docker compose up -d     Dừng: docker compose down     Xóa cả dữ liệu: docker compose down -v
+# Biến môi trường lấy từ file .env (đã bị .gitignore chặn), xem .env.example.
+services:
+  ai-db:
+    image: pgvector/pgvector:pg16
+    container_name: grocery-ai-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${AI_DB_NAME:-ai_db}
+      POSTGRES_USER: ${AI_DB_USER:-ai_user}
+      POSTGRES_PASSWORD: ${AI_DB_PASSWORD:?Chưa có AI_DB_PASSWORD, copy .env.example thành .env rồi điền}
+    ports:
+      # Chỉ mở trên máy local. 5432 là medusa-postgres, 5433 là nestfair-postgres nên dùng 5434.
+      - "127.0.0.1:${AI_DB_PORT:-5434}:5432"
+    volumes:
+      - ai_pgdata:/var/lib/postgresql/data
+      # Các file .sql ở đây chạy MỘT LẦN, lúc volume còn trống, theo thứ tự tên file.
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  ai_pgdata:

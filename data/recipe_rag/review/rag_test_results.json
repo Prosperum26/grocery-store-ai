@@ -1,0 +1,3972 @@
+{
+ "queries": [
+  {
+   "query": "canh chua cá lóc",
+   "expect": [
+    "canh chua",
+    "ca loc"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "canh-chua-ca-loc",
+     "name": "Canh chua cá lóc",
+     "sim": 0.709
+    },
+    {
+     "id": "canh-chua-ca-loc-dau-tuong",
+     "name": "Canh chua cá lóc đậu tương",
+     "sim": 0.694
+    },
+    {
+     "id": "canh-chua-ca",
+     "name": "Canh chua cá",
+     "sim": 0.648
+    },
+    {
+     "id": "canh-chua-ca-lang-rau-nhut",
+     "name": "Canh chua cá lăng rau nhút",
+     "sim": 0.647
+    },
+    {
+     "id": "canh-ca-loc-la-giang",
+     "name": "Canh cá lóc lá giang",
+     "sim": 0.639
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bạc hà",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bạc hà (dọc mùng) 300g",
+     "sim": 0.606,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "cà chua",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà chua 300g",
+     "sim": 0.743,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "cá lóc",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cá lóc làm sạch vỉ 300g",
+     "sim": 0.653,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "giá",
+     "kind": "core",
+     "packs": 1,
+     "product": "Giá mầm sạch 300g",
+     "sim": 0.557,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "me",
+     "kind": "core",
+     "packs": 1,
+     "product": "Me chua vắt gói 250g",
+     "sim": 0.435,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ngò gai",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ngò gai, rau om 50g",
+     "sim": 0.663,
+     "contains": true,
+     "via": "quyet_dinh_gop"
+    },
+    {
+     "ingredient": "rau om",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ngò gai, rau om 50g",
+     "sim": 0.607,
+     "contains": true,
+     "via": "quyet_dinh_gop"
+    },
+    {
+     "ingredient": "thơm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Thơm trái trung từ 700g - dưới 1kg",
+     "sim": 0.45,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đậu bắp",
+     "kind": "core",
+     "packs": 1,
+     "product": "Đậu bắp khay 250g",
+     "sim": 0.642,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt sừng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt sừng đỏ tươi gói 100g",
+     "sim": 0.713,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bột ngọt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột ngọt Meizan gói 400g",
+     "sim": 0.578,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "muối",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Muối tinh sấy iot Sosal Group 1kg",
+     "sim": 0.535,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước mắm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước mắm Phú Quốc Thanh Quốc 520ml",
+     "sim": 0.573,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "sả",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Sả cây gói 200g",
+     "sim": 0.643,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tỏi",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tỏi tím Trung Quốc 200g",
+     "sim": 0.585,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "gà kho gừng",
+   "expect": [
+    "ga",
+    "kho",
+    "gung"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "nam-dui-ga-kho-gung",
+     "name": "Nấm đùi gà kho gừng",
+     "sim": 0.627
+    },
+    {
+     "id": "ga-xao-giam-gung",
+     "name": "Gà xào giấm gừng",
+     "sim": 0.606
+    },
+    {
+     "id": "ga-kho-nam",
+     "name": "Gà kho nấm",
+     "sim": 0.601
+    },
+    {
+     "id": "ngheu-kho-gung",
+     "name": "Nghêu kho gừng",
+     "sim": 0.595
+    },
+    {
+     "id": "vit-kho-dua-gung-non",
+     "name": "Vịt kho dưa gừng non",
+     "sim": 0.59
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "nấm đông cô khô",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nấm đông cô 50g có bán với",
+     "sim": 0.656,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "nấm đùi gà",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nấm đùi gà baby Việt Nam 300g",
+     "sim": 0.665,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đậu hũ chiên",
+     "kind": "core",
+     "packs": 1,
+     "product": "Đậu hũ chiên Vị Nguyên hộp 300g",
+     "sim": 0.668,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt hiểm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt hiểm trái gói 50g, giá cả",
+     "sim": 0.728,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu điều",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu điều chai 250ml",
+     "sim": 0.701,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "gừng",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Gừng",
+     "sim": 0.935,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành lá",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành lá",
+     "sim": 0.969,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ngò rí",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Ngò rí 50g",
+     "sim": 0.646,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước tương",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước tương Nam Dương 210ml",
+     "sim": 0.652,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "sườn xào chua ngọt",
+   "expect": [
+    "suon",
+    "chua ngot"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "suon-xao-chua-ngot",
+     "name": "Sườn xào chua ngọt",
+     "sim": 0.752
+    },
+    {
+     "id": "gan-ga-xao-chua-ngot",
+     "name": "Gan gà xào chua ngọt",
+     "sim": 0.612
+    },
+    {
+     "id": "so-long-xao-chua-ngot",
+     "name": "Sò lông xào chua ngọt",
+     "sim": 0.61
+    },
+    {
+     "id": "trung-cut-xao-chua-ngot",
+     "name": "Trứng cút xào chua ngọt",
+     "sim": 0.608
+    },
+    {
+     "id": "oc-bien-xao-chua-ngot",
+     "name": "Ốc biển xào chua ngọt",
+     "sim": 0.596
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "hành tây",
+     "kind": "core",
+     "packs": 1,
+     "product": "Hành tây túi từ 300g",
+     "sim": 0.681,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "lòng trắng trứng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Trứng gà ta hộp 6 quả",
+     "sim": 0.529,
+     "contains": false,
+     "via": "quyet_dinh_che_bien_tu"
+    },
+    {
+     "ingredient": "sườn non",
+     "kind": "core",
+     "packs": 1,
+     "product": "Sườn non heo nhập khẩu",
+     "sim": 0.711,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt chuông vàng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt chuông xanh-vàng-đỏ",
+     "sim": 0.787,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "ớt chuông xanh",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt chuông xanh-vàng-đỏ",
+     "sim": 0.826,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "ớt chuông đỏ",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt chuông xanh-vàng-đỏ",
+     "sim": 0.741,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "bột ngọt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột ngọt Meizan gói 400g",
+     "sim": 0.578,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bột năng",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột năng khoai mì Tấn Sang 400g",
+     "sim": 0.601,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành tím",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành tím 200g",
+     "sim": 0.75,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "muối",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Muối tinh sấy iot Sosal Group 1kg",
+     "sim": 0.535,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ngò rí",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Ngò rí 50g",
+     "sim": 0.646,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước tương",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước tương Nam Dương 210ml",
+     "sim": 0.652,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tương cà",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tương cà Delly Cook chai 270g",
+     "sim": 0.623,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tỏi",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tỏi tím Trung Quốc 200g",
+     "sim": 0.585,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Ớt hiểm trái gói 50g, giá cả",
+     "sim": 0.533,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "bò xào hành tây",
+   "expect": [
+    "bo",
+    "xao",
+    "hanh tay"
+   ],
+   "hit_rank": null,
+   "top": [
+    {
+     "id": "khoai-tay-xao-thit-bo",
+     "name": "Khoai tây xào thịt bò",
+     "sim": 0.656
+    },
+    {
+     "id": "kho-qua-tay-xao-thit-bo",
+     "name": "Khổ qua tây xào thịt bò",
+     "sim": 0.624
+    },
+    {
+     "id": "bap-bo-xao-xot-tieu-xanh",
+     "name": "Bắp bò xào xốt tiêu xanh",
+     "sim": 0.616
+    },
+    {
+     "id": "kho-qua-tay-xao-thit-bo-2",
+     "name": "Khổ Qua Tây Xào Thịt Bò",
+     "sim": 0.615
+    },
+    {
+     "id": "bo-xao-ot-kho",
+     "name": "Bò xào ớt khô",
+     "sim": 0.614
+    }
+   ]
+  },
+  {
+   "query": "cá kho tộ",
+   "expect": [
+    "ca",
+    "kho"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "ca-ro-kho-to",
+     "name": "Cá rô kho tộ",
+     "sim": 0.642
+    },
+    {
+     "id": "ca-kho-tau",
+     "name": "Cá kho tàu",
+     "sim": 0.621
+    },
+    {
+     "id": "ca-thu-kho-ca-tim",
+     "name": "Cá thu kho cà tím",
+     "sim": 0.589
+    },
+    {
+     "id": "ca-doi-kho-thom",
+     "name": "Cá đối kho thơm",
+     "sim": 0.587
+    },
+    {
+     "id": "ca-kho-quet",
+     "name": "Cá kho quẹt",
+     "sim": 0.584
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "cá rô",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cá rô làm sạch",
+     "sim": 0.771,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước màu",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nước màu thốt nốt Thnot 90ml",
+     "sim": 0.589,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "thịt ba chỉ",
+     "kind": "core",
+     "packs": 1,
+     "product": "Thịt ba chỉ heo khay 500g",
+     "sim": 0.665,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt hiểm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt hiểm trái gói 50g, giá cả",
+     "sim": 0.728,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bột ngọt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột ngọt Meizan gói 400g",
+     "sim": 0.578,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành lá",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành lá",
+     "sim": 0.969,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "muối",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Muối tinh sấy iot Sosal Group 1kg",
+     "sim": 0.535,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước mắm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước mắm Phú Quốc Thanh Quốc 520ml",
+     "sim": 0.573,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "lẩu thái hải sản",
+   "expect": [
+    "lau",
+    "thai"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "lau-ga-thai-lan",
+     "name": "Lẩu gà Thái Lan",
+     "sim": 0.602
+    },
+    {
+     "id": "lau-kho-qua-hai-san",
+     "name": "Lẩu khổ qua hải sản",
+     "sim": 0.593
+    },
+    {
+     "id": "lau-ca-dia",
+     "name": "Lẩu cá dìa",
+     "sim": 0.591
+    },
+    {
+     "id": "lau-ca-lang-vi-thai",
+     "name": "Lẩu cá lăng vị Thái",
+     "sim": 0.589
+    },
+    {
+     "id": "lau-ca-khoai-chua-cay",
+     "name": "Lẩu cá khoai chua cay",
+     "sim": 0.582
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bún",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bún tươi gói 500g",
+     "sim": 0.673,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "cà chua",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà chua 300g",
+     "sim": 0.743,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "gà",
+     "kind": "core",
+     "packs": 1,
+     "product": "Gà ủ muối MEATDeli gói 450g",
+     "sim": 0.521,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "lá chanh bắc",
+     "kind": "core",
+     "packs": 1,
+     "product": "Lá chúc 50g",
+     "sim": 0.562,
+     "contains": false,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "rau chuối",
+     "kind": "core",
+     "packs": 1,
+     "product": "Rau chuối bào bó 200g",
+     "sim": 0.758,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "rau muống",
+     "kind": "core",
+     "packs": 1,
+     "product": "Rau muống nước 400gr",
+     "sim": 0.752,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "rau nhút",
+     "kind": "core",
+     "packs": 2,
+     "product": "Rau nhút 100g",
+     "sim": 0.806,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "riềng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Riềng 200g",
+     "sim": 0.726,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "thơm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Thơm trái trung từ 700g - dưới 1kg",
+     "sim": 0.45,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt hiểm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt hiểm trái gói 50g, giá cả",
+     "sim": 0.728,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành tím",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành tím 200g",
+     "sim": 0.75,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nêm sẵn lẩu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Xốt gia vị nêm sẵn lẩu Thái Chinsu gói 80g",
+     "sim": 0.681,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước mắm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước mắm Phú Quốc Thanh Quốc 520ml",
+     "sim": 0.573,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "sả",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Sả cây gói 200g",
+     "sim": 0.643,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tỏi",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tỏi tím Trung Quốc 200g",
+     "sim": 0.585,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "bún riêu cua",
+   "expect": [
+    "bun rieu"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "bun-rieu-cua-bap-bo",
+     "name": "Bún riêu cua bắp bò",
+     "sim": 0.668
+    },
+    {
+     "id": "bun-rieu-cua",
+     "name": "Bún riêu cua",
+     "sim": 0.662
+    },
+    {
+     "id": "bun-rieu-cua-xi-quach-2",
+     "name": "Bún riêu cua xí quách",
+     "sim": 0.656
+    },
+    {
+     "id": "bun-gao-xao-rau-cu",
+     "name": "Bún gạo xào rau củ",
+     "sim": 0.562
+    },
+    {
+     "id": "banh-canh-cua",
+     "name": "Bánh canh cua",
+     "sim": 0.558
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bún",
+     "kind": "core",
+     "packs": 2,
+     "product": "Bún tươi gói 500g",
+     "sim": 0.673,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "bắp bò hoa",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bắp bò",
+     "sim": 0.806,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "bắp chuối",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bắp chuối 1 bắp",
+     "sim": 0.813,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "chả bò",
+     "kind": "core",
+     "packs": 1,
+     "product": "Chả bò 200g",
+     "sim": 0.719,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "cà chua",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà chua 300g",
+     "sim": 0.743,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "giá",
+     "kind": "core",
+     "packs": 1,
+     "product": "Giá mầm sạch 300g",
+     "sim": 0.557,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "hành tây",
+     "kind": "core",
+     "packs": 1,
+     "product": "Hành tây túi từ 300g",
+     "sim": 0.681,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "rau muống",
+     "kind": "core",
+     "packs": 1,
+     "product": "Rau muống nước 400gr",
+     "sim": 0.752,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "rau thơm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Rau thơm các loại khoảng 200g",
+     "sim": 0.683,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu điều",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu điều chai 250ml",
+     "sim": 0.701,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước mắm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước mắm Phú Quốc Thanh Quốc 520ml",
+     "sim": 0.573,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "thịt kho trứng",
+   "expect": [
+    "thit kho"
+   ],
+   "hit_rank": null,
+   "top": [
+    {
+     "id": "kho-qua-xao-trung-thit-bam",
+     "name": "Khổ qua xào trứng thịt bằm",
+     "sim": 0.611
+    },
+    {
+     "id": "cha-ca-kho-van-trung",
+     "name": "Chả cá kho vân trứng",
+     "sim": 0.597
+    },
+    {
+     "id": "heo-kho-tau",
+     "name": "Heo kho tàu",
+     "sim": 0.596
+    },
+    {
+     "id": "suon-non-kho-dua-cai",
+     "name": "Sườn non kho dưa cải",
+     "sim": 0.588
+    },
+    {
+     "id": "ca-bong-trung-kho-tieu",
+     "name": "Cá bống trứng kho tiêu",
+     "sim": 0.587
+    }
+   ]
+  },
+  {
+   "query": "bánh xèo",
+   "expect": [
+    "banh xeo"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "banh-xeo-cuon-ap-chao",
+     "name": "Bánh xèo cuốn áp chảo",
+     "sim": 0.647
+    },
+    {
+     "id": "banh-xeo-nam-moi-chay",
+     "name": "Bánh xèo nấm mối chay",
+     "sim": 0.638
+    },
+    {
+     "id": "banh-xeo-han-quoc",
+     "name": "Bánh xèo Hàn Quốc",
+     "sim": 0.636
+    },
+    {
+     "id": "banh-xeo-nhat-ban",
+     "name": "Đãi cả nhà món bánh xèo Nhật Bản thơm ngon chuẩn vị",
+     "sim": 0.628
+    },
+    {
+     "id": "banh-xeo",
+     "name": "Bí quyết làm bánh xèo vàng giòn không ngấy, ai cũng mê",
+     "sim": 0.627
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bột bánh xèo",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bột bánh xèo Mikko Hương Xưa 500g",
+     "sim": 0.656,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "cà rốt",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà rốt 300g",
+     "sim": 0.758,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "giá sống",
+     "kind": "core",
+     "packs": 1,
+     "product": "Giá mầm sạch 300g",
+     "sim": 0.569,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "măng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Măng khô gói 100g có bán",
+     "sim": 0.581,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "thịt heo",
+     "kind": "core",
+     "packs": 1,
+     "product": "Thịt heo xay CP 100g",
+     "sim": 0.661,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tôm sú",
+     "kind": "core",
+     "packs": 1,
+     "product": "Tôm thẻ khay 300g",
+     "sim": 0.532,
+     "contains": false,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bột ngọt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột ngọt Meizan gói 400g",
+     "sim": 0.578,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành lá",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành lá",
+     "sim": 0.969,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành tím",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành tím 200g",
+     "sim": 0.75,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ngò rí",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Ngò rí 50g",
+     "sim": 0.646,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tỏi",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tỏi tím Trung Quốc 200g",
+     "sim": 0.585,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "xốt mayonnaise",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Xốt mayonnaise Ajinomoto Aji-mayo 430g",
+     "sim": 0.74,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "chả giò",
+   "expect": [
+    "cha gio"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "cha-gio-sua",
+     "name": "Chả giò sứa",
+     "sim": 0.632
+    },
+    {
+     "id": "cha-gio-spaghetti",
+     "name": "Chả giò Spaghetti",
+     "sim": 0.625
+    },
+    {
+     "id": "cha-gio-ca-chem",
+     "name": "Chả giò cá chẽm",
+     "sim": 0.598
+    },
+    {
+     "id": "cha-gio-chuoi-2",
+     "name": "Chả giò chuối",
+     "sim": 0.596
+    },
+    {
+     "id": "cha-gio-chay",
+     "name": "Chả giò chay",
+     "sim": 0.587
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bánh tráng pía",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bánh tráng gói 200g",
+     "sim": 0.592,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "bắp hạt",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bắp Mỹ tách hạt khay 250g",
+     "sim": 0.587,
+     "contains": true,
+     "via": "quyet_dinh_gop"
+    },
+    {
+     "ingredient": "bột chiên xù",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bột chiên xù đa dụng Miwon 200g",
+     "sim": 0.674,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "chanh vàng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Chanh không hạt túi 250g (4 trái)",
+     "sim": 0.536,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "nước cốt chanh",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nước cốt chanh chai 200ml",
+     "sim": 0.755,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "sứa ngâm chua",
+     "kind": "core",
+     "packs": 1,
+     "product": "Sứa ngâm chua 200g",
+     "sim": 0.801,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "sữa đặc",
+     "kind": "core",
+     "packs": 1,
+     "product": "Sữa đặc có đường Créme Castle lon 380g",
+     "sim": 0.597,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "trứng gà",
+     "kind": "core",
+     "packs": 1,
+     "product": "Trứng gà ta hộp 6 quả",
+     "sim": 0.624,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đậu xanh cà vỏ",
+     "kind": "core",
+     "packs": 1,
+     "product": "Đậu xanh cà gói 150g",
+     "sim": 0.676,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành lá",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành lá",
+     "sim": 0.969,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "muối",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Muối tinh sấy iot Sosal Group 1kg",
+     "sim": 0.535,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tương ớt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tương ớt Cholimex Foods 270g",
+     "sim": 0.64,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "xốt mayonnaise",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Xốt mayonnaise Ajinomoto Aji-mayo 430g",
+     "sim": 0.74,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "canh bí đao nấu tôm",
+   "expect": [
+    "bi dao"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "canh-bi-dao-rong-bien-2",
+     "name": "Canh Bí Đao Rong Biển",
+     "sim": 0.697
+    },
+    {
+     "id": "canh-bi-ngoi-quan-tom",
+     "name": "Canh bí ngòi quấn tôm",
+     "sim": 0.647
+    },
+    {
+     "id": "canh-bi-dao-don-thit",
+     "name": "Canh bí đao dồn thịt",
+     "sim": 0.623
+    },
+    {
+     "id": "canh-bi-dao-nau-suon-non",
+     "name": "Canh bí đao nấu sườn non",
+     "sim": 0.609
+    },
+    {
+     "id": "canh-tom-bo-ngot-2",
+     "name": "Canh tôm bồ ngót",
+     "sim": 0.608
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bí đao",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bí đao 500g",
+     "sim": 0.691,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "rong biển wakame",
+     "kind": "core",
+     "packs": 2,
+     "product": "Lốc 3 gói rong biển Ockdongja 4.5g",
+     "sim": 0.518,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "tôm thẻ",
+     "kind": "core",
+     "packs": 1,
+     "product": "Tôm thẻ khay 300g",
+     "sim": 0.748,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành tím",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành tím 200g",
+     "sim": 0.75,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "rau muống xào tỏi",
+   "expect": [
+    "rau muong"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "rau-muong-xao-mam-ruoc",
+     "name": "Rau muống xào mắm ruốc",
+     "sim": 0.676
+    },
+    {
+     "id": "bach-tuoc-xao-rau-muong",
+     "name": "Bạch tuộc xào rau muống",
+     "sim": 0.676
+    },
+    {
+     "id": "goi-rau-muong-chien-gion",
+     "name": "Gỏi rau muống chiên giòn",
+     "sim": 0.666
+    },
+    {
+     "id": "rau-muong-ngam-chua",
+     "name": "Rau muống ngâm chua",
+     "sim": 0.622
+    },
+    {
+     "id": "so-huyet-xao-toi",
+     "name": "Sò huyết xào tỏi",
+     "sim": 0.612
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "mắm ruốc",
+     "kind": "core",
+     "packs": 1,
+     "product": "Mắm ruốc Huế Sông Hương 200g",
+     "sim": 0.713,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "rau muống hạt",
+     "kind": "core",
+     "packs": 1,
+     "product": "Rau muống nước 400gr",
+     "sim": 0.696,
+     "contains": false,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "thịt ba chỉ",
+     "kind": "core",
+     "packs": 1,
+     "product": "Thịt ba chỉ heo khay 500g",
+     "sim": 0.665,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bột ngọt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột ngọt Meizan gói 400g",
+     "sim": 0.578,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "muối",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Muối tinh sấy iot Sosal Group 1kg",
+     "sim": 0.535,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "sả",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Sả cây gói 200g",
+     "sim": 0.643,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tỏi",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tỏi tím Trung Quốc 200g",
+     "sim": 0.585,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Ớt hiểm trái gói 50g, giá cả",
+     "sim": 0.533,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "đậu hũ sốt cà chua",
+   "expect": [
+    "dau hu"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "ca-chua-nhoi-dau-hu",
+     "name": "Cà chua nhồi đậu hũ",
+     "sim": 0.613
+    },
+    {
+     "id": "dau-hu-chien-xot-ca",
+     "name": "Đậu hũ chiên xốt cà",
+     "sim": 0.588
+    },
+    {
+     "id": "vien-dau-hu-xot-nuoc-tuong",
+     "name": "Viên đậu hũ xốt nước tương",
+     "sim": 0.585
+    },
+    {
+     "id": "dau-hu-xot-cay-xe",
+     "name": "ĐẬU HŨ XỐT CAY XÈ",
+     "sim": 0.582
+    },
+    {
+     "id": "salad-dau-hu-chien",
+     "name": "Salad đậu hũ chiên",
+     "sim": 0.58
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bún tàu",
+     "kind": "core",
+     "packs": 1,
+     "product": "Miến khô Vifon gói 210g",
+     "sim": 0.321,
+     "contains": false,
+     "via": "quyet_dinh_gop"
+    },
+    {
+     "ingredient": "bột bắp",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bột bắp nguyên chất Tấn Sang 150g",
+     "sim": 0.6,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "cà chua",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà chua 300g",
+     "sim": 0.743,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "cà rốt",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà rốt 300g",
+     "sim": 0.758,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "củ năng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Củ năng 200g",
+     "sim": 0.677,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "dừa",
+     "kind": "core",
+     "packs": 1,
+     "product": "3 trái dừa xiêm gọt vỏ",
+     "sim": 0.607,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành boa rô",
+     "kind": "core",
+     "packs": 1,
+     "product": "Hành boa rô 100g",
+     "sim": 0.829,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "màu dầu điều",
+     "kind": "core",
+     "packs": 1,
+     "product": "Dầu điều chai 250ml",
+     "sim": 0.644,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "nấm hương",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nấm hương hộp 150g",
+     "sim": 0.657,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nấm mèo",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nấm mèo thái 50g (Giao ngẫu nhiên)",
+     "sim": 0.606,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "xốt cà hộp",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà chua hộp lon 400g",
+     "sim": 0.639,
+     "contains": false,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "đậu hũ",
+     "kind": "core",
+     "packs": 1,
+     "product": "Đậu hũ trắng non Nguyên 280g",
+     "sim": 0.587,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bột ngọt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột ngọt Meizan gói 400g",
+     "sim": 0.578,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "muối",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Muối tinh sấy iot Sosal Group 1kg",
+     "sim": 0.535,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước tương",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước tương Nam Dương 210ml",
+     "sim": 0.652,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "cơm chiên dương châu",
+   "expect": [
+    "com chien"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "com-chien-duong-chau",
+     "name": "Cơm chiên Dương Châu thơm ngon dễ làm tại nhà",
+     "sim": 0.672
+    },
+    {
+     "id": "com-chien-trung-ca",
+     "name": "Cơm chiên trứng cá",
+     "sim": 0.589
+    },
+    {
+     "id": "com-chien-dua",
+     "name": "Cơm chiên dừa",
+     "sim": 0.585
+    },
+    {
+     "id": "com-chien-chay",
+     "name": "Cơm chiên chay",
+     "sim": 0.576
+    },
+    {
+     "id": "com-chien-kim-chi",
+     "name": "Cơm chiên kim chi",
+     "sim": 0.574
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "cà rốt",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà rốt 300g",
+     "sim": 0.758,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "lạp xưởng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Lạp xưởng tươi MEATDeli 280g",
+     "sim": 0.601,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "trứng gà",
+     "kind": "core",
+     "packs": 1,
+     "product": "Trứng gà ta hộp 6 quả",
+     "sim": 0.624,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tôm khô",
+     "kind": "core",
+     "packs": 1,
+     "product": "Tôm khô 100g",
+     "sim": 0.812,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "xá xíu",
+     "kind": "core",
+     "packs": 1,
+     "product": "Thịt xá xíu khay 200g",
+     "sim": 0.533,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "xốt cà chua",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà chua 300g",
+     "sim": 0.625,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "đậu hà lan",
+     "kind": "core",
+     "packs": 1,
+     "product": "Đậu Hà Lan vỉ 100g",
+     "sim": 0.667,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu điều",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu điều chai 250ml",
+     "sim": 0.701,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành lá",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành lá",
+     "sim": 0.969,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "muối",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Muối tinh sấy iot Sosal Group 1kg",
+     "sim": 0.535,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ngò rí",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Ngò rí 50g",
+     "sim": 0.646,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước tương",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước tương Nam Dương 210ml",
+     "sim": 0.652,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tỏi",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tỏi tím Trung Quốc 200g",
+     "sim": 0.585,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "mực xào sa tế",
+   "expect": [
+    "muc",
+    "sa te"
+   ],
+   "hit_rank": null,
+   "top": [
+    {
+     "id": "muc-xao-xot-tieu-xanh",
+     "name": "Mực xào xốt tiêu xanh",
+     "sim": 0.618
+    },
+    {
+     "id": "tom-muc-xao-tieu-xanh",
+     "name": "Tôm mực xào tiêu xanh",
+     "sim": 0.6
+    },
+    {
+     "id": "muc-xao-sa-ot",
+     "name": "Mực xào sả ớt",
+     "sim": 0.592
+    },
+    {
+     "id": "tom-muc-xao-rau-nhut",
+     "name": "Tôm mực xào rau nhút",
+     "sim": 0.584
+    },
+    {
+     "id": "muc-xao-hoa-trung",
+     "name": "Mực xào hoa trứng",
+     "sim": 0.579
+    }
+   ]
+  },
+  {
+   "query": "tôm rang me",
+   "expect": [
+    "rang me"
+   ],
+   "hit_rank": null,
+   "top": [
+    {
+     "id": "mi-tron-vi-thai",
+     "name": "Mì Trộn Vị Thái",
+     "sim": 0.513
+    },
+    {
+     "id": "tom-chien-me",
+     "name": "Tôm chiên mè",
+     "sim": 0.509
+    },
+    {
+     "id": "mi-linguine-xao-tom-bap",
+     "name": "Mì Linguine xào tôm bắp",
+     "sim": 0.508
+    },
+    {
+     "id": "tom-chien-u-rom",
+     "name": "Tôm chiên ủ rơm",
+     "sim": 0.505
+    },
+    {
+     "id": "canh-tom-vien-nam-mong-toi",
+     "name": "Canh tôm nấm mồng tơi",
+     "sim": 0.505
+    }
+   ]
+  },
+  {
+   "query": "gà nướng mật ong",
+   "expect": [
+    "ga",
+    "nuong"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "thit-ga-nuong",
+     "name": "Thịt gà nướng",
+     "sim": 0.643
+    },
+    {
+     "id": "suon-nuong-mat-ong-2",
+     "name": "Sườn nướng mật ong ngọt ngào, đậm đà cho bữa ăn thêm hấp dẫn",
+     "sim": 0.637
+    },
+    {
+     "id": "suon-nuong-mat-ong",
+     "name": "Sườn nướng mật ong",
+     "sim": 0.624
+    },
+    {
+     "id": "ga-nuong-chao",
+     "name": "Gà nướng chảo",
+     "sim": 0.57
+    },
+    {
+     "id": "ga-nuong-chanh-sa-mayo",
+     "name": "Gà Nướng Chanh Sả Mayo",
+     "sim": 0.565
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "dầu màu điều",
+     "kind": "core",
+     "packs": 1,
+     "product": "Dầu điều chai 250ml",
+     "sim": 0.688,
+     "contains": false,
+     "via": "quyet_dinh_gop"
+    },
+    {
+     "ingredient": "má đùi gà",
+     "kind": "core",
+     "packs": 1,
+     "product": "Má đùi gà cắt sẵn",
+     "sim": 0.811,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "mật ong",
+     "kind": "core",
+     "packs": 1,
+     "product": "Mật ong Rừng Nhiệt Đới chai 300g",
+     "sim": 0.643,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bột ngọt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột ngọt Meizan gói 400g",
+     "sim": 0.578,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu hào",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu hào cao cấp Maggi bào ngư chai 350g",
+     "sim": 0.535,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành lá",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành lá",
+     "sim": 0.969,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước tương",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước tương Nam Dương 210ml",
+     "sim": 0.652,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tỏi",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tỏi tím Trung Quốc 200g",
+     "sim": 0.585,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "xốt mayonnaise",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Xốt mayonnaise Ajinomoto Aji-mayo 430g",
+     "sim": 0.74,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "mì ý sốt bò bằm",
+   "expect": [
+    "mi y"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "mi-y-bo-bam",
+     "name": "Mì Ý bò băm",
+     "sim": 0.662
+    },
+    {
+     "id": "mi-y-xao-thit-bo-bam",
+     "name": "Mì Ý xào thịt bò băm",
+     "sim": 0.655
+    },
+    {
+     "id": "mi-y-xot-nam",
+     "name": "Mì Ý xốt nấm chay béo thơm, nấu nhanh 20 phút",
+     "sim": 0.597
+    },
+    {
+     "id": "banh-mi-kep-thit-bo-bam",
+     "name": "Bánh mì kẹp thịt bò bằm",
+     "sim": 0.595
+    },
+    {
+     "id": "mi-y-ca-hoi-xot-me-rang",
+     "name": "Mì ý cá hồi xốt mè rang",
+     "sim": 0.583
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bơ",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bơ lạt từ thực vật Tường An 80g",
+     "sim": 0.515,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "cà chua hộp",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà chua 300g",
+     "sim": 0.613,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "cà rốt",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà rốt 300g",
+     "sim": 0.758,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành tây",
+     "kind": "core",
+     "packs": 1,
+     "product": "Hành tây túi từ 300g",
+     "sim": 0.681,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "mì ý",
+     "kind": "core",
+     "packs": 2,
+     "product": "Mì Spaghetti San Remo số 5 gói 250g",
+     "sim": 0.378,
+     "contains": false,
+     "via": "quyet_dinh_gop"
+    },
+    {
+     "ingredient": "ngò tây",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ngò tây 50g",
+     "sim": 0.771,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "thịt bò",
+     "kind": "core",
+     "packs": 1,
+     "product": "Thịt bò khay 500g",
+     "sim": 0.647,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "trứng gà",
+     "kind": "core",
+     "packs": 1,
+     "product": "Trứng gà ta hộp 6 quả",
+     "sim": 0.624,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đậu hà lan",
+     "kind": "core",
+     "packs": 1,
+     "product": "Đậu Hà Lan vỉ 100g",
+     "sim": 0.667,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "dầu hào",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu hào cao cấp Maggi bào ngư chai 350g",
+     "sim": 0.535,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước tương",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước tương Nam Dương 210ml",
+     "sim": 0.652,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tương cà",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tương cà Delly Cook chai 270g",
+     "sim": 0.623,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "xốt mayonnaise",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Xốt mayonnaise Ajinomoto Aji-mayo 430g",
+     "sim": 0.74,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "cà ri gà",
+   "expect": [
+    "ca ri"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "ga-xao-ca-ri",
+     "name": "Gà xào cà ri",
+     "sim": 0.641
+    },
+    {
+     "id": "ga-ca-ri-xanh",
+     "name": "Gà cà ri xanh",
+     "sim": 0.63
+    },
+    {
+     "id": "ca-ri-ga",
+     "name": "Cách làm cà ri gà thơm béo, ăn cùng cơm siêu ngon",
+     "sim": 0.624
+    },
+    {
+     "id": "ga-vien-xot-ca-ri",
+     "name": "Gà viên xốt cà ri",
+     "sim": 0.605
+    },
+    {
+     "id": "canh-ga-tam-xot-mayonnaise-ca-ri",
+     "name": "Cánh gà tẩm xốt Mayonnaise cà ri",
+     "sim": 0.6
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bột cà ri",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bột cà ri tẩm ướp Vianco 10g",
+     "sim": 0.61,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành tây",
+     "kind": "core",
+     "packs": 1,
+     "product": "Hành tây túi từ 300g",
+     "sim": 0.681,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "lá chanh",
+     "kind": "core",
+     "packs": 1,
+     "product": "Lá chanh 50g",
+     "sim": 0.797,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "nước cốt dừa",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nước cốt dừa Vietcoco lon 400ml",
+     "sim": 0.687,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "thơm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Thơm trái trung từ 700g - dưới 1kg",
+     "sim": 0.45,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "thịt gà má đùi",
+     "kind": "core",
+     "packs": 1,
+     "product": "Má đùi gà cắt sẵn",
+     "sim": 0.796,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "xà lách",
+     "kind": "core",
+     "packs": 1,
+     "product": "Xà lách thủy tinh thủy canh",
+     "sim": 0.635,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt sừng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt sừng đỏ tươi gói 100g",
+     "sim": 0.713,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu hào",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu hào cao cấp Maggi bào ngư chai 350g",
+     "sim": 0.535,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành tím",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành tím 200g",
+     "sim": 0.75,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tỏi",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tỏi tím Trung Quốc 200g",
+     "sim": 0.585,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "trứng chiên",
+   "expect": [
+    "trung"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "goi-trung-chien",
+     "name": "Gỏi trứng chiên",
+     "sim": 0.677
+    },
+    {
+     "id": "trung-chien-rau-cu-xot-mayonnaise",
+     "name": "Trứng chiên rau củ xốt mayonnaise",
+     "sim": 0.646
+    },
+    {
+     "id": "ca-trung-chien-gion",
+     "name": "Cá trứng chiên giòn",
+     "sim": 0.645
+    },
+    {
+     "id": "com-chien-trung-ca",
+     "name": "Cơm chiên trứng cá",
+     "sim": 0.644
+    },
+    {
+     "id": "trung-chien-ngai-cuu",
+     "name": "Trứng chiên ngải cứu",
+     "sim": 0.636
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "cà chua",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà chua 300g",
+     "sim": 0.743,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "cà rốt",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà rốt 300g",
+     "sim": 0.758,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "cần tàu",
+     "kind": "core",
+     "packs": 1,
+     "product": "Rau cần tàu (cần ta) 100g",
+     "sim": 0.612,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dưa leo",
+     "kind": "core",
+     "packs": 1,
+     "product": "Dưa leo",
+     "sim": 0.908,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "rau húng lủi",
+     "kind": "core",
+     "packs": 1,
+     "product": "Rau húng cây khoảng 100g",
+     "sim": 0.607,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "trứng gà",
+     "kind": "core",
+     "packs": 1,
+     "product": "Trứng gà ta hộp 6 quả",
+     "sim": 0.624,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt hiểm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt hiểm trái gói 50g, giá cả",
+     "sim": 0.728,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành tím",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành tím 200g",
+     "sim": 0.75,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước mắm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước mắm Phú Quốc Thanh Quốc 520ml",
+     "sim": 0.573,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tương ớt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tương ớt Cholimex Foods 270g",
+     "sim": 0.64,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "canh khổ qua nhồi thịt",
+   "expect": [
+    "kho qua"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "canh-kho-qua-ham-thit",
+     "name": "Canh khổ qua hầm thịt",
+     "sim": 0.705
+    },
+    {
+     "id": "kho-qua-nhoi-nam-kho-nuoc-tuong",
+     "name": "Khổ qua nhồi nấm kho nước tương",
+     "sim": 0.646
+    },
+    {
+     "id": "kho-qua-xao-trung-thit-bam",
+     "name": "Khổ qua xào trứng thịt bằm",
+     "sim": 0.629
+    },
+    {
+     "id": "canh-dot-kho-qua-rung-tom-tha",
+     "name": "Canh đọt khổ qua rừng tôm thả",
+     "sim": 0.577
+    },
+    {
+     "id": "bo-xao-kho-qua-bap-cai-tim",
+     "name": "Bò xào khổ qua bắp cải tím",
+     "sim": 0.568
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bún tàu",
+     "kind": "core",
+     "packs": 1,
+     "product": "Miến khô Vifon gói 210g",
+     "sim": 0.321,
+     "contains": false,
+     "via": "quyet_dinh_gop"
+    },
+    {
+     "ingredient": "cá thác lác",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cá thác lác làm sạch 500g",
+     "sim": 0.738,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "khổ qua",
+     "kind": "core",
+     "packs": 1,
+     "product": "Khổ qua khay 500g (3-5 trái)",
+     "sim": 0.57,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "nấm mèo",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nấm mèo thái 50g (Giao ngẫu nhiên)",
+     "sim": 0.606,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "thịt heo",
+     "kind": "core",
+     "packs": 1,
+     "product": "Thịt heo xay CP 100g",
+     "sim": 0.661,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt hiểm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt hiểm trái gói 50g, giá cả",
+     "sim": 0.728,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bột canh",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột canh I-ốt Vifon gói 200g",
+     "sim": 0.573,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bột ngọt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột ngọt Meizan gói 400g",
+     "sim": 0.578,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành tím",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành tím 200g",
+     "sim": 0.75,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước mắm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước mắm Phú Quốc Thanh Quốc 520ml",
+     "sim": 0.573,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "gỏi cuốn tôm thịt",
+   "expect": [
+    "goi cuon"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "goi-cuon-tom-chien",
+     "name": "Gỏi cuốn tôm chiên",
+     "sim": 0.684
+    },
+    {
+     "id": "goi-cuon-tom",
+     "name": "Gỏi cuốn tôm",
+     "sim": 0.672
+    },
+    {
+     "id": "goi-cuon-3-loai",
+     "name": "Gỏi cuốn 3 loại",
+     "sim": 0.664
+    },
+    {
+     "id": "goi-cuon-mayonnaise",
+     "name": "Gỏi cuốn Mayonnaise",
+     "sim": 0.638
+    },
+    {
+     "id": "ca-cuon-tom-chien",
+     "name": "Cá cuốn tôm chiên",
+     "sim": 0.603
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bánh tráng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bánh tráng gói 200g",
+     "sim": 0.662,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bánh ướt không nhân",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bánh ướt gói 300g",
+     "sim": 0.667,
+     "contains": false,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "húng quế",
+     "kind": "core",
+     "packs": 1,
+     "product": "Rau húng quế khoảng 100g",
+     "sim": 0.642,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "rau diếp cá",
+     "kind": "core",
+     "packs": 1,
+     "product": "Rau diếp cá khoảng 100g",
+     "sim": 0.736,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "rau mầm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Rau mầm 100g",
+     "sim": 0.82,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "tía tô",
+     "kind": "core",
+     "packs": 1,
+     "product": "Tía tô khoảng 100g",
+     "sim": 0.661,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tôm sú",
+     "kind": "core",
+     "packs": 2,
+     "product": "Tôm thẻ khay 300g",
+     "sim": 0.532,
+     "contains": false,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "xà lách",
+     "kind": "core",
+     "packs": 1,
+     "product": "Xà lách thủy tinh thủy canh",
+     "sim": 0.635,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bột tẩm khô chiên giòn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột tẩm khô chiên giòn gói 150g",
+     "sim": 0.843,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước mắm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước mắm Phú Quốc Thanh Quốc 520ml",
+     "sim": 0.573,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tỏi",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tỏi tím Trung Quốc 200g",
+     "sim": 0.585,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Ớt hiểm trái gói 50g, giá cả",
+     "sim": 0.533,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "ga kho gung cho 4 nguoi",
+   "expect": [
+    "ga",
+    "kho",
+    "gung"
+   ],
+   "hit_rank": 5,
+   "top": [
+    {
+     "id": "oc-buou-kho-gung",
+     "name": "Ốc bươu kho gừng",
+     "sim": 0.403
+    },
+    {
+     "id": "long-ga-kho-tuong",
+     "name": "Lòng gà kho tương",
+     "sim": 0.401
+    },
+    {
+     "id": "bap-bo-kho-thom",
+     "name": "Bắp bò kho thơm",
+     "sim": 0.398
+    },
+    {
+     "id": "cuon-dau-hu-kho-gung",
+     "name": "Cuốn đậu hủ kho gừng",
+     "sim": 0.397
+    },
+    {
+     "id": "nam-dui-ga-kho-gung",
+     "name": "Nấm đùi gà kho gừng",
+     "sim": 0.395
+    }
+   ]
+  },
+  {
+   "query": "món nướng cho 4 người",
+   "expect": [
+    "nuong"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "thit-ga-nuong",
+     "name": "Thịt gà nướng",
+     "sim": 0.623
+    },
+    {
+     "id": "thit-nuong-bbq",
+     "name": "Thịt nướng BBQ",
+     "sim": 0.621
+    },
+    {
+     "id": "than-bo-nuong",
+     "name": "Thăn bò nướng",
+     "sim": 0.615
+    },
+    {
+     "id": "suon-nuong-ngu-vi",
+     "name": "Sườn nướng ngũ vị",
+     "sim": 0.612
+    },
+    {
+     "id": "banh-mi-nuong-toi",
+     "name": "Bánh mì nướng tỏi",
+     "sim": 0.603
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "dầu màu điều",
+     "kind": "core",
+     "packs": 1,
+     "product": "Dầu điều chai 250ml",
+     "sim": 0.688,
+     "contains": false,
+     "via": "quyet_dinh_gop"
+    },
+    {
+     "ingredient": "má đùi gà",
+     "kind": "core",
+     "packs": 1,
+     "product": "Má đùi gà cắt sẵn",
+     "sim": 0.811,
+     "contains": true,
+     "via": "khop_ten"
+    },
+    {
+     "ingredient": "mật ong",
+     "kind": "core",
+     "packs": 1,
+     "product": "Mật ong Rừng Nhiệt Đới chai 300g",
+     "sim": 0.643,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "bột ngọt",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Bột ngọt Meizan gói 400g",
+     "sim": 0.578,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu hào",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu hào cao cấp Maggi bào ngư chai 350g",
+     "sim": 0.535,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành lá",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành lá",
+     "sim": 0.969,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước tương",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước tương Nam Dương 210ml",
+     "sim": 0.652,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tỏi",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tỏi tím Trung Quốc 200g",
+     "sim": 0.585,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "xốt mayonnaise",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Xốt mayonnaise Ajinomoto Aji-mayo 430g",
+     "sim": 0.74,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "cháo gà",
+   "expect": [
+    "chao"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "dau-bap-thit-ga-xao-chao",
+     "name": "Đậu bắp thịt gà xào chao",
+     "sim": 0.61
+    },
+    {
+     "id": "ga-xao-cham-cheo",
+     "name": "Gà xào chẩm chéo",
+     "sim": 0.598
+    },
+    {
+     "id": "ga-kho-chao-mayonnaise",
+     "name": "Gà kho chao Mayonnaise",
+     "sim": 0.59
+    },
+    {
+     "id": "ga-xao-vi-thai",
+     "name": "Gà xào vị Thái",
+     "sim": 0.588
+    },
+    {
+     "id": "ga-nuong-tao-2",
+     "name": "Gà nướng táo",
+     "sim": 0.573
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "chao",
+     "kind": "core",
+     "packs": 1,
+     "product": "Chao hũ 200g",
+     "sim": 0.532,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "rau om",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ngò gai, rau om 50g",
+     "sim": 0.607,
+     "contains": true,
+     "via": "quyet_dinh_gop"
+    },
+    {
+     "ingredient": "thịt má đùi gà",
+     "kind": "core",
+     "packs": 1,
+     "product": "Má đùi gà cắt sẵn",
+     "sim": 0.811,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "đậu bắp",
+     "kind": "core",
+     "packs": 2,
+     "product": "Đậu bắp khay 250g",
+     "sim": 0.642,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt sừng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt sừng đỏ tươi gói 100g",
+     "sim": 0.713,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "gừng",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Gừng",
+     "sim": 0.935,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "lươn xào sả ớt",
+   "expect": [
+    "luon"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "luon-kho-sa-ot-2",
+     "name": "Lươn kho sả ớt",
+     "sim": 0.671
+    },
+    {
+     "id": "luon-kho-sa-ot",
+     "name": "Cách làm lươn kho sả ớt thơm ngon ấm bụng trong mùa đông",
+     "sim": 0.64
+    },
+    {
+     "id": "luon-xao-lan",
+     "name": "Lươn xào lăn",
+     "sim": 0.614
+    },
+    {
+     "id": "bun-thit-xao-sa-ot",
+     "name": "Bún thịt xào sả ớt",
+     "sim": 0.601
+    },
+    {
+     "id": "muc-xao-sa-ot",
+     "name": "Mực xào sả ớt",
+     "sim": 0.586
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "lươn",
+     "kind": "core",
+     "packs": 1,
+     "product": "Lươn làm sạch",
+     "sim": 0.754,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước dừa tươi",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nước dừa xiêm xanh Vico Fresh 1 lít",
+     "sim": 0.679,
+     "contains": false,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước màu",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nước màu thốt nốt Thnot 90ml",
+     "sim": 0.589,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu điều",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu điều chai 250ml",
+     "sim": 0.701,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước mắm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước mắm Phú Quốc Thanh Quốc 520ml",
+     "sim": 0.573,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "canh chua bồn bồn",
+   "expect": [
+    "bon bon"
+   ],
+   "hit_rank": 1,
+   "top": [
+    {
+     "id": "canh-chua-bon-bon-vi-thai",
+     "name": "Canh chua bồn bồn vị thái",
+     "sim": 0.723
+    },
+    {
+     "id": "canh-chua-bong-so-dua-chay",
+     "name": "Canh chua bông so đũa chay",
+     "sim": 0.637
+    },
+    {
+     "id": "canh-chua-ca-keo-bong-so-dua",
+     "name": "Canh chua cá kèo bông so đũa",
+     "sim": 0.63
+    },
+    {
+     "id": "canh-chua-tom-bon-bon-bong-dien-dien",
+     "name": "CANH CHUA TÔM BỒN BỒN BÔNG ĐIÊN ĐIỂN",
+     "sim": 0.617
+    },
+    {
+     "id": "canh-chua-ga-bong-so-dua",
+     "name": "Canh chua gà bông so đũa",
+     "sim": 0.608
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bồn bồn",
+     "kind": "core",
+     "packs": 2,
+     "product": "Bồn bồn tươi bó 200g",
+     "sim": 0.566,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "cà chua",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà chua 300g",
+     "sim": 0.743,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "cá hú",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cá hú khay 500g",
+     "sim": 0.693,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "thơm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Thơm trái trung từ 700g - dưới 1kg",
+     "sim": 0.45,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt hiểm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt hiểm trái gói 50g, giá cả",
+     "sim": 0.728,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt sừng",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt sừng đỏ tươi gói 100g",
+     "sim": 0.713,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành tím",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hành tím 200g",
+     "sim": 0.75,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nêm sẵn lẩu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Xốt gia vị nêm sẵn lẩu Thái Chinsu gói 80g",
+     "sim": 0.681,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước mắm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước mắm Phú Quốc Thanh Quốc 520ml",
+     "sim": 0.573,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  },
+  {
+   "query": "điện thoại iphone 15",
+   "expect": null,
+   "hit_rank": null,
+   "top": [
+    {
+     "id": "com-chien-thap-cam",
+     "name": "Cơm chiên thập cẩm",
+     "sim": 0.346
+    },
+    {
+     "id": "mi-can-xao-bap-non",
+     "name": "Mì căn xào bắp non",
+     "sim": 0.338
+    },
+    {
+     "id": "pancake-xot-bi-do-pho-mai",
+     "name": "Pancake xốt bí đỏ phô mai",
+     "sim": 0.338
+    },
+    {
+     "id": "com-chien-trai-cay",
+     "name": "Cơm chiên trái cây",
+     "sim": 0.337
+    },
+    {
+     "id": "suon-chien-xot-man",
+     "name": "Sườn chiên xốt mận",
+     "sim": 0.333
+    }
+   ],
+   "basket": [
+    {
+     "ingredient": "bắp mỹ",
+     "kind": "core",
+     "packs": 1,
+     "product": "Bắp mỹ giòn ngọt",
+     "sim": 0.838,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "chả lụa chay",
+     "kind": "core",
+     "packs": 1,
+     "product": "Chả lụa C.P gói 500g",
+     "sim": 0.643,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "cà rốt",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cà rốt 300g",
+     "sim": 0.758,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "cơm tấm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Gạo Khổng Tước Nguyên Vinh Hiển 5kg",
+     "sim": 0.431,
+     "contains": false,
+     "via": "quyet_dinh_gop"
+    },
+    {
+     "ingredient": "cần tây",
+     "kind": "core",
+     "packs": 1,
+     "product": "Cần tây 300g",
+     "sim": 0.761,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "củ cải muối",
+     "kind": "core",
+     "packs": 1,
+     "product": "Củ cải muối dạng sợi",
+     "sim": 0.83,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hành boa rô",
+     "kind": "core",
+     "packs": 1,
+     "product": "Hành boa rô 100g",
+     "sim": 0.829,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nấm hương sapa",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nấm hương hộp 150g",
+     "sim": 0.543,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "nấm rơm",
+     "kind": "core",
+     "packs": 1,
+     "product": "Nấm rơm túi 200g",
+     "sim": 0.647,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tàu hũ ky lá",
+     "kind": "core",
+     "packs": 1,
+     "product": "Tàu hũ chiên Ichi Sakura gói 500g",
+     "sim": 0.531,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "đậu hà lan",
+     "kind": "core",
+     "packs": 1,
+     "product": "Đậu Hà Lan vỉ 100g",
+     "sim": 0.667,
+     "contains": true,
+     "via": "san_pham_moi"
+    },
+    {
+     "ingredient": "đậu hũ",
+     "kind": "core",
+     "packs": 1,
+     "product": "Đậu hũ trắng non Nguyên 280g",
+     "sim": 0.587,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ớt hiểm xanh",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt hiểm trái gói 50g, giá cả",
+     "sim": 0.658,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "ớt hiểm đỏ",
+     "kind": "core",
+     "packs": 1,
+     "product": "Ớt hiểm trái gói 50g, giá cả",
+     "sim": 0.658,
+     "contains": false,
+     "via": "gop_ten_da_duyet"
+    },
+    {
+     "ingredient": "dầu mè",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu mè thơm hảo hạng Meizan 250ml",
+     "sim": 0.647,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "dầu ăn",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Dầu ăn thượng hạng Neptune 1 lít",
+     "sim": 0.572,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "hạt nêm",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Hạt nêm thịt heo Aji-ngon 170g",
+     "sim": 0.603,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "ngò rí",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Ngò rí 50g",
+     "sim": 0.646,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "nước tương",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Nước tương Nam Dương 210ml",
+     "sim": 0.652,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "tiêu",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Tiêu đen xay 50g",
+     "sim": 0.505,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    },
+    {
+     "ingredient": "đường",
+     "kind": "addon",
+     "packs": 1,
+     "product": "Đường kính trắng An Khê 500g",
+     "sim": 0.437,
+     "contains": true,
+     "via": "bang_ghep_100_mon"
+    }
+   ]
+  }
+ ],
+ "find_dish": {
+  "top1": 22,
+  "recall5": 23,
+  "scored": 27
+ },
+ "ingredient_match": {
+  "pairs": 1447,
+  "sim_mean": 0.645,
+  "sim_median": 0.642,
+  "sim_p10": 0.513,
+  "contains_pct": 49,
+  "by_via": [
+   {
+    "via": "san_pham_moi",
+    "cap": 564,
+    "sim_tb": 0.672,
+    "chua_tu_pct": 62,
+    "nghi_sai": 94
+   },
+   {
+    "via": "gop_ten_da_duyet",
+    "cap": 358,
+    "sim_tb": 0.624,
+    "chua_tu_pct": 3,
+    "nghi_sai": 150
+   },
+   {
+    "via": "bang_ghep_100_mon",
+    "cap": 173,
+    "sim_tb": 0.68,
+    "chua_tu_pct": 98,
+    "nghi_sai": 1
+   },
+   {
+    "via": "quyet_dinh_gop",
+    "cap": 163,
+    "sim_tb": 0.568,
+    "chua_tu_pct": 25,
+    "nghi_sai": 93
+   },
+   {
+    "via": "khop_ten",
+    "cap": 141,
+    "sim_tb": 0.666,
+    "chua_tu_pct": 100,
+    "nghi_sai": 0
+   },
+   {
+    "via": "quyet_dinh_che_bien_tu",
+    "cap": 30,
+    "sim_tb": 0.538,
+    "chua_tu_pct": 0,
+    "nghi_sai": 24
+   },
+   {
+    "via": "chon_tay",
+    "cap": 18,
+    "sim_tb": 0.595,
+    "chua_tu_pct": 22,
+    "nghi_sai": 9
+   }
+  ],
+  "worst": [
+   {
+    "sim": 0.321,
+    "ingredient": "bún tàu",
+    "product": "Miến khô Vifon gói 210g",
+    "via": "quyet_dinh_gop"
+   },
+   {
+    "sim": 0.334,
+    "ingredient": "mù tạc xanh",
+    "product": "Wasabi tuýp 43g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.362,
+    "ingredient": "màu gạch tôm",
+    "product": "Dầu điều chai 250ml",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.363,
+    "ingredient": "caramel",
+    "product": "Đường kính trắng An Khê 500g",
+    "via": "quyet_dinh_che_bien_tu"
+   },
+   {
+    "sim": 0.369,
+    "ingredient": "mayo",
+    "product": "Mayonnaise vị ngọt dịu Simply 230g",
+    "via": "quyet_dinh_gop"
+   },
+   {
+    "sim": 0.378,
+    "ingredient": "mì ý",
+    "product": "Mì Spaghetti San Remo số 5 gói 250g",
+    "via": "quyet_dinh_gop"
+   },
+   {
+    "sim": 0.379,
+    "ingredient": "hành tăm",
+    "product": "Củ nén 100g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.384,
+    "ingredient": "tai vị",
+    "product": "Hoa hồi (đại hồi) gói 100g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.384,
+    "ingredient": "mỡ + tóp mỡ",
+    "product": "Thịt heo xay CP 100g",
+    "via": "quyet_dinh_che_bien_tu"
+   },
+   {
+    "sim": 0.385,
+    "ingredient": "mì koreno",
+    "product": "Mì 3 Miền Tôm sú chua cay trung bộ gói 75g",
+    "via": "quyet_dinh_gop"
+   },
+   {
+    "sim": 0.389,
+    "ingredient": "lạc",
+    "product": "Đậu phộng gói 200g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.389,
+    "ingredient": "tép",
+    "product": "Tôm thẻ khay 300g",
+    "via": "quyet_dinh_gop"
+   },
+   {
+    "sim": 0.395,
+    "ingredient": "mỳ ý",
+    "product": "Mì Spaghetti San Remo số 5 gói 250g",
+    "via": "quyet_dinh_gop"
+   },
+   {
+    "sim": 0.396,
+    "ingredient": "thanh cá giả",
+    "product": "Thanh surimi vị cua 3N Foods gói 250g",
+    "via": "quyet_dinh_gop"
+   },
+   {
+    "sim": 0.397,
+    "ingredient": "xốt cà chua hộp",
+    "product": "Tương cà Delly Cook chai 270g",
+    "via": "quyet_dinh_gop"
+   },
+   {
+    "sim": 0.403,
+    "ingredient": "cỏ xạ hương",
+    "product": "Lá thyme khô lọ 10g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.404,
+    "ingredient": "thịt nguột",
+    "product": "Giăm bông gói 200g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.407,
+    "ingredient": "thịt jambon",
+    "product": "Giăm bông gói 200g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.408,
+    "ingredient": "đường tán",
+    "product": "Đường kính trắng An Khê 500g",
+    "via": "quyet_dinh_gop"
+   },
+   {
+    "sim": 0.412,
+    "ingredient": "dưa nụ ngâm chua",
+    "product": "Nụ bạch hoa (capers) hũ 100g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.414,
+    "ingredient": "jambon",
+    "product": "Giăm bông gói 200g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.414,
+    "ingredient": "tai vị thơm",
+    "product": "Hoa hồi (đại hồi) gói 100g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.42,
+    "ingredient": "xuyên tiêu",
+    "product": "Tiêu đen hạt 50g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.422,
+    "ingredient": "lát thịt nguội",
+    "product": "Giăm bông gói 200g",
+    "via": "san_pham_moi"
+   },
+   {
+    "sim": 0.422,
+    "ingredient": "poa-ro",
+    "product": "Hành boa rô 100g",
+    "via": "san_pham_moi"
+   }
+  ]
+ }
+}
