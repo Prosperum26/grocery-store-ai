@@ -32,6 +32,7 @@ def load_chef(app: FastAPI, settings: Settings) -> None:
         from src.services.recipe_service import RecipeService
 
         recipes = RecipeService(settings, Embedder(settings.embedding_model))
+        recipes.warm_up()
         providers = providers_from_settings(settings)
         app.state.recipes = recipes
         app.state.copilot = CopilotService(recipes, providers, settings)

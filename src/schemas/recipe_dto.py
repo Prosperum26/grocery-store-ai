@@ -7,6 +7,7 @@ class SearchRequest(BaseModel):
     servings: int | None = Field(default=None, ge=1, le=50)    # bỏ trống thì lấy từ câu hỏi ("cho 4 người")
     top_k: int = Field(default=5, ge=1, le=10)
     have: list[str] = Field(default_factory=list)              # tên nguyên liệu hoặc catalog_id khách đã có
+    include_basket: bool = True                                # False: chỉ cần danh sách món (màn tìm kiếm), giỏ để trống cho nhẹ
 
 
 class Need(BaseModel):
