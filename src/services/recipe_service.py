@@ -10,7 +10,7 @@ from src.ml.embedder import Embedder
 from src.schemas.recipe_dto import RecipeDetailRequest, RecipeDetailResponse, SearchRequest, SearchResponse, SearchResult
 from src.services.basket import BASE_UNIT, build_basket, pack_hint  # noqa: F401  (giữ import cũ chạy được)
 from src.services.recipe_detail import build_recipe_detail, recipe_info
-from src.utils.text_cleaner import keywords, split_servings, tokens
+from src.utils.text_cleaner import name_matcher, split_servings
 
 KEYWORD_LIMIT = 10
 
@@ -30,7 +30,6 @@ class RecipeService:
         cols = ["id", "name", "source_url", "image_url", "description", "servings", "time_minutes", "difficulty", "prep_steps", "cooking_steps", "family", "complete", "ingredients"]
         self.recipes = {r[0]: dict(zip(cols, r)) for r in rows}
         self.ids = list(self.recipes)
-        self.name_tokens = {rid: tokens(r["name"]) for rid, r in self.recipes.items()}
         self.catalog = {c[0]: dict(zip(["catalog_id", "name", "category", "unit", "pack_size", "pack_unit"], c)) for c in catalog_rows}
 
     def _connect(self) -> psycopg.Connection:
@@ -41,11 +40,11 @@ class RecipeService:
         return conn
 
     def _keyword_hits(self, text: str) -> list[str]:
-        """Món mà tên chứa mọi từ khóa (đã bỏ dấu, bỏ từ thừa); tên ngắn xếp trước."""
-        words = keywords(text)
-        if not words:
+        """Món mà tên chứa mọi từ khóa (bỏ từ thừa; có dấu hay không tùy khách gõ, xem name_matcher); tên ngắn xếp trước."""
+        matches = name_matcher(text)
+        if matches is None:
             return []
-        hits = [rid for rid in self.ids if all(w in self.name_tokens[rid] for w in words)]
+        hits = [rid for rid in self.ids if matches(self.recipes[rid]["name"])]
         return sorted(hits, key=lambda rid: (len(self.recipes[rid]["name"]), rid))[:KEYWORD_LIMIT]
 
     def _semantic_hits(self, vec, limit: int) -> list[tuple[str, float]]:
