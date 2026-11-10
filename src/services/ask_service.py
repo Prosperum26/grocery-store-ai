@@ -44,7 +44,7 @@ class AskService:
         if recipe is None:
             raise LookupError(request.recipe_id)
         start = time.perf_counter()
-        prompt = build_ask_prompt(recipe, request.question, request.servings)
+        prompt = build_ask_prompt(recipe, request.question, request.servings, request.history)
         outcome = run_chain(self.providers, self.config_source(), SYSTEM_PROMPT, prompt, AskAnswer, check_ask_answer,
                             self.settings, start, self.recorder)
         return AskResponse(answer=outcome.answer.answer if outcome.answer else None, status=outcome.status, provider=outcome.provider,

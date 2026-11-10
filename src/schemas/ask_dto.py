@@ -4,10 +4,17 @@ from typing import Annotated
 from pydantic import BaseModel, Field, StringConstraints
 
 
+class AskTurn(BaseModel):
+    """Một lượt hỏi đáp trước đó, do storefront gửi lại (service không lưu hội thoại)."""
+    question: str = Field(min_length=1, max_length=300)
+    answer: str = Field(min_length=1, max_length=1500)
+
+
 class AskRequest(BaseModel):
     recipe_id: str = Field(min_length=1, max_length=100)
     question: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=300)]
     servings: int | None = Field(default=None, ge=1, le=50)    # số người khách đang xem; bỏ trống thì lấy khẩu phần của công thức
+    history: list[AskTurn] = Field(default_factory=list, max_length=6)   # các lượt trước, cũ trước mới sau, để hỏi nối tiếp ("vậy thay bằng gì?")
 
 
 class AskAnswer(BaseModel):

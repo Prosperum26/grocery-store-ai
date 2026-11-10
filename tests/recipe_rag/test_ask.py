@@ -103,3 +103,15 @@ def test_route_ok_404_and_validation():
     assert client(StubAsk(LookupError("a"))).post("/api/v1/ask", json=body, headers=key).status_code == 404
     assert client(StubAsk()).post("/api/v1/ask", json=body).status_code == 401
     assert client(StubAsk()).post("/api/v1/ask", json={**body, "question": "   "}, headers=key).status_code == 422
+
+
+def test_history_is_put_in_the_prompt_as_data_and_capped():
+    from src.schemas.ask_dto import AskTurn
+    turn = AskTurn(question="Bớt cay được không?", answer="Được, bỏ ớt ở bước 2.")
+    g = FakeProvider("gemini", [AskAnswer(answer="Thay bằng tiêu.")])
+    service([g]).answer(AskRequest(recipe_id="a", question="Vậy thay bằng gì?", history=[turn]))
+    prompt = g.prompts[0]
+    assert "<<<Bớt cay được không?>>>" in prompt and "<<<Được, bỏ ớt ở bước 2.>>>" in prompt
+    assert prompt.index("Bớt cay được không?") < prompt.index("Vậy thay bằng gì?")      # lượt cũ đứng trước câu hỏi mới
+    with pytest.raises(ValueError):
+        AskRequest(recipe_id="a", question="q", history=[turn] * 7)
