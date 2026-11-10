@@ -13,9 +13,17 @@ def build_recipe_detail(recipe: dict, catalog: dict[str, dict], servings: int | 
     recipe_servings = recipe["servings"] or default_servings
     shown = servings or recipe_servings
     basket = build_basket(recipe["ingredients"], catalog, recipe_servings, shown, have)
-    in_basket = {item.ingredient for item in basket.buy + basket.maybe_have}
-    # Dòng không vào giỏ vẫn hiện cho khách đọc đủ công thức (đồ ăn kèm, hoặc cửa hàng chưa có sản phẩm tương ứng).
-    not_in_basket = [line["raw_text"] for line in recipe["ingredients"] if line["ingredient"] not in in_basket]
+    lines = recipe["ingredients"]
+    covered = {name for item in basket.buy + basket.maybe_have for name in item.ingredients}
+    # Một dòng công thức có thể tách thành nhiều nguyên liệu ("đường, muối, nước mắm"): đếm để biết dòng nào bị tách.
+    parts: dict[str, int] = {}
+    for line in lines:
+        parts[line["raw_text"]] = parts.get(line["raw_text"], 0) + 1
+    # Phần không vào giỏ vẫn hiện cho khách (đồ ăn kèm, không phải hàng mua). Dòng nguyên vẹn thì ghi đúng chữ công thức;
+    # dòng bị tách thì chỉ ghi tên nguyên liệu bị thiếu, để không lặp lại cả dòng.
+    missing = [line["raw_text"] if parts[line["raw_text"]] == 1 else line["ingredient"] for line in lines if line["ingredient"] not in covered]
+    not_in_basket = list(dict.fromkeys(missing))
+    ingredient_lines = list(dict.fromkeys(line["raw_text"] for line in lines))
     return RecipeDetailResponse(recipe=recipe_info(recipe, recipe_servings), servings=shown, complete=recipe["complete"],
                                 prep_steps=list(recipe["prep_steps"] or []), cooking_steps=list(recipe["cooking_steps"] or []),
-                                basket=basket, not_in_basket=not_in_basket)
+                                basket=basket, ingredient_lines=ingredient_lines, not_in_basket=not_in_basket)
