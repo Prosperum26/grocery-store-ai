@@ -20,11 +20,11 @@ def app_with(copilot=None) -> FastAPI:
 def test_health_needs_no_key_and_lists_only_provider_names():
     app = app_with(SimpleNamespace(providers={"openrouter": object(), "gemini": object()}))
     body = TestClient(app).get("/api/v1/health").json()
-    assert body == {"status": "ok", "ai_providers": ["gemini", "openrouter"]}
+    assert body["status"] == "ok" and body["ai_providers"] == ["gemini", "openrouter"]
 
 
 def test_health_works_before_services_are_loaded():
-    assert TestClient(app_with()).get("/api/v1/health").json() == {"status": "ok", "ai_providers": []}
+    assert TestClient(app_with()).get("/api/v1/health").json() == {"status": "ok", "modules": {}, "ai_providers": [], "reorder_model_loaded": False}
 
 
 def test_providers_are_built_only_for_keys_that_exist():

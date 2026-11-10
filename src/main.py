@@ -1,35 +1,24 @@
-"""FastAPI application entry point."""
-import logging
+"""App gộp cả hai module trong một tiến trình, tiện khi dev: uvicorn src.main:app --port 8100
+
+Mỗi module nạp độc lập (src/apps/loading.py): module nào nạp lỗi thì route của nó trả 503, module kia vẫn chạy.
+Khi cần cách ly hẳn (một tiến trình chết không ảnh hưởng bên kia) thì chạy hai app riêng:
+src.apps.chef:app (8100) và src.apps.reorder:app (8101).
+"""
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 
 from src.api.router import api_router
+from src.apps.loading import load_chef, load_reorder
 from src.config.settings import get_settings
-from src.ml.embedder import Embedder
-from src.services.ask_service import AskService
-from src.services.copilot_service import CopilotService
-from src.services.providers import providers_from_settings
-from src.services.recipe_service import RecipeService
-from src.services.reorder_service import ReorderService
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncIterator[None]:
-    # Nạp bge-m3, danh sách món và catalog một lần lúc khởi động (khoảng 10 giây), không nạp mỗi request.
     settings = get_settings()
-    recipes = RecipeService(settings, Embedder(settings.embedding_model))
-    app.state.recipes = recipes
-    providers = providers_from_settings(settings)
-    app.state.copilot = CopilotService(recipes, providers, settings)
-    app.state.ask = AskService(recipes, providers, settings)
-    # Thiếu model reorder không được làm sập cả service: /predict trả 503.
-    try:
-        app.state.reorder_service = ReorderService.from_weights(settings.weights_dir)
-    except (FileNotFoundError, KeyError) as error:
-        logging.getLogger(__name__).warning("reorder model not loaded: %r", error)
-        app.state.reorder_service = None
+    load_reorder(app, settings)
+    load_chef(app, settings)
     yield
 
 
