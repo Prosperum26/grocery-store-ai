@@ -158,7 +158,7 @@ curl -X POST http://localhost:8100/api/v1/predict -H "Content-Type: application/
   "at": "2026-10-20T09:00:00+07:00", "top_k": 5}'
 ```
 
-Thiếu file model hoặc thống kê thì service vẫn chạy và `/predict` trả 503. Như các endpoint khác, `/predict` cần header `X-Internal-Key`.
+Thiếu file model hoặc thống kê thì service vẫn chạy và `/predict` trả 503 (kể cả khi chỉ thiếu file `.onnx`). Như các endpoint khác, `/predict` cần header `X-Internal-Key`.
 
 ### Tài liệu
 
@@ -200,6 +200,21 @@ uvicorn src.main:app --reload --port 8100
 
 Service chạy ở cổng **8100** (cổng 8000 là của storefront). Swagger UI: `http://localhost:8100/docs`.
 Khởi động mất khoảng 10 giây vì nạp bge-m3 và dữ liệu món một lần; cần `ai_db` đang chạy (`docker compose up -d`).
+
+### Chạy hai module thành hai tiến trình riêng
+
+Lệnh `uvicorn src.main:app` ở trên chạy cả hai module trong một tiến trình, tiện khi dev. Mỗi module vẫn nạp độc lập:
+module nào nạp lỗi (thiếu file model, `ai_db` tắt, torch bị chặn) thì route của nó trả 503, module kia vẫn chạy.
+Để một tiến trình sập, treo hay hết RAM không kéo bên kia theo, chạy hai app riêng (mỗi lệnh một terminal):
+
+```bash
+uvicorn src.apps.chef:app --port 8100       # Trợ lý Bếp: /search, /recipe, /copilot, /ask (nạp bge-m3, cần ai_db)
+uvicorn src.apps.reorder:app --port 8101    # Mua lại: /predict (không cần torch hay ai_db, lên trong vài giây)
+```
+
+Backend khi đó đặt `AI_SERVICE_URL=http://localhost:8100` và `AI_REORDER_URL=http://localhost:8101`.
+`GET /api/v1/health` của mỗi tiến trình trả `modules` (`"ok"` hoặc `"failed"` cho từng module nó chạy) và
+`status: "degraded"` khi có module nạp lỗi; lý do lỗi nằm trong log, không trả ra ngoài.
 Các route nghiệp vụ (`/api/v1/search`, `/api/v1/copilot`) cần header `X-Internal-Key` trùng `AI_INTERNAL_KEY` trong `.env`; `GET /api/v1/health` thì không.
 
 ## Cấu hình môi trường

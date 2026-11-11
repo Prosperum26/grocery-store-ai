@@ -38,6 +38,17 @@ def test_lines_outside_the_basket_are_listed_as_written():
     assert build_recipe_detail(RECIPE, CATALOG, None, [], 4).not_in_basket == ["Rau ăn kèm", "Me: 40g"]
 
 
+def test_split_recipe_line_is_listed_once_and_missing_parts_by_name():
+    """'Đường, muối, rau thơm' tách ba nguyên liệu: danh sách công thức ghi một lần; phần không vào giỏ ghi tên nguyên liệu."""
+    raw = "Đường, muối, rau thơm"
+    recipe = dict(RECIPE, ingredients=[line("cá lóc", "Cá lóc: 500g"), line("đường", raw, kind="addon", catalog_id="CAT-2"),
+                                       line("muối", raw, kind="addon", catalog_id="CAT-2"), line("rau thơm", raw, kind="side")])
+    detail = build_recipe_detail(recipe, CATALOG, None, [], 4)
+    assert detail.ingredient_lines == ["Cá lóc: 500g", raw]
+    assert detail.not_in_basket == ["rau thơm"]
+    assert [i.ingredient for i in detail.basket.maybe_have] == ["đường, muối"]
+
+
 def test_default_servings_when_not_given_and_have_moves_items_out_of_buy():
     detail = build_recipe_detail(RECIPE, CATALOG, None, ["cá lóc"], 4)
     assert detail.servings == 4 and detail.basket.buy == []

@@ -2,6 +2,7 @@
 import psycopg
 from fastapi import APIRouter, Depends, HTTPException, Request
 
+from src.api.deps import loaded
 from src.api.security import require_internal_key
 from src.schemas.recipe_dto import RecipeDetailRequest, RecipeDetailResponse, SearchRequest, SearchResponse
 
@@ -12,7 +13,7 @@ router = APIRouter(tags=["recipes"], dependencies=[Depends(require_internal_key)
 @router.post("/search", response_model=SearchResponse)
 def search(body: SearchRequest, request: Request) -> SearchResponse:
     try:
-        return request.app.state.recipes.search(body)
+        return loaded(request, "recipes").search(body)
     except psycopg.Error as e:
         # DB của AI chưa chạy: 503 để backend dùng bản dự phòng (hợp đồng ai-service.md, mục 3)
         raise HTTPException(status_code=503, detail="ai_db không sẵn sàng") from e
@@ -21,7 +22,7 @@ def search(body: SearchRequest, request: Request) -> SearchResponse:
 @router.post("/recipe", response_model=RecipeDetailResponse)
 def recipe_detail(body: RecipeDetailRequest, request: Request) -> RecipeDetailResponse:
     """Một món theo id: các bước nấu và giỏ nhân theo số người. Không embedding nên nhanh, dùng khi khách đổi số người."""
-    detail = request.app.state.recipes.detail(body)
+    detail = loaded(request, "recipes").detail(body)
     if detail is None:
         raise HTTPException(status_code=404, detail=f"Không có món {body.recipe_id}")
     return detail

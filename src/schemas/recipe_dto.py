@@ -7,6 +7,7 @@ class SearchRequest(BaseModel):
     servings: int | None = Field(default=None, ge=1, le=50)    # bỏ trống thì lấy từ câu hỏi ("cho 4 người")
     top_k: int = Field(default=5, ge=1, le=10)
     have: list[str] = Field(default_factory=list)              # tên nguyên liệu hoặc catalog_id khách đã có
+    include_basket: bool = True                                # False: chỉ cần danh sách món (màn tìm kiếm), giỏ để trống cho nhẹ
 
 
 class Need(BaseModel):
@@ -29,7 +30,8 @@ class Alternative(BaseModel):
 
 
 class Item(BaseModel):
-    ingredient: str
+    ingredient: str                                            # tên hiển thị; nhiều nguyên liệu chung một sản phẩm thì nối bằng ", "
+    ingredients: list[str] = []                                # từng nguyên liệu mà sản phẩm này phục vụ (thường chỉ một)
     kind: str                                                  # core | addon
     raw_text: str
     need: Need | None                                          # None khi công thức không ghi lượng
@@ -87,4 +89,5 @@ class RecipeDetailResponse(BaseModel):
     prep_steps: list[str]
     cooking_steps: list[str]
     basket: Basket
+    ingredient_lines: list[str] = []                           # nguyên liệu đúng như công thức ghi, mỗi dòng một lần
     not_in_basket: list[str]                                   # dòng công thức không vào giỏ (đồ ăn kèm, chưa ghép được), đúng chữ công thức

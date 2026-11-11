@@ -67,3 +67,31 @@ def test_unknown_catalog_product_is_skipped_and_alternatives_kept():
     assert [i.ingredient for i in basket.buy] == ["b"]
     assert basket.buy[0].alternatives[0].catalog_id == "CAT-2"
     assert basket.buy[0].need is None and basket.buy[0].pack_hint is None
+
+
+def test_two_ingredients_matched_to_one_product_give_one_line():
+    """'rau om' và 'ngò gai' cùng ghép vào một gói: giỏ chỉ có một dòng, không mua hai lần."""
+    lines = [dict(line("rau om", "core", "CAT-1"), raw_text="Rau om, ngò gai, ớt sừng"),
+             dict(line("ngò gai", "core", "CAT-1"), raw_text="Rau om, ngò gai, ớt sừng"),
+             dict(line("ớt sừng", "core", "CAT-3"), raw_text="Rau om, ngò gai, ớt sừng")]
+    basket = build_basket(lines, CATALOG, 4, 4)
+    assert [i.product.catalog_id for i in basket.buy] == ["CAT-1", "CAT-3"]
+    merged = basket.buy[0]
+    assert merged.ingredient == "rau om, ngò gai" and merged.ingredients == ["rau om", "ngò gai"]
+    assert merged.raw_text == "Rau om, ngò gai, ớt sừng"               # chữ công thức không lặp lại
+
+
+def test_merged_product_adds_quantities_only_when_units_match():
+    same = build_basket([line("a", "core", "CAT-1", 300, "g"), line("b", "core", "CAT-1", 400, "g")], CATALOG, 4, 4).buy[0]
+    assert same.need.quantity == 700 and same.pack_hint == 2
+    mixed = build_basket([line("a", "core", "CAT-1", 300, "g"), line("b", "core", "CAT-1", 2, "quả")], CATALOG, 4, 4).buy[0]
+    assert mixed.need is None and mixed.pack_hint is None
+    unknown = build_basket([line("a", "core", "CAT-1", 300, "g"), line("b", "core", "CAT-1")], CATALOG, 4, 4).buy[0]
+    assert unknown.need is None
+
+
+def test_merged_product_is_core_if_any_part_is_and_owned_only_if_all_parts_are():
+    lines = [line("tỏi", "addon", "CAT-1"), line("hành", "core", "CAT-1")]
+    assert build_basket(lines, CATALOG, 4, 4).buy[0].kind == "core"
+    assert len(build_basket(lines, CATALOG, 4, 4, have=["hành"]).buy) == 1            # còn thiếu tỏi: vẫn phải mua
+    assert build_basket(lines, CATALOG, 4, 4, have=["hành", "tỏi"]).buy == []

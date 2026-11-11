@@ -45,3 +45,14 @@ def test_default_quantities(service):
     for r in service.search(SearchRequest(query="gà nướng", top_k=5)).results:
         assert all(i.default_qty == 1 for i in r.basket.buy)
         assert all(i.default_qty == 0 for i in r.basket.maybe_have)
+
+
+def test_list_only_search_returns_recipes_without_baskets(service):
+    resp = service.search(SearchRequest(query="canh chua cá lóc", include_basket=False))
+    assert resp.accepted and resp.results[0].recipe.name.lower() == "canh chua cá lóc"
+    assert all(r.basket.buy == [] and r.basket.maybe_have == [] for r in resp.results)
+
+
+def test_accented_query_does_not_return_a_lookalike_word(service):
+    names = [r.recipe.name.lower() for r in service.search(SearchRequest(query="cơm chiên", top_k=5)).results if r.matched_by != "semantic"]
+    assert names and all("cơm" in name.split() for name in names)      # không có "cốm"
