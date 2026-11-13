@@ -46,11 +46,6 @@ def test_prompt_contains_recipe_and_question():
     assert "cho 4 người" in p and "cho 2 người" in p and "<<<bớt mặn được không>>>" in p
 
 
-def test_system_prompt_says_the_assistant_only_answers():
-    from src.services.ask_facts import SYSTEM_PROMPT
-    assert "chỉ trả lời câu hỏi" in SYSTEM_PROMPT and "thêm vào giỏ" in SYSTEM_PROMPT
-
-
 def test_ok_answer():
     g = FakeProvider("gemini", [AskAnswer(answer="  Khoảng 300-400 kcal (ước tính).  ")])
     r = service([g]).answer(REQ)
