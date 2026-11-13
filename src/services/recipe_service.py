@@ -24,13 +24,13 @@ class RecipeService:
         with self._connect() as conn:
             rows = conn.execute(
                 """select r.id, r.name, r.source_url, r.image_url, r.description, r.servings, r.time_minutes, r.difficulty,
-                          r.prep_steps, r.cooking_steps, r.usage_notes, r.tips, b.family, b.complete, b.ingredients
+                          r.prep_steps, r.cooking_steps, r.usage_notes, r.tips, b.family, b.complete, b.in_target_set, b.ingredients
                    from recipe r join recipe_basket b on b.recipe_id = r.id order by r.id""").fetchall()
-            catalog_rows = conn.execute("select catalog_id, name, category, unit, pack_size, pack_unit from catalog_product").fetchall()
-        cols = ["id", "name", "source_url", "image_url", "description", "servings", "time_minutes", "difficulty", "prep_steps", "cooking_steps", "usage_notes", "tips", "family", "complete", "ingredients"]
+            catalog_rows = conn.execute("select catalog_id, name, category, unit, pack_size, pack_unit, needs_review from catalog_product").fetchall()
+        cols = ["id", "name", "source_url", "image_url", "description", "servings", "time_minutes", "difficulty", "prep_steps", "cooking_steps", "usage_notes", "tips", "family", "complete", "in_target_set", "ingredients"]
         self.recipes = {r[0]: dict(zip(cols, r)) for r in rows}
         self.ids = list(self.recipes)
-        self.catalog = {c[0]: dict(zip(["catalog_id", "name", "category", "unit", "pack_size", "pack_unit"], c)) for c in catalog_rows}
+        self.catalog = {c[0]: dict(zip(["catalog_id", "name", "category", "unit", "pack_size", "pack_unit", "needs_review"], c)) for c in catalog_rows}
 
     def _connect(self) -> psycopg.Connection:
         s = self.settings
