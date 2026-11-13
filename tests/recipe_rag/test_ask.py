@@ -175,3 +175,9 @@ def test_amounts_are_scaled_when_the_customer_views_other_servings():
 def test_no_scaled_amounts_for_the_recipe_servings():
     assert "Lượng cho" not in ask_with_catalog(4)
     assert "Lượng cho" not in ask_with_catalog(None)
+
+
+def test_system_prompt_asks_for_plain_text():
+    # Giao diện hiện câu trả lời nguyên văn: thẻ HTML hay ** sẽ lộ ra (gặp "<ul><li>" khi thử ngày 2026-11-13).
+    from src.services.ask_facts import SYSTEM_PROMPT
+    assert "không dùng thẻ HTML" in SYSTEM_PROMPT and "markdown" in SYSTEM_PROMPT
