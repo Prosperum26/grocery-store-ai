@@ -115,3 +115,63 @@ def test_history_is_put_in_the_prompt_as_data_and_capped():
     assert prompt.index("Bớt cay được không?") < prompt.index("Vậy thay bằng gì?")      # lượt cũ đứng trước câu hỏi mới
     with pytest.raises(ValueError):
         AskRequest(recipe_id="a", question="q", history=[turn] * 7)
+
+
+# --- Ngữ cảnh của prompt (spec R7, 2026-11-11): số bước giống màn hình, cách dùng, mẹo, lượng theo số người ---
+
+FULL = {**RECIPE, "time_minutes": 35, "difficulty": "Dễ",
+        "usage_notes": ["Dùng nóng với cơm."], "tips": ["Cho cá vào khi nước sôi để cá không tanh."]}
+
+
+def test_steps_are_numbered_like_the_screen():
+    # Màn hình gộp chuẩn bị rồi nấu, đánh số 1..N; prompt phải dùng đúng các số đó.
+    p = build_ask_prompt(FULL, "bước 3 làm gì?", None)
+    assert "Các bước (3 bước" in p
+    assert "1. [chuẩn bị] Sơ chế cá." in p and "2. [nấu] Nấu nước me." in p and "3. [nấu] Thả cá vào." in p
+    assert "Các bước chuẩn bị" not in p and "Các bước nấu" not in p          # không còn hai danh sách đánh số riêng
+
+
+def test_notes_tips_time_and_difficulty_are_in_the_prompt():
+    p = build_ask_prompt(FULL, "có mẹo gì không?", None)
+    assert "thời gian khoảng 35 phút" in p and "độ khó: Dễ" in p
+    assert "Cách dùng:\n- Dùng nóng với cơm." in p and "Mẹo:\n- Cho cá vào khi nước sôi" in p
+
+
+def test_no_empty_sections_when_the_recipe_has_no_notes_or_steps():
+    bare = {**RECIPE, "prep_steps": [], "cooking_steps": [], "usage_notes": [], "tips": [""]}
+    p = build_ask_prompt(bare, "hỏi", None)
+    assert "Các bước" not in p and "Cách dùng" not in p and "Mẹo" not in p and "Thông tin:" not in p
+
+
+def test_long_notes_are_clipped_and_capped():
+    many = {**FULL, "tips": ["x" * 1000] + [f"mẹo {i}" for i in range(10)]}
+    p = build_ask_prompt(many, "hỏi", None)
+    assert "x" * 300 + "..." in p and "x" * 301 not in p
+    assert "mẹo 4" in p and "mẹo 5" not in p                                  # tối đa 6 dòng mẹo
+
+
+class StubRecipesWithCatalog:
+    catalog = {"CAT-1": {"catalog_id": "CAT-1", "name": "Cá lóc", "category": None, "pack_size": 500, "pack_unit": "g"},
+               "CAT-2": {"catalog_id": "CAT-2", "name": "Me", "category": None, "pack_size": None, "pack_unit": None}}
+    recipes = {"a": {**FULL, "ingredients": [
+        {"ingredient": "cá lóc", "kind": "core", "raw_text": "500g cá lóc", "quantity": 500, "unit": "g", "status": "da_ghep",
+         "match": {"catalog_id": "CAT-1", "alternatives": []}},
+        {"ingredient": "me", "kind": "core", "raw_text": "2 quả me", "quantity": 2, "unit": "quả", "status": "da_ghep",
+         "match": {"catalog_id": "CAT-2", "alternatives": []}}]}}
+
+
+def ask_with_catalog(servings):
+    g = FakeProvider("gemini", [AskAnswer(answer="ok")])
+    AskService(StubRecipesWithCatalog(), {"gemini": g}, Settings(), config_source=lambda: [ProviderConfig("gemini", True, 0)],
+               recorder=lambda r: None).answer(AskRequest(recipe_id="a", question="cần bao nhiêu cá?", servings=servings))
+    return g.prompts[0]
+
+
+def test_amounts_are_scaled_when_the_customer_views_other_servings():
+    p = ask_with_catalog(8)
+    assert "Lượng cho 8 người" in p and "- cá lóc: 1000 g" in p and "- me: 4 quả" in p
+
+
+def test_no_scaled_amounts_for_the_recipe_servings():
+    assert "Lượng cho" not in ask_with_catalog(4)
+    assert "Lượng cho" not in ask_with_catalog(None)
