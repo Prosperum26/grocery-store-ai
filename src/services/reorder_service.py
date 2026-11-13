@@ -7,7 +7,7 @@ top_k. Quantity is not predicted: the caller keeps its own logic for it.
 
 import json
 import math
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Protocol
 from zoneinfo import ZoneInfo
@@ -19,6 +19,7 @@ from src.ml.feature_extractor import extract_features, prediction_point
 from src.ml.onnx_inference import OnnxScorer, to_matrix
 from src.ml.shelf_life_rules import RuleConfig, suppression_reason
 from src.schemas.reorder_dto import (
+    OrderLine,
     PastOrder,
     PredictedItem,
     PredictRequest,
@@ -105,6 +106,16 @@ class ReorderService:
             not_due_enabled=mapping["not_due_enabled"],
         )
         return cls(OnnxScorer(weights_dir / metadata["onnx"]["file"]), metadata, stats, rules)
+
+    def warm_up(self) -> None:
+        """Chạy một lần dự đoán giả lúc khởi động. Lần gọi đầu của onnxruntime và polars chậm hơn hẳn các lần sau
+        (cấp phát bộ nhớ, biên dịch biểu thức), nên để nó rơi vào lúc khởi động thay vì vào khách đầu tiên."""
+        now = datetime.now(timezone.utc)
+        orders = [
+            PastOrder(placed_at=now - timedelta(days=days), lines=[OrderLine(product_id=p, category="rau-cu") for p in ("warm-a", "warm-b")])
+            for days in (21, 14, 7)
+        ]
+        self.predict(PredictRequest(orders=orders, at=now))
 
     def features(self, orders: list[PastOrder], at: datetime) -> pl.DataFrame:
         """One row per candidate, built by the extractor shared with training."""

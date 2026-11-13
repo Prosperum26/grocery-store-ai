@@ -46,12 +46,15 @@ def load_chef(app: FastAPI, settings: Settings) -> None:
 
 
 def load_reorder(app: FastAPI, settings: Settings) -> None:
-    """Model ONNX + metadata trong weights/. Không cần torch hay ai_db."""
+    """Model ONNX + metadata trong weights/, rồi một lần dự đoán giả để khách đầu tiên không chịu độ trễ khởi động.
+    Không cần torch hay ai_db."""
     app.state.reorder_service = None
     try:
         from src.services.reorder_service import ReorderService
 
-        app.state.reorder_service = ReorderService.from_weights(settings.weights_dir)
+        service = ReorderService.from_weights(settings.weights_dir)
+        service.warm_up()
+        app.state.reorder_service = service
         _mark(app, REORDER, "ok")
     except Exception:                                   # noqa: BLE001  (onnxruntime ném NoSuchFile, không phải FileNotFoundError)
         log.exception("Model Mua lại không nạp được; /predict sẽ trả 503")

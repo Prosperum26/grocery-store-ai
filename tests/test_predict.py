@@ -70,6 +70,18 @@ def test_orders_after_prediction_time_are_ignored():
     assert [i.product_id for i in r.items] == ["a"]
 
 
+def test_warm_up_runs_the_scorer_once():
+    calls = []
+
+    class Counting(StubScorer):
+        def predict(self, x):
+            calls.append(len(x))
+            return super().predict(x)
+
+    service(Counting()).warm_up()
+    assert len(calls) == 1 and calls[0] > 0
+
+
 def test_empty_history():
     r = service().predict(request([], 1))
     assert r.status == "empty" and r.items == [] and r.low_history
