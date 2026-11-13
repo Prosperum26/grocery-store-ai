@@ -23,13 +23,14 @@ def _mark(app: FastAPI, module: str, status: str) -> None:
 
 def load_chef(app: FastAPI, settings: Settings) -> None:
     """bge-m3 + danh sách món + catalog (khoảng 10 giây). Import nằm trong hàm để app Mua lại không phải nạp torch."""
-    app.state.recipes = app.state.copilot = app.state.ask = None
+    app.state.recipes = app.state.copilot = app.state.ask = app.state.suggest = None
     try:
         from src.ml.embedder import Embedder
         from src.services.ask_service import AskService
         from src.services.copilot_service import CopilotService
         from src.services.providers import providers_from_settings
         from src.services.recipe_service import RecipeService
+        from src.services.suggest_service import SuggestService
 
         recipes = RecipeService(settings, Embedder(settings.embedding_model))
         recipes.warm_up()
@@ -37,6 +38,7 @@ def load_chef(app: FastAPI, settings: Settings) -> None:
         app.state.recipes = recipes
         app.state.copilot = CopilotService(recipes, providers, settings)
         app.state.ask = AskService(recipes, providers, settings)
+        app.state.suggest = SuggestService(recipes.recipes, recipes.catalog, settings.search_default_servings)
         _mark(app, CHEF, "ok")
     except Exception:                                   # noqa: BLE001  (cố ý bắt hết: xem docstring của file)
         log.exception("Trợ lý Bếp không nạp được; các route của nó sẽ trả 503")

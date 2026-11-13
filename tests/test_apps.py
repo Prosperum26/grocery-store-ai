@@ -24,7 +24,8 @@ def client(app: FastAPI) -> TestClient:
 
 
 def test_each_app_serves_only_its_own_routes():
-    assert paths(chef_router) == {"/api/v1/health", "/api/v1/search", "/api/v1/recipe", "/api/v1/copilot", "/api/v1/ask"}
+    assert paths(chef_router) == {"/api/v1/health", "/api/v1/search", "/api/v1/recipe", "/api/v1/copilot", "/api/v1/ask",
+                                  "/api/v1/suggest/by-products", "/api/v1/suggest/discover"}
     assert paths(reorder_router) == {"/api/v1/health", "/api/v1/predict"}
     assert paths(api_router) == paths(chef_router) | paths(reorder_router)
 
