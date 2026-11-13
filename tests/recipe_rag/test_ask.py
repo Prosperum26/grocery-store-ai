@@ -18,6 +18,16 @@ RECIPE = {"name": "Canh chua cá lóc", "family": "canh", "servings": 4, "descri
 
 class StubRecipes:
     recipes = {"a": RECIPE}
+    searched: list[str] = []
+
+    def search(self, request):
+        from src.schemas.recipe_dto import RecipeInfo, SearchResponse, SearchResult, Basket
+        self.searched.append(request.query)
+        info = lambda rid: RecipeInfo(id=rid, name=rid, family=None, servings=4, time_minutes=30, difficulty=None,
+                                      description=None, image_url=None, source_url="u")
+        results = [SearchResult(recipe=info(rid), score=0.8, matched_by="semantic", complete=True, basket=Basket(buy=[], maybe_have=[]))
+                   for rid in ("a", "b", "c", "d", "e")]
+        return SearchResponse(query=request.query, servings=4, accepted=request.query != "không ra", threshold=0.6, results=results)
 
 
 class FakeProvider:
@@ -47,13 +57,13 @@ def test_prompt_contains_recipe_and_question():
 
 
 def test_ok_answer():
-    g = FakeProvider("gemini", [AskAnswer(answer="  Khoảng 300-400 kcal (ước tính).  ")])
+    g = FakeProvider("gemini", [AskAnswer(answer="  Khoảng 300-400 kcal (ước tính).  ", find_dishes="", find_products="")])
     r = service([g]).answer(REQ)
     assert r.status == "ok" and r.answer == "Khoảng 300-400 kcal (ước tính)." and r.provider == "gemini"
 
 
 def test_invalid_then_retry_with_reason():
-    g = FakeProvider("gemini", [AskAnswer(answer="  "), AskAnswer(answer="Ổn.")])
+    g = FakeProvider("gemini", [AskAnswer(answer="  ", find_dishes="", find_products=""), AskAnswer(answer="Ổn.", find_dishes="", find_products="")])
     r = service([g]).answer(REQ)
     assert r.status == "ok" and "bị từ chối" in g.prompts[1]
 
@@ -75,7 +85,7 @@ def test_unknown_recipe_raises_lookup_error():
 
 def test_check_rejects_too_long():
     with pytest.raises(ProviderInvalid):
-        check_ask_answer(AskAnswer(answer="x" * 1501))
+        check_ask_answer(AskAnswer(answer="x" * 1501, find_dishes="", find_products=""))
 
 
 class StubAsk:
@@ -108,7 +118,7 @@ def test_route_ok_404_and_validation():
 def test_history_is_put_in_the_prompt_as_data_and_capped():
     from src.schemas.ask_dto import AskTurn
     turn = AskTurn(question="Bớt cay được không?", answer="Được, bỏ ớt ở bước 2.")
-    g = FakeProvider("gemini", [AskAnswer(answer="Thay bằng tiêu.")])
+    g = FakeProvider("gemini", [AskAnswer(answer="Thay bằng tiêu.", find_dishes="", find_products="")])
     service([g]).answer(AskRequest(recipe_id="a", question="Vậy thay bằng gì?", history=[turn]))
     prompt = g.prompts[0]
     assert "<<<Bớt cay được không?>>>" in prompt and "<<<Được, bỏ ớt ở bước 2.>>>" in prompt
@@ -161,7 +171,7 @@ class StubRecipesWithCatalog:
 
 
 def ask_with_catalog(servings):
-    g = FakeProvider("gemini", [AskAnswer(answer="ok")])
+    g = FakeProvider("gemini", [AskAnswer(answer="ok", find_dishes="", find_products="")])
     AskService(StubRecipesWithCatalog(), {"gemini": g}, Settings(), config_source=lambda: [ProviderConfig("gemini", True, 0)],
                recorder=lambda r: None).answer(AskRequest(recipe_id="a", question="cần bao nhiêu cá?", servings=servings))
     return g.prompts[0]
@@ -181,3 +191,28 @@ def test_system_prompt_asks_for_plain_text():
     # Giao diện hiện câu trả lời nguyên văn: thẻ HTML hay ** sẽ lộ ra (gặp "<ul><li>" khi thử ngày 2026-11-13).
     from src.services.ask_facts import SYSTEM_PROMPT
     assert "không dùng thẻ HTML" in SYSTEM_PROMPT and "markdown" in SYSTEM_PROMPT
+
+
+def test_dishes_are_searched_and_the_current_recipe_is_left_out():
+    g = FakeProvider("gemini", [AskAnswer(answer="Gợi ý vài món bên dưới.", find_dishes="  canh rau nhẹ ", find_products="")])
+    r = service([g]).answer(REQ)
+    assert StubRecipes.searched[-1] == "canh rau nhẹ"
+    assert [d.id for d in r.dishes] == ["b", "c", "d"] and r.product_query is None
+
+
+def test_no_dishes_when_search_is_not_confident_or_not_asked():
+    g = FakeProvider("gemini", [AskAnswer(answer="Ổn.", find_dishes="không ra", find_products=""),
+                                AskAnswer(answer="Ổn.", find_dishes="", find_products="")])
+    assert service([g]).answer(REQ).dishes == []
+    assert service([g]).answer(REQ).dishes == []
+
+
+def test_product_query_is_passed_to_the_storefront():
+    g = FakeProvider("gemini", [AskAnswer(answer="Có kết quả bên dưới.", find_dishes="", find_products=" nước mắm ")])
+    r = service([g]).answer(REQ)
+    assert r.product_query == "nước mắm" and r.dishes == []
+
+
+def test_prompt_rules_explain_the_two_search_fields():
+    from src.services.ask_facts import SYSTEM_PROMPT
+    assert "find_dishes" in SYSTEM_PROMPT and "find_products" in SYSTEM_PROMPT
