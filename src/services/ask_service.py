@@ -9,6 +9,7 @@ from typing import TYPE_CHECKING
 from src.config.settings import Settings
 from src.schemas.ask_dto import AskAnswer, AskRequest, AskResponse
 from src.services.ask_facts import SYSTEM_PROMPT, build_ask_prompt
+from src.services.basket import build_basket
 from src.services.copilot_service import configs_from_settings
 from src.services.llm_provider import LlmProvider, ProviderInvalid
 from src.services.provider_chain import CallRecord, ProviderConfig, log_call, run_chain
@@ -44,8 +45,21 @@ class AskService:
         if recipe is None:
             raise LookupError(request.recipe_id)
         start = time.perf_counter()
-        prompt = build_ask_prompt(recipe, request.question, request.servings, request.history)
+        prompt = build_ask_prompt(recipe, request.question, request.servings, request.history,
+                                  scaled=self._scaled_amounts(recipe, request.servings))
         outcome = run_chain(self.providers, self.config_source(), SYSTEM_PROMPT, prompt, AskAnswer, check_ask_answer,
                             self.settings, start, self.recorder)
         return AskResponse(answer=outcome.answer.answer if outcome.answer else None, status=outcome.status, provider=outcome.provider,
                            model=outcome.model, latency_ms=int((time.perf_counter() - start) * 1000))
+
+    def _scaled_amounts(self, recipe: dict, servings: int | None) -> list[str] | None:
+        """Lượng từng nguyên liệu cho `servings` người, cùng cách tính với giỏ trên màn hình (build_basket).
+        None khi khách xem đúng khẩu phần gốc, công thức không ghi khẩu phần, hoặc không có catalog."""
+        own = recipe.get("servings")
+        catalog = getattr(self.recipes, "catalog", None)
+        if not servings or not own or servings == own or catalog is None:
+            return None
+        basket = build_basket(recipe["ingredients"], catalog, own, servings)
+        amounts = [f"{item.ingredient}: {item.need.quantity:g}" + (f" {item.need.unit}" if item.need.unit else "")
+                   for item in basket.buy + basket.maybe_have if item.need]
+        return amounts or None
