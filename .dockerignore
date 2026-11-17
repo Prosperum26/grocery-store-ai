@@ -1,0 +1,13 @@
+.venv/
+.git/
+.env
+.env.*
+!.env.example
+**/__pycache__/
+.pytest_cache/
+data/
+notebooks/
+demo/
+docs/
+tests/
+scripts/
