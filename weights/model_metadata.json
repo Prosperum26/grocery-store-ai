@@ -1,0 +1,129 @@
+{
+  "created_at": "2026-11-05T20:32:14+07:00",
+  "machine": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "n_cpu": 12,
+    "python": "3.11.9",
+    "lightgbm": "4.7.0"
+  },
+  "model_file": "lgbm_v4_selected.txt",
+  "feature_version": "v4",
+  "feature_columns": [
+    "up_cnt",
+    "up_orders_since",
+    "up_rate",
+    "streak_ratio",
+    "up_days_since",
+    "up_mean_gap",
+    "up_decay",
+    "in_last_1",
+    "in_last_2",
+    "in_last_3",
+    "u_n_orders",
+    "u_basket",
+    "u_reorder_rate",
+    "u_n_products",
+    "u_mean_dsp",
+    "u_pct_capped",
+    "p_reorder_ratio",
+    "a_reorder_ratio",
+    "ua_rate",
+    "t_dow",
+    "t_hour",
+    "t_dsp",
+    "t_dsp_capped"
+  ],
+  "top_k": 15,
+  "tau": 0.13,
+  "tau_selection": {
+    "split": "val",
+    "metric": "f1@15",
+    "grid": [
+      0.02,
+      0.6,
+      0.01
+    ],
+    "best": {
+      "tau": 0.13,
+      "f1@15": 0.3181,
+      "precision": 0.3211,
+      "recall": 0.3793,
+      "avg_items": 10.42,
+      "empty_orders": 0.0084
+    },
+    "no_tau": {
+      "tau": 0.0,
+      "f1@15": 0.2977,
+      "precision": 0.2704,
+      "recall": 0.4342,
+      "avg_items": 14.32,
+      "empty_orders": 0.0
+    }
+  },
+  "oracle_recall@15_val": 0.6012,
+  "calibration": {
+    "method": "none",
+    "ece_uniform": 0.0008,
+    "ece_quantile": 0.001,
+    "brier": 0.08151,
+    "brier_base_rate": 0.10216
+  },
+  "split": {
+    "method": "leave-last-out per user",
+    "test": "order n",
+    "val": "order n-1",
+    "train": "orders 1..n-2; the last train_targets of them are labels",
+    "why": "Instacart has no absolute dates, so a global time cut is impossible"
+  },
+  "data": {
+    "n_users": 20000,
+    "seed": 42,
+    "min_orders": 5,
+    "train_targets": 3,
+    "max_candidates": 100,
+    "dsp_cap": 30
+  },
+  "onnx": {
+    "file": "lgbm_v4_selected.onnx",
+    "opset": 15,
+    "parity": {
+      "split": "val",
+      "rows": 1096031,
+      "rows_with_nan": 609151,
+      "max_abs_diff": 2.5933089548013655e-07,
+      "p99_abs_diff": 1.1478966240041626e-07,
+      "orders_with_different_top15": 0,
+      "orders": 20000,
+      "limit": 0.0001
+    }
+  },
+  "latency_cpu": {
+    "created_at": "2026-11-05T20:34:54+07:00",
+    "machine": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "n_cpu": 12,
+      "python": "3.11.9",
+      "lightgbm": "4.7.0"
+    },
+    "requests": 500,
+    "scope": "in-process POST /api/v1/predict, no network, one ONNX thread",
+    "p50_ms": 22.5,
+    "p95_ms": 31.2,
+    "p99_ms": 35.0,
+    "max_ms": 82.5,
+    "median_purchase_lines": 92,
+    "max_purchase_lines": 1303
+  },
+  "train_serve_check": {
+    "requests": 500,
+    "skipped": [
+      "a_reorder_ratio",
+      "p_reorder_ratio",
+      "t_dow",
+      "t_hour"
+    ],
+    "above_tolerance": {}
+  }
+}

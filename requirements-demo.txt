@@ -1,0 +1,2 @@
+# Chỉ để chạy demo Streamlit (demo/recipe_rag/app.py). Cài thêm sau requirements.txt.
+streamlit==1.50.0

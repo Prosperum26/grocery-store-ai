@@ -1,0 +1,58 @@
+# CD: push lên main thì đẩy code sang Hugging Face Space (Docker), Space tự build lại image.
+# Cần: secret HF_TOKEN (token quyền write) và variable HF_SPACE (dạng <user>/<space>).
+# Chỉ thêm/ghi đè file, không xóa, nên weights/*.onnx đã upload tay lên Space vẫn được giữ.
+name: Deploy to Hugging Face
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-hf
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    if: vars.HF_SPACE != ''
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install "huggingface_hub>=0.30"
+
+      # Space cần README có front matter (sdk: docker, app_port). README của GitHub giữ nguyên,
+      # bản cho Space được tạo trong thư mục tạm.
+      - name: Upload to Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE: ${{ vars.HF_SPACE }}
+        run: |
+          mkdir -p /tmp/space
+          cp -r src weights requirements.txt Dockerfile .dockerignore /tmp/space/
+          cat > /tmp/space/README.md <<'EOF'
+          ---
+          title: Com4Fud AI
+          sdk: docker
+          app_port: 7860
+          pinned: false
+          ---
+          grocery-store-ai (Trợ lý Bếp + Mua lại). Mã nguồn: GitHub Prosperum26/grocery-store-ai.
+          EOF
+          python - <<'EOF'
+          import os
+          from huggingface_hub import HfApi
+
+          HfApi(token=os.environ["HF_TOKEN"]).upload_folder(
+              folder_path="/tmp/space",
+              repo_id=os.environ["HF_SPACE"],
+              repo_type="space",
+              commit_message=f"deploy {os.environ['GITHUB_SHA'][:7]}",
+              ignore_patterns=["**/__pycache__/**"],
+          )
+          EOF
